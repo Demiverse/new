@@ -399,10 +399,49 @@ body.menu {
 	animation-iteration-count: infinite;
 	animation-timing-function: linear;
 }
-
 #ui-bar {
   display: none;
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript">// Локализация
+}
+.settingsicon {
+    background-image: url("https://imgbb.su/images/2023/01/16/menu60af7b33caed0917.png");
+  width: 32px;
+  height: 32px;
+  position: fixed;
+  left: 50em;
+	right: 0em;
+	bottom: 0em;
+  top: 20em;
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript">// Кнопки для настроек
+$(document).ready(function() {
+	$("#sidebar-toggle-icon").click(function(){
+		$("#sidebar").toggleClass("toggled");
+	});
+	
+		$("#saves-button").click(function() {
+		UI.saves();
+	});
+	
+	$("#settings-button").click(function() {
+		UI.settings();
+	});
+	
+	$("#restart-button").click(function() {
+		UI.restart();
+	});
+	
+	$("#backwards-button").click(function() {
+	Engine.backward();
+});
+
+	$("#forwards-button").click(function() {
+	Engine.forward();
+});
+	
+	console.log(UIBar.stow());
+	
+});
+
+// Локализация
 l10nStrings.savesTitle="Сохранить";
 l10nStrings.settingsTitle="Настройки";
 l10nStrings.restartTitle="Перезапуск";
@@ -573,10 +612,10 @@ $(document).on("mousedown", function (event) {
 &lt;&lt;timed 0s t8n&gt;&gt;&lt;h3&gt;Смеяна&lt;/h3&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;type 10ms&gt;&gt;\
 Ну наконец-то! Заставляешь себя ждать. И не надо на меня так смотреть - Антуанетта говорила, что и тебя пригласила на Игнисту. Или думаешь, она бы тебя сюда привела без моего ведома? Я хотела бы с тобой кое-что обсудить.\&lt;&lt;/type&gt;&gt;&lt;&lt;timed 3s t8n&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Слушаю, моя Владычица!]]&lt;/div&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Интересно, что могло вдруг потребоваться от гонимого героя Сарнаута...]]&lt;/div&gt;&lt;&lt;/timed&gt;&gt;
 
-
+&lt;div id=&quot;saves-button&quot; class=&quot;settingsicon&quot;&gt;&lt;/div&gt;
 
 </tw-passagedata><tw-passagedata pid="2" name="StoryInit" tags="" position="243,81" size="100,100">&lt;&lt;cacheaudio &quot;night_bgm&quot; &quot;sounds/fate.mp3&quot;&gt;&gt;
-&lt;&lt;set $achievement_01 to recall(&#39;achievement_01&#39;)&gt;&gt;</tw-passagedata><tw-passagedata pid="3" name="Слушаю, моя Владычица!" tags="desert" position="106,451" size="100,100">&lt;&lt;audio &quot;night_bgm&quot; loop play&gt;&gt;
+&lt;&lt;set $achievement_01 to recall(&#39;achievement_01&#39;)&gt;&gt;</tw-passagedata><tw-passagedata pid="3" name="Слушаю, моя Владычица!" tags="desert" position="108,454" size="100,100">&lt;&lt;audio &quot;night_bgm&quot; loop play&gt;&gt;
 &lt;&lt;type 10ms&gt;&gt;\
 Ну наконец-то! Заставляешь себя ждать. И не надо на меня так смотреть - Антуанетта говорила, что и тебя пригласила на Игнисту. Или думаешь, она бы тебя сюда привела без моего ведома? Я хотела бы с тобой кое-что обсудить.
 \&lt;&lt;/type&gt;&gt;&lt;&lt;timed 3s t8n&gt;&gt;[[Обратно|StartPassage]]
