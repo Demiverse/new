@@ -98,7 +98,7 @@ var LZString={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234
 		<div id="init-lacking">Your browser lacks required capabilities. Please upgrade it or switch to another to continue.</div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<tw-storydata name="Копия Тестсупер" startnode="5" creator="Twine" creator-version="2.3.14" ifid="18AACA89-BCF7-46E4-B696-B1A934895FCA" zoom="1" format="SugarCube" format-version="2.34.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">  @import url(https://myfonts.ru/myfonts?fonts=allodswest);
+	<tw-storydata name="Копия Тестсупер" startnode="5" creator="Twine" creator-version="2.3.14" ifid="18AACA89-BCF7-46E4-B696-B1A934895FCA" zoom="1" format="SugarCube" format-version="2.34.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url(https://myfonts.ru/myfonts?fonts=allodswest);
 
 html {
   width: 100%;
@@ -141,15 +141,19 @@ body {
   text-align:center;
 }
 
-/* Links */
-a.internalLink, a.externalLink {
-  color: hotpink;
-}
-a.internalLink:hover, a.externalLink:hover {
-  color: hotpink;
-  text-decoration: none;
-}
-
+ A {
+    color: #f0f097; /* Цвет ссылок */
+   }
+   A:active {
+    color: #c2b893; /* Цвет активных ссылок */
+   }
+   A:hover, a:focus {
+	   color: #d9be5b; /* Цвет выделенных ссылок */
+	 text-decoration: none;
+   } 
+   A:visited {
+    color: #faf8c8; /* Цвет посещенных ссылок */
+   }
 /* Shrink the page when viewed on devices with a low screen width */
 @media screen and (max-width: 960px) {
   .passage { font-size: 90%; width: 70%; }
@@ -202,7 +206,7 @@ body.desert {
 .desert .passage {
   /* Passage width */
    width: 80%; 
-  position: absolute;
+  position: fixed;
   overflow: auto;
   left: 10em;
 	right: 10em;
@@ -214,25 +218,15 @@ body.desert {
   text-align: left;
 }
 
-/* Links */
-a.internalLink, a.externalLink {
-  color: hotpink;
-}
-a.internalLink:hover, a.externalLink:hover {
-  color: hotpink;
-  text-decoration: none;
-}
-
 /* Shrink the page when viewed on devices with a low screen width */
 @media screen and (max-width: 960px) {
-  .desert .passage { font-size: 60%; width: 70%; left: 2em; right: 10em; }
+  .desert .passage { font-size: 90%; width: 70%; left: 2em; right: 10em; }
 }
 @media screen and (max-width: 840px) {
-  .desert .passage { font-size: 60%; width: 80%; left: 2em; right: 10em; }
+  .desert .passage { font-size: 90%; width: 80%; left: 2em; right: 10em; }
 }
 @media screen and (max-width: 720px) {
   .desert .passage { font-size: 60%; width: 90%; left: 2em; right: 10em; }
-
 }
  #notify {
     position : fixed;
@@ -347,15 +341,6 @@ body.menu {
   text-align:center;
 }
 
-/* Links */
-a.internalLink, a.externalLink {
-  color: hotpink;
-}
-a.internalLink:hover, a.externalLink:hover {
-  color: hotpink;
-  text-decoration: none;
-}
-
 /* Shrink the page when viewed on devices with a low screen width */
 @media screen and (max-width: 960px) {
  .menu .passage { font-size: 90%; width: 70%; }
@@ -367,9 +352,7 @@ a.internalLink:hover, a.externalLink:hover {
   .menu .passage { font-size: 75%; width: 90%; }
 }
 
-#ui-bar {
-  display: none;
-}
+
 
 /* исчезновение */
 @keyframes animationName {
@@ -390,7 +373,36 @@ a.internalLink:hover, a.externalLink:hover {
    -webkit-animation: animationName 15s infinite;
     animation: animationName 15s infinite;
 }
-</style><script role="script" id="twine-user-script" type="text/twine-javascript">// Локализация
+.proceed a {
+  color: #c0975f;
+  float: none;
+  text-decoration: none;
+}
+
+.proceed a:hover {
+  color: #d2b68f;
+  float: none;
+  text-decoration: none;
+}
+ @keyframes move {
+	from {
+		margin-left: 0;
+	}
+	to {
+		margin-left: 5px;
+	}
+}
+#elem {
+	animation-direction: alternate;
+	animation-duration: 1s;
+	animation-name: move;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+#ui-bar {
+  display: none;
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript">// Локализация
 l10nStrings.savesTitle="Сохранить";
 l10nStrings.settingsTitle="Настройки";
 l10nStrings.restartTitle="Перезапуск";
@@ -559,19 +571,21 @@ $(document).on("mousedown", function (event) {
 &lt;&lt;set $achievement_01 to true&gt;&gt;
 
 &lt;&lt;timed 0s t8n&gt;&gt;&lt;h3&gt;Смеяна&lt;/h3&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;type 10ms&gt;&gt;\
-Ну наконец-то! Заставляешь себя ждать. И не надо на меня так смотреть - Антуанетта говорила, что и тебя пригласила на Игнисту. Или думаешь, она бы тебя сюда привела без моего ведома? Я хотела бы с тобой кое-что обсудить.
-\&lt;&lt;/type&gt;&gt;&lt;&lt;timed 3s t8n&gt;&gt;[[Слушаю, моя Владычица!]]
-[[Интересно, что могло вдруг потребоваться от гонимого героя Сарнаута...]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="StoryInit" tags="" position="243,81" size="100,100">&lt;&lt;cacheaudio &quot;night_bgm&quot; &quot;sounds/fate.mp3&quot;&gt;&gt;
+Ну наконец-то! Заставляешь себя ждать. И не надо на меня так смотреть - Антуанетта говорила, что и тебя пригласила на Игнисту. Или думаешь, она бы тебя сюда привела без моего ведома? Я хотела бы с тобой кое-что обсудить.\&lt;&lt;/type&gt;&gt;&lt;&lt;timed 3s t8n&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Слушаю, моя Владычица!]]&lt;/div&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Интересно, что могло вдруг потребоваться от гонимого героя Сарнаута...]]&lt;/div&gt;&lt;&lt;/timed&gt;&gt;
+
+
+
+</tw-passagedata><tw-passagedata pid="2" name="StoryInit" tags="" position="243,81" size="100,100">&lt;&lt;cacheaudio &quot;night_bgm&quot; &quot;sounds/fate.mp3&quot;&gt;&gt;
 &lt;&lt;set $achievement_01 to recall(&#39;achievement_01&#39;)&gt;&gt;</tw-passagedata><tw-passagedata pid="3" name="Слушаю, моя Владычица!" tags="desert" position="106,451" size="100,100">&lt;&lt;audio &quot;night_bgm&quot; loop play&gt;&gt;
 &lt;&lt;type 10ms&gt;&gt;\
 Ну наконец-то! Заставляешь себя ждать. И не надо на меня так смотреть - Антуанетта говорила, что и тебя пригласила на Игнисту. Или думаешь, она бы тебя сюда привела без моего ведома? Я хотела бы с тобой кое-что обсудить.
-\&lt;&lt;/type&gt;&gt;&lt;&lt;timed 3s t8n&gt;&gt;[[Слушаю, моя Владычица!]]
+\&lt;&lt;/type&gt;&gt;&lt;&lt;timed 3s t8n&gt;&gt;[[Обратно|StartPassage]]
 [[Интересно, что могло вдруг потребоваться от гонимого героя Сарнаута...]]&lt;&lt;/timed&gt;&gt;
 </tw-passagedata><tw-passagedata pid="4" name="Интересно, что могло вдруг потребоваться от гонимого героя Сарнаута..." tags="" position="361,449" size="100,100">&lt;&lt;audio &quot;night_bgm&quot; loop play&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="Allods" tags="blackscreen" position="457,26" size="100,100">&lt;&lt;audio &quot;night_bgm&quot; loop play&gt;&gt;
 &lt;&lt;switch visited()&gt;&gt;&lt;&lt;case 1&gt;&gt;&lt;&lt;fadeout 2s 4s&gt;&gt;&lt;&lt;fadein 2s 0s&gt;&gt;&lt;div class=&quot;logo&quot;&gt;&lt;img src=&quot;https://static.wikia.nocookie.net/all0ds/images/d/d3/Аллоды_логотип.png/revision/latest/scale-to-width-down/1000?cb=20190316193007&amp;path-prefix=ru&quot; alt=&quot;Allods&quot; width=&quot;100%&quot;&gt;&lt;/div&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;/fadeout&gt;&gt;&lt;&lt;timed 7s&gt;&gt;&lt;&lt;goto &quot;Allods&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|Allods]]&lt;/span&gt;
 
 &lt;&lt;case 2&gt;&gt;&lt;&lt;fadeout 2s 4s&gt;&gt;&lt;&lt;fadein 2s 0s&gt;&gt;&lt;div class=&quot;logo&quot;&gt;&lt;img src=&quot;https://alloder.ru/logos/logo_full.png&quot; alt=&quot;Created in Twine&quot; width=&quot;100%&quot;&gt;&lt;/div&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;/fadeout&gt;&gt;&lt;&lt;timed 7s&gt;&gt;&lt;&lt;goto &quot;Warning&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|Warning]]&lt;/span&gt;&lt;&lt;/switch&gt;&gt;
-</tw-passagedata><tw-passagedata pid="6" name="Warning" tags="" position="610,89" size="100,100">&lt;div class=elementToFadeInAndOut&gt;Добро пожаловать!&lt;&lt;timed 15s&gt;&gt;&lt;&lt;goto &quot;MainMenu&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|MainMenu]]&lt;/span&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="7" name="MainMenu" tags="menu" position="471,268" size="100,100">&lt;div class=&quot;subtitle&quot;&gt;&lt;span class=&quot;subtitle-item&quot;&gt;[[Новая игра|StartPassage]]&lt;/span&gt;
+</tw-passagedata><tw-passagedata pid="6" name="Warning" tags="" position="610,89" size="100,100">&lt;div class=&quot;elementToFadeInAndOut&quot;&gt;Добро пожаловать!&lt;&lt;timed 15s&gt;&gt;&lt;&lt;goto &quot;MainMenu&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|MainMenu]]&lt;/span&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="7" name="MainMenu" tags="menu" position="471,268" size="100,100">&lt;div class=&quot;subtitle&quot;&gt;&lt;span class=&quot;subtitle-item&quot;&gt;[[Новая игра|StartPassage]]&lt;/span&gt;
 &lt;span class=&quot;subtitle-item&quot;&gt;&lt;&lt;link &quot;Загрузить игру&quot;&gt;&gt;&lt;&lt;run UI.saves()&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;
 &lt;span class=&quot;subtitle-item&quot;&gt;&lt;&lt;link &quot;Настройки&quot;&gt;&gt;&lt;&lt;run UI.settings()&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;
 &lt;&lt;link &#39;Достижения&#39;&gt;&gt;&lt;&lt;run Dialog.setup(&quot;Достижения&quot;);Dialog.wiki(Story.get(&quot;Достижения&quot;).processText());Dialog.open();&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="8" name="Достижения" tags="" position="105,83" size="100,100">&lt;&lt;if $achievement_01 is true&gt;&gt;Достижение «Первый заход»: получено!
