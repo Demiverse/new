@@ -156,13 +156,16 @@ h3 {
    A:active {
     color: #c2b893; /* Цвет активных ссылок */
    }
-   A:hover, a:focus {
+   A:hover {
 	   color: #d9be5b; /* Цвет выделенных ссылок */
 	 text-decoration: none;
    } 
    A:visited {
     color: #faf8c8; /* Цвет посещенных ссылок */
    }
+A:focus {
+    outline: none;
+}
 /* Shrink the page when viewed on devices with a low screen width */
 @media screen and (max-width: 960px) {
   .passage { font-size: 90%; width: 70%; }
@@ -547,9 +550,13 @@ text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6
 
 /* дизайн меню */
 #ui-overlay {
-    background-color: #000;
+   background-image: url('https://f.radikal.host/2023/02/15/Background-2.png');
+     background-repeat: no-repeat;
+  background-position: center center;
 }
-
+#ui-overlay.open {
+	opacity: 0.9;
+}
 #ui-dialog-titlebar {
 	display: none;
 
@@ -564,8 +571,9 @@ text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6
   	display: none;
 }
 #ui-dialog-body {
-    background-color: rgba(0,0,0, 0.3);
-    border: 1px solid #c0975f;
+    background-color: rgba(0, 0, 0, 0);
+ outline: none;
+      border: none;
     text-align: left;
     line-height: 1.5;
     padding: 1em;
@@ -576,10 +584,20 @@ text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6
 	min-width: 200px;
 }
 #ui-dialog.open {
-  	top: 5em!important;  
+  	top: 5em!important; 
+}
+#ui-dialog-body.restart {
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 1px solid #c0975f;
+}
+#ui-dialog-body.settings {
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 1px solid #c0975f;
 }
 /* Saves dialog styling. */
 #ui-dialog-body.saves {
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 1px solid #c0975f;
 	padding: 5px 5px 5px 5px; /* Webkit/Blink need 1px bottom padding or they'll trigger the scroll bar */
 }
 #ui-dialog-body.saves > *:not(:first-child) {
@@ -619,7 +637,6 @@ text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6
 	color: #c0975f;
 	speak: none;
 	text-align: center;
-	user-select: none;
 }
 #ui-dialog-body.saves .datestamp {
 	font-size: 80%;
@@ -872,50 +889,73 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 /*Сюжетные айтемы*/
 #ui-dialog-body .img_item {
     background-image: url("https://imgbb.su/images/2023/02/14/ManticoreBottle575c8b6f43d087c5.png");
-  width: 500px;
-  height: 500px;
+     position: fixed;
+    left: 36em;
+    top: 17em;
+    width: 500px;
+    height: 500px;
    background-repeat: no-repeat;
     background-size: 90%;
   background-position: center center;
     display: table-cell;
 }
 #ui-dialog-body .img_item2 {
-    background-image: url("https://imgbb.su/images/2023/02/13/ZtaFiUFmdnA9e2c56da35efa9be.jpg");
+    background-image: url("https://imgbb.su/images/2023/02/15/ZtaFiUFmdnA_problembo_com89655a3a45f2bce0.png");
+   position: fixed;
+    left: 36em;
+    top: 15em;
   width: 500px;
   height: 600px;
    background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 80%;
   background-position: center center;
     display: table-cell;
 }
 #ui-dialog-body .img_item_text {
+position: fixed;
+    left: 31.5em;
+    top: 11.5em;
+  width: 500px;
+  height: 600px;
   font-style: normal;
      font-weight: bold;
 font-size: 22px;
   text-align: center;
-   color: #6d4526;
-    background-color: #c0975f;
-   border: 1px solid #6d4526;
-    display: table-caption;
+   color: #c0975f;
+    display: table-cell;
+  padding: 5px;
 }
 #ui-dialog-body .img_item_text2 {
-     font-weight: normal;
-    width: 100%;
-    height: 100%;
-  display: table-cell;
-  font-style: normal;
 font-size: 18px;
   text-align: center;
+   color: #c0975f;
+    display: block;
+  font-style: normal;
+  font-weight: normal;
 }
 #ui-dialog-body .img_item:hover {
   background-image: url("https://imgbb.su/images/2023/02/14/Backgrounda9097dc3baf730c5.png");
+    background-size: 70%;
+      padding: 2% 0 0 0;
+}
+#ui-dialog-body .img_item2:hover {
+  background-image: url("https://imgbb.su/images/2023/02/15/Background-1c93c190d01f85e04.png");
     background-size: 65%;
 
 }
-#ui-dialog-body .img_item_text:hover {
-    color: #6d4526;
-    border: 1px solid #6d4526;
-    background-color: #cda164;
+#ui-dialog-body .img_border {
+  background-image: url("https://imgbb.su/images/2023/02/15/ramka_6-1c5378cc8f57bcb73.png");
+    position: fixed;
+    left: 24em;
+    right: 0em;
+    bottom: 10em;
+    top: -3em;
+    width: 932px;
+    height: 1186px;
+   background-repeat: no-repeat;
+    background-size: 100%;
+  background-position: center center;
+    display: table-cell;
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript">// Локализация
 l10nStrings.savesTitle="Загрузить";
 l10nStrings.settingsTitle="Настройки";
@@ -1106,7 +1146,7 @@ Setting.addToggle("masterMute", {
 
 // Клик-переход
 $(document).on("mousedown", function (event) {
-	$(".next")
+			$(".next")
 	.find('a')
 	.trigger("click");
 });
@@ -1129,8 +1169,7 @@ $(document).on("mousedown", function (event) {
   
           shift.style.transform = `translateX(${x}px) translateY(${y}px)`;
         });
-      }
-</script><tw-tag name="autosave" color="green"></tw-tag>,<tw-tag name="code-passage" color="orange"></tw-tag>,<tw-tag name="desert" color="orange"></tw-tag>,<tw-tag name="frontpage" color="yellow"></tw-tag>,<tw-tag name="menu" color="yellow"></tw-tag>,<tw-tag name="ключ" color="blue"></tw-tag><tw-passagedata pid="1" name="StartPassage" tags="desert" position="230,327" size="100,100">&lt;&lt;run forget(&#39;achievement_01&#39;)&gt;&gt;
+      }</script><tw-tag name="autosave" color="green"></tw-tag>,<tw-tag name="code-passage" color="orange"></tw-tag>,<tw-tag name="desert" color="orange"></tw-tag>,<tw-tag name="frontpage" color="yellow"></tw-tag>,<tw-tag name="menu" color="yellow"></tw-tag>,<tw-tag name="ключ" color="blue"></tw-tag><tw-passagedata pid="1" name="StartPassage" tags="desert" position="231,331" size="100,100">&lt;&lt;run forget(&#39;achievement_01&#39;)&gt;&gt;
 &lt;&lt;run forget(&#39;variable&#39;)&gt;&gt;
 
 
@@ -1166,9 +1205,9 @@ $(document).on("mousedown", function (event) {
 &lt;&lt;run forget(&#39;nayan_item&#39;)&gt;&gt;
 &lt;&lt;run forget(&#39;jasker_item&#39;)&gt;&gt;
 
-&lt;&lt;set $areaname to &quot;Игниста. Рахл-Игниста&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="StoryInit" tags="" position="243,81" size="100,100">&lt;&lt;cacheaudio &quot;night_bgm&quot; &quot;sounds/fate.mp3&quot;&gt;&gt;
-&lt;&lt;cacheaudio &quot;credits&quot; &quot;sounds/credits.mp3&quot;&gt;&gt;
-&lt;&lt;cacheaudio &quot;day_bgm&quot; &quot;sounds/click.mp3&quot;&gt;&gt;
+&lt;&lt;set $areaname to &quot;Игниста. Рахл-Игниста&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="StoryInit" tags="" position="243,81" size="100,100">&lt;&lt;cacheaudio &quot;night_bgm&quot; &quot;fate.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;credits&quot; &quot;credits.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;day_bgm&quot; &quot;click.mp3&quot;&gt;&gt;
 &lt;&lt;set $achievement_01 to recall(&#39;achievement_01&#39;)&gt;&gt;
 &lt;&lt;set $variable to recall(&#39;variable&#39;)&gt;&gt;
 
@@ -1335,8 +1374,7 @@ $(document).on("mousedown", function (event) {
 &lt;&lt;run memorize (&#39;jasker_item&#39;, true)&gt;&gt;
 &lt;&lt;set $jasker_item to true&gt;&gt;
 
-&lt;&lt;timed 1s t8n&gt;&gt;&lt;&lt;dialog &#39;Заживляющая мазь&#39;&gt;&gt;\
-&lt;i class=&#39;img_item_text&#39;&gt;Заживляющая мазь&lt;i class=&#39;img_item_text2&#39;&gt;В густой красной жидкости чувствуется странная сила.&lt;/i&gt;&lt;/i&gt;&lt;i class=&#39;img_item&#39;&gt;&lt;/i&gt;\
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;&lt;dialog &#39;itemmeti&#39;&gt;&gt;\&lt;i class=&#39;img_border&#39;&gt;&lt;i class=&#39;img_item_text&#39;&gt;Заживляющая мазь&lt;i class=&#39;img_item_text2&#39;&gt;В густой красной жидкости чувствуется странная сила&lt;/i&gt;&lt;/i&gt;&lt;i class=&#39;img_item&#39;&gt;&lt;/i&gt;&lt;/i&gt;\
     &lt;&lt;/dialog&gt;&gt;&lt;&lt;/timed&gt;&gt;
 	
 &lt;&lt;set $areaname to &quot;Игниста. Рахл-Игниста&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="19" name="АнтуанеттаНайан2" tags="desert" position="120,1198" size="100,100">
@@ -1370,8 +1408,7 @@ $(document).on("mousedown", function (event) {
 &lt;&lt;run memorize (&#39;nayan_item&#39;, true)&gt;&gt;
 &lt;&lt;set $nayan_item to true&gt;&gt;
 
-&lt;&lt;timed 1s t8n&gt;&gt;&lt;&lt;dialog &#39;Вино на драконьей крови&#39;&gt;&gt;\
-&lt;i class=&#39;img_item_text&#39;&gt;Вино на драконьей крови&lt;/i&gt;&lt;i class=&#39;img_item2&#39;&gt;&lt;/i&gt;\
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;&lt;dialog &#39;itemmeti&#39;&gt;&gt;\&lt;i class=&#39;img_border&#39;&gt;&lt;i class=&#39;img_item_text&#39;&gt;Вино на драконьей крови&lt;i class=&#39;img_item_text2&#39;&gt;Наполняет сердце жаром решимости и пробуждает скрытые эмоции&lt;/i&gt;&lt;/i&gt;&lt;i class=&#39;img_item2&#39;&gt;&lt;/i&gt;&lt;/i&gt;\
     &lt;&lt;/dialog&gt;&gt;&lt;&lt;/timed&gt;&gt;
 	
 &lt;&lt;set $areaname to &quot;Игниста. Рахл-Игниста&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="22" name="ЛинияСмеяны" tags="desert" position="802,477" size="100,100">
@@ -3170,7 +3207,7 @@ $(document).on("mousedown", function (event) {
 
 
 &lt;&lt;fadeout 2s 6s&gt;&gt;&lt;&lt;fadein 2s 0s&gt;&gt;
-Главный разработчик&lt;h3&gt;Demiverse&lt;/h3&gt;&lt;&lt;timed 8s&gt;&gt;&lt;&lt;goto &quot;Титры2&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;/fadeout&gt;&gt;
+Ведущий разработчик&lt;h3&gt;Demiverse&lt;/h3&gt;&lt;&lt;timed 8s&gt;&gt;&lt;&lt;goto &quot;Титры2&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;/fadeout&gt;&gt;
 
 &lt;&lt;audio &quot;night_bgm&quot; stop&gt;&gt;
 &lt;&lt;audio &quot;credits&quot; loop play&gt;&gt;
@@ -3179,31 +3216,31 @@ $(document).on("mousedown", function (event) {
 
 </tw-passagedata><tw-passagedata pid="210" name="Титры3" tags="" position="4268,4298" size="100,100">
 &lt;&lt;fadeout 2s 6s&gt;&gt;&lt;&lt;fadein 2s 0s&gt;&gt;
-Художник&lt;h3&gt;Сандра&lt;/h3&gt;&lt;&lt;timed 8s&gt;&gt;&lt;&lt;goto &quot;Титры4&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;/fadeout&gt;&gt;
+Художник по персонажам&lt;h3&gt;Сандра&lt;/h3&gt;&lt;&lt;timed 8s&gt;&gt;&lt;&lt;goto &quot;Титры4&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;/fadeout&gt;&gt;
 
 &lt;&lt;audio &quot;credits&quot; loop play&gt;&gt;
 
 &lt;span class=&quot;next&quot;&gt;[[|MainMenu]]&lt;/span&gt;</tw-passagedata><tw-passagedata pid="211" name="Титры4" tags="" position="4398,4299" size="100,100">
 &lt;&lt;fadeout 2s 6s&gt;&gt;&lt;&lt;fadein 2s 0s&gt;&gt;
-Художник&lt;h3&gt;Анонимное Бесфамильное&lt;/h3&gt;&lt;&lt;timed 8s&gt;&gt;&lt;&lt;goto &quot;Титры5&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;/fadeout&gt;&gt;
+Художник по персонажам&lt;h3&gt;Анонимное Бесфамильное&lt;/h3&gt;&lt;&lt;timed 8s&gt;&gt;&lt;&lt;goto &quot;Титры5&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;/fadeout&gt;&gt;
 
 &lt;&lt;audio &quot;credits&quot; loop play&gt;&gt;
 
-&lt;span class=&quot;next&quot;&gt;[[|MainMenu]]&lt;/span&gt;</tw-passagedata><tw-passagedata pid="212" name="Титры5" tags="" position="4522,4297" size="100,100">
+&lt;span class=&quot;next&quot;&gt;[[|MainMenu]]&lt;/span&gt;</tw-passagedata><tw-passagedata pid="212" name="Титры5" tags="" position="4521,4298" size="100,100">
 &lt;&lt;fadeout 2s 6s&gt;&gt;&lt;&lt;fadein 2s 0s&gt;&gt;
-Художник&lt;h3&gt;Марина&lt;/h3&gt;&lt;&lt;timed 8s&gt;&gt;&lt;&lt;goto &quot;Титры6&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;/fadeout&gt;&gt;
+Художник по фонам&lt;h3&gt;Марина&lt;/h3&gt;&lt;&lt;timed 8s&gt;&gt;&lt;&lt;goto &quot;Титры6&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;/fadeout&gt;&gt;
 
 &lt;&lt;audio &quot;credits&quot; loop play&gt;&gt;
 
 &lt;span class=&quot;next&quot;&gt;[[|MainMenu]]&lt;/span&gt;</tw-passagedata><tw-passagedata pid="213" name="Титры6" tags="" position="4649,4295" size="100,100">
 &lt;&lt;fadeout 2s 6s&gt;&gt;&lt;&lt;fadein 2s 0s&gt;&gt;
-Художник&lt;h3&gt;Олеся&lt;/h3&gt;&lt;&lt;timed 8s&gt;&gt;&lt;&lt;goto &quot;Титры7&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;/fadeout&gt;&gt;
+Художник по персонажам&lt;h3&gt;Олеся&lt;/h3&gt;&lt;&lt;timed 8s&gt;&gt;&lt;&lt;goto &quot;Титры7&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;/fadeout&gt;&gt;
 
 &lt;&lt;audio &quot;credits&quot; loop play&gt;&gt;
 
 &lt;span class=&quot;next&quot;&gt;[[|MainMenu]]&lt;/span&gt;</tw-passagedata><tw-passagedata pid="214" name="Титры7" tags="" position="4772,4296" size="100,100">
 &lt;&lt;fadeout 2s 6s&gt;&gt;&lt;&lt;fadein 2s 0s&gt;&gt;
-Художник&lt;h3&gt;Опиумка&lt;/h3&gt;&lt;&lt;timed 8s&gt;&gt;&lt;&lt;goto &quot;MainMenu&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;/fadeout&gt;&gt;
+Художник по персонажам&lt;h3&gt;Опиумка&lt;/h3&gt;&lt;&lt;timed 8s&gt;&gt;&lt;&lt;goto &quot;MainMenu&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;/fadeout&gt;&gt;
 
 &lt;&lt;audio &quot;credits&quot; loop play&gt;&gt;
 
