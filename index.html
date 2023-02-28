@@ -438,7 +438,7 @@ body.menu {
 
 /* иконка меню */
 .settingsicon {
-    background-image: url("https://imgbb.su/images/2023/01/16/menu60af7b33caed0917.png");
+    background-image: url("https://imgbb.su/images/2023/02/16/free-icon-book-207114f2b03ffd1cb8bdad.png");
   width: 32px;
   height: 32px;
   position: fixed;
@@ -873,9 +873,6 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 #notify .far {
   	color: #c0975f;
 } 
-#ui-bar {
-  display: none;
-}
 
 /*Недоступные диалоги*/
 .notdialog {
@@ -956,6 +953,9 @@ font-size: 18px;
     background-size: 100%;
   background-position: center center;
     display: table-cell;
+}
+#ui-bar {
+  display: none;
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript">// Локализация
 l10nStrings.savesTitle="Загрузить";
 l10nStrings.settingsTitle="Настройки";
@@ -1024,18 +1024,18 @@ onChange : settingFullscreenHandler
 ;!function(){var s=/\d+m?s$/;function e(s,e,t){"string"==typeof s&&("number"!=typeof e&&(e=!1),$(document).trigger({type:":notify",message:s,delay:e,class:t||""}))}$(document.body).append("<div id='notify'></div>"),$(document).on(":notify",(function(s){s.message&&"string"==typeof s.message&&(s.message.trim(),s.class?"string"==typeof s.class?s.class="open macro-notify "+s.class:Array.isArray(s.class)?s.class="open macro-notify "+s.class.join(" "):s.class="open macro-notify":s.class="open macro-notify",s.delay?("number"!=typeof s.delay&&(s.delay=Number(s.delay)),Number.isNaN(s.delay)&&(s.delay=2e3)):s.delay=2e3,$("#notify").empty().wiki(s.message).addClass(s.class),setTimeout((function(){$("#notify").removeClass()}),s.delay))})),Macro.add("notify",{tags:null,handler:function(){var t=this.payload[0].contents,a=!1,n=!1;if(this.args.length>0){var i=s.test(this.args[0]);"number"==typeof this.args[0]||i?(a=i?Util.fromCssTime(this.args[0]):this.args[0],n=this.args.length>1&&this.args.slice(1).flatten()):n=this.args.flatten().join(" ")}e(t,a,n)}}),setup.notify=e}();
 // end notify.min.js
 
-// Mute
+// Отключить звук
 function masterMuteHandler() {
     SimpleAudio.mute(settings["masterMute"]);
 }
 Setting.addToggle("masterMute", {
-    label    : "Звук",
+    label    : "Отключить звук",
+		 default  : false,
     onInit   : masterMuteHandler,
-    onChange : masterMuteHandler,
-	 default  : false 
+    onChange : masterMuteHandler
 }); 
 
-// Звук
+// Громкость
 (function () {
 	// Set initial values.
 	var options = {
@@ -1148,7 +1148,7 @@ Setting.addToggle("masterMute", {
 $(document).on("mousedown", function (event) {
 			$(".next")
 	.find('a')
-	.trigger("click");
+.trigger("click");
 });
 
 // Tweaked version of maphilight (12-06-2016 build) to work with SugarCube 2 and Twine
@@ -1169,9 +1169,9 @@ $(document).on("mousedown", function (event) {
   
           shift.style.transform = `translateX(${x}px) translateY(${y}px)`;
         });
-      }</script><tw-tag name="autosave" color="green"></tw-tag>,<tw-tag name="code-passage" color="orange"></tw-tag>,<tw-tag name="desert" color="orange"></tw-tag>,<tw-tag name="frontpage" color="yellow"></tw-tag>,<tw-tag name="menu" color="yellow"></tw-tag>,<tw-tag name="ключ" color="blue"></tw-tag><tw-passagedata pid="1" name="StartPassage" tags="desert" position="231,331" size="100,100">&lt;&lt;run forget(&#39;achievement_01&#39;)&gt;&gt;
+      }
+</script><tw-tag name="autosave" color="green"></tw-tag>,<tw-tag name="code-passage" color="orange"></tw-tag>,<tw-tag name="desert" color="orange"></tw-tag>,<tw-tag name="frontpage" color="yellow"></tw-tag>,<tw-tag name="menu" color="yellow"></tw-tag>,<tw-tag name="ключ" color="blue"></tw-tag><tw-passagedata pid="1" name="StartPassage" tags="desert" position="232,332" size="100,100">&lt;&lt;run forget(&#39;achievement_01&#39;)&gt;&gt;
 &lt;&lt;run forget(&#39;variable&#39;)&gt;&gt;
-
 
 &lt;&lt;timed 0s t8n&gt;&gt;&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;type 10ms&gt;&gt;\
 Здравствуй, герой Сарнаута. Как понимаешь, я пригласила тебя сюда не просто так. Во время известных событий на Айрине твоя помощь была неоценима. Я не уверена, что без неё удалось бы достичь таких дипломатических успехов и решить столько проблем.
@@ -1179,7 +1179,7 @@ $(document).on("mousedown", function (event) {
 
 &lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|Антуанетта2]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;link &quot;&lt;i class=&#39;settingsicon&#39;&gt;&lt;/i&gt;&quot;&gt;&gt;
+&lt;span class=&quot;settingsicon&quot;&gt;&lt;&lt;link &quot;&lt;i class=&#39;settingsicon&#39;&gt;&lt;/i&gt;&quot;&gt;&gt;
 &lt;&lt;dialog &#39;Меню&#39;&gt;&gt;\
         &lt;&lt;link &quot;Загрузить игру&quot;&gt;&gt;&lt;&lt;run UI.saves()&gt;&gt;&lt;&lt;/link&gt;&gt;
         &lt;&lt;link &quot;Настройки&quot;&gt;&gt;&lt;&lt;run UI.settings()&gt;&gt;&lt;&lt;/link&gt;&gt;
@@ -1187,7 +1187,7 @@ $(document).on("mousedown", function (event) {
         &lt;&lt;link &quot;Перезапуск&quot;&gt;&gt;&lt;&lt;run UI.restart()&gt;&gt;&lt;&lt;/link&gt;&gt;
 		&lt;&lt;link &quot;[[Вернуться в меню|MainMenu]]&quot;&gt;&gt;&lt;&lt;dialogclose&gt;&gt;&lt;&lt;/link&gt;&gt;\
     &lt;&lt;/dialog&gt;&gt;
-&lt;&lt;/link&gt;&gt;
+&lt;&lt;/link&gt;&gt;&lt;/span&gt;
 
 &lt;&lt;run forget(&#39;smeyana_01&#39;)&gt;&gt;
 &lt;&lt;run forget(&#39;nayan_01&#39;)&gt;&gt;
@@ -1261,8 +1261,7 @@ $(document).on("mousedown", function (event) {
         value=&quot;5&quot;/&gt;
 	 &lt;img
         id=&quot;img2&quot;
-        src=
-&quot;https://imgbb.su/images/2023/01/20/4554445f820b144dd974416.png&quot;
+		&lt;a href=&quot;images/logo_game.png&quot;&gt;&lt;/a&gt;
         class=&quot;mouse&quot;
         value=&quot;-2&quot;/&gt;
 			&lt;/div&gt;
@@ -1276,9 +1275,7 @@ $(document).on("mousedown", function (event) {
 &lt;span class=&quot;subtitle-item&quot;&gt;[[Титры|Титры]]&lt;/span&gt;&lt;/div&gt;
 
 &lt;&lt;audio &quot;night_bgm&quot; loop play&gt;&gt;
-&lt;&lt;audio &quot;credits&quot; stop&gt;&gt;
-
-</tw-passagedata><tw-passagedata pid="7" name="Достижения" tags="" position="105,83" size="100,100">&lt;&lt;if $achievement_01 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Первый заход&lt;/h3&gt;Начало большого приключения!&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Первый заход&lt;/h3&gt;Начало большого приключения!&lt;/span&gt;&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="8" name="Начало" tags="" position="781,15" size="100,100">&lt;&lt;fadein 2s 0s&gt;&gt;&lt;h3&gt;В этой игре есть различные звукосодержащие элементы. Рекомендуется отрегулировать громкость на вашем устройстве. Вы также можете сделать это в меню настроек, если запустили игру с компьютера.&lt;/h3&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;Нажмите на экран...&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
+&lt;&lt;audio &quot;credits&quot; stop&gt;&gt;</tw-passagedata><tw-passagedata pid="7" name="Достижения" tags="" position="105,83" size="100,100">&lt;&lt;if $achievement_01 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Первый заход&lt;/h3&gt;Начало большого приключения!&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Первый заход&lt;/h3&gt;Начало большого приключения!&lt;/span&gt;&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="8" name="Начало" tags="" position="781,15" size="100,100">&lt;&lt;fadein 2s 0s&gt;&gt;&lt;h3&gt;В этой игре есть различные звукосодержащие элементы. Рекомендуется отрегулировать громкость на вашем устройстве. Вы также можете сделать это в меню настроек, если запустили игру с компьютера.&lt;/h3&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;Нажмите на экран...&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
 &lt;span class=&quot;next&quot;&gt;[[|Allods]]&lt;/span&gt;</tw-passagedata><tw-passagedata pid="9" name="Антуанетта3" tags="desert" position="242,598" size="100,100">
 
