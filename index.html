@@ -150,6 +150,13 @@ h3 {
     margin-block-end: 0em;
     font-weight: bold;
 }
+
+h5 {
+    display: block;
+  margin-block-start: 1em;
+    margin-block-end: 0em;
+    font-weight: normal;
+}
  A {
     color: #f0f097; /* Цвет ссылок */
    }
@@ -189,7 +196,7 @@ body.desert {
   /* Remove default styles */
    font-family: 'AllodsWest', arial;
   font-size: 22px;
-  background-image: url("https://s285vlx.storage.yandex.net/rdisk/195a626ee09465efe1f1e9e87ba4339f888d8f55184d47739793801ad6b7902d/63ffc716/3Jm5q9YnED-2_L2nMQCmjPO3RXZIaWV_ldpPGIkuCyYJ35ul99T_VmSU6WKKAnBwOzBGRk9Uw2vCHZNBgEzgdw==?uid=573673892&filename=Smeyana.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=573673892&fsize=1578468&hid=6b27b2cc863b24b099ef58c5d59b05cf&media_type=image&tknv=v2&etag=aab15accd442799c4259aba578349fcb&rtoken=xkhd4ygnTF18&force_default=yes&ycrid=na-c3a2a8999204b08437fe1b9a52626500-downloader10e&ts=5f5dd9b8f7180&s=38a8c633a44ab6f2fc976659cd7564ad47d41902d5c30482e832273f931351c8&pb=U2FsdGVkX1_rnpj9c2mGI3PpYzxuCBEqjbvnYu--phW0Re3xuM4DqMw1iqie2LO0X7lQ1O_DGzHgwy2-DMjA8Fa21kCHHUjIVa170DqNdvo");
+  background-image: url("https://sun9-29.userapi.com/impg/9cuRm-qIEbdpEYlnRhpP9eyaDdLybVSg3n2pDQ/wX-NamPhxuE.jpg?size=1920x1080&quality=95&sign=cab5bdd7364d670ae9ca7087a94df5f1&type=album");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -232,13 +239,32 @@ body.desert {
 
 /* Shrink the page when viewed on devices with a low screen width */
 @media screen and (max-width: 960px) {
-  .desert .passage { font-size: 90%; width: 70%; left: 2em; right: 10em; }
+  .desert .passage { 
+	font-size: 60%; 
+	position: absolute;
+	width: 80%; 
+	left: 2em; 
+	right: 10em;
+  top: 13em;
+	bottom: 0em;
+  }
 }
 @media screen and (max-width: 840px) {
   .desert .passage { font-size: 90%; width: 80%; left: 2em; right: 10em; }
 }
 @media screen and (max-width: 720px) {
   .desert .passage { font-size: 60%; width: 90%; left: 2em; right: 10em; }
+}
+@media screen and (orientation:portrait) {
+ body.desert {
+     background-image: url('https://sun9-68.userapi.com/impg/B-NtXO4GR_0eIwnKdBz_TcNNe0vtquJiLGxxUw/zc79jzRCdYs.jpg?size=1080x1920&quality=95&sign=fd96425069caca5c8513b4e4762787ac&type=album');
+   font-size: 0%;
+	background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-color: black;
+  }
 }
  #notify {
     position : fixed;
@@ -438,14 +464,16 @@ body.menu {
 
 /* иконка меню */
 .settingsicon {
-    background-image: url("https://imgbb.su/images/2023/02/16/free-icon-book-207114f2b03ffd1cb8bdad.png");
+    background-image: url("https://psv4.userapi.com/c235031/u280095054/docs/d9/2923a60f3ae4/menu.png?extra=kIPnZ2n2sPseu_dNX5wPDL4EB489AggYDn7aHC5a4izCJX6KD4KNUbhXxt27-e2CMqVyP7ksu4UsWEepkLi0Sk44ReG3wrOnhkGict4z1ZcCP7OM8S5qfmLUP8AzHdYMp49ZzO85ofKdqFxp5MDGmWk");
+    position: absolute;
+   background-repeat: no-repeat;
+  background-size: cover;
   width: 32px;
   height: 32px;
-  position: fixed;
-  left: 50em;
-	right: 0em;
+  left: 7.5em;
+	right: 63em;
 	bottom: 0em;
-  top: 20em;
+  top: 6.6em;
 }
 
 /* мерцание текста */
@@ -1180,7 +1208,7 @@ $(document).on("dblclick", function (event) {
 
 &lt;&lt;timed 0s t8n&gt;&gt;&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;type 10ms&gt;&gt;\
 Здравствуй, герой Сарнаута. Как понимаешь, я пригласила тебя сюда не просто так. Во время известных событий на Айрине твоя помощь была неоценима. Я не уверена, что без неё удалось бы достичь таких дипломатических успехов и решить столько проблем.
-\&lt;&lt;/type&gt;&gt;
+\&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
 &lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next2&quot;&gt;[[|Антуанетта2]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
