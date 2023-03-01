@@ -981,6 +981,29 @@ font-size: 18px;
 }
 #ui-bar {
   display: none;
+}
+@media screen and (max-width: 960px) {
+#ui-dialog-body.settings input[type=range][id|=setting-control-volume] {
+ display: none;
+  }
+#ui-dialog-body.settings [id|=setting-label-volume] {
+    display: none;
+}
+  #ui-dialog-body.settings button[id|=setting-control-fullscreen] {
+ display: none;
+  }
+	#ui-dialog-body.settings [id|=setting-label-fullscreen] {
+    display: none;
+  }
+  #ui-dialog-body {
+	    font-size: 70%;
+}
+  #ui-dialog-body.settings [id|=setting-label] {
+	padding: 0;
+  }
+	#ui-dialog-body.saves {
+  font-size: 49%;
+}
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript">// Локализация
 l10nStrings.savesTitle="Загрузить";
 l10nStrings.settingsTitle="Настройки";
