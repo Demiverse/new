@@ -189,7 +189,7 @@ body.desert {
   /* Remove default styles */
    font-family: 'AllodsWest', arial;
   font-size: 22px;
-  background-image: url("https://sun9-29.userapi.com/impg/9cuRm-qIEbdpEYlnRhpP9eyaDdLybVSg3n2pDQ/wX-NamPhxuE.jpg?size=1920x1080&quality=95&sign=cab5bdd7364d670ae9ca7087a94df5f1&type=album");
+  background-image: url("https://s285vlx.storage.yandex.net/rdisk/195a626ee09465efe1f1e9e87ba4339f888d8f55184d47739793801ad6b7902d/63ffc716/3Jm5q9YnED-2_L2nMQCmjPO3RXZIaWV_ldpPGIkuCyYJ35ul99T_VmSU6WKKAnBwOzBGRk9Uw2vCHZNBgEzgdw==?uid=573673892&filename=Smeyana.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=573673892&fsize=1578468&hid=6b27b2cc863b24b099ef58c5d59b05cf&media_type=image&tknv=v2&etag=aab15accd442799c4259aba578349fcb&rtoken=xkhd4ygnTF18&force_default=yes&ycrid=na-c3a2a8999204b08437fe1b9a52626500-downloader10e&ts=5f5dd9b8f7180&s=38a8c633a44ab6f2fc976659cd7564ad47d41902d5c30482e832273f931351c8&pb=U2FsdGVkX1_rnpj9c2mGI3PpYzxuCBEqjbvnYu--phW0Re3xuM4DqMw1iqie2LO0X7lQ1O_DGzHgwy2-DMjA8Fa21kCHHUjIVa170DqNdvo");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1143,13 +1143,18 @@ Setting.addToggle("masterMute", {
 ;Macro.add("fadein",{tags:null,handler:function(){var t,a,s=$(document.createElement("span")),e=this.payload[0].contents;if(0===this.args.length)return this.error("no arguments given");t=Util.fromCssTime(this.args[0]),a=this.args.length>1?Util.fromCssTime(this.args[1]):0,s.wiki(e).addClass("macro-"+this.name).appendTo(this.output).hide().delay(a).fadeIn(t)}}),Macro.add("fadeout",{tags:null,handler:function(){var t,a,s=$(document.createElement("span")),e=this.payload[0].contents;if(0===this.args.length)return this.error("no arguments given");t=Util.fromCssTime(this.args[0]),a=this.args.length>1?Util.fromCssTime(this.args[1]):0,s.wiki(e).addClass("macro-"+this.name).appendTo(this.output).delay(a).fadeOut(t)}});
 // end fading-macro-set.min.js
 
-
 // Клик-переход
-$(document).on("mousedown", function (event) {
-			$(".next")
-	.find('a')
-.trigger("click");
-});
+$(document).on("mousedown", function (event) { 	
+  $(".next") 	
+  .find('a') 	
+  .trigger("click"); 
+}); 
+
+$(document).on("dblclick", function (event) { 	
+  $(".next2") 	
+  .find('a') 	
+  .trigger("click"); 
+}); 
 
 // Tweaked version of maphilight (12-06-2016 build) to work with SugarCube 2 and Twine
 !function(a,b){"function"==typeof define&&define.amd?define(["jquery"],b):b(a.jQuery)}(window,function(a){var b,c,d,e,f,g,h,i,j,k,l;if(c=!!document.createElement("canvas").getContext,b=function(){var a=document.createElement("div");a.innerHTML='<v:shape id="vml_flag1" adj="1" />';var b=a.firstChild;return b.style.behavior="url(#default#VML)",!b||"object"==typeof b.adj}(),!c&&!b)return void(a.fn.maphilight=function(){return this});if(c){i=function(a){return Math.max(0,Math.min(parseInt(a,16),255))},j=function(a,b){return"rgba("+i(a.substr(0,2))+","+i(a.substr(2,2))+","+i(a.substr(4,2))+","+b+")"},d=function(b){var c=a('<canvas style="width:'+a(b).width()+"px;height:"+a(b).height()+'px;"></canvas>').get(0);return c.getContext("2d").clearRect(0,0,a(b).width(),a(b).height()),c};var m=function(a,b,c,d,e){if(d=d||0,e=e||0,a.beginPath(),"rect"==b)a.rect(c[0]+d,c[1]+e,c[2]-c[0],c[3]-c[1]);else if("poly"==b){a.moveTo(c[0]+d,c[1]+e);for(var f=2;f<c.length;f+=2)a.lineTo(c[f]+d,c[f+1]+e)}else"circ"==b&&a.arc(c[0]+d,c[1]+e,c[2],0,2*Math.PI,!1);a.closePath()};e=function(b,c,d,e,f){var h=b.getContext("2d");if(e.shadow){h.save(),"inside"==e.shadowPosition&&(m(h,c,d),h.clip());var i=100*b.width,k=100*b.height;m(h,c,d,i,k),h.shadowOffsetX=e.shadowX-i,h.shadowOffsetY=e.shadowY-k,h.shadowBlur=e.shadowRadius,h.shadowColor=j(e.shadowColor,e.shadowOpacity);var l=e.shadowFrom;l||(l="outside"==e.shadowPosition?"fill":"stroke"),"stroke"==l?(h.strokeStyle="rgba(0,0,0,1)",h.stroke()):"fill"==l&&(h.fillStyle="rgba(0,0,0,1)",h.fill()),h.restore(),"outside"==e.shadowPosition&&(h.save(),m(h,c,d),h.globalCompositeOperation="destination-out",h.fillStyle="rgba(0,0,0,1);",h.fill(),h.restore())}h.save(),m(h,c,d),e.fill&&(h.fillStyle=j(e.fillColor,e.fillOpacity),h.fill()),e.stroke&&(h.strokeStyle=j(e.strokeColor,e.strokeOpacity),h.lineWidth=e.strokeWidth,h.stroke()),h.restore(),e.fade&&a(b).css("opacity",0).animate({opacity:1},100)},f=function(a){a.getContext("2d").clearRect(0,0,a.width,a.height)}}else d=function(b){return a('<var style="zoom:1;overflow:hidden;display:block;width:'+b.width+"px;height:"+b.height+'px;"></var>').get(0)},e=function(b,c,d,e,f){var g,h,i,j;for(var k in d)d[k]=parseInt(d[k],10);g='<v:fill color="#'+e.fillColor+'" opacity="'+(e.fill?e.fillOpacity:0)+'" />',h=e.stroke?'strokeweight="'+e.strokeWidth+'" stroked="t" strokecolor="#'+e.strokeColor+'"':'stroked="f"',i='<v:stroke opacity="'+e.strokeOpacity+'"/>',"rect"==c?j=a('<v:rect name="'+f+'" filled="t" '+h+' style="zoom:1;margin:0;padding:0;display:block;position:absolute;left:'+d[0]+"px;top:"+d[1]+"px;width:"+(d[2]-d[0])+"px;height:"+(d[3]-d[1])+'px;"></v:rect>'):"poly"==c?j=a('<v:shape name="'+f+'" filled="t" '+h+' coordorigin="0,0" coordsize="'+b.width+","+b.height+'" path="m '+d[0]+","+d[1]+" l "+d.join(",")+' x e" style="zoom:1;margin:0;padding:0;display:block;position:absolute;top:0px;left:0px;width:'+b.width+"px;height:"+b.height+'px;"></v:shape>'):"circ"==c&&(j=a('<v:oval name="'+f+'" filled="t" '+h+' style="zoom:1;margin:0;padding:0;display:block;position:absolute;left:'+(d[0]-d[2])+"px;top:"+(d[1]-d[2])+"px;width:"+2*d[2]+"px;height:"+2*d[2]+'px;"></v:oval>')),j.get(0).innerHTML=g+i,a(b).append(j)},f=function(b){var c=a("<div>"+b.innerHTML+"</div>");c.children("[name=highlighted]").remove(),b.innerHTML=c.html()};g=function(a){var b,c=a.getAttribute("coords").split(",");for(b=0;b<c.length;b++)c[b]=parseFloat(c[b]);return[a.getAttribute("shape").toLowerCase().substr(0,4),c]},l=function(b,c){var d=a(b);return a.extend({},c,!!a.metadata&&d.metadata(),d.data("maphilight"))},k=function(a){return!!a.complete&&("undefined"==typeof a.naturalWidth||0!==a.naturalWidth)},h={position:"absolute",left:0,top:0,padding:0,border:0};var n=!1;a.fn.maphilight=function(i){return i=a.extend({},a.fn.maphilight.defaults,i),c||n||(a(window).ready(function(){document.namespaces.add("v","urn:schemas-microsoft-com:vml");var b=document.createStyleSheet(),c=["shape","rect","oval","circ","fill","stroke","imagedata","group","textbox"];a.each(c,function(){b.addRule("v\\:"+this,"behavior: url(#default#VML); antialias:true")})}),n=!0),this.each(function(){var j,m,n,o,p,q,s;if(j=a(this),!k(this))return window.setTimeout(function(){j.maphilight(i)},200);if(n=a.extend({},i,!!a.metadata&&j.metadata(),j.data("maphilight")),s=j.get(0).getAttribute("usemap"),s&&(o=a('map[name="'+s.substr(1)+'"]'),j.is('img,input[type="image"]')&&s&&o.length>0)){if(j.hasClass("maphilighted")){var t=j.parent();j.insertBefore(t),t.remove(),a(o).unbind(".maphilight")}m=a("<div></div>").css({display:"block",backgroundImage:'url("'+this.src+'")',backgroundSize:"contain",position:"relative",padding:0,width:this.width,height:this.height}),n.wrapClass&&(n.wrapClass===!0?m.addClass(a(this).attr("class")):m.addClass(n.wrapClass)),j.before(m).css("opacity",0).css(h).remove(),b&&j.css("filter","Alpha(opacity=0)"),m.append(j),p=d(this),a(p).css(h),p.height=this.height,p.width=this.width,a(o).bind("alwaysOn.maphilight",function(){q&&f(q),c||a(p).empty(),a(o).find("area[coords]").each(function(){var b,f;f=l(this,n),f.alwaysOn&&(!q&&c&&(q=d(j[0]),a(q).css(h),q.width=j[0].width,q.height=j[0].height,j.before(q)),f.fade=f.alwaysOnFade,b=g(this),c?e(q,b[0],b[1],f,""):e(p,b[0],b[1],f,""))})}).trigger("alwaysOn.maphilight").bind("mouseover.maphilight, focus.maphilight",function(b){var d,f,h=b.target;if(f=l(h,n),!f.neverOn&&!f.alwaysOn){if(d=g(h),e(p,d[0],d[1],f,"highlighted"),f.groupBy){var i;i=/^[a-zA-Z][\-a-zA-Z]+$/.test(f.groupBy)?o.find("area["+f.groupBy+'="'+a(h).attr(f.groupBy)+'"]'):o.find(f.groupBy);var j=h;i.each(function(){if(this!=j){var a=l(this,n);if(!a.neverOn&&!a.alwaysOn){var b=g(this);e(p,b[0],b[1],a,"highlighted")}}})}c||a(p).append("<v:rect></v:rect>")}}).bind("mouseout.maphilight, blur.maphilight",function(a){f(p)}),j.before(p),j.addClass("maphilighted")}})},a.fn.maphilight.defaults={fill:!0,fillColor:"000000",fillOpacity:.2,stroke:!0,strokeColor:"ff0000",strokeOpacity:1,strokeWidth:1,fade:!0,alwaysOn:!1,neverOn:!1,groupBy:!1,wrapClass:!0,shadow:!1,shadowX:0,shadowY:0,shadowRadius:6,shadowColor:"000000",shadowOpacity:.8,shadowPosition:"outside",shadowFrom:!1}});
@@ -1177,9 +1182,9 @@ $(document).on("mousedown", function (event) {
 Здравствуй, герой Сарнаута. Как понимаешь, я пригласила тебя сюда не просто так. Во время известных событий на Айрине твоя помощь была неоценима. Я не уверена, что без неё удалось бы достичь таких дипломатических успехов и решить столько проблем.
 \&lt;&lt;/type&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|Антуанетта2]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next2&quot;&gt;[[|Антуанетта2]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
-&lt;span class=&quot;settingsicon&quot;&gt;&lt;&lt;link &quot;&lt;i class=&#39;settingsicon&#39;&gt;&lt;/i&gt;&quot;&gt;&gt;
+&lt;&lt;link &quot;&lt;i class=&#39;settingsicon&#39;&gt;&lt;/i&gt;&quot;&gt;&gt;
 &lt;&lt;dialog &#39;Меню&#39;&gt;&gt;\
         &lt;&lt;link &quot;Загрузить игру&quot;&gt;&gt;&lt;&lt;run UI.saves()&gt;&gt;&lt;&lt;/link&gt;&gt;
         &lt;&lt;link &quot;Настройки&quot;&gt;&gt;&lt;&lt;run UI.settings()&gt;&gt;&lt;&lt;/link&gt;&gt;
@@ -1187,7 +1192,7 @@ $(document).on("mousedown", function (event) {
         &lt;&lt;link &quot;Перезапуск&quot;&gt;&gt;&lt;&lt;run UI.restart()&gt;&gt;&lt;&lt;/link&gt;&gt;
 		&lt;&lt;link &quot;[[Вернуться в меню|MainMenu]]&quot;&gt;&gt;&lt;&lt;dialogclose&gt;&gt;&lt;&lt;/link&gt;&gt;\
     &lt;&lt;/dialog&gt;&gt;
-&lt;&lt;/link&gt;&gt;&lt;/span&gt;
+&lt;&lt;/link&gt;&gt;
 
 &lt;&lt;run forget(&#39;smeyana_01&#39;)&gt;&gt;
 &lt;&lt;run forget(&#39;nayan_01&#39;)&gt;&gt;
@@ -1248,7 +1253,7 @@ $(document).on("mousedown", function (event) {
 &lt;&lt;set $variable to true&gt;&gt;
 
 &lt;&lt;set $areaname to &quot;Игниста. Рахл-Игниста&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="4" name="Allods" tags="blackscreen" position="427,30" size="100,100">&lt;&lt;audio night_bgm loop play&gt;&gt;
-&lt;&lt;switch visited()&gt;&gt;&lt;&lt;case 1&gt;&gt;&lt;&lt;fadeout 2s 4s&gt;&gt;&lt;&lt;fadein 2s 0s&gt;&gt;&lt;div class=&quot;logo&quot;&gt;&lt;img src=&quot;https://static.wikia.nocookie.net/all0ds/images/d/d3/Аллоды_логотип.png/revision/latest/scale-to-width-down/1000?cb=20190316193007&amp;path-prefix=ru&quot; alt=&quot;Allods&quot; width=&quot;100%&quot;&gt;&lt;/div&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;/fadeout&gt;&gt;&lt;&lt;timed 7s&gt;&gt;&lt;&lt;goto &quot;Allods&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|Allods]]&lt;/span&gt;
+&lt;&lt;switch visited()&gt;&gt;&lt;&lt;case 1&gt;&gt;&lt;&lt;fadeout 2s 4s&gt;&gt;&lt;&lt;fadein 2s 0s&gt;&gt;&lt;div class=&quot;logo&quot;&gt;&lt;img src=&quot;https://2.downloader.disk.yandex.ru/preview/7fe4bb9fb3c9de3b8a50d0c754af04589014979b2b4f5577a1317456d5146b07/inf/CNUMWEN82im1rfj5yrEYaRzpBL8AONm06kxmvimaANwCDp9jvtUywcyaJKa-20X1vBrUEWPOXP0qt4Sy3_ZQdA%3D%3D?uid=573673892&amp;filename=logo_allods.png&amp;disposition=inline&amp;hash=&amp;limit=0&amp;content_type=image%2Fpng&amp;owner_uid=573673892&amp;tknv=v2&amp;size=1872x940&quot; alt=&quot;Allods&quot; width=&quot;100%&quot;&gt;&lt;/div&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;/fadeout&gt;&gt;&lt;&lt;timed 7s&gt;&gt;&lt;&lt;goto &quot;Allods&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|Allods]]&lt;/span&gt;
 
 &lt;&lt;case 2&gt;&gt;&lt;&lt;fadeout 2s 4s&gt;&gt;&lt;&lt;fadein 2s 0s&gt;&gt;&lt;div class=&quot;logo&quot;&gt;&lt;img src=&quot;https://alloder.ru/logos/logo_full.png&quot; alt=&quot;Created for Alloder.ru&quot; width=&quot;100%&quot;&gt;&lt;/div&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;/fadeout&gt;&gt;&lt;&lt;timed 7s&gt;&gt;&lt;&lt;goto &quot;Warning&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|Warning]]&lt;/span&gt;&lt;&lt;/switch&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="Warning" tags="" position="610,89" size="100,100">&lt;div class=&quot;elementToFadeInAndOut&quot;&gt;&lt;h3&gt;Игра сохраняется автоматически, но вы также можете сделать это вручную.
 Сохраните игру на диск перед удалением кэша из истории браузера, если хотите, чтобы данные не были утеряны. 
@@ -1262,7 +1267,7 @@ $(document).on("mousedown", function (event) {
 	 &lt;img
         id=&quot;img2&quot;
 		src=
-&quot;https://psv4.userapi.com/c235131/u280095054/docs/d35/5f71c8e0df2e/logo_game.png&quot;
+&quot;https://s264vlx.storage.yandex.net/rdisk/8f7702c0d8eb213c033120cacab0c9da905f5513b3daee7f927e0bdd5fb47748/63ffc72d/3Jm5q9YnED-2_L2nMQCmjEorjfO2tsMMapjl6wEy8ect0dIMX2ffQTvkuD8hHxWWtukG9BQsSSTeR2oZCkcu5g==?uid=573673892&amp;filename=logo_game.png&amp;disposition=inline&amp;hash=&amp;limit=0&amp;content_type=image%2Fpng&amp;owner_uid=573673892&amp;fsize=26571&amp;hid=432fdc15b87effd71e1c8e13041027a8&amp;media_type=image&amp;tknv=v2&amp;etag=dab765f67b5181a943efb52af88538c9&amp;rtoken=SVDoeohogoEx&amp;force_default=yes&amp;ycrid=na-e93c54d1430989496ce1306a50683c11-downloader10e&amp;ts=5f5dd9cee6540&amp;s=3cde8297ad4bd188ce60836ff275c0dff6f5406f775393185b88123caf940756&amp;pb=U2FsdGVkX1-UmMEez7OFLOBQz-vMCq8A33ekdnf2RWUiRPWgagBWc7QjoaF9cRdY3hZitzBVhS2FoVETTWw56a0zia33ZRR88bhSVptX_PE&quot;
         class=&quot;mouse&quot;
         value=&quot;-2&quot;/&gt;
 			&lt;/div&gt;
