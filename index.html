@@ -175,13 +175,19 @@ A:focus {
 }
 /* Shrink the page when viewed on devices with a low screen width */
 @media screen and (max-width: 960px) {
-  .passage { font-size: 90%; width: 70%; }
+  .passage { 
+	font-size: 90%; 
+	width: 70%; 
+	left: 2em; 
+	right: 10em;
+  }
 }
 @media screen and (max-width: 840px) {
-  .passage {  font-size: 87.5%; width: 80%; }
+  .passage { font-size: 90%; width: 80%; left: 2em; right: 10em; }
 }
 @media screen and (max-width: 720px) {
-  .passage { font-size: 75%; width: 90%; }
+  .passage { font-size: 60%; width: 90%; left: 2em; right: 10em; }
+}
 }
 
 /* cтиль 2 */
@@ -238,29 +244,21 @@ body.desert {
 }
 
 /* Shrink the page when viewed on devices with a low screen width */
-@media screen and (max-width: 960px) {
+@media screen and (orientation:landscape) and (max-width: 960px) {
   .desert .passage { 
-	font-size: 90%; 
-	width: 70%; 
+	font-size: 60%; 
+	width: 90%; 
 	left: 2em; 
 	right: 10em;
+	top: 12em;
   }
 }
-@media screen and (max-width: 840px) {
-  .desert .passage { font-size: 90%; width: 80%; left: 2em; right: 10em; }
-}
-@media screen and (max-width: 720px) {
-  .desert .passage { font-size: 60%; width: 90%; left: 2em; right: 10em; }
-}
-@media screen and (max-width: 1024px) and (orientation:landscape) {
- body.desert {
-     background-image: url('https://sun9-26.userapi.com/impg/bxTbgFr128bp8d3luZv3PJgE7xujNkRKyw9HgA/fedgV20za1Q.jpg?size=958x540&quality=96&sign=0d18a14df78545135c33187021d8db23&type=album');
-   font-size: 0%;
-	background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  background-color: black;
+@media screen and (orientation:portrait) and (max-width: 960px) {
+  .desert .passage { 
+	font-size: 70%; 
+	width: 85%; 
+	left: 2em; 
+	right: 10em;
   }
 }
  #notify {
@@ -394,15 +392,19 @@ body.menu {
 
 /* Shrink the page when viewed on devices with a low screen width */
 @media screen and (max-width: 960px) {
- .menu .passage { font-size: 90%; width: 70%; }
+  .menu .passage { 
+	font-size: 90%; 
+	width: 70%; 
+	left: 2em; 
+	right: 10em;
+  }
 }
 @media screen and (max-width: 840px) {
-  .menu .passage {  font-size: 87.5%; width: 80%; }
+  .menu .passage { font-size: 90%; width: 80%; left: 2em; right: 10em; }
 }
 @media screen and (max-width: 720px) {
-  .menu .passage { font-size: 75%; width: 90%; }
+  .menu .passage { font-size: 60%; width: 90%; left: 2em; right: 10em; }
 }
-
 
 
 /* исчезновение */
@@ -471,6 +473,18 @@ body.menu {
 	right: 63em;
 	bottom: 0em;
   top: 6.6em;
+}
+@media screen and (orientation:portrait) and (max-width: 960px) {
+ .settingsicon { 
+    width: 22px; 
+	height: 22px;
+  }
+}
+@media screen and (orientation:landscape) and (max-width: 960px) {
+ .settingsicon { 
+    width: 22px; 
+	height: 22px;
+  }
 }
 
 /* мерцание текста */
@@ -572,8 +586,7 @@ text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6
     width: 20%;
 	pointer-events: none; 
 }
-
-/* дизайн меню */
+/* дизайн настроек */
 #ui-overlay {
    background-image: url('https://f.radikal.host/2023/02/15/Background-2.png');
      background-repeat: no-repeat;
@@ -1305,7 +1318,7 @@ $(document).on("dblclick", function (event) {
 
 &lt;&lt;case 2&gt;&gt;&lt;&lt;fadeout 2s 4s&gt;&gt;&lt;&lt;fadein 2s 0s&gt;&gt;&lt;div class=&quot;logo&quot;&gt;&lt;img src=&quot;https://alloder.ru/logos/logo_full.png&quot; alt=&quot;Created for Alloder.ru&quot; width=&quot;100%&quot;&gt;&lt;/div&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;/fadeout&gt;&gt;&lt;&lt;timed 7s&gt;&gt;&lt;&lt;goto &quot;Warning&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|Warning]]&lt;/span&gt;&lt;&lt;/switch&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="Warning" tags="" position="610,89" size="100,100">&lt;div class=&quot;elementToFadeInAndOut&quot;&gt;&lt;h3&gt;Игра сохраняется автоматически, но вы также можете сделать это вручную.
 Сохраните игру на диск перед удалением кэша из истории браузера, если хотите, чтобы данные не были утеряны. 
-Приятной игры!&lt;/h3&gt;&lt;&lt;timed 15s&gt;&gt;&lt;&lt;goto &quot;MainMenu&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|MainMenu]]&lt;/span&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="6" name="MainMenu" tags="" position="472,268" size="100,100">&lt;div class=&quot;mouse_move&quot;&gt;
+Приятной игры!&lt;/h3&gt;&lt;&lt;timed 15s&gt;&gt;&lt;&lt;goto &quot;MainMenu&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|MainMenu]]&lt;/span&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="6" name="MainMenu" tags="mouse_move" position="475,270" size="100,100">&lt;div class=&quot;mouse_move&quot;&gt;
       &lt;img
         id=&quot;img1&quot;
         src=
@@ -1315,7 +1328,7 @@ $(document).on("dblclick", function (event) {
 	 &lt;img
         id=&quot;img2&quot;
 		src=
-&quot;https://s264vlx.storage.yandex.net/rdisk/8f7702c0d8eb213c033120cacab0c9da905f5513b3daee7f927e0bdd5fb47748/63ffc72d/3Jm5q9YnED-2_L2nMQCmjEorjfO2tsMMapjl6wEy8ect0dIMX2ffQTvkuD8hHxWWtukG9BQsSSTeR2oZCkcu5g==?uid=573673892&amp;filename=logo_game.png&amp;disposition=inline&amp;hash=&amp;limit=0&amp;content_type=image%2Fpng&amp;owner_uid=573673892&amp;fsize=26571&amp;hid=432fdc15b87effd71e1c8e13041027a8&amp;media_type=image&amp;tknv=v2&amp;etag=dab765f67b5181a943efb52af88538c9&amp;rtoken=SVDoeohogoEx&amp;force_default=yes&amp;ycrid=na-e93c54d1430989496ce1306a50683c11-downloader10e&amp;ts=5f5dd9cee6540&amp;s=3cde8297ad4bd188ce60836ff275c0dff6f5406f775393185b88123caf940756&amp;pb=U2FsdGVkX1-UmMEez7OFLOBQz-vMCq8A33ekdnf2RWUiRPWgagBWc7QjoaF9cRdY3hZitzBVhS2FoVETTWw56a0zia33ZRR88bhSVptX_PE&quot;
+&quot;https://psv4.userapi.com/c235131/u280095054/docs/d35/50311880b4ec/logo_game.png?extra=HH7G8x1R512InoL2KwC27nHM0Zr5O65hqfgeSu6I_fUBXUhAs0R5GYBzuHzAAIF_fXf4rYSKjP0tZR_JuqevdnKGj9zqXSLgK9PAm3lpsTIkgdxPUyQYGw6cldKQy5kLZPn-3vTCYoF0zwL40x3O9lM&quot;
         class=&quot;mouse&quot;
         value=&quot;-2&quot;/&gt;
 			&lt;/div&gt;
