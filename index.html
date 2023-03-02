@@ -245,12 +245,14 @@ body.desert {
 
 /* Shrink the page when viewed on devices with a low screen width */
 @media screen and (orientation:landscape) and (max-width: 960px) {
-  .desert .passage { 
-	font-size: 60%; 
-	width: 90%; 
-	left: 2em; 
-	right: 10em;
-	top: 8em;
+  body.desert { 
+  background-image: url("https://sun9-46.userapi.com/impg/4aanqqmTtbEW_thGhXZTqLyobD_efb4VhNo_qw/Bji1h5fW8Dg.jpg?size=1280x720&quality=95&sign=925d9780ba1ffa92e634b677d1fe472d&type=album");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-color: black;
+	font-size: 0%; 
   }
 }
 @media screen and (orientation:portrait) and (max-width: 960px) {
@@ -478,12 +480,7 @@ body.menu {
  .settingsicon { 
     width: 22px; 
 	height: 22px;
-  }
-}
-@media screen and (orientation:landscape) and (max-width: 960px) {
- .settingsicon { 
-    width: 22px; 
-	height: 22px;
+   top: 6em;
   }
 }
 
