@@ -180,20 +180,13 @@ A:focus {
 	width: 70%; 
 	left: 2em; 
 	right: 10em;
-}
+  }
 }
 @media screen and (max-width: 840px) {
   .passage { font-size: 90%; width: 80%; left: 2em; right: 10em; }
 }
 @media screen and (max-width: 720px) {
-  .passage { 
-	font-size: 60%; 
-	width: 90%; 
-	left: 2em; 
-	right: 10em; 
-	top: 0em;
-	  bottom: 0em;
-}
+  .passage { font-size: 60%; width: 90%; left: 2em; right: 10em; }
 }
 /* cтиль 2 */
 html.desert {
@@ -273,54 +266,6 @@ body.desert {
   }
 }
 /* cтиль 3 */ 
-body.blackscreen {
-	background-color: var(--bgblack);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  	padding:0;
-  	margin:0;
-  	background: url("index.html"); 
-    background-color: #000000;     
-}
-
-.blackscreen #header {
-  background: url("index.html"); 
-  border-top: transparent;
-  border-bottom: transparent;
-  background-color: transparent;
-}
-
-.blackscreen #passages {
-  max-height: 78vh;  
-}
-
-.blackscreen #story {
-  background: url("index.html"); 
-
-}
-.blackscreen .passage {
-  color: white;
-  font-family: 'AllodsWest', arial;
-  margin-right: 0;
-	position: fixed;
-  left: 21em;
-	right: 21em;
-	bottom: 20em;
-}
-.blackscreen .menutoggle #one {
-  background: url("index.html"); 
-  background-color: transparent;
-}
-
-.actbanner {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
-}
-
 .logo {
   position: fixed;
   top: 50%;
@@ -332,6 +277,16 @@ body.blackscreen {
     -o-user-select: none;
     user-select: none;
   pointer-events: none; 
+}
+@media screen and (orientation:landscape) and (max-width: 960px) {
+ .logo { 
+  background-image: url("https://sun9-46.userapi.com/impg/4aanqqmTtbEW_thGhXZTqLyobD_efb4VhNo_qw/Bji1h5fW8Dg.jpg?size=1280x720&quality=95&sign=925d9780ba1ffa92e634b677d1fe472d&type=album");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-color: black;
+  }
 }
 
 /* cтиль 3 */ 
@@ -1393,7 +1348,9 @@ $(document).on("dblclick", function (event) {
 
 &lt;&lt;case 2&gt;&gt;&lt;&lt;fadeout 2s 4s&gt;&gt;&lt;&lt;fadein 2s 0s&gt;&gt;&lt;div class=&quot;logo&quot;&gt;&lt;img src=&quot;https://alloder.ru/logos/logo_full.png&quot; alt=&quot;Created for Alloder.ru&quot; width=&quot;100%&quot;&gt;&lt;/div&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;/fadeout&gt;&gt;&lt;&lt;timed 7s&gt;&gt;&lt;&lt;goto &quot;Warning&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|Warning]]&lt;/span&gt;&lt;&lt;/switch&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="Warning" tags="" position="610,89" size="100,100">&lt;div class=&quot;elementToFadeInAndOut&quot;&gt;&lt;h3&gt;Игра сохраняется автоматически, но вы также можете сделать это вручную.
 Сохраните игру на диск перед удалением кэша из истории браузера, если хотите, чтобы данные не были утеряны. 
-Приятной игры!&lt;/h3&gt;&lt;&lt;timed 15s&gt;&gt;&lt;&lt;goto &quot;MainMenu&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|MainMenu]]&lt;/span&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="6" name="MainMenu" tags="" position="476,272" size="100,100">&lt;div class=&quot;mouse_move&quot;&gt;
+Приятной игры!&lt;/h3&gt;&lt;&lt;timed 15s&gt;&gt;&lt;&lt;goto &quot;MainMenu&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|MainMenu]]&lt;/span&gt;&lt;/div&gt;
+
+&lt;span class=&quot;back_mobile&quot;&gt;&lt;/span&gt;</tw-passagedata><tw-passagedata pid="6" name="MainMenu" tags="" position="476,272" size="100,100">&lt;div class=&quot;mouse_move&quot;&gt;
       &lt;img
         id=&quot;img1&quot;
         src=
@@ -1422,7 +1379,9 @@ $(document).on("dblclick", function (event) {
 &lt;&lt;audio &quot;night_bgm&quot; loop play&gt;&gt;
 &lt;&lt;audio &quot;credits&quot; stop&gt;&gt;</tw-passagedata><tw-passagedata pid="7" name="Достижения" tags="" position="105,83" size="100,100">&lt;&lt;if $achievement_01 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Первый заход&lt;/h3&gt;Начало большого приключения!&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Первый заход&lt;/h3&gt;Начало большого приключения!&lt;/span&gt;&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="8" name="Начало" tags="" position="781,15" size="100,100">&lt;&lt;fadein 2s 0s&gt;&gt;&lt;h3&gt;В этой игре есть различные звукосодержащие элементы. Рекомендуется отрегулировать громкость на вашем устройстве. Вы также можете сделать это в меню настроек, если запустили игру с компьютера.&lt;/h3&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;Нажмите на экран...&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;span class=&quot;next&quot;&gt;[[|Allods]]&lt;/span&gt;</tw-passagedata><tw-passagedata pid="9" name="Антуанетта3" tags="desert" position="242,598" size="100,100">
+&lt;span class=&quot;next&quot;&gt;[[|Allods]]&lt;/span&gt;
+
+&lt;span class=&quot;back_mobile&quot;&gt;&lt;/span&gt;</tw-passagedata><tw-passagedata pid="9" name="Антуанетта3" tags="desert" position="242,598" size="100,100">
 
 
 &lt;&lt;audio &quot;night_bgm&quot; loop play&gt;&gt;
