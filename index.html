@@ -268,25 +268,10 @@ body.desert {
     overflow: inherit;
 	left: 2em; 
 	right: 10em;
-	    top: 30em;
+	    top: 25em;
     bottom: 0em;
   }
 }
- #notify {
-    position : fixed;
-    display : block;
-    width : 16em;
-    right : -20em; top : 2em;
-    padding : 0.5em;
-    background-color : #fff;
-    color : #000;
-    -webkit-transition : right 0.3s;
-    -moz-transition : right 0.3s;
-    -o-transition : right 0.3s;
-    transition : right 0.3s;
-}
-#notify.open { right : 0; }
-
 /* cтиль 3 */ 
 body.blackscreen {
 	background-color: var(--bgblack);
@@ -474,17 +459,24 @@ body.menu {
 
 /* иконка меню */
 .settingsicon {
-    background-image: url("https://psv4.userapi.com/c235031/u280095054/docs/d9/2923a60f3ae4/menu.png?extra=kIPnZ2n2sPseu_dNX5wPDL4EB489AggYDn7aHC5a4izCJX6KD4KNUbhXxt27-e2CMqVyP7ksu4UsWEepkLi0Sk44ReG3wrOnhkGict4z1ZcCP7OM8S5qfmLUP8AzHdYMp49ZzO85ofKdqFxp5MDGmWk");
+    background-image: url("https://psv4.userapi.com/c235131/u280095054/docs/d55/d927a398d5ab/MenuButtonNormal_UITexture.png?extra=Y9yF3pXLP_A8Ghkx-IGjOkIM9qn22aFmmQIc_fbAYdp5hYgfnGCZ7VQ4mCjRM0GG8kYHXw3ghNCZWg1hiSHrcdmqFY6uu9GD9X0crJnZ8yZZY7w6q3ePmQoPEEbw4Iusnas0_ypTi9_e6uIJrmykJb8");
     position: absolute;
    background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
   width: 32px;
   height: 32px;
   left: 7.5em;
 	right: 63em;
 	bottom: 0em;
-  top: 6.6em;
+  top: 6.9em;
 }
+  .settingsicon:hover {
+        background-image: url("https://psv4.userapi.com/c235131/u280095054/docs/d41/600c07f4f946/MenuButtonOver_UITexture.png?extra=sJfhMpzluwAYWKxQ8GS_3Q1bWo03IBFNnK7ys--nsnmnMTpRsTQeNisBAWHPt8zpfdneE4N0tHqvbuUnHLaxiY1CLQESV4FOvDYS5r2qt9gnULrCecFO3EzhlcuEZlMwrF4dVbnE2CkFxUqzkdoWewQ");
+   }
+   .settingsicon:active {
+     background-image: url("https://psv4.userapi.com/c235131/u280095054/docs/d56/039f89a16520/MenuButtonPressed_UITexture.png?extra=GgSy3MYV15BE81PQz3OPm5f6s4XPHwjdAZHUMLVTJ_PVm8l-nFRH58cEf9irkxvgGmOyn0GN9d1jSdXpJkteg5szt8OmoGz0PQ_mJO1zkOAQr1n5LRvxjDqr3_R3b3zvIMpgbrB1qx26PWH5b2elzhU");
+   }
 @media screen and (orientation:portrait) and (max-width: 960px) {
  .settingsicon { 
     width: 22px; 
@@ -988,6 +980,12 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 #notify .far {
   	color: #c0975f;
 } 
+@media screen and (orientation:portrait) and (max-width: 960px) {
+  #notify { 
+	font-size: 15px;
+	 width: 12em;
+  }
+}
 
 /*Недоступные диалоги*/
 .notdialog {
