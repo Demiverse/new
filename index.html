@@ -180,16 +180,21 @@ A:focus {
 	width: 70%; 
 	left: 2em; 
 	right: 10em;
-  }
+}
 }
 @media screen and (max-width: 840px) {
   .passage { font-size: 90%; width: 80%; left: 2em; right: 10em; }
 }
 @media screen and (max-width: 720px) {
-  .passage { font-size: 60%; width: 90%; left: 2em; right: 10em; }
+  .passage { 
+	font-size: 60%; 
+	width: 90%; 
+	left: 2em; 
+	right: 10em; 
+	top: 0em;
+	  bottom: 0em;
 }
 }
-
 /* cтиль 2 */
 html.desert {
   width: 100%;
@@ -519,6 +524,26 @@ text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6
   }
 }
 
+/* для мобил */
+.subtitle-mobile {
+  color: white;
+  text-align: left;
+  padding: 5%;
+ position: absolute;
+  overflow: auto;
+    left: 33em;
+	right: 0em;
+  top: 6.7em;
+  bottom: 0em;
+}
+.logo_mobile {
+   background-image: url("https://psv4.userapi.com/c235131/u280095054/docs/d35/50311880b4ec/logo_game.png?extra=HH7G8x1R512InoL2KwC27nHM0Zr5O65hqfgeSu6I_fUBXUhAs0R5GYBzuHzAAIF_fXf4rYSKjP0tZR_JuqevdnKGj9zqXSLgK9PAm3lpsTIkgdxPUyQYGw6QkdKQy5kLZPn-3vTGYNonmVGvixvJ9F8");
+   background-attachment: local;
+   background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top center;
+  opacity: 0%;
+}
 /* меню */
 .subtitle-item a {
   font-family: 'AllodsWest', arial;
@@ -549,13 +574,6 @@ text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6
   color: white;
   text-align: left;
   padding: 5%;
-  /* Passage width */
- position: fixed;
-  overflow: auto;
-    left: 33em;
-	right: 0em;
-  top: 6.7em;
-  bottom: 0em;
 }
       .mouse_move {
         position: fixed;
@@ -582,6 +600,70 @@ text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6
     height: 35%;
     width: 20%;
 	pointer-events: none; 
+}
+/* Shrink the page when viewed on devices with a low screen width */
+@media screen and (orientation:landscape) and (max-width: 960px) {
+ .subtitle2 { 
+  background-image: url("https://sun9-46.userapi.com/impg/4aanqqmTtbEW_thGhXZTqLyobD_efb4VhNo_qw/Bji1h5fW8Dg.jpg?size=1280x720&quality=95&sign=925d9780ba1ffa92e634b677d1fe472d&type=album");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-color: black;
+	font-size: 0%; 
+     position: absolute;
+    left: 0em;
+    right: 0em;
+    top: 0em;
+    bottom: 0em;
+}
+}
+@media screen and (orientation:landscape) and (max-width: 960px) {
+  .subtitle-mobile { 
+	font-size: 0%; 
+  }
+}
+   
+@media screen and (orientation:portrait) and (max-width: 960px) {
+ .subtitle2 { 
+	 background-image: url("https://sun9-44.userapi.com/impg/TCaqAMg1fuW-54HYQ4HCmfH0QG281M6jlnlO9A/k0yVjxS8Nj4.jpg?size=2560x1221&quality=95&sign=6537bd4ec254de6887b5791254bf4935&type=album");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-color: black;
+   	font-size: 0%; 
+     position: absolute;
+    left: 0em;
+    right: 0em;
+    top: 0em;
+    bottom: 0em;
+}
+} 
+@media screen and (orientation:portrait) and (max-width: 960px) {
+ .subtitle-mobile { 
+  color: white;
+  text-align: left;
+  padding: 5%;
+  /* Passage width */; 
+   font-size: 150%; 
+ position: absolute;
+  overflow: auto;
+    left: 1em;
+	right: 0em;
+  top: 9.7em;
+  bottom: 0em;
+}
+}
+@media screen and (orientation:portrait) and (max-width: 960px) {
+ .logo_mobile {
+      position: absolute;
+    left: 4em;
+    right: 5em;
+    top: 8em;
+    bottom: 18em;
+   opacity: 100%;
+  }
 }
 /* дизайн настроек */
 #ui-overlay {
@@ -1315,17 +1397,17 @@ $(document).on("dblclick", function (event) {
 
 &lt;&lt;case 2&gt;&gt;&lt;&lt;fadeout 2s 4s&gt;&gt;&lt;&lt;fadein 2s 0s&gt;&gt;&lt;div class=&quot;logo&quot;&gt;&lt;img src=&quot;https://alloder.ru/logos/logo_full.png&quot; alt=&quot;Created for Alloder.ru&quot; width=&quot;100%&quot;&gt;&lt;/div&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;/fadeout&gt;&gt;&lt;&lt;timed 7s&gt;&gt;&lt;&lt;goto &quot;Warning&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|Warning]]&lt;/span&gt;&lt;&lt;/switch&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="Warning" tags="" position="610,89" size="100,100">&lt;div class=&quot;elementToFadeInAndOut&quot;&gt;&lt;h3&gt;Игра сохраняется автоматически, но вы также можете сделать это вручную.
 Сохраните игру на диск перед удалением кэша из истории браузера, если хотите, чтобы данные не были утеряны. 
-Приятной игры!&lt;/h3&gt;&lt;&lt;timed 15s&gt;&gt;&lt;&lt;goto &quot;MainMenu&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|MainMenu]]&lt;/span&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="6" name="MainMenu" tags="mouse_move" position="475,270" size="100,100">&lt;div class=&quot;mouse_move&quot;&gt;
+Приятной игры!&lt;/h3&gt;&lt;&lt;timed 15s&gt;&gt;&lt;&lt;goto &quot;MainMenu&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|MainMenu]]&lt;/span&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="6" name="MainMenu" tags="" position="476,272" size="100,100">&lt;div class=&quot;mouse_move&quot;&gt;
       &lt;img
         id=&quot;img1&quot;
         src=
-&quot;https://games.mail.ru/hotbox/content_files/article/2019/03/15/6aa84547eac945c98b963db4b0998f90.png&quot;
+&quot;https://sun9-44.userapi.com/impg/TCaqAMg1fuW-54HYQ4HCmfH0QG281M6jlnlO9A/k0yVjxS8Nj4.jpg?size=2560x1221&amp;quality=95&amp;sign=6537bd4ec254de6887b5791254bf4935&amp;type=album&quot;
         class=&quot;mouse&quot;
         value=&quot;5&quot;/&gt;
 	 &lt;img
         id=&quot;img2&quot;
 		src=
-&quot;https://psv4.userapi.com/c235131/u280095054/docs/d35/50311880b4ec/logo_game.png?extra=HH7G8x1R512InoL2KwC27nHM0Zr5O65hqfgeSu6I_fUBXUhAs0R5GYBzuHzAAIF_fXf4rYSKjP0tZR_JuqevdnKGj9zqXSLgK9PAm3lpsTIkgdxPUyQYGw6cldKQy5kLZPn-3vTCYoF0zwL40x3O9lM&quot;
+&quot;https://psv4.userapi.com/c235131/u280095054/docs/d35/50311880b4ec/logo_game.png?extra=HH7G8x1R512InoL2KwC27nHM0Zr5O65hqfgeSu6I_fUBXUhAs0R5GYBzuHzAAIF_fXf4rYSKjP0tZR_JuqevdnKGj9zqXSLgK9PAm3lpsTIkgdxPUyQYGw6QkdKQy5kLZPn-3vTGYNonmVGvixvJ9F8&quot;
         class=&quot;mouse&quot;
         value=&quot;-2&quot;/&gt;
 			&lt;/div&gt;
@@ -1339,7 +1421,17 @@ $(document).on("dblclick", function (event) {
 &lt;span class=&quot;subtitle-item&quot;&gt;[[Титры|Титры]]&lt;/span&gt;&lt;/div&gt;
 
 &lt;&lt;audio &quot;night_bgm&quot; loop play&gt;&gt;
-&lt;&lt;audio &quot;credits&quot; stop&gt;&gt;</tw-passagedata><tw-passagedata pid="7" name="Достижения" tags="" position="105,83" size="100,100">&lt;&lt;if $achievement_01 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Первый заход&lt;/h3&gt;Начало большого приключения!&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Первый заход&lt;/h3&gt;Начало большого приключения!&lt;/span&gt;&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="8" name="Начало" tags="" position="781,15" size="100,100">&lt;&lt;fadein 2s 0s&gt;&gt;&lt;h3&gt;В этой игре есть различные звукосодержащие элементы. Рекомендуется отрегулировать громкость на вашем устройстве. Вы также можете сделать это в меню настроек, если запустили игру с компьютера.&lt;/h3&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;Нажмите на экран...&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
+&lt;&lt;audio &quot;credits&quot; stop&gt;&gt;
+
+&lt;span class=&quot;subtitle-item&quot;&gt;&lt;div class=&quot;subtitle-mobile&quot;&gt;&lt;&lt;if $variable is true&gt;&gt;&lt;&lt;link &quot;Продолжить&quot;&gt;&gt;&lt;&lt;run Save.autosave.load()&gt;&gt;&lt;/span&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;/if&gt;&gt;
+&lt;span class=&quot;subtitle-item&quot;&gt;[[Новая игра|StartPassage]]&lt;/span&gt;
+&lt;span class=&quot;subtitle-item&quot;&gt;&lt;&lt;link &quot;Загрузитьㅤ&quot;&gt;&gt;&lt;&lt;run UI.saves()&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;
+&lt;span class=&quot;subtitle-item&quot;&gt;&lt;&lt;link &quot;Настройки&quot;&gt;&gt;&lt;&lt;run UI.settings()&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;
+&lt;span class=&quot;subtitle-item&quot;&gt;&lt;&lt;link &quot;Достижения&quot;&gt;&gt;&lt;&lt;run Dialog.setup(&quot;Достижения&quot;);Dialog.wiki(Story.get(&quot;Достижения&quot;).processText());Dialog.open();&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;
+&lt;span class=&quot;subtitle-item&quot;&gt;&lt;&lt;link &quot;Перезапуск&quot;&gt;&gt;&lt;&lt;run UI.restart()&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;
+&lt;span class=&quot;subtitle-item&quot;&gt;[[Титры|Титры]]&lt;/span&gt;&lt;/div&gt;
+
+&lt;span class=&quot;logo_mobile&quot;&gt;&lt;/span&gt;</tw-passagedata><tw-passagedata pid="7" name="Достижения" tags="" position="105,83" size="100,100">&lt;&lt;if $achievement_01 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Первый заход&lt;/h3&gt;Начало большого приключения!&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Первый заход&lt;/h3&gt;Начало большого приключения!&lt;/span&gt;&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="8" name="Начало" tags="" position="781,15" size="100,100">&lt;&lt;fadein 2s 0s&gt;&gt;&lt;h3&gt;В этой игре есть различные звукосодержащие элементы. Рекомендуется отрегулировать громкость на вашем устройстве. Вы также можете сделать это в меню настроек, если запустили игру с компьютера.&lt;/h3&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;Нажмите на экран...&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
 &lt;span class=&quot;next&quot;&gt;[[|Allods]]&lt;/span&gt;</tw-passagedata><tw-passagedata pid="9" name="Антуанетта3" tags="desert" position="242,598" size="100,100">
 
