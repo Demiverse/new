@@ -1453,10 +1453,9 @@ $(document).on("dblclick", function (event) {
         &lt;&lt;link &quot;Настройки&quot;&gt;&gt;&lt;&lt;run UI.settings()&gt;&gt;&lt;&lt;/link&gt;&gt;
         &lt;&lt;link &#39;Достижения&#39;&gt;&gt;&lt;&lt;run Dialog.setup(&quot;Достижения&quot;);Dialog.wiki(Story.get(&quot;Достижения&quot;).processText());Dialog.open();&gt;&gt;&lt;&lt;/link&gt;&gt;
         &lt;&lt;link &quot;Перезапуск&quot;&gt;&gt;&lt;&lt;run UI.restart()&gt;&gt;&lt;&lt;/link&gt;&gt;
-		&lt;&lt;if $date.getHours() &gt;= 22 || $date.getHours() &lt;= 6&gt;&gt;&lt;&lt;link &quot;Вернуться в меню&quot; &quot;main_menu_night&quot;&gt;&gt;&lt;&lt;dialogclose&gt;&gt;&lt;&lt;/link&gt;&gt;
-	&lt;&lt;elseif $date.getHours() &gt;= 16 || $date.getHours() &lt;=21&gt;&gt;&lt;&lt;link &quot;Вернуться в меню&quot; &quot;main_menu_evening&quot;&gt;&gt;&lt;&lt;dialogclose&gt;&gt;&lt;&lt;/link&gt;&gt;
-&lt;&lt;else&gt;&gt;
-        &lt;&lt;link &quot;Вернуться в меню&quot; &quot;main_menu_day&quot;&gt;&gt;&lt;&lt;dialogclose&gt;&gt;&lt;&lt;/link&gt;&gt;
+		&lt;&lt;if $date.getHours() &gt;= 22 || $date.getHours() &lt;= 6&gt;&gt;&lt;&lt;link &quot;Вернуться в меню&quot; &quot;main_menu_night&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+	&lt;&lt;elseif $date.getHours() gte 7 and $date.getHours() lt 15&gt;&gt;&lt;&lt;link &quot;Вернуться в меню&quot; &quot;main_menu_day&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+	&lt;&lt;elseif $date.getHours() &gt;= 16 || $date.getHours() &lt;= 21&gt;&gt;&lt;&lt;link &quot;Вернуться в меню&quot; &quot;main_menu_evening&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
     &lt;&lt;/if&gt;&gt;
     &lt;&lt;/dialog&gt;&gt;
 &lt;&lt;/link&gt;&gt;
@@ -1526,21 +1525,22 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.</tw-passagedata><tw
 &lt;&lt;set $areaname to &quot;Игниста. Рахл-Игниста&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="4" name="Allods" tags="logo2" position="427,30" size="100,100">&lt;&lt;audio night_bgm loop play&gt;&gt;
 &lt;&lt;switch visited()&gt;&gt;&lt;&lt;case 1&gt;&gt;&lt;&lt;fadeout 2s 4s&gt;&gt;&lt;&lt;fadein 2s 0s&gt;&gt;&lt;div class=&quot;logo&quot;&gt;&lt;img src=&quot;https://raw.githubusercontent.com/Demiverse/new/main/images/%253F%253F%253F%253F%253F%253F_%253F%253F%253F%253F%253F%253F%253F.png&quot; alt=&quot;Allods&quot; width=&quot;100%&quot;&gt;&lt;/div&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;/fadeout&gt;&gt;&lt;&lt;timed 7s&gt;&gt;&lt;&lt;goto &quot;Allods&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|Allods]]&lt;/span&gt;
 
-&lt;&lt;case 2&gt;&gt;&lt;&lt;fadeout 2s 4s&gt;&gt;&lt;&lt;fadein 2s 0s&gt;&gt;&lt;div class=&quot;logo&quot;&gt;&lt;img src=&quot;https://alloder.ru/logos/logo_full.png&quot; alt=&quot;Created for Alloder.ru&quot; width=&quot;100%&quot;&gt;&lt;/div&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;/fadeout&gt;&gt;&lt;&lt;timed 7s&gt;&gt;&lt;&lt;goto &quot;Warning&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|Warning]]&lt;/span&gt;&lt;&lt;/switch&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="Warning" tags="logo2" position="610,94" size="100,100">&lt;div class=&quot;elementToFadeInAndOut&quot;&gt;&lt;h3&gt;Игра сохраняется автоматически, но вы также можете сделать это вручную.
+&lt;&lt;case 2&gt;&gt;&lt;&lt;fadeout 2s 4s&gt;&gt;&lt;&lt;fadein 2s 0s&gt;&gt;&lt;div class=&quot;logo&quot;&gt;&lt;img src=&quot;https://alloder.ru/logos/logo_full.png&quot; alt=&quot;Created for Alloder.ru&quot; width=&quot;100%&quot;&gt;&lt;/div&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;/fadeout&gt;&gt;&lt;&lt;timed 7s&gt;&gt;&lt;&lt;goto &quot;Warning&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|Warning]]&lt;/span&gt;&lt;&lt;/switch&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="Warning" tags="logo2" position="612,94" size="100,100">&lt;div class=&quot;elementToFadeInAndOut&quot;&gt;&lt;h3&gt;Игра сохраняется автоматически, но вы также можете сделать это вручную.
 Сохраните игру на диск перед удалением кэша из истории браузера, если хотите, чтобы данные не были утеряны. 
 Приятной игры!&lt;/h3&gt;
 
 &lt;&lt;timed 15s&gt;&gt;&lt;&lt;if $date.getHours() &gt;= 22 || $date.getHours() &lt;= 6&gt;&gt;&lt;&lt;goto &quot;main_menu_night&quot;&gt;&gt; 
-	&lt;&lt;elseif $date.getHours() &gt;= 16 || $date.getHours() &lt;=21&gt;&gt;&lt;&lt;goto &quot;main_menu_evening&quot;&gt;&gt;
-&lt;&lt;else&gt;&gt;
-        &lt;&lt;goto &quot;main_menu_day&quot;&gt;&gt;
-    &lt;&lt;/if&gt;&gt;&lt;&lt;/timed&gt;&gt;
+	&lt;&lt;elseif $date.getHours() gte 7 and $date.getHours() lt 15&gt;&gt;&lt;&lt;goto &quot;main_menu_day&quot;&gt;&gt;
+	&lt;&lt;elseif $date.getHours() &gt;= 16 || $date.getHours() &lt;= 21&gt;&gt;&lt;&lt;goto &quot;main_menu_evening&quot;&gt;&gt;
+	&lt;&lt;/if&gt;&gt;
+	    &lt;&lt;/timed&gt;&gt;
 	
 &lt;&lt;if $date.getHours() &gt;= 22 || $date.getHours() &lt;= 6&gt;&gt;&lt;span class=&quot;next&quot;&gt;&lt;&lt;link &quot;&quot; &quot;main_menu_night&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;
-	&lt;&lt;elseif $date.getHours() &gt;= 16 || $date.getHours() &lt;=21&gt;&gt;&lt;span class=&quot;next&quot;&gt;&lt;&lt;link &quot;&quot; &quot;main_menu_evening&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;
-&lt;&lt;else&gt;&gt;
-        &lt;span class=&quot;next&quot;&gt;&lt;&lt;link &quot;&quot; &quot;main_menu_day&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;
-    &lt;&lt;/if&gt;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="6" name="main_menu_day" tags="" position="495,204" size="100,100">&lt;div class=&quot;mouse_move&quot;&gt;
+	&lt;&lt;elseif $date.getHours() gte 7 and $date.getHours() lt 15&gt;&gt;&lt;span class=&quot;next&quot;&gt;&lt;&lt;link &quot;&quot; &quot;main_menu_day&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;
+	&lt;&lt;elseif $date.getHours() &gt;= 16 || $date.getHours() &lt;= 21&gt;&gt;&lt;span class=&quot;next&quot;&gt;&lt;&lt;link &quot;&quot; &quot;main_menu_evening&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;
+	&lt;&lt;/if&gt;&gt;
+	    &lt;/div&gt;
+	</tw-passagedata><tw-passagedata pid="6" name="main_menu_day" tags="" position="495,204" size="100,100">&lt;div class=&quot;mouse_move&quot;&gt;
  &lt;img
         id=&quot;img3&quot;
 		src=
@@ -3508,53 +3508,51 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.</tw-passagedata><tw
 &lt;&lt;audio &quot;credits&quot; loop play&gt;&gt;
 
 &lt;&lt;if $date.getHours() &gt;= 22 || $date.getHours() &lt;= 6&gt;&gt;&lt;span class=&quot;next&quot;&gt;&lt;&lt;link &quot;&quot; &quot;main_menu_night&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;
-	&lt;&lt;elseif $date.getHours() &gt;= 16 || $date.getHours() &lt;=21&gt;&gt;&lt;span class=&quot;next&quot;&gt;&lt;&lt;link &quot;&quot; &quot;main_menu_evening&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;
-&lt;&lt;else&gt;&gt;
-        &lt;span class=&quot;next&quot;&gt;&lt;&lt;link &quot;&quot; &quot;main_menu_day&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;
-    &lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="210" name="Титры3" tags="" position="4268,4298" size="100,100">
+	&lt;&lt;elseif $date.getHours() gte 7 and $date.getHours() lt 15&gt;&gt;&lt;span class=&quot;next&quot;&gt;&lt;&lt;link &quot;&quot; &quot;main_menu_day&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;
+	&lt;&lt;elseif $date.getHours() &gt;= 16 || $date.getHours() &lt;= 21&gt;&gt;&lt;span class=&quot;next&quot;&gt;&lt;&lt;link &quot;&quot; &quot;main_menu_evening&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;
+	&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="210" name="Титры3" tags="" position="4268,4298" size="100,100">
 &lt;&lt;fadeout 2s 6s&gt;&gt;&lt;&lt;fadein 2s 0s&gt;&gt;
 Художник по персонажам&lt;h3&gt;Сандра&lt;/h3&gt;&lt;&lt;timed 8s&gt;&gt;&lt;&lt;goto &quot;Титры4&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;/fadeout&gt;&gt;
 
 &lt;&lt;audio &quot;credits&quot; loop play&gt;&gt;
 
 &lt;&lt;if $date.getHours() &gt;= 22 || $date.getHours() &lt;= 6&gt;&gt;&lt;span class=&quot;next&quot;&gt;&lt;&lt;link &quot;&quot; &quot;main_menu_night&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;
-	&lt;&lt;elseif $date.getHours() &gt;= 16 || $date.getHours() &lt;=21&gt;&gt;&lt;span class=&quot;next&quot;&gt;&lt;&lt;link &quot;&quot; &quot;main_menu_evening&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;
-&lt;&lt;else&gt;&gt;
-        &lt;span class=&quot;next&quot;&gt;&lt;&lt;link &quot;&quot; &quot;main_menu_day&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;
-    &lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="211" name="Титры4" tags="" position="4398,4299" size="100,100">
+	&lt;&lt;elseif $date.getHours() gte 7 and $date.getHours() lt 15&gt;&gt;&lt;span class=&quot;next&quot;&gt;&lt;&lt;link &quot;&quot; &quot;main_menu_day&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;
+	&lt;&lt;elseif $date.getHours() &gt;= 16 || $date.getHours() &lt;= 21&gt;&gt;&lt;span class=&quot;next&quot;&gt;&lt;&lt;link &quot;&quot; &quot;main_menu_evening&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;
+	&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="211" name="Титры4" tags="" position="4398,4299" size="100,100">
 &lt;&lt;fadeout 2s 6s&gt;&gt;&lt;&lt;fadein 2s 0s&gt;&gt;
 Художник по персонажам&lt;h3&gt;Анонимное Бесфамильное&lt;/h3&gt;&lt;&lt;timed 8s&gt;&gt;&lt;&lt;goto &quot;Титры5&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;/fadeout&gt;&gt;
 
 &lt;&lt;audio &quot;credits&quot; loop play&gt;&gt;
 
 &lt;&lt;if $date.getHours() &gt;= 22 || $date.getHours() &lt;= 6&gt;&gt;&lt;span class=&quot;next&quot;&gt;&lt;&lt;link &quot;&quot; &quot;main_menu_night&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;
-	&lt;&lt;elseif $date.getHours() &gt;= 16 || $date.getHours() &lt;=21&gt;&gt;&lt;span class=&quot;next&quot;&gt;&lt;&lt;link &quot;&quot; &quot;main_menu_evening&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;
-&lt;&lt;else&gt;&gt;
-        &lt;span class=&quot;next&quot;&gt;&lt;&lt;link &quot;&quot; &quot;main_menu_day&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;
-    &lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="212" name="Титры5" tags="" position="4521,4298" size="100,100">
+	&lt;&lt;elseif $date.getHours() gte 7 and $date.getHours() lt 15&gt;&gt;&lt;span class=&quot;next&quot;&gt;&lt;&lt;link &quot;&quot; &quot;main_menu_day&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;
+	&lt;&lt;elseif $date.getHours() &gt;= 16 || $date.getHours() &lt;= 21&gt;&gt;&lt;span class=&quot;next&quot;&gt;&lt;&lt;link &quot;&quot; &quot;main_menu_evening&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;
+	&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="212" name="Титры5" tags="" position="4521,4298" size="100,100">
 &lt;&lt;fadeout 2s 6s&gt;&gt;&lt;&lt;fadein 2s 0s&gt;&gt;
 Художник по фонам&lt;h3&gt;Марина&lt;/h3&gt;&lt;&lt;timed 8s&gt;&gt;&lt;&lt;goto &quot;Титры6&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;/fadeout&gt;&gt;
 
 &lt;&lt;audio &quot;credits&quot; loop play&gt;&gt;
 
 &lt;&lt;if $date.getHours() &gt;= 22 || $date.getHours() &lt;= 6&gt;&gt;&lt;span class=&quot;next&quot;&gt;&lt;&lt;link &quot;&quot; &quot;main_menu_night&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;
-	&lt;&lt;elseif $date.getHours() &gt;= 16 || $date.getHours() &lt;=21&gt;&gt;&lt;span class=&quot;next&quot;&gt;&lt;&lt;link &quot;&quot; &quot;main_menu_evening&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;
-&lt;&lt;else&gt;&gt;
-        &lt;span class=&quot;next&quot;&gt;&lt;&lt;link &quot;&quot; &quot;main_menu_day&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;
-    &lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="213" name="Титры6" tags="" position="4649,4295" size="100,100">
+	&lt;&lt;elseif $date.getHours() gte 7 and $date.getHours() lt 15&gt;&gt;&lt;span class=&quot;next&quot;&gt;&lt;&lt;link &quot;&quot; &quot;main_menu_day&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;
+	&lt;&lt;elseif $date.getHours() &gt;= 16 || $date.getHours() &lt;= 21&gt;&gt;&lt;span class=&quot;next&quot;&gt;&lt;&lt;link &quot;&quot; &quot;main_menu_evening&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;
+	&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="213" name="Титры6" tags="" position="4649,4295" size="100,100">
 &lt;&lt;fadeout 2s 6s&gt;&gt;&lt;&lt;fadein 2s 0s&gt;&gt;
 Художник по персонажам&lt;h3&gt;Олеся&lt;/h3&gt;&lt;&lt;timed 8s&gt;&gt;&lt;&lt;goto &quot;Титры7&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;/fadeout&gt;&gt;
 
 &lt;&lt;audio &quot;credits&quot; loop play&gt;&gt;
 
 &lt;&lt;if $date.getHours() &gt;= 22 || $date.getHours() &lt;= 6&gt;&gt;&lt;span class=&quot;next&quot;&gt;&lt;&lt;link &quot;&quot; &quot;main_menu_night&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;
-	&lt;&lt;elseif $date.getHours() &gt;= 16 || $date.getHours() &lt;=21&gt;&gt;&lt;span class=&quot;next&quot;&gt;&lt;&lt;link &quot;&quot; &quot;main_menu_evening&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;
-&lt;&lt;else&gt;&gt;
-        &lt;span class=&quot;next&quot;&gt;&lt;&lt;link &quot;&quot; &quot;main_menu_day&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;
-    &lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="214" name="Титры7" tags="" position="4772,4296" size="100,100">
+	&lt;&lt;elseif $date.getHours() gte 7 and $date.getHours() lt 15&gt;&gt;&lt;span class=&quot;next&quot;&gt;&lt;&lt;link &quot;&quot; &quot;main_menu_day&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;
+	&lt;&lt;elseif $date.getHours() &gt;= 16 || $date.getHours() &lt;= 21&gt;&gt;&lt;span class=&quot;next&quot;&gt;&lt;&lt;link &quot;&quot; &quot;main_menu_evening&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;
+	&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="214" name="Титры7" tags="" position="4772,4296" size="100,100">
 &lt;&lt;fadeout 2s 6s&gt;&gt;&lt;&lt;fadein 2s 0s&gt;&gt;
 Художник по персонажам&lt;h3&gt;Опиумка&lt;/h3&gt;&lt;&lt;timed 8s&gt;&gt;&lt;&lt;if $date.getHours() &gt;= 22 || $date.getHours() &lt;= 6&gt;&gt;&lt;&lt;goto &quot;main_menu_night&quot;&gt;&gt; 
-	&lt;&lt;elseif $date.getHours() &gt;= 16 || $date.getHours() &lt;=21&gt;&gt;&lt;&lt;goto &quot;main_menu_evening&quot;&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;goto &quot;main_menu_day&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;/fadeout&gt;&gt;
+	&lt;&lt;elseif $date.getHours() gte 7 and $date.getHours() lt 15&gt;&gt;&lt;&lt;goto &quot;main_menu_day&quot;&gt;&gt;
+	&lt;&lt;elseif $date.getHours() &gt;= 16 || $date.getHours() &lt;= 21&gt;&gt;&lt;&lt;goto &quot;main_menu_evening&quot;&gt;&gt;
+	&lt;&lt;/if&gt;&gt;
+	  &lt;&lt;/timed&gt;&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;/fadeout&gt;&gt;
 
 &lt;&lt;audio &quot;credits&quot; loop play&gt;&gt;
 
@@ -3569,10 +3567,9 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.</tw-passagedata><tw
 &lt;&lt;audio &quot;credits&quot; loop play&gt;&gt;
 
 &lt;&lt;if $date.getHours() &gt;= 22 || $date.getHours() &lt;= 6&gt;&gt;&lt;span class=&quot;next&quot;&gt;&lt;&lt;link &quot;&quot; &quot;main_menu_night&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;
-	&lt;&lt;elseif $date.getHours() &gt;= 16 || $date.getHours() &lt;=21&gt;&gt;&lt;span class=&quot;next&quot;&gt;&lt;&lt;link &quot;&quot; &quot;main_menu_evening&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;
-&lt;&lt;else&gt;&gt;
-        &lt;span class=&quot;next&quot;&gt;&lt;&lt;link &quot;&quot; &quot;main_menu_day&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;
-    &lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="216" name="main_menu_night" tags="" position="657,209" size="100,100">&lt;div class=&quot;mouse_move&quot;&gt;
+	&lt;&lt;elseif $date.getHours() gte 7 and $date.getHours() lt 15&gt;&gt;&lt;span class=&quot;next&quot;&gt;&lt;&lt;link &quot;&quot; &quot;main_menu_day&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;
+	&lt;&lt;elseif $date.getHours() &gt;= 16 || $date.getHours() &lt;= 21&gt;&gt;&lt;span class=&quot;next&quot;&gt;&lt;&lt;link &quot;&quot; &quot;main_menu_evening&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;
+	&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="216" name="main_menu_night" tags="" position="657,209" size="100,100">&lt;div class=&quot;mouse_move&quot;&gt;
  &lt;img
         id=&quot;img3&quot;
 		src=
