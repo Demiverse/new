@@ -200,7 +200,7 @@ body.desert {
   /* Remove default styles */
    font-family: 'AllodsWest', arial;
   font-size: 22px;
-  background-image: url("https://raw.githubusercontent.com/Demiverse/new/main/images/Smeyana.png");
+  background-image: url("http://img2.joyreactor.com/pics/post/full/Game-Art-artist-Sergey-Demidov-Allods-Online-7143526.jpeg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -215,7 +215,7 @@ body.desert {
 }
 .desert #story h3 {
     display: block;
-  margin-block-start: 1em;
+  margin-block-start: 0em;
     margin-block-end: 0em;
     font-weight: bold;
 }
@@ -227,11 +227,15 @@ body.desert {
   padding: 5% 0;
 }
 .desert .passage {
-  /* Passage width */
-   width: 80%; 
+  /* Passage width
+   background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 8px 10px rgba(0, 0, 0, 0.5); */
   position: fixed;
-  overflow: auto;
-  left: 10em;
+  padding: 10px;
+   width: 80%; 
+    height: 30%;
+  bottom: 2em;
+  left: 8em;
 	right: 10em;
   /* Horizontal centering */
 
@@ -256,13 +260,14 @@ body.desert {
 @media screen and (orientation:portrait) and (max-width: 960px) {
   .desert .passage { 
 	font-size: 60%; 
+	  border: none;
 	width: 85%; 
-	    position: fixed;
+	    position: absolute;
     overflow: inherit;
-	left: 2em; 
+	left: 1.7em; 
 	right: 10em;
-	    top: 25em;
-    bottom: 0em;
+	    top: 35em;
+    bottom: -15em;
   }
 }
 /* cтиль 3 */ 
@@ -416,16 +421,16 @@ body.menu {
 /* иконка меню */
 .settingsicon {
     background-image: url("https://raw.githubusercontent.com/Demiverse/new/main/images/button/MenuButtonNormal._UITexture_.png");
-    position: absolute;
-   background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  width: 32px;
-  height: 32px;
-  left: 7.5em;
-	right: 63em;
-	bottom: 0em;
-  top: 6.9em;
+   position: absolute;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 32px;
+    height: 32px;
+    left: 7.6em;
+    right: 63em;
+    bottom: 0em;
+    top: 0.9em;
 }
   .settingsicon:hover {
         background-image: url("https://raw.githubusercontent.com/Demiverse/new/main/images/button/MenuButtonOver._UITexture_.png");
@@ -435,9 +440,11 @@ body.menu {
    }
 @media screen and (orientation:portrait) and (max-width: 960px) {
  .settingsicon { 
-    width: 22px; 
-	height: 22px;
-   top: 6.6em;
+    position: fixed;
+    width: 22px;
+    height: 22px;
+    top: 36.1em;
+    left: 9.8em;
   }
 }
 
@@ -653,6 +660,7 @@ text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6
    background-image: url('https://raw.githubusercontent.com/Demiverse/new/main/images/items/Background%20(2).png');
      background-repeat: no-repeat;
   background-position: center center;
+      overflow: hidden;
 }
 #ui-overlay.open {
 	opacity: 0.9;
@@ -683,10 +691,6 @@ opacity: 0;
     line-height: 1.5;
     padding: 1em;
   	font-size: 90%;
-}
-#ui-dialog-body {
- 	overflow: auto;
-	min-width: 200px;
 }
 #ui-dialog.open {
   	top: 5em!important; 
@@ -1194,9 +1198,6 @@ opacity: 0%;
     bottom: -4em;
 }
 }
-#ui-bar {
-  display: none;
-}
 @media screen and (max-width: 960px) and (max-width: 840px) and (max-width: 720px) {
 #ui-dialog-body.settings input[type=range][id|=setting-control-volume] {
  display: none;
@@ -1219,6 +1220,41 @@ opacity: 0%;
 	#ui-dialog-body.saves {
   font-size: 49%;
 }
+}
+#ui-bar {
+ display: none;
+  }
+/* персонажи */
+.hero {  
+      }
+#img_hero2 {
+  position: fixed;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+}
+   #img_hero {
+	 position: fixed;
+    z-index: -2;
+    top: 179px;
+    left: 576px;
+    height: 85%;
+    width: auto;
+    pointer-events: none;
+}
+@media screen and (orientation:portrait) and (max-width: 960px) {
+  #img_hero { 
+ position: fixed;
+    z-index: -2;
+    top: 179px;
+    left: -130px;
+    height: 85%;
+    width: auto;
+    pointer-events: none;
+  }
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript">// Локализация
 l10nStrings.savesTitle="Загрузить";
 l10nStrings.settingsTitle="Настройки";
@@ -1438,27 +1474,34 @@ $(document).on("dblclick", function (event) {
           shift.style.transform = `translateX(${x}px) translateY(${y}px)`;
         });
       }
-</script><tw-tag name="autosave" color="green"></tw-tag>,<tw-tag name="code-passage" color="orange"></tw-tag>,<tw-tag name="desert" color="orange"></tw-tag>,<tw-tag name="frontpage" color="yellow"></tw-tag>,<tw-tag name="menu" color="yellow"></tw-tag>,<tw-tag name="ключ" color="blue"></tw-tag><tw-passagedata pid="1" name="StartPassage" tags="desert" position="232,332" size="100,100">&lt;&lt;run forget(&#39;achievement_01&#39;)&gt;&gt;
-&lt;&lt;run forget(&#39;variable&#39;)&gt;&gt;
+</script><tw-tag name="autosave" color="green"></tw-tag>,<tw-tag name="code-passage" color="orange"></tw-tag>,<tw-tag name="desert" color="orange"></tw-tag>,<tw-tag name="frontpage" color="yellow"></tw-tag>,<tw-tag name="menu" color="yellow"></tw-tag>,<tw-tag name="ключ" color="blue"></tw-tag><tw-passagedata pid="1" name="StartPassage" tags="desert" position="222,382" size="100,100">&lt;&lt;timed 2s t8n&gt;&gt;&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
+Здравствуй, герой Сарнаута. Как понимаешь, я пригласила тебя сюда не просто так. Во время известных событий на Айрине твоя помощь была неоценима. Я не уверена, что без неё удалось бы достичь таких дипломатических успехов и решить столько проблем.\&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;timed 0s t8n&gt;&gt;&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;type 10ms&gt;&gt;\
-Здравствуй, герой Сарнаута. Как понимаешь, я пригласила тебя сюда не просто так. Во время известных событий на Айрине твоя помощь была неоценима. Я не уверена, что без неё удалось бы достичь таких дипломатических успехов и решить столько проблем.
-\&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
+&lt;&lt;timed 5s t8n&gt;&gt;&lt;span class=&quot;next2&quot;&gt;[[|Антуанетта2]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next2&quot;&gt;[[|Антуанетта2]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;div class=&quot;hero&quot;&gt;&lt;&lt;timed 0.3s t8n&gt;&gt;
+&lt;img
+        id=&quot;img_hero&quot;
+		src=
+&quot;https://downloader.disk.yandex.ru/preview/d13f2dbe82e70c8d955cb316001c37eeebfb286a4261e394c23ebd70812f02a1/64128a98/YLl_0Fu4csCERoyCuarUVoq74MZZ84S8U5XecU-8osu6nlgYzi9n1KDSrOm5LF1njGBgYkMgo5UEArY_htEc6g%3D%3D?uid=0&amp;filename=Ан-начало.png&amp;disposition=inline&amp;hash=&amp;limit=0&amp;content_type=image%2Fpng&amp;owner_uid=0&amp;tknv=v2&amp;size=2048x2048&quot;&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1.7s t8n&gt;&gt;&lt;img
+        id=&quot;img_hero2&quot;
+		src=
+&quot;https://imgbb.su/images/2023/03/16/TEN9b4c2fd9c8831b96.png&quot;&gt;
+&lt;&lt;/timed&gt;&gt;&lt;/div&gt;
 
-&lt;&lt;link &quot;&lt;i class=&#39;settingsicon&#39;&gt;&lt;/i&gt;&quot;&gt;&gt;
+&lt;&lt;timed 2s t8n&gt;&gt;&lt;&lt;link &quot;&lt;i class=&#39;settingsicon&#39;&gt;&lt;/i&gt;&quot;&gt;&gt;
 &lt;&lt;dialog &#39;Меню&#39;&gt;&gt;\
         &lt;&lt;link &quot;Загрузить игру&quot;&gt;&gt;&lt;&lt;run UI.saves()&gt;&gt;&lt;&lt;/link&gt;&gt;
         &lt;&lt;link &quot;Настройки&quot;&gt;&gt;&lt;&lt;run UI.settings()&gt;&gt;&lt;&lt;/link&gt;&gt;
         &lt;&lt;link &#39;Достижения&#39;&gt;&gt;&lt;&lt;run Dialog.setup(&quot;Достижения&quot;);Dialog.wiki(Story.get(&quot;Достижения&quot;).processText());Dialog.open();&gt;&gt;&lt;&lt;/link&gt;&gt;
         &lt;&lt;link &quot;Перезапуск&quot;&gt;&gt;&lt;&lt;run UI.restart()&gt;&gt;&lt;&lt;/link&gt;&gt;
-		&lt;&lt;if $date.getHours() &gt;= 22 || $date.getHours() &lt;= 6&gt;&gt;&lt;&lt;link &quot;Вернуться в меню&quot; &quot;main_menu_night&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
-	&lt;&lt;elseif $date.getHours() gte 7 and $date.getHours() lt 15&gt;&gt;&lt;&lt;link &quot;Вернуться в меню&quot; &quot;main_menu_day&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
-	&lt;&lt;elseif $date.getHours() &gt;= 16 || $date.getHours() &lt;= 21&gt;&gt;&lt;&lt;link &quot;Вернуться в меню&quot; &quot;main_menu_evening&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
-    &lt;&lt;/if&gt;&gt;
+		&lt;&lt;if $date.getHours() &gt;= 22 || $date.getHours() &lt;= 6&gt;&gt;&lt;&lt;link &quot;Вернуться в меню&quot; &quot;main_menu_night&quot;&gt;&gt;&lt;&lt;dialogclose&gt;&gt;&lt;&lt;/link&gt;&gt;
+	&lt;&lt;elseif $date.getHours() gte 7 and $date.getHours() lt 15&gt;&gt;&lt;&lt;link &quot;Вернуться в меню&quot; &quot;main_menu_day&quot;&gt;&gt;&lt;&lt;dialogclose&gt;&gt;&lt;&lt;/link&gt;&gt;
+	&lt;&lt;elseif $date.getHours() &gt;= 16 || $date.getHours() &lt;= 21&gt;&gt;&lt;&lt;link &quot;Вернуться в меню&quot; &quot;main_menu_evening&quot;&gt;&gt;&lt;&lt;dialogclose&gt;&gt;&lt;&lt;/link&gt;&gt;
+   &lt;&lt;/if&gt;&gt;
     &lt;&lt;/dialog&gt;&gt;
-&lt;&lt;/link&gt;&gt;
+&lt;&lt;/link&gt;&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;&lt;run forget(&#39;smeyana_01&#39;)&gt;&gt;
 &lt;&lt;run forget(&#39;nayan_01&#39;)&gt;&gt;
@@ -1475,30 +1518,41 @@ $(document).on("dblclick", function (event) {
 &lt;&lt;run forget(&#39;smeyana_item&#39;)&gt;&gt;
 &lt;&lt;run forget(&#39;nayan_item&#39;)&gt;&gt;
 &lt;&lt;run forget(&#39;jasker_item&#39;)&gt;&gt;
+&lt;&lt;run forget(&#39;antoinette_02&#39;)&gt;&gt;
+&lt;&lt;run forget(&#39;antoinette_03&#39;)&gt;&gt;
 
-&lt;&lt;set $areaname to &quot;Игниста. Рахл-Игниста&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="StoryInit" tags="" position="243,81" size="100,100">&lt;&lt;cacheaudio &quot;night_bgm&quot; &quot;https://github.com/Demiverse/new/blob/main/music/fate.mp3?raw=true&quot;&gt;&gt;
+&lt;&lt;run forget(&#39;achievement_01&#39;)&gt;&gt;
+&lt;&lt;run forget(&#39;variable&#39;)&gt;&gt;
+
+&lt;&lt;set $areaname to &quot;Игниста. Рахл-Игниста&quot;&gt;&gt;
+
+&lt;&lt;audio &quot;night_bgm&quot; loop play&gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="StoryInit" tags="" position="243,81" size="100,100">&lt;&lt;cacheaudio &quot;night_bgm&quot; &quot;https://github.com/Demiverse/new/blob/main/music/fate.mp3?raw=true&quot;&gt;&gt;
 &lt;&lt;cacheaudio &quot;credits&quot; &quot;https://github.com/Demiverse/new/blob/main/music/credits.mp3?raw=true&quot;&gt;&gt;
 &lt;&lt;cacheaudio &quot;day_bgm&quot; &quot;sounds/click.mp3&quot;&gt;&gt;
 &lt;&lt;set $achievement_01 to recall(&#39;achievement_01&#39;)&gt;&gt;
 &lt;&lt;set $variable to recall(&#39;variable&#39;)&gt;&gt;
 
 /* Смеяна */
-&lt;&lt;set $smeyana_01 to recall(&#39;smeyana_01&#39;)&gt;&gt;
-&lt;&lt;set $smeyana_02 to recall(&#39;smeyana_02&#39;)&gt;&gt;
-&lt;&lt;set $smeyana_03 to recall(&#39;smeyana_03&#39;)&gt;&gt;
-&lt;&lt;set $smeyana_04 to recall(&#39;smeyana_04&#39;)&gt;&gt;
+&lt;&lt;set $smeyana_01 to recall(&#39;smeyana_01&#39;)&gt;&gt; /* открывается диалог-обсуждение у Антуанетты */
+&lt;&lt;set $smeyana_02 to recall(&#39;smeyana_02&#39;)&gt;&gt; /* плохая концовка */
+&lt;&lt;set $smeyana_03 to recall(&#39;smeyana_03&#39;)&gt;&gt; /* средняя концовка */
+&lt;&lt;set $smeyana_04 to recall(&#39;smeyana_04&#39;)&gt;&gt; /* хорошая концовка */
 
 /* Найан */
-&lt;&lt;set $nayan_01 to recall(&#39;nayan_01&#39;)&gt;&gt;
-&lt;&lt;set $nayan_02 to recall(&#39;nayan_02&#39;)&gt;&gt;
-&lt;&lt;set $nayan_03 to recall(&#39;nayan_03&#39;)&gt;&gt;
-&lt;&lt;set $nayan_04 to recall(&#39;nayan_04&#39;)&gt;&gt;
+&lt;&lt;set $nayan_01 to recall(&#39;nayan_01&#39;)&gt;&gt; /* открывается диалог-обсуждение у Антуанетты */
+&lt;&lt;set $nayan_02 to recall(&#39;nayan_02&#39;)&gt;&gt; /* плохая концовка */
+&lt;&lt;set $nayan_03 to recall(&#39;nayan_03&#39;)&gt;&gt; /* средняя концовка */
+&lt;&lt;set $nayan_04 to recall(&#39;nayan_04&#39;)&gt;&gt; /* хорошая концовка */
 
 /* Яскер */
-&lt;&lt;set $jasker_01 to recall(&#39;jasker_01&#39;)&gt;&gt;
-&lt;&lt;set $jasker_02 to recall(&#39;jasker_02&#39;)&gt;&gt;
-&lt;&lt;set $jasker_03 to recall(&#39;jasker_03&#39;)&gt;&gt;
-&lt;&lt;set $jasker_04 to recall(&#39;jasker_04&#39;)&gt;&gt;
+&lt;&lt;set $jasker_01 to recall(&#39;jasker_01&#39;)&gt;&gt; /* открывается диалог-обсуждение у Антуанетты */
+&lt;&lt;set $jasker_02 to recall(&#39;jasker_02&#39;)&gt;&gt; /* плохая концовка */
+&lt;&lt;set $jasker_03 to recall(&#39;jasker_03&#39;)&gt;&gt; /* средняя концовка */
+&lt;&lt;set $jasker_04 to recall(&#39;jasker_04&#39;)&gt;&gt; /* хорошая концовка */
+
+/* Антуанетта */
+&lt;&lt;set $antoinette_02 to recall(&#39;antoinette_02&#39;)&gt;&gt; /* этап 2 */
+&lt;&lt;set $antoinette_03 to recall(&#39;antoinette_03&#39;)&gt;&gt; /* этап 3 */
 
 /* Антуанетта айтемы */
 &lt;&lt;set $smeyana_item to recall(&#39;smeyana_item&#39;)&gt;&gt;
@@ -1507,11 +1561,7 @@ $(document).on("dblclick", function (event) {
 
 /* время */
 &lt;&lt;set $date to new Date()&gt;&gt;
-The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.</tw-passagedata><tw-passagedata pid="3" name="Антуанетта2" tags="desert autosave" position="92,483" size="100,100">&lt;&lt;notify 3000&gt;&gt;Получено достижение: Первый заход&lt;&lt;/notify&gt;&gt;&lt;&lt;timed 5s&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Сохранение...&lt;&lt;/notify&gt;&gt;&lt;&lt;/timed&gt;&gt;
-
-
-&lt;&lt;audio &quot;night_bgm&quot; loop play&gt;&gt;
-&lt;&lt;timed 0s t8n&gt;&gt;&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;type 10ms&gt;&gt;\
+The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.</tw-passagedata><tw-passagedata pid="3" name="Антуанетта2" tags="desert autosave" position="92,483" size="100,100">&lt;&lt;timed 0s t8n&gt;&gt;&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;type 10ms&gt;&gt;\
 Жаль, что после произошедшего на Эдеме ситуация обернулась против нас всех… Но в этом твоей вины нет. Политика, тактика, стратегия... Это всё очень сложно для неискушённого ума. Даже искушённые не всегда могут просчитать все последствия. И тем более - взять ответственность на себя.
 \&lt;&lt;/type&gt;&gt;
 
@@ -1522,10 +1572,19 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.</tw-passagedata><tw
 &lt;&lt;run memorize (&#39;variable&#39;, true)&gt;&gt;
 &lt;&lt;set $variable to true&gt;&gt;
 
-&lt;&lt;set $areaname to &quot;Игниста. Рахл-Игниста&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="4" name="Allods" tags="logo2" position="427,30" size="100,100">&lt;&lt;audio night_bgm loop play&gt;&gt;
+&lt;&lt;set $areaname to &quot;Игниста. Рахл-Игниста&quot;&gt;&gt;
+
+&lt;&lt;notify 3000&gt;&gt;Получено достижение: Первый заход&lt;&lt;/notify&gt;&gt;&lt;&lt;timed 5s&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Сохранение...&lt;&lt;/notify&gt;&gt;&lt;&lt;/timed&gt;&gt;
+
+&lt;&lt;audio &quot;night_bgm&quot; loop play&gt;&gt;</tw-passagedata><tw-passagedata pid="4" name="Allods" tags="logo2" position="427,30" size="100,100">&lt;&lt;audio night_bgm loop play&gt;&gt;
 &lt;&lt;switch visited()&gt;&gt;&lt;&lt;case 1&gt;&gt;&lt;&lt;fadeout 2s 4s&gt;&gt;&lt;&lt;fadein 2s 0s&gt;&gt;&lt;div class=&quot;logo&quot;&gt;&lt;img src=&quot;https://raw.githubusercontent.com/Demiverse/new/main/images/%253F%253F%253F%253F%253F%253F_%253F%253F%253F%253F%253F%253F%253F.png&quot; alt=&quot;Allods&quot; width=&quot;100%&quot;&gt;&lt;/div&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;/fadeout&gt;&gt;&lt;&lt;timed 7s&gt;&gt;&lt;&lt;goto &quot;Allods&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|Allods]]&lt;/span&gt;
 
-&lt;&lt;case 2&gt;&gt;&lt;&lt;fadeout 2s 4s&gt;&gt;&lt;&lt;fadein 2s 0s&gt;&gt;&lt;div class=&quot;logo&quot;&gt;&lt;img src=&quot;https://alloder.ru/logos/logo_full.png&quot; alt=&quot;Created for Alloder.ru&quot; width=&quot;100%&quot;&gt;&lt;/div&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;/fadeout&gt;&gt;&lt;&lt;timed 7s&gt;&gt;&lt;&lt;goto &quot;Warning&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|Warning]]&lt;/span&gt;&lt;&lt;/switch&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="Warning" tags="logo2" position="612,94" size="100,100">&lt;div class=&quot;elementToFadeInAndOut&quot;&gt;&lt;h3&gt;Игра сохраняется автоматически, но вы также можете сделать это вручную.
+&lt;&lt;case 2&gt;&gt;&lt;&lt;fadeout 2s 4s&gt;&gt;&lt;&lt;fadein 2s 0s&gt;&gt;&lt;div class=&quot;logo&quot;&gt;&lt;img src=&quot;https://alloder.ru/logos/logo_full.png&quot; alt=&quot;Created for Alloder.ru&quot; width=&quot;100%&quot;&gt;&lt;/div&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;/fadeout&gt;&gt;&lt;&lt;timed 7s&gt;&gt;&lt;&lt;goto &quot;Warning&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|Warning]]&lt;/span&gt;&lt;&lt;/switch&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="Warning" tags="logo2" position="612,94" size="100,100">
+
+
+
+
+&lt;div class=&quot;elementToFadeInAndOut&quot;&gt;&lt;h3&gt;Игра сохраняется автоматически, но вы также можете сделать это вручную.
 Сохраните игру на диск перед удалением кэша из истории браузера, если хотите, чтобы данные не были утеряны. 
 Приятной игры!&lt;/h3&gt;
 
@@ -1573,27 +1632,23 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.</tw-passagedata><tw
 &lt;span class=&quot;subtitle-item&quot;&gt;[[Титры|Титры]]&lt;/span&gt;&lt;/div&gt;
 
 &lt;&lt;audio &quot;night_bgm&quot; loop play&gt;&gt;
-&lt;&lt;audio &quot;credits&quot; stop&gt;&gt;</tw-passagedata><tw-passagedata pid="7" name="Достижения" tags="" position="105,83" size="100,100">&lt;&lt;if $achievement_01 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Первый заход&lt;/h3&gt;Начало большого приключения!&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Первый заход&lt;/h3&gt;Начало большого приключения!&lt;/span&gt;&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="8" name="Начало" tags="logo2" position="781,15" size="100,100">&lt;&lt;fadein 2s 0s&gt;&gt;&lt;h3&gt;В этой игре есть различные звукосодержащие элементы. Рекомендуется отрегулировать громкость на вашем устройстве. Вы также можете сделать это в меню настроек, если запустили игру с компьютера.&lt;/h3&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;Нажмите на экран...&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
+&lt;&lt;audio &quot;credits&quot; stop&gt;&gt;</tw-passagedata><tw-passagedata pid="7" name="Достижения" tags="" position="105,83" size="100,100">&lt;&lt;if $achievement_01 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Первый заход&lt;/h3&gt;Начало большого приключения!&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Первый заход&lt;/h3&gt;Начало большого приключения!&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $achievement_01 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Первый заход&lt;/h3&gt;Начало большого приключения!&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Первый заход&lt;/h3&gt;Начало большого приключения!&lt;/span&gt;&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="8" name="Начало" tags="logo2" position="781,15" size="100,100">&lt;&lt;fadein 2s 0s&gt;&gt;&lt;h3&gt;В этой игре есть различные звукосодержащие элементы. Рекомендуется отрегулировать громкость на вашем устройстве. Вы также можете сделать это в меню настроек, если запустили игру с компьютера.&lt;/h3&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;Нажмите на экран...&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;span class=&quot;next&quot;&gt;[[|Allods]]&lt;/span&gt;</tw-passagedata><tw-passagedata pid="9" name="Антуанетта3" tags="desert" position="242,598" size="100,100">
-
-
-&lt;&lt;audio &quot;night_bgm&quot; loop play&gt;&gt;
-&lt;&lt;timed 0s t8n&gt;&gt;&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;type 10ms&gt;&gt;\
+&lt;span class=&quot;next&quot;&gt;[[|Allods]]&lt;/span&gt;</tw-passagedata><tw-passagedata pid="9" name="Антуанетта3" tags="desert" position="242,598" size="100,100">&lt;&lt;timed 0s t8n&gt;&gt;&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;type 10ms&gt;&gt;\
 Я вижу, что тебя просто обвинили в наступивших бедах. И скорее всего, это было сделано на эмоциях. Поэтому у тебя есть шанс исправить ситуацию. Я ценю твою помощь и решила помочь в ответ. Да, в этом есть и моя личная заинтересованность, но всё же...
 \&lt;&lt;/type&gt;&gt;
 
 &lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|Антуанетта4]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;set $areaname to &quot;Игниста. Рахл-Игниста&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="10" name="Антуанетта4" tags="desert" position="242,748" size="100,100">
+&lt;&lt;set $areaname to &quot;Игниста. Рахл-Игниста&quot;&gt;&gt;
 
-
-&lt;&lt;audio &quot;night_bgm&quot; loop play&gt;&gt;
-&lt;&lt;timed 0s t8n&gt;&gt;&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;type 10ms&gt;&gt;\
+&lt;&lt;audio &quot;night_bgm&quot; loop play&gt;&gt;</tw-passagedata><tw-passagedata pid="10" name="Антуанетта4" tags="desert" position="242,748" size="100,100">&lt;&lt;timed 0s t8n&gt;&gt;&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;type 10ms&gt;&gt;\
 Здесь, на Игнисте, будет проходить неформальный съезд влиятельных лиц Сарнаута. И накануне Дня всех влюблённых магия этого места усиливается многократно. Поэтому я решила собрать всех именно здесь и сейчас. Понимаешь, к чему я клоню?
 \&lt;&lt;/type&gt;&gt;&lt;&lt;timed 3s t8n&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Задача ясна! Бегу завоёвывать сердца, печени и другие органы!]]&lt;/div&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Давай-ка поподробнее…]]&lt;/div&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Вот последняя фраза звучит очень подозрительно...]]&lt;/div&gt;&lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;set $areaname to &quot;Игниста. Рахл-Игниста&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="11" name="Задача ясна! Бегу завоёвывать сердца, печени и другие органы!" tags="desert autosave" position="64,919" size="100,100">
+&lt;&lt;set $areaname to &quot;Игниста. Рахл-Игниста&quot;&gt;&gt;
+
+&lt;&lt;audio &quot;night_bgm&quot; loop play&gt;&gt;</tw-passagedata><tw-passagedata pid="11" name="Задача ясна! Бегу завоёвывать сердца, печени и другие органы!" tags="desert autosave" position="64,919" size="100,100">
 
 
 &lt;&lt;audio &quot;night_bgm&quot; loop play&gt;&gt;
@@ -1617,7 +1672,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.</tw-passagedata><tw
 Ха-ха! Не бойся, герой Сарнаута. Я обо всём говорю тебе открыто. И как уже сказала - моя личная заинтересованность в твоём успехе тоже есть. Поэтому в качестве небольшого бонуса я бы могла научить тебя кое-чему, что знаю достаточно хорошо.
 \&lt;&lt;/type&gt;&gt;&lt;&lt;timed 3s t8n&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Задача ясна! Бегу завоёвывать сердца, печень и другие органы!|Задача ясна! Бегу завоёвывать сердца, печени и другие органы!]]&lt;/div&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Давай-ка поподробнее о наших жертвах дипломатии.|Давай-ка поподробнее…]]&lt;/div&gt;&lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;set $areaname to &quot;Игниста. Рахл-Игниста&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="14" name="Яскер" tags="desert" position="5,1043" size="100,100">
+&lt;&lt;set $areaname to &quot;Игниста. Рахл-Игниста&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="14" name="Яскер" tags="desert" position="9,1038" size="100,100">
 
 
 &lt;&lt;audio &quot;night_bgm&quot; loop play&gt;&gt;
@@ -1627,7 +1682,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.</tw-passagedata><tw
 
 &lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|АнтуанеттаЯскер2]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;set $areaname to &quot;Игниста. Рахл-Игниста&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="15" name="Найан" tags="desert" position="125,1046" size="100,100">
+&lt;&lt;set $areaname to &quot;Игниста. Рахл-Игниста&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="15" name="Найан" tags="desert" position="142,1044" size="100,100">
 
 
 &lt;&lt;audio &quot;night_bgm&quot; loop play&gt;&gt;
@@ -1637,13 +1692,13 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.</tw-passagedata><tw
 
 &lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|АнтуанеттаНайан2]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;set $areaname to &quot;Игниста. Рахл-Игниста&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="16" name="Смеяна" tags="desert autosave" position="251,1053" size="100,100">
+&lt;&lt;set $areaname to &quot;Игниста. Рахл-Игниста&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="16" name="Смеяна" tags="desert autosave" position="270,1047" size="100,100">
 
 
 &lt;&lt;audio &quot;night_bgm&quot; loop play&gt;&gt;
 &lt;&lt;timed 0s t8n&gt;&gt;&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;type 10ms&gt;&gt;\
 Смеяна прошла через многое, хотя так сразу и не скажешь... И она весьма трепетно относится к ученицам. Я слышала, что у нашей волшебницы есть какие-то планы на этот счёт. Попробуй поговорить с ней об этом.
-\&lt;&lt;/type&gt;&gt;&lt;&lt;timed 3s t8n&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Отправиться к Смеяне|ЛинияСмеяны]]&lt;/div&gt;&lt;&lt;/timed&gt;&gt;
+\&lt;&lt;/type&gt;&gt;&lt;&lt;timed 3s t8n&gt;&gt;&lt;&lt;if $smeyana_03 is true&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;&lt;&lt;link &quot; [[Отправиться к Смеяне и продолжить разговор|СмеянаПункт7]]&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/div&gt;&lt;&lt;else&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Отправиться к Смеяне|ЛинияСмеяны]]&lt;/div&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;&lt;run memorize (&#39;smeyana_item&#39;, true)&gt;&gt;
 &lt;&lt;set $smeyana_item to true&gt;&gt;
@@ -1664,7 +1719,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.</tw-passagedata><tw
 &lt;&lt;audio &quot;night_bgm&quot; loop play&gt;&gt;
 &lt;&lt;timed 0s t8n&gt;&gt;&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;type 10ms&gt;&gt;\
 Здесь заживляющая мазь. И она же имеет интересный побочный эффект при соблюдении кое-каких условий... И в данном случае эти условия будут присутствовать. Это даст тебе возможность разговорить Яскера. Я думаю, он не обидится...
-\&lt;&lt;/type&gt;&gt;&lt;&lt;timed 3s t8n&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Отправиться к Яскеру|ЛинияЯскера]]&lt;/div&gt;&lt;&lt;/timed&gt;&gt;
+\&lt;&lt;/type&gt;&gt;&lt;&lt;timed 3s t8n&gt;&gt;&lt;&lt;if $jasker_03 is true&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;&lt;&lt;link &quot; [[Отправиться к Яскеру и продолжить разговор|ЯскерПункт7]]&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/div&gt;&lt;&lt;else&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Отправиться к Яскеру|ЛинияЯскера]]&lt;/div&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;&lt;run memorize (&#39;jasker_item&#39;, true)&gt;&gt;
 &lt;&lt;set $jasker_item to true&gt;&gt;
@@ -1698,7 +1753,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.</tw-passagedata><tw
 &lt;&lt;audio &quot;night_bgm&quot; loop play&gt;&gt;
 &lt;&lt;timed 0s t8n&gt;&gt;&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;type 10ms&gt;&gt;\
 Определённый жар... Думаю, для тебя будет нелишним взять у меня бутылочку и попробовать разговорить нашего ворчливого историка.
-\&lt;&lt;/type&gt;&gt;&lt;&lt;timed 3s t8n&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Отправиться к Найану|ЛинияНайана]]&lt;/div&gt;&lt;&lt;/timed&gt;&gt;
+\&lt;&lt;/type&gt;&gt;&lt;&lt;timed 3s t8n&gt;&gt;&lt;&lt;if $nayan_03 is true&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;&lt;&lt;link &quot; [[Отправиться к Найану и продолжить разговор|НайанПункт5]]&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/div&gt;&lt;&lt;else&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Отправиться к Найану|ЛинияНайана]]&lt;/div&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;&lt;run memorize (&#39;nayan_item&#39;, true)&gt;&gt;
 &lt;&lt;set $nayan_item to true&gt;&gt;
@@ -1746,7 +1801,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.</tw-passagedata><tw
 &lt;&lt;audio &quot;night_bgm&quot; loop play&gt;&gt;
 &lt;&lt;timed 0s t8n&gt;&gt;&lt;h3&gt;Смеяна&lt;/h3&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;type 10ms&gt;&gt;\
 Да ты издеваешься?! Всё же, я была лучшего мнения о твоих мозгах. ПШЁЛ ВОН, ХОЛОП!!!
-\&lt;&lt;/type&gt;&gt;&lt;&lt;timed 3s t8n&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[*спешно ретироваться*|ЛинияПродолжениеАнтуанетта]]&lt;/div&gt;&lt;&lt;/timed&gt;&gt;
+\&lt;&lt;/type&gt;&gt;&lt;&lt;timed 3s t8n&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[*спешно ретироваться*|ПредАнтуанетта]]&lt;/div&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;&lt;run memorize (&#39;smeyana_01&#39;, true)&gt;&gt;
 &lt;&lt;set $smeyana_01 to true&gt;&gt;
@@ -1901,7 +1956,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.</tw-passagedata><tw
 Рада, что ты меня понимаешь. Значит, обсудим это подробнее чуть позже. А пока поддай пару. Вон, шайка в углу стоит.
 \&lt;&lt;/type&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ЛинияПродолжениеАнтуанетта]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ПредАнтуанетта]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;&lt;run memorize (&#39;smeyana_01&#39;, true)&gt;&gt;
 &lt;&lt;set $smeyana_01 to true&gt;&gt;
@@ -1951,7 +2006,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.</tw-passagedata><tw
 &lt;&lt;audio &quot;night_bgm&quot; loop play&gt;&gt;
 &lt;&lt;timed 0s t8n&gt;&gt;&lt;h3&gt;Смеяна&lt;/h3&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;type 10ms&gt;&gt;\
 ЕЩЁ!
-\&lt;&lt;/type&gt;&gt;&lt;&lt;timed 3s t8n&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Слушаюсь, Владычица!|ЛинияПродолжениеАнтуанетта]]&lt;/div&gt;&lt;&lt;/timed&gt;&gt;
+\&lt;&lt;/type&gt;&gt;&lt;&lt;timed 3s t8n&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Слушаюсь, Владычица!|ПредАнтуанетта]]&lt;/div&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;&lt;run memorize (&#39;smeyana_01&#39;, true)&gt;&gt;
 &lt;&lt;set $smeyana_01 to true&gt;&gt;
@@ -1967,7 +2022,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.</tw-passagedata><tw
 Приветствую! Чем обязан столь неожиданному визиту?
 \&lt;&lt;/type&gt;&gt;&lt;&lt;timed 3s t8n&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Да вот... Захотелось прилететь на огонёк... У вас крылья как у мотылька, кстати.]]&lt;/div&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Захотелось задать пару вопросов как историку.]]&lt;/div&gt;&lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;set $areaname to &quot;Игниста. Читальный зал&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="49" name="ЛинияЯскера" tags="desert" position="2222,558" size="100,100">
+&lt;&lt;set $areaname to &quot;Игниста. Читальный зал&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="49" name="ЛинияЯскера" tags="desert" position="2220,567" size="100,100">
 
 
 &lt;&lt;audio &quot;night_bgm&quot; loop play&gt;&gt;
@@ -2067,7 +2122,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.</tw-passagedata><tw
 Ха-ха! Я понял! Ох уж эти шуточки Антуанетты... Передай ей, что это и вправду было неожиданно.
 \&lt;&lt;/type&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ЛинияПродолжениеАнтуанетта]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ПредАнтуанетта]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;&lt;run memorize (&#39;nayan_01&#39;, true)&gt;&gt;
 &lt;&lt;set $nayan_01 to true&gt;&gt;
@@ -2128,7 +2183,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.</tw-passagedata><tw
 Да, пожалуй. Ведь информация от первоисточника ценнее, да и для летописи пригодится. Хотя будет забавно, если потом кто-то воспользуется ей для написания очередного любовного романа... Но ожидаемо.
 \&lt;&lt;/type&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ЛинияПродолжениеАнтуанетта]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ПредАнтуанетта]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;&lt;run memorize (&#39;nayan_01&#39;, true)&gt;&gt;
 &lt;&lt;set $nayan_01 to true&gt;&gt;
@@ -2438,13 +2493,13 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.</tw-passagedata><tw
 
 &lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|НайанПункт16]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;set $areaname to &quot;Игниста. Читальный зал&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="98" name="НайанПункт16" tags="desert ключ autosave" position="1507,6155" size="100,100">
+&lt;&lt;set $areaname to &quot;Игниста. Читальный зал&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="98" name="НайанПункт16" tags="desert ключ autosave" position="1526,6166" size="100,100">
 
 
 &lt;&lt;audio &quot;night_bgm&quot; loop play&gt;&gt;
 &lt;&lt;timed 0s t8n&gt;&gt;&lt;h3&gt;Найан&lt;/h3&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;type 10ms&gt;&gt;\
 Это уже былое... Былое...
-\&lt;&lt;/type&gt;&gt;&lt;&lt;timed 3s t8n&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[*обняться вместе и плакать*|ЛинияПродолжениеАнтуанетта]]&lt;/div&gt;&lt;&lt;/timed&gt;&gt;
+\&lt;&lt;/type&gt;&gt;&lt;&lt;timed 3s t8n&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[*обняться вместе и плакать*|ПредАнтуанетта]]&lt;/div&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Да чтобы такой ик! ...сторик, с таким опытом... И сдался... Не верю! Вы же и-ик! ...стольких ситуаций выходили! Гхыр... Гыш... Геш-таль-ты закрывать надо! Ик!|НайанПункт16.2]]&lt;/div&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;&lt;run memorize (&#39;nayan_01&#39;, true)&gt;&gt;
 &lt;&lt;set $nayan_01 to true&gt;&gt;
@@ -2488,7 +2543,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.</tw-passagedata><tw
 Кхм... Это лич... государственная тайна! Тебе вообще знать об этом необязательно. А после произошедшего на Эдеме... Иди-ка ты отсюда ВОН!!!
 \&lt;&lt;/type&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ЛинияПродолжениеАнтуанетта]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ПредАнтуанетта]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;&lt;run memorize (&#39;jasker_01&#39;, true)&gt;&gt;
 &lt;&lt;set $jasker_01 to true&gt;&gt;
@@ -2625,7 +2680,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.</tw-passagedata><tw
 Тьфу! С таким подходом можешь брать уроки у баньши - у них визжать получается лучше. Или тебе хотелось оглушить меня своим воплем? Герой Сарнаута... Ты бы на меня ещё рейд собрал! Похоже, разочаровывать окружающих - лучшее, что тебе удаётся.
 \&lt;&lt;/type&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ЛинияПродолжениеАнтуанетта]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ПредАнтуанетта]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;&lt;run memorize (&#39;jasker_01&#39;, true)&gt;&gt;
 &lt;&lt;set $jasker_01 to true&gt;&gt;
@@ -2640,7 +2695,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.</tw-passagedata><tw
 Кхм... Предлагаю сделать перерыв, чтобы переодеться и сделать небольшую перевязку.
 \&lt;&lt;/type&gt;&gt;&lt;&lt;timed 3s t8n&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Давайте я помогу!]]&lt;/div&gt;&lt;&lt;if $jasker_item is true&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;&lt;&lt;link &quot; [[Думаю, здесь пригодится заживляющая мазь. Смажу ею порезы и будете как новенький!]]&quot;&gt;&gt;&lt;/span&gt;&lt;&lt;/link&gt;&gt;&lt;/div&gt;&lt;&lt;else&gt;&gt;&lt;div id=&quot;elem2&quot;&gt;&lt;span class=&quot;notdialog&quot;&gt;Думаю, здесь пригодится заживляющая мазь. Смажу ею порезы и будете как новенький!&lt;/span&gt;&lt;/div&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;set $areaname to &quot;Игниста. Тренажёрный зал&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="118" name="Давайте я помогу!" tags="desert ключ autosave" position="2037,2911" size="100,100">
+&lt;&lt;set $areaname to &quot;Игниста. Тренажёрный зал&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="118" name="Давайте я помогу!" tags="desert ключ autosave" position="2012,2920" size="100,100">
 
 
 &lt;&lt;audio &quot;night_bgm&quot; loop play&gt;&gt;
@@ -2648,8 +2703,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.</tw-passagedata><tw
 Не стоит. Для Великого Мага это пустяки. Благодарю за компанию! Было приятно немного размяться. Я думаю, что мы сможем продолжить наш разговор чуть позже.
 \&lt;&lt;/type&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ЯскерПункт8]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ЛинияПродолжениеАнтуанетта]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ПредАнтуанетта]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;&lt;run memorize (&#39;jasker_01&#39;, true)&gt;&gt;
 &lt;&lt;set $jasker_01 to true&gt;&gt;
@@ -2673,7 +2727,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.</tw-passagedata><tw
 &lt;&lt;audio &quot;night_bgm&quot; loop play&gt;&gt;
 &lt;&lt;timed 0s t8n&gt;&gt;&lt;h3&gt;Яскер&lt;/h3&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;type 10ms&gt;&gt;\
 А вот спортивную форму жаль. Самый первый комплект от Абибаса... Хороший портной, кстати. Его мастерская весь Незебград обшивает. Да и орки нахваливают не меньше, чем продавцов семечек. Ну-ка...
-\&lt;&lt;/type&gt;&gt;&lt;&lt;timed 3s t8n&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Ого! Так вот как закалялась имперская сталь!]]&lt;/div&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span [[Знакомый комплект... Потыкать палочкой - 300 золотых! Ещё в &quot;Розе и Шиповнике&quot; так шутили...]]&lt;/div&gt;&lt;&lt;/timed&gt;&gt;
+\&lt;&lt;/type&gt;&gt;&lt;&lt;timed 3s t8n&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Ого! Так вот как закалялась имперская сталь!]]&lt;/div&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Знакомый комплект... Потыкать палочкой - 300 золотых! Ещё в &quot;Розе и Шиповнике&quot; так шутили...]]&lt;/div&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;&lt;set $areaname to &quot;Игниста. Тренажёрный зал&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="121" name="Ого! Так вот как закалялась имперская сталь!" tags="desert" position="2062,3264" size="100,100">
 
@@ -2895,13 +2949,13 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.</tw-passagedata><tw
 
 &lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ЯскерПункт14.3]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;set $areaname to &quot;Игниста. Тренажёрный зал&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="144" name="ЯскерПункт14.3" tags="desert ключ autosave" position="2156,6071" size="100,100">
+&lt;&lt;set $areaname to &quot;Игниста. Тренажёрный зал&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="144" name="ЯскерПункт14.3" tags="desert" position="2156,6071" size="100,100">
 
 
 &lt;&lt;audio &quot;night_bgm&quot; loop play&gt;&gt;
 &lt;&lt;timed 0s t8n&gt;&gt;&lt;h3&gt;Яскер&lt;/h3&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;type 10ms&gt;&gt;\
 Но, как ты понимаешь, все мы имеем свои слабости и недостатки... Сейчас Империя сотрудничает с Лигой, и сам факт переговоров уже не выглядел бы чем-то предосудительным. Однако некоторые детали даже сейчас стоило бы опустить. Надеюсь, ты понимаешь это. 
-\&lt;&lt;/type&gt;&gt;&lt;&lt;timed 3s t8n&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Разумеется. Но я и так знаю много тайн... И, как вы понимаете, продолжаю держать их в секрете.|ЛинияПродолжениеАнтуанетта]]&lt;/div&gt;&lt;&lt;/timed&gt;&gt;
+\&lt;&lt;/type&gt;&gt;&lt;&lt;timed 3s t8n&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Разумеется. Но я и так знаю много тайн... И, как вы понимаете, продолжаю держать их в секрете.|ЯскерПункт15]]&lt;/div&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;&lt;run memorize (&#39;jasker_01&#39;, true)&gt;&gt;
 &lt;&lt;set $jasker_01 to true&gt;&gt;
@@ -2917,15 +2971,15 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.</tw-passagedata><tw
 Вся во внимании...
 \&lt;&lt;/type&gt;&gt;&lt;&lt;timed 3s t8n&gt;&gt;&lt;&lt;if $jasker_04 is true&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;&lt;&lt;link &quot; [[Он доволен! Не припомню, чтобы Яскер когда-нибудь был таким весёлым...]]&quot;&gt;&gt;&lt;/span&gt;&lt;&lt;/link&gt;&gt;&lt;/div&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;notdialog&quot;&gt;&lt;div id=&quot;elem2&quot;&gt;Он доволен! Не припомню, чтобы Яскер когда-нибудь был таким весёлым...&lt;/div&gt;&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $jasker_03 is true&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;&lt;&lt;link &quot; [[Ну, надежды есть. Хотя бы как-то поговорить удалось...]]&quot;&gt;&gt;&lt;/span&gt;&lt;&lt;/link&gt;&gt;&lt;/div&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;notdialog&quot;&gt;&lt;div id=&quot;elem2&quot;&gt;Ну, надежды есть. Хотя бы как-то поговорить удалось...&lt;/div&gt;&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $jasker_02 is true&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;&lt;&lt;link &quot; [[Как-то не очень пошёл у нас с ним диалог...]]&quot;&gt;&gt;&lt;/span&gt;&lt;&lt;/link&gt;&gt;&lt;/div&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;notdialog&quot;&gt;&lt;div id=&quot;elem2&quot;&gt;Как-то не очень пошёл у нас с ним диалог...&lt;/div&gt;&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;set $areaname to &quot;Игниста. Рахл-Игниста&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="146" name="О Найане" tags="desert" position="3019,705" size="100,100">
+&lt;&lt;set $areaname to &quot;Игниста. Рахл-Игниста&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="146" name="О Найане" tags="desert" position="3019,728" size="100,100">
 
 
 &lt;&lt;audio &quot;night_bgm&quot; loop play&gt;&gt;
 &lt;&lt;timed 0s t8n&gt;&gt;&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;type 10ms&gt;&gt;\
 Вся во внимании...
-\&lt;&lt;/type&gt;&gt;&lt;&lt;timed 3s t8n&gt;&gt;&lt;&lt;if $smeyana_04 is true&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;&lt;&lt;link &quot; [[И вкусно, и грустно... Но, кажется, мы вместе достигли катарсиса.]]&quot;&gt;&gt;&lt;/span&gt;&lt;&lt;/link&gt;&gt;&lt;/div&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;notdialog&quot;&gt;&lt;div id=&quot;elem2&quot;&gt;И вкусно, и грустно... Но, кажется, мы вместе достигли катарсиса.&lt;/div&gt;&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $smeyana_03 is true&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;&lt;&lt;link &quot; [[Поговорили мы неплохо, но не скажу, что прям вот по душам...]]&quot;&gt;&gt;&lt;/span&gt;&lt;&lt;/link&gt;&gt;&lt;/div&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;notdialog&quot;&gt;&lt;div id=&quot;elem2&quot;&gt;Поговорили мы неплохо, но не скажу, что прям вот по душам...&lt;/div&gt;&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $smeyana_02 is true&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;&lt;&lt;link &quot; [[Он как-то быстро раскусил вашу хитрость. Да и у меня как-то не особо получилось заинтересовать Найана...]]&quot;&gt;&gt;&lt;/span&gt;&lt;&lt;/link&gt;&gt;&lt;/div&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;notdialog&quot;&gt;&lt;div id=&quot;elem2&quot;&gt;Он как-то быстро раскусил вашу хитрость. Да и у меня как-то не особо получилось заинтересовать Найана...&lt;/div&gt;&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/timed&gt;&gt;
+\&lt;&lt;/type&gt;&gt;&lt;&lt;timed 3s t8n&gt;&gt;&lt;&lt;if $nayan_04 is true&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;&lt;&lt;link &quot; [[И вкусно, и грустно... Но, кажется, мы вместе достигли катарсиса.]]&quot;&gt;&gt;&lt;/span&gt;&lt;&lt;/link&gt;&gt;&lt;/div&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;notdialog&quot;&gt;&lt;div id=&quot;elem2&quot;&gt;И вкусно, и грустно... Но, кажется, мы вместе достигли катарсиса.&lt;/div&gt;&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $nayan_03 is true&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;&lt;&lt;link &quot; [[Поговорили мы неплохо, но не скажу, что прям вот по душам...]]&quot;&gt;&gt;&lt;/span&gt;&lt;&lt;/link&gt;&gt;&lt;/div&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;notdialog&quot;&gt;&lt;div id=&quot;elem2&quot;&gt;Поговорили мы неплохо, но не скажу, что прям вот по душам...&lt;/div&gt;&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $nayan_02 is true&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;&lt;&lt;link &quot; [[Он как-то быстро раскусил вашу хитрость. Да и у меня как-то не особо получилось заинтересовать Найана...]]&quot;&gt;&gt;&lt;/span&gt;&lt;&lt;/link&gt;&gt;&lt;/div&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;notdialog&quot;&gt;&lt;div id=&quot;elem2&quot;&gt;Он как-то быстро раскусил вашу хитрость. Да и у меня как-то не особо получилось заинтересовать Найана...&lt;/div&gt;&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;set $areaname to &quot;Игниста. Рахл-Игниста&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="147" name="О Смеяне" tags="desert" position="3213,639" size="100,100">
+&lt;&lt;set $areaname to &quot;Игниста. Рахл-Игниста&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="147" name="О Смеяне" tags="desert" position="3213,642" size="100,100">
 
 
 &lt;&lt;audio &quot;night_bgm&quot; loop play&gt;&gt;
@@ -2933,57 +2987,53 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.</tw-passagedata><tw
 Вся во внимании...
 \&lt;&lt;/type&gt;&gt;&lt;&lt;timed 3s t8n&gt;&gt;&lt;&lt;if $smeyana_04 is true&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;&lt;&lt;link &quot; [[Владычица распарена и довольна!]]&quot;&gt;&gt;&lt;/span&gt;&lt;&lt;/link&gt;&gt;&lt;/div&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;notdialog&quot;&gt;&lt;div id=&quot;elem2&quot;&gt;Владычица распарена и довольна!&lt;/div&gt;&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $smeyana_03 is true&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;&lt;&lt;link &quot; [[Думаю, нам удалось наладить контакт. Не скажу, что разговор завершён, но она заинтересована в его продолжении.]]&quot;&gt;&gt;&lt;/span&gt;&lt;&lt;/link&gt;&gt;&lt;/div&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;notdialog&quot;&gt;&lt;div id=&quot;elem2&quot;&gt;Думаю, нам удалось наладить контакт. Не скажу, что разговор завершён, но она заинтересована в его продолжении.&lt;/div&gt;&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $smeyana_02 is true&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;&lt;&lt;link &quot; [[Не задался разговор...]]&quot;&gt;&gt;&lt;/span&gt;&lt;&lt;/link&gt;&gt;&lt;/div&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;notdialog&quot;&gt;&lt;div id=&quot;elem2&quot;&gt;Не задался разговор...&lt;/div&gt;&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;set $areaname to &quot;Игниста. Рахл-Игниста&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="148" name="Он доволен! Не припомню, чтобы Яскер когда-нибудь был таким весёлым..." tags="desert" position="2713,732" size="100,100">
+&lt;&lt;set $areaname to &quot;Игниста. Рахл-Игниста&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="148" name="Он доволен! Не припомню, чтобы Яскер когда-нибудь был таким весёлым..." tags="desert" position="2731,758" size="100,100">
 
 
 &lt;&lt;audio &quot;night_bgm&quot; loop play&gt;&gt;
 &lt;&lt;timed 0s t8n&gt;&gt;&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;type 10ms&gt;&gt;\
 Рада это слышать. Видимо, мазь поспособствовала исцелению и некоторых старых травм. Тем более, что её побочное действие так же приводит к расслаблению мышц тела. Но Яскеру будет полезно отдохнуть. А меня твои успехи... вдохновляют.
-\&lt;&lt;/type&gt;&gt;
+\&lt;&lt;/type&gt;&gt;&lt;&lt;timed 3s t8n&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Поговорить ещё|ЛинияПродолжениеАнтуанетта]]&lt;/div&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Вернуться к Яскеру|ЯскерПункт15]]&lt;/div&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Уехать с Игнисты|КонецКонца]]&lt;/div&gt;&lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
-
-&lt;&lt;set $areaname to &quot;Игниста. Рахл-Игниста&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="149" name="Ну, надежды есть. Хотя бы как-то поговорить удалось..." tags="desert" position="2566,840" size="100,100">
+&lt;&lt;set $areaname to &quot;Игниста. Рахл-Игниста&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="149" name="Ну, надежды есть. Хотя бы как-то поговорить удалось..." tags="desert" position="2543,819" size="100,100">
 
 
 &lt;&lt;audio &quot;night_bgm&quot; loop play&gt;&gt;
 &lt;&lt;timed 0s t8n&gt;&gt;&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;type 10ms&gt;&gt;\
 Тоже неплохо. Возможно, ещё будет случай, чтобы улучшить результат...
-\&lt;&lt;/type&gt;&gt;&lt;&lt;timed 3s t8n&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Поговорить ещё|ЛинияПродолжениеАнтуанетта]]&lt;/div&gt;&lt;&lt;/timed&gt;&gt;
+\&lt;&lt;/type&gt;&gt;&lt;&lt;timed 3s t8n&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; &lt;&lt;if $antoinette_02 is true&gt;&gt;[[Продолжить урок|ТокеныАнтуанетта7.2]]&lt;&lt;elseif $antoinette_03 is true&gt;&gt;[[Продолжить урок|ТокеныАнтуанетта13.2]]&lt;&lt;else&gt;&gt;[[Урок от Антуанетты|ТокеныАнтуанетта]]&lt;&lt;/if&gt;&gt;&lt;/div&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;timed 3s t8n&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Поговорить ещё|ЛинияПродолжениеАнтуанетта]]&lt;/div&gt;&lt;&lt;if $jasker_item is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Разузнать о Яскере|Яскер]]&lt;/div&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;set $areaname to &quot;Игниста. Рахл-Игниста&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="150" name="Как-то не очень пошёл у нас с ним диалог..." tags="desert" position="2576,975" size="100,100">
+&lt;&lt;set $areaname to &quot;Игниста. Рахл-Игниста&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="150" name="Как-то не очень пошёл у нас с ним диалог..." tags="desert" position="2618,948" size="100,100">
 
 
 &lt;&lt;audio &quot;night_bgm&quot; loop play&gt;&gt;
 &lt;&lt;timed 0s t8n&gt;&gt;&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;type 10ms&gt;&gt;\
 Жаль... Надеюсь, в следующий раз он будет в более благодушном настроении.
-\&lt;&lt;/type&gt;&gt;&lt;&lt;timed 3s t8n&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Поговорить ещё|ЛинияПродолжениеАнтуанетта]]&lt;/div&gt;&lt;&lt;/timed&gt;&gt;
+\&lt;&lt;/type&gt;&gt;&lt;&lt;timed 3s t8n&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; &lt;&lt;if $antoinette_02 is true&gt;&gt;[[Продолжить урок|ТокеныАнтуанетта7.2]]&lt;&lt;elseif $antoinette_03 is true&gt;&gt;[[Продолжить урок|ТокеныАнтуанетта13.2]]&lt;&lt;else&gt;&gt;[[Урок от Антуанетты|ТокеныАнтуанетта]]&lt;&lt;/if&gt;&gt;&lt;/div&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;timed 3s t8n&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Поговорить ещё|ЛинияПродолжениеАнтуанетта]]&lt;/div&gt;&lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;set $areaname to &quot;Игниста. Рахл-Игниста&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="151" name="И вкусно, и грустно... Но, кажется, мы вместе достигли катарсиса." tags="desert" position="3002,950" size="100,100">
+&lt;&lt;set $areaname to &quot;Игниста. Рахл-Игниста&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="151" name="И вкусно, и грустно... Но, кажется, мы вместе достигли катарсиса." tags="desert" position="3004,963" size="100,100">
 
 
 &lt;&lt;audio &quot;night_bgm&quot; loop play&gt;&gt;
 &lt;&lt;timed 0s t8n&gt;&gt;&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;type 10ms&gt;&gt;\
 О, рада, что вино пришлось по вкусу и тебе. Надеюсь, ему стало хотя бы немного легче на душе от того, что кто-то его понимает и готов поддержать. Я рада, что герою Сарнаута не чужды столь трепетные чувства...
-\&lt;&lt;/type&gt;&gt;
+\&lt;&lt;/type&gt;&gt;&lt;&lt;timed 3s t8n&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Поговорить ещё|ЛинияПродолжениеАнтуанетта]]&lt;/div&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Уехать с Игнисты|КонецКонца]]&lt;/div&gt;&lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
-
-&lt;&lt;set $areaname to &quot;Игниста. Рахл-Игниста&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="152" name="Поговорили мы неплохо, но не скажу, что прям вот по душам..." tags="desert" position="2824,950" size="100,100">
+&lt;&lt;set $areaname to &quot;Игниста. Рахл-Игниста&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="152" name="Поговорили мы неплохо, но не скажу, что прям вот по душам..." tags="desert" position="2845,1015" size="100,100">
 
 
 &lt;&lt;audio &quot;night_bgm&quot; loop play&gt;&gt;
 &lt;&lt;timed 0s t8n&gt;&gt;&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;type 10ms&gt;&gt;\
 Что же, бывает... Жаль, что в спешке тебе оказались не столь интересны мои советы. Возможно, разговор получился бы более откровенным.
-\&lt;&lt;/type&gt;&gt;&lt;&lt;timed 3s t8n&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Поговорить ещё|ЛинияПродолжениеАнтуанетта]]&lt;/div&gt;&lt;&lt;/timed&gt;&gt;
+\&lt;&lt;/type&gt;&gt;&lt;&lt;timed 3s t8n&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; &lt;&lt;if $antoinette_02 is true&gt;&gt;[[Продолжить урок|ТокеныАнтуанетта7.2]]&lt;&lt;elseif $antoinette_03 is true&gt;&gt;[[Продолжить урок|ТокеныАнтуанетта13.2]]&lt;&lt;else&gt;&gt;[[Урок от Антуанетты|ТокеныАнтуанетта]]&lt;&lt;/if&gt;&gt;&lt;/div&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;timed 3s t8n&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Поговорить ещё|ЛинияПродолжениеАнтуанетта]]&lt;/div&gt;&lt;&lt;if $nayan_item is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Разузнать о Найане|Найан]]&lt;/div&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;set $areaname to &quot;Игниста. Рахл-Игниста&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="153" name="Он как-то быстро раскусил вашу хитрость. Да и у меня как-то не особо получилось заинтересовать Найана..." tags="desert" position="3190,942" size="100,100">
+&lt;&lt;set $areaname to &quot;Игниста. Рахл-Игниста&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="153" name="Он как-то быстро раскусил вашу хитрость. Да и у меня как-то не особо получилось заинтересовать Найана..." tags="desert" position="3185,1024" size="100,100">
 
 
 &lt;&lt;audio &quot;night_bgm&quot; loop play&gt;&gt;
 &lt;&lt;timed 0s t8n&gt;&gt;&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;type 10ms&gt;&gt;\
 Печально... Что ж, придётся искать другой способ. Надо будет подумать над этим на досуге.
-\&lt;&lt;/type&gt;&gt;&lt;&lt;timed 3s t8n&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Поговорить ещё|ЛинияПродолжениеАнтуанетта]]&lt;/div&gt;&lt;&lt;/timed&gt;&gt;
+\&lt;&lt;/type&gt;&gt;&lt;&lt;timed 3s t8n&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; &lt;&lt;if $antoinette_02 is true&gt;&gt;[[Продолжить урок|ТокеныАнтуанетта7.2]]&lt;&lt;elseif $antoinette_03 is true&gt;&gt;[[Продолжить урок|ТокеныАнтуанетта13.2]]&lt;&lt;else&gt;&gt;[[Урок от Антуанетты|ТокеныАнтуанетта]]&lt;&lt;/if&gt;&gt;&lt;/div&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;timed 3s t8n&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Поговорить ещё|ЛинияПродолжениеАнтуанетта]]&lt;/div&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;&lt;set $areaname to &quot;Игниста. Рахл-Игниста&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="154" name="Владычица распарена и довольна!" tags="desert" position="3371,749" size="100,100">
 
@@ -2991,25 +3041,23 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.</tw-passagedata><tw
 &lt;&lt;audio &quot;night_bgm&quot; loop play&gt;&gt;
 &lt;&lt;timed 0s t8n&gt;&gt;&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;type 10ms&gt;&gt;\
 Поздравляю с победой! Теперь ты знаешь, что дипломатия это не только мягкая сила, но она и... имеет разные формы. Я рада открыть для тебя их многообразие...
-\&lt;&lt;/type&gt;&gt;
+\&lt;&lt;/type&gt;&gt;&lt;&lt;timed 3s t8n&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Поговорить ещё|ЛинияПродолжениеАнтуанетта]]&lt;/div&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Уехать с Игнисты|КонецКонца]]&lt;/div&gt;&lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
-
-&lt;&lt;set $areaname to &quot;Игниста. Рахл-Игниста&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="155" name="Думаю, нам удалось наладить контакт. Не скажу, что разговор завершён, но она заинтересована в его продолжении." tags="desert" position="3504,873" size="100,100">
+&lt;&lt;set $areaname to &quot;Игниста. Рахл-Игниста&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="155" name="Думаю, нам удалось наладить контакт. Не скажу, что разговор завершён, но она заинтересована в его продолжении." tags="desert" position="3502,882" size="100,100">
 
 
 &lt;&lt;audio &quot;night_bgm&quot; loop play&gt;&gt;
 &lt;&lt;timed 0s t8n&gt;&gt;&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;type 10ms&gt;&gt;\
 Неплохо. Это значит, что у тебя есть шанс на нормализацию отношений с ней. Ведь интерес к диалогу - это уже немало в данном случае.
-\&lt;&lt;/type&gt;&gt;&lt;&lt;timed 3s t8n&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Поговорить ещё|ЛинияПродолжениеАнтуанетта]]&lt;/div&gt;&lt;&lt;/timed&gt;&gt;
+\&lt;&lt;/type&gt;&gt;&lt;&lt;timed 3s t8n&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; &lt;&lt;if $antoinette_02 is true&gt;&gt;[[Продолжить урок|ТокеныАнтуанетта7.2]]&lt;&lt;elseif $antoinette_03 is true&gt;&gt;[[Продолжить урок|ТокеныАнтуанетта13.2]]&lt;&lt;else&gt;&gt;[[Урок от Антуанетты|ТокеныАнтуанетта]]&lt;&lt;/if&gt;&gt;&lt;/div&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;timed 3s t8n&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Поговорить ещё|ЛинияПродолжениеАнтуанетта]]&lt;/div&gt;&lt;&lt;if $smeyana_item is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Разузнать о Смеяне|Смеяна]]&lt;/div&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;set $areaname to &quot;Игниста. Рахл-Игниста&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="156" name="Не задался разговор..." tags="desert" position="3504,1002" size="100,100">
+&lt;&lt;set $areaname to &quot;Игниста. Рахл-Игниста&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="156" name="Не задался разговор..." tags="desert" position="3503,1013" size="100,100">
 
 
 &lt;&lt;audio &quot;night_bgm&quot; loop play&gt;&gt;
 &lt;&lt;timed 0s t8n&gt;&gt;&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;type 10ms&gt;&gt;\
 О да... Я слышала её вопли даже здесь. Жаль, что так вышло... Но, может быть, в следующий раз разговор сложится удачнее. Главное, внимательнее подбирай слова.
-\&lt;&lt;/type&gt;&gt;&lt;&lt;timed 3s t8n&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Поговорить ещё|ЛинияПродолжениеАнтуанетта]]&lt;/div&gt;&lt;&lt;/timed&gt;&gt;
+\&lt;&lt;/type&gt;&gt;&lt;&lt;timed 3s t8n&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; &lt;&lt;if $antoinette_02 is true&gt;&gt;[[Продолжить урок|ТокеныАнтуанетта7.2]]&lt;&lt;elseif $antoinette_03 is true&gt;&gt;[[Продолжить урок|ТокеныАнтуанетта13.2]]&lt;&lt;else&gt;&gt;[[Урок от Антуанетты|ТокеныАнтуанетта]]&lt;&lt;/if&gt;&gt;&lt;/div&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;timed 3s t8n&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Поговорить ещё|ЛинияПродолжениеАнтуанетта]]&lt;/div&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;&lt;set $areaname to &quot;Игниста. Рахл-Игниста&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="157" name="ТокеныАнтуанетта" tags="desert" position="3012,1117" size="100,100">
 
@@ -3171,9 +3219,12 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.</tw-passagedata><tw
 &lt;&lt;audio &quot;night_bgm&quot; loop play&gt;&gt;
 &lt;&lt;timed 0s t8n&gt;&gt;&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;type 10ms&gt;&gt;\
 Для собеседника это будет выглядеть так, что он нашёл единомышленника и родственную душу. Ну а для тебя это станет отличным способом завоевать его доверие. Главное, не перестарайся и случайно не начни пародировать собеседника - иначе это лишь усугубит ситуацию.
-\&lt;&lt;/type&gt;&gt;&lt;&lt;timed 3s t8n&gt;&gt;&lt;&lt;if ($jasker_04 and $smeyana_04) or ($smeyana_04 and $nayan_04) or ($nayan_04 and $jasker_04) is true&gt;&gt;[[ТокеныАнтуанетта8]]&lt;&lt;else&gt;&gt;&lt;span class=&quot;notdialog&quot;&gt;&lt;div id=&quot;elem2&quot;&gt;&lt;span class=&quot;next&quot;&gt;[[|ОкончаниеАнтуанетта]]&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/timed&gt;&gt;
+\&lt;&lt;/type&gt;&gt;&lt;&lt;timed 3s t8n&gt;&gt;&lt;&lt;if ($jasker_02 and $smeyana_02) or ($smeyana_02 and $nayan_02) or ($nayan_02 and $jasker_02) or ($jasker_03 and $smeyana_03) or ($smeyana_03 and $nayan_03) or ($nayan_03 and $jasker_03) is true&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта8]]&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;notdialog&quot;&gt;&lt;div id=&quot;elem2&quot;&gt;&lt;span class=&quot;next&quot;&gt;[[|ОкончаниеАнтуанетта]]&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;set $areaname to &quot;Игниста. Рахл-Игниста&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="174" name="ТокеныАнтуанетта8" tags="desert" position="3019,3464" size="100,100">
+&lt;&lt;set $areaname to &quot;Игниста. Рахл-Игниста&quot;&gt;&gt;
+
+&lt;&lt;run memorize (&#39;antoinette_02&#39;, true)&gt;&gt;
+&lt;&lt;set $antoinette_02 to true&gt;&gt;</tw-passagedata><tw-passagedata pid="174" name="ТокеныАнтуанетта8" tags="desert" position="3019,3464" size="100,100">
 
 
 &lt;&lt;audio &quot;night_bgm&quot; loop play&gt;&gt;
@@ -3341,28 +3392,37 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.</tw-passagedata><tw
 
 
 &lt;&lt;audio &quot;night_bgm&quot; loop play&gt;&gt;
-&lt;&lt;timed 0s t8n&gt;&gt;&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;type 10ms&gt;&gt;\
-*Антуанетта берёт бутылку и с усилием вставляет пробку в горловину*
+&lt;&lt;timed 0s t8n&gt;&gt;&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;type 10ms&gt;&gt;\*Антуанетта берёт бутылку и с усилием вставляет пробку в горловину*
 Фух... Почему ты на меня так странно смотришь? Тебе не приходилось видеть специальных пробок для вина?
 \&lt;&lt;/type&gt;&gt;&lt;&lt;timed 3s t8n&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Нет! Но приходилось видеть кое-что другое... И это было страшно...]]&lt;/div&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[А... Так это для вина была? А мне казалось, что для... Кхм...]]&lt;/div&gt;&lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;set $areaname to &quot;Игниста. Рахл-Игниста&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="192" name="Нет! Но приходилось видеть кое-что другое... И это было страшно..." tags="desert ключ autosave" position="2872,5896" size="100,100">
+&lt;&lt;set $areaname to &quot;Игниста. Рахл-Игниста&quot;&gt;&gt;
+
+&lt;&lt;run memorize (&#39;antoinette_03&#39;, true)&gt;&gt;
+&lt;&lt;set $antoinette_03 to true&gt;&gt;
+&lt;&lt;run forget(&#39;antoinette_02&#39;)&gt;&gt;</tw-passagedata><tw-passagedata pid="192" name="Нет! Но приходилось видеть кое-что другое... И это было страшно..." tags="desert ключ autosave" position="2872,5896" size="100,100">
 
 
 &lt;&lt;audio &quot;night_bgm&quot; loop play&gt;&gt;
 &lt;&lt;timed 0s t8n&gt;&gt;&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;type 10ms&gt;&gt;\
 Дай угадаю... Опять в &quot;Розе и Шиповнике&quot;, да? Вот говорила же, что беседки надо делать с нормальными дверями, а не этими завесами...
-\&lt;&lt;/type&gt;&gt;&lt;&lt;timed 3s t8n&gt;&gt;&lt;&lt;if $jasker_04 and $smeyana_04 and $nayan_04 is true&gt;&gt;[[|ТокеныАнтуанетта14]]&lt;&lt;else&gt;&gt;&lt;span class=&quot;notdialog&quot;&gt;&lt;div id=&quot;elem2&quot;&gt;&lt;span class=&quot;next&quot;&gt;[[|ОкончаниеАнтуанетта]]&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/timed&gt;&gt;
+\&lt;&lt;/type&gt;&gt;&lt;&lt;timed 3s t8n&gt;&gt;&lt;&lt;if ($jasker_02 and $smeyana_02 and $nayan_02) or ($jasker_03 and $smeyana_03 and $nayan_03) is true&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта14]]&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;notdialog&quot;&gt;&lt;div id=&quot;elem2&quot;&gt;&lt;span class=&quot;next&quot;&gt;[[|ОкончаниеАнтуанетта]]&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;set $areaname to &quot;Игниста. Рахл-Игниста&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="193" name="А... Так это для вина была? А мне казалось, что для... Кхм..." tags="desert ключ autosave" position="3048,5901" size="100,100">
+&lt;&lt;set $areaname to &quot;Игниста. Рахл-Игниста&quot;&gt;&gt;
+
+&lt;&lt;run memorize (&#39;antoinette_03&#39;, true)&gt;&gt;
+&lt;&lt;set $antoinette_03 to true&gt;&gt;</tw-passagedata><tw-passagedata pid="193" name="А... Так это для вина была? А мне казалось, что для... Кхм..." tags="desert ключ autosave" position="3048,5901" size="100,100">
 
 
 &lt;&lt;audio &quot;night_bgm&quot; loop play&gt;&gt;
 &lt;&lt;timed 0s t8n&gt;&gt;&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;type 10ms&gt;&gt;\
 Ха-ха! Нет... Те, которые я использую для себя выглядят несколько иначе. Но ход твоих мыслей мне нравится...
-\&lt;&lt;/type&gt;&gt;&lt;&lt;timed 3s t8n&gt;&gt;&lt;&lt;if $jasker_04 and $smeyana_04 and $nayan_04 is true&gt;&gt;[[|ТокеныАнтуанетта14]]&lt;&lt;else&gt;&gt;&lt;span class=&quot;notdialog&quot;&gt;&lt;div id=&quot;elem2&quot;&gt;&lt;span class=&quot;next&quot;&gt;[[|ОкончаниеАнтуанетта]]&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/timed&gt;&gt;
+\&lt;&lt;/type&gt;&gt;&lt;&lt;timed 3s t8n&gt;&gt;&lt;&lt;if ($jasker_02 and $smeyana_02 and $nayan_02) or ($jasker_03 and $smeyana_03 and $nayan_03) is true&gt;&gt;[[|ТокеныАнтуанетта14]]&lt;&lt;else&gt;&gt;&lt;span class=&quot;notdialog&quot;&gt;&lt;div id=&quot;elem2&quot;&gt;&lt;span class=&quot;next&quot;&gt;[[|ОкончаниеАнтуанетта]]&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;set $areaname to &quot;Игниста. Рахл-Игниста&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="194" name="ТокеныАнтуанетта14" tags="desert" position="2988,6079" size="100,100">
+&lt;&lt;set $areaname to &quot;Игниста. Рахл-Игниста&quot;&gt;&gt;
+
+&lt;&lt;run memorize (&#39;antoinette_03&#39;, true)&gt;&gt;
+&lt;&lt;set $antoinette_03 to true&gt;&gt;</tw-passagedata><tw-passagedata pid="194" name="ТокеныАнтуанетта14" tags="desert" position="2988,6079" size="100,100">
 
 
 &lt;&lt;audio &quot;night_bgm&quot; loop play&gt;&gt;
@@ -3475,19 +3535,17 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.</tw-passagedata><tw
 &lt;&lt;audio &quot;night_bgm&quot; loop play&gt;&gt;
 &lt;&lt;timed 0s t8n&gt;&gt;&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;type 10ms&gt;&gt;\
 И вот теперь... Повтори то же самое, но с нажимом - используй основание ладони. Пройдись по спине, надавливая на мышцы рядом с плечами, на лопатки, на мышцы вдоль позвоночника... И на поясницу. Да, если разомнёшь её нижнюю часть - я тоже не буду против. Сегодня пришлось поработать с бумагами и я эту часть немного отсидела, честно говоря. Буду рада, если ты мне поможешь...
-\&lt;&lt;/type&gt;&gt;&lt;&lt;timed 3s t8n&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Да, моя королева!]]&lt;/div&gt;&lt;&lt;/timed&gt;&gt;
+\&lt;&lt;/type&gt;&gt;&lt;&lt;timed 3s t8n&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Да, моя королева!|Титры]]&lt;/div&gt;&lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;set $areaname to &quot;Игниста. Рахл-Игниста&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="206" name="Да, моя королева!" tags="" position="2957,7669" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="207" name="ОкончаниеАнтуанетта" tags="desert" position="3668,4301" size="100,100">
+&lt;&lt;set $areaname to &quot;Игниста. Рахл-Игниста&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="206" name="ОкончаниеАнтуанетта" tags="desert" position="3668,4301" size="100,100">
 
 
 &lt;&lt;audio &quot;night_bgm&quot; loop play&gt;&gt;
 &lt;&lt;timed 0s t8n&gt;&gt;&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;type 10ms&gt;&gt;\
 Что ж... Я всего лишь рассказала тебе основы - да и те в очень сжатых и грубых чертах. Но ты быстро учишься... И я надеюсь, что мы ещё продолжим наши уроки.
-\&lt;&lt;/type&gt;&gt;
+\&lt;&lt;/type&gt;&gt;&lt;&lt;timed 3s t8n&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Поговорить о гостях|ЛинияПродолжениеАнтуанетта]]&lt;/div&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Уехать с Игнисты|КонецКонца]]&lt;/div&gt;&lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ЛинияПродолжениеАнтуанетта]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
-
-&lt;&lt;set $areaname to &quot;Игниста. Рахл-Игниста&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="208" name="КонецКонца" tags="desert" position="3823,4304" size="100,100">
+&lt;&lt;set $areaname to &quot;Игниста. Рахл-Игниста&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="207" name="КонецКонца" tags="desert" position="3818,4308" size="100,100">
 
 
 &lt;&lt;audio &quot;night_bgm&quot; loop play&gt;&gt;
@@ -3497,7 +3555,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.</tw-passagedata><tw
 
 &lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|Титры]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;set $areaname to &quot;Игниста. Рахл-Игниста&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="209" name="Титры" tags="" position="4008,4297" size="100,100">
+&lt;&lt;set $areaname to &quot;Игниста. Рахл-Игниста&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="208" name="Титры" tags="" position="4008,4297" size="100,100">
 
 
 
@@ -3510,7 +3568,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.</tw-passagedata><tw
 &lt;&lt;if $date.getHours() &gt;= 22 || $date.getHours() &lt;= 6&gt;&gt;&lt;span class=&quot;next&quot;&gt;&lt;&lt;link &quot;&quot; &quot;main_menu_night&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;
 	&lt;&lt;elseif $date.getHours() gte 7 and $date.getHours() lt 15&gt;&gt;&lt;span class=&quot;next&quot;&gt;&lt;&lt;link &quot;&quot; &quot;main_menu_day&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;
 	&lt;&lt;elseif $date.getHours() &gt;= 16 || $date.getHours() &lt;= 21&gt;&gt;&lt;span class=&quot;next&quot;&gt;&lt;&lt;link &quot;&quot; &quot;main_menu_evening&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;
-	&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="210" name="Титры3" tags="" position="4268,4298" size="100,100">
+	&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="209" name="Титры3" tags="" position="4268,4298" size="100,100">
 &lt;&lt;fadeout 2s 6s&gt;&gt;&lt;&lt;fadein 2s 0s&gt;&gt;
 Художник по персонажам&lt;h3&gt;Сандра&lt;/h3&gt;&lt;&lt;timed 8s&gt;&gt;&lt;&lt;goto &quot;Титры4&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;/fadeout&gt;&gt;
 
@@ -3519,7 +3577,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.</tw-passagedata><tw
 &lt;&lt;if $date.getHours() &gt;= 22 || $date.getHours() &lt;= 6&gt;&gt;&lt;span class=&quot;next&quot;&gt;&lt;&lt;link &quot;&quot; &quot;main_menu_night&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;
 	&lt;&lt;elseif $date.getHours() gte 7 and $date.getHours() lt 15&gt;&gt;&lt;span class=&quot;next&quot;&gt;&lt;&lt;link &quot;&quot; &quot;main_menu_day&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;
 	&lt;&lt;elseif $date.getHours() &gt;= 16 || $date.getHours() &lt;= 21&gt;&gt;&lt;span class=&quot;next&quot;&gt;&lt;&lt;link &quot;&quot; &quot;main_menu_evening&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;
-	&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="211" name="Титры4" tags="" position="4398,4299" size="100,100">
+	&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="210" name="Титры4" tags="" position="4398,4299" size="100,100">
 &lt;&lt;fadeout 2s 6s&gt;&gt;&lt;&lt;fadein 2s 0s&gt;&gt;
 Художник по персонажам&lt;h3&gt;Анонимное Бесфамильное&lt;/h3&gt;&lt;&lt;timed 8s&gt;&gt;&lt;&lt;goto &quot;Титры5&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;/fadeout&gt;&gt;
 
@@ -3528,7 +3586,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.</tw-passagedata><tw
 &lt;&lt;if $date.getHours() &gt;= 22 || $date.getHours() &lt;= 6&gt;&gt;&lt;span class=&quot;next&quot;&gt;&lt;&lt;link &quot;&quot; &quot;main_menu_night&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;
 	&lt;&lt;elseif $date.getHours() gte 7 and $date.getHours() lt 15&gt;&gt;&lt;span class=&quot;next&quot;&gt;&lt;&lt;link &quot;&quot; &quot;main_menu_day&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;
 	&lt;&lt;elseif $date.getHours() &gt;= 16 || $date.getHours() &lt;= 21&gt;&gt;&lt;span class=&quot;next&quot;&gt;&lt;&lt;link &quot;&quot; &quot;main_menu_evening&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;
-	&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="212" name="Титры5" tags="" position="4521,4298" size="100,100">
+	&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="211" name="Титры5" tags="" position="4521,4298" size="100,100">
 &lt;&lt;fadeout 2s 6s&gt;&gt;&lt;&lt;fadein 2s 0s&gt;&gt;
 Художник по фонам&lt;h3&gt;Марина&lt;/h3&gt;&lt;&lt;timed 8s&gt;&gt;&lt;&lt;goto &quot;Титры6&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;/fadeout&gt;&gt;
 
@@ -3537,7 +3595,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.</tw-passagedata><tw
 &lt;&lt;if $date.getHours() &gt;= 22 || $date.getHours() &lt;= 6&gt;&gt;&lt;span class=&quot;next&quot;&gt;&lt;&lt;link &quot;&quot; &quot;main_menu_night&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;
 	&lt;&lt;elseif $date.getHours() gte 7 and $date.getHours() lt 15&gt;&gt;&lt;span class=&quot;next&quot;&gt;&lt;&lt;link &quot;&quot; &quot;main_menu_day&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;
 	&lt;&lt;elseif $date.getHours() &gt;= 16 || $date.getHours() &lt;= 21&gt;&gt;&lt;span class=&quot;next&quot;&gt;&lt;&lt;link &quot;&quot; &quot;main_menu_evening&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;
-	&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="213" name="Титры6" tags="" position="4649,4295" size="100,100">
+	&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="212" name="Титры6" tags="" position="4649,4295" size="100,100">
 &lt;&lt;fadeout 2s 6s&gt;&gt;&lt;&lt;fadein 2s 0s&gt;&gt;
 Художник по персонажам&lt;h3&gt;Олеся&lt;/h3&gt;&lt;&lt;timed 8s&gt;&gt;&lt;&lt;goto &quot;Титры7&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;/fadeout&gt;&gt;
 
@@ -3546,7 +3604,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.</tw-passagedata><tw
 &lt;&lt;if $date.getHours() &gt;= 22 || $date.getHours() &lt;= 6&gt;&gt;&lt;span class=&quot;next&quot;&gt;&lt;&lt;link &quot;&quot; &quot;main_menu_night&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;
 	&lt;&lt;elseif $date.getHours() gte 7 and $date.getHours() lt 15&gt;&gt;&lt;span class=&quot;next&quot;&gt;&lt;&lt;link &quot;&quot; &quot;main_menu_day&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;
 	&lt;&lt;elseif $date.getHours() &gt;= 16 || $date.getHours() &lt;= 21&gt;&gt;&lt;span class=&quot;next&quot;&gt;&lt;&lt;link &quot;&quot; &quot;main_menu_evening&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;
-	&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="214" name="Титры7" tags="" position="4772,4296" size="100,100">
+	&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="213" name="Титры7" tags="" position="4772,4296" size="100,100">
 &lt;&lt;fadeout 2s 6s&gt;&gt;&lt;&lt;fadein 2s 0s&gt;&gt;
 Художник по персонажам&lt;h3&gt;Опиумка&lt;/h3&gt;&lt;&lt;timed 8s&gt;&gt;&lt;&lt;if $date.getHours() &gt;= 22 || $date.getHours() &lt;= 6&gt;&gt;&lt;&lt;goto &quot;main_menu_night&quot;&gt;&gt; 
 	&lt;&lt;elseif $date.getHours() gte 7 and $date.getHours() lt 15&gt;&gt;&lt;&lt;goto &quot;main_menu_day&quot;&gt;&gt;
@@ -3560,7 +3618,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.</tw-passagedata><tw
 	&lt;&lt;elseif $date.getHours() &gt;= 16 || $date.getHours() &lt;=21&gt;&gt;&lt;span class=&quot;next&quot;&gt;&lt;&lt;link &quot;&quot; &quot;main_menu_evening&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;
 &lt;&lt;else&gt;&gt;
         &lt;span class=&quot;next&quot;&gt;&lt;&lt;link &quot;&quot; &quot;main_menu_day&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;
-    &lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="215" name="Титры2" tags="" position="4139,4303" size="100,100">
+    &lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="214" name="Титры2" tags="" position="4139,4303" size="100,100">
 &lt;&lt;fadeout 2s 6s&gt;&gt;&lt;&lt;fadein 2s 0s&gt;&gt;
 Автор сценария&lt;h3&gt;Draculina&lt;/h3&gt;&lt;&lt;timed 8s&gt;&gt;&lt;&lt;goto &quot;Титры3&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;/fadeout&gt;&gt;
 
@@ -3569,7 +3627,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.</tw-passagedata><tw
 &lt;&lt;if $date.getHours() &gt;= 22 || $date.getHours() &lt;= 6&gt;&gt;&lt;span class=&quot;next&quot;&gt;&lt;&lt;link &quot;&quot; &quot;main_menu_night&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;
 	&lt;&lt;elseif $date.getHours() gte 7 and $date.getHours() lt 15&gt;&gt;&lt;span class=&quot;next&quot;&gt;&lt;&lt;link &quot;&quot; &quot;main_menu_day&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;
 	&lt;&lt;elseif $date.getHours() &gt;= 16 || $date.getHours() &lt;= 21&gt;&gt;&lt;span class=&quot;next&quot;&gt;&lt;&lt;link &quot;&quot; &quot;main_menu_evening&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;
-	&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="216" name="main_menu_night" tags="" position="657,209" size="100,100">&lt;div class=&quot;mouse_move&quot;&gt;
+	&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="215" name="main_menu_night" tags="" position="657,209" size="100,100">&lt;div class=&quot;mouse_move&quot;&gt;
  &lt;img
         id=&quot;img3&quot;
 		src=
@@ -3602,7 +3660,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.</tw-passagedata><tw
 &lt;span class=&quot;subtitle-item&quot;&gt;[[Титры|Титры]]&lt;/span&gt;&lt;/div&gt;
 
 &lt;&lt;audio &quot;night_bgm&quot; loop play&gt;&gt;
-&lt;&lt;audio &quot;credits&quot; stop&gt;&gt;</tw-passagedata><tw-passagedata pid="217" name="main_menu_evening" tags="" position="816,213" size="100,100">&lt;div class=&quot;mouse_move&quot;&gt;
+&lt;&lt;audio &quot;credits&quot; stop&gt;&gt;</tw-passagedata><tw-passagedata pid="216" name="main_menu_evening" tags="" position="816,213" size="100,100">&lt;div class=&quot;mouse_move&quot;&gt;
  &lt;img
         id=&quot;img3&quot;
 		src=
@@ -3635,7 +3693,59 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.</tw-passagedata><tw
 &lt;span class=&quot;subtitle-item&quot;&gt;[[Титры|Титры]]&lt;/span&gt;&lt;/div&gt;
 
 &lt;&lt;audio &quot;night_bgm&quot; loop play&gt;&gt;
-&lt;&lt;audio &quot;credits&quot; stop&gt;&gt;</tw-passagedata></tw-storydata>
+&lt;&lt;audio &quot;credits&quot; stop&gt;&gt;</tw-passagedata><tw-passagedata pid="217" name="ЯскерПункт15" tags="desert" position="2312,6135" size="100,100">
+
+
+&lt;&lt;audio &quot;night_bgm&quot; loop play&gt;&gt;
+&lt;&lt;timed 0s t8n&gt;&gt;&lt;h3&gt;Яскер&lt;/h3&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;type 10ms&gt;&gt;\
+Рад это слышать. Ну что, раз уж так... Ты не против подзадержаться тут? Вижу, что общий язык мы нашли. Почему бы и не продолжить наше общение, а? 
+\&lt;&lt;/type&gt;&gt;&lt;&lt;timed 3s t8n&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Да я бы с радостью... Но тут ещё столько дел, столько дел...|ЯскерПункт15.1]]&lt;/div&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[И позаниматься на тренажёрах?|ЯскерПункт15.2]]&lt;/div&gt;&lt;&lt;/timed&gt;&gt;
+
+&lt;&lt;set $areaname to &quot;Игниста. Тренажёрный зал&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="218" name="ЯскерПункт15.1" tags="desert ключ autosave" position="2192,6291" size="100,100">
+
+
+&lt;&lt;audio &quot;night_bgm&quot; loop play&gt;&gt;
+&lt;&lt;timed 0s t8n&gt;&gt;&lt;h3&gt;Яскер&lt;/h3&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;type 10ms&gt;&gt;\
+Ха! Вечно занятые герои, которые вечно пытаются успеть выполнить все задания... Но я и сам когда-то был таким же. Понимаю. Ну смотри тогда. Я пока ещё побуду тут и потренируюсь. Надумаешь - приходи.
+\&lt;&lt;/type&gt;&gt;
+
+&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ПредАнтуанетта]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+
+&lt;&lt;run memorize (&#39;jasker_01&#39;, true)&gt;&gt;
+&lt;&lt;set $jasker_01 to true&gt;&gt;
+&lt;&lt;run memorize (&#39;jasker_04&#39;, true)&gt;&gt;
+&lt;&lt;set $jasker_04 to true&gt;&gt;
+&lt;&lt;run forget(&#39;jasker_03&#39;)&gt;&gt;
+
+&lt;&lt;set $areaname to &quot;Игниста. Тренажёрный зал&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="219" name="ЯскерПункт15.2" tags="desert" position="2410,6290" size="100,100">
+
+
+&lt;&lt;audio &quot;night_bgm&quot; loop play&gt;&gt;
+&lt;&lt;timed 0s t8n&gt;&gt;&lt;h3&gt;Яскер&lt;/h3&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;type 10ms&gt;&gt;\
+И позаниматься на тренажёрах. Разумеется. 
+\&lt;&lt;/type&gt;&gt;
+
+&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ЯскерПунктФинал]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+
+&lt;&lt;set $areaname to &quot;Игниста. Тренажёрный зал&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="220" name="ЯскерПунктФинал" tags="" position="2282,6457" size="100,100">&lt;&lt;fadeout 2s 6s&gt;&gt;&lt;&lt;fadein 2s 0s&gt;&gt;&lt;h3&gt;Спустя приятно проведённое время, полное пота и удовольствий&lt;/h3&gt;&lt;&lt;timed 8s&gt;&gt;&lt;&lt;goto &quot;ЯскерПунктФинал2&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;/fadeout&gt;&gt;
+</tw-passagedata><tw-passagedata pid="221" name="ЯскерПунктФинал2" tags="desert" position="2281,6611" size="100,100">
+
+
+&lt;&lt;audio &quot;night_bgm&quot; loop play&gt;&gt;
+&lt;&lt;timed 0s t8n&gt;&gt;&lt;h3&gt;Яскер&lt;/h3&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;type 10ms&gt;&gt;\
+А знаешь, мне понравилось. Давненько не встречал достойного спарринг-партнёра, который бы занимался с такой отдачей. Если сохранишь свой боевой настрой, то твоим врагам можно будет лишь посочувствовать. Причём, посмертно. 
+\&lt;&lt;/type&gt;&gt;
+
+&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|Титры]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="222" name="НайанПункт16.2" tags="desert" position="1531,6284" size="100,100">
+
+
+&lt;&lt;audio &quot;night_bgm&quot; loop play&gt;&gt;
+&lt;&lt;timed 0s t8n&gt;&gt;&lt;h3&gt;Найан&lt;/h3&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;type 10ms&gt;&gt;\
+Не знаю, сможем ли мы сделать это в нашем состоянии... Но... Возможно... хм, и вправду стоит воспользоваться шансом. Мы ведь на Игнисте... Говоришь, магия этого места порой оказывает странное воздействие? Что ж... Предлагаю изучить архив, в таком случае. Да и поговорить со старожилами тоже не будет лишним. Но это после. А пока... Мне бы пригодилась вторая пара рук. Да и вино тоже, честно говоря... Для храбрости. Порой в архивах можно найти такое, что не воспринять на трезвый рассудок. Быть может, там получится найти подобную историю со счастливым концом...
+\&lt;&lt;/type&gt;&gt;
+
+&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|НайанПунктФинал]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+</tw-passagedata><tw-passagedata pid="223" name="НайанПунктФинал" tags="desert" position="1531,6434" size="100,100">&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|Титры]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="224" name="ПредАнтуанетта" tags="" position="3074,380" size="100,100">&lt;&lt;fadeout 2s 6s&gt;&gt;&lt;&lt;fadein 2s 0s&gt;&gt;&lt;h3&gt;Вы возвращаетесь к Антуанетте&lt;/h3&gt;&lt;&lt;timed 8s&gt;&gt;&lt;&lt;goto &quot;ЛинияПродолжениеАнтуанетта&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;/fadeout&gt;&gt;</tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
 	/*! SugarCube JS */
 	if(document.documentElement.getAttribute("data-init")==="loading"){!function(window,document,jQuery,undefined){"use strict";function _classCallCheck(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,r=Array(e.length);t<e.length;t++)r[t]=e[t];return r}return Array.from(e)}var _createClass=function(){function e(e,t){for(var r=0;r<t.length;r++){var n=t[r];n.enumerable=n.enumerable||!1,n.configurable=!0,"value"in n&&(n.writable=!0),Object.defineProperty(e,n.key,n)}}return function(t,r,n){return r&&e(t.prototype,r),n&&e(t,n),t}}(),_slicedToArray=function(){function e(e,t){var r=[],n=!0,a=!1,i=undefined;try{for(var o,s=e[Symbol.iterator]();!(n=(o=s.next()).done)&&(r.push(o.value),!t||r.length!==t);n=!0);}catch(e){a=!0,i=e}finally{try{!n&&s.return&&s.return()}finally{if(a)throw i}}return r}return function(t,r){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,r);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},errorPrologRegExp=/^(?:(?:uncaught\s+(?:exception:\s+)?)?\w*(?:error|exception|_err):\s+)+/i,Alert=function(){function e(e,t,r,n){var a="fatal"===e,i="Apologies! "+(a?"A fatal":"An")+" error has occurred.";i+=a?" Aborting.":" You may be able to continue, but some parts may not work properly.",null==t&&null==r||(i+="\n\nError",null!=t&&(i+=" ["+t+"]"),i+=null!=r?": "+r.replace(errorPrologRegExp,"")+".":": unknown error."),"object"===(void 0===n?"undefined":_typeof(n))&&null!==n&&n.stack&&(i+="\n\nStack Trace:\n"+n.stack),window.alert(i)}function t(t,r,n){e(null,t,r,n)}function r(t,r,n){e("fatal",t,r,n)}return function(e){window.onerror=function(n,a,i,o,s){"complete"===document.readyState?t(null,n,s):(r(null,n,s),window.onerror=e,"function"==typeof window.onerror&&window.onerror.apply(this,arguments))}}(window.onerror),Object.freeze(Object.defineProperties({},{error:{value:t},fatal:{value:r}}))}(),Patterns=function(){var e=function(){var e=new Map([[" ","\\u0020"],["\f","\\f"],["\n","\\n"],["\r","\\r"],["\t","\\t"],["\v","\\v"],[" ","\\u00a0"],[" ","\\u1680"],["᠎","\\u180e"],[" ","\\u2000"],[" ","\\u2001"],[" ","\\u2002"],[" ","\\u2003"],[" ","\\u2004"],[" ","\\u2005"],[" ","\\u2006"],[" ","\\u2007"],[" ","\\u2008"],[" ","\\u2009"],[" ","\\u200a"],["\u2028","\\u2028"],["\u2029","\\u2029"],[" ","\\u202f"],[" ","\\u205f"],["　","\\u3000"],["\ufeff","\\ufeff"]]),t=/^\s$/,r="";return e.forEach(function(e,n){t.test(n)||(r+=e)}),r?"[\\s"+r+"]":"\\s"}(),t="[\\u0020\\f\\t\\v\\u00a0\\u1680\\u180e\\u2000-\\u200a\\u202f\\u205f\\u3000\\ufeff]",r="\\s"===e?"\\S":e.replace(/^\[/,"[^"),n="[0-9A-Z_a-z\\-\\u00c0-\\u00d6\\u00d8-\\u00f6\\u00f8-\\u00ff\\u0150\\u0170\\u0151\\u0171]",a=n.replace("\\-",""),i=function(){var e="(?:[\\x2D.0-9A-Z_a-z\\xB7\\xC0-\\xD6\\xD8-\\xF6\\xF8-\\u037D\\u037F-\\u1FFF\\u200C\\u200D\\u203F\\u2040\\u2070-\\u218F\\u2C00-\\u2FEF\\u3001-\\uD7FF\\uF900-\\uFDCF\\uFDF0-\\uFFFD]|[\\uD800-\\uDB7F][\\uDC00-\\uDFFF])";return"[A-Za-z](?:"+e+"*-"+e+"*|[0-9A-Za-z]*)"}(),o=function(){return"("+n+"+)\\(([^\\)\\|\\n]+)\\):|"+t+"*("+n+"+)"+t+"*:([^;\\|\\n]+);|"+t+"*((?:[#.]"+n+"+"+t+"*)+);"}();return Object.freeze({space:e,spaceNoTerminator:t,lineTerminator:"[\\n\\r\\u2028\\u2029]",notSpace:r,anyChar:"(?:.|[\\n\\r\\u2028\\u2029])",anyLetter:n,anyLetterStrict:a,identifierFirstChar:"[$A-Z_a-z]",identifierNextChar:"[$0-9A-Z_a-z]",identifier:"[$A-Z_a-z][$0-9A-Z_a-z]*",variableSigil:"[$_]",variable:"[$_][$A-Z_a-z][$0-9A-Z_a-z]*",macroName:"[A-Za-z][\\w-]*|[=-]",templateName:"[A-Za-z][\\w-]*",htmlTagName:i,cssIdOrClassSigil:"[#.]",cssImage:"\\[[<>]?[Ii][Mm][Gg]\\[(?:\\s|\\S)*?\\]\\]+",inlineCss:o,url:"(?:file|https?|mailto|ftp|javascript|irc|news|data):[^\\s'\"]+"})}();!function(){function e(e,t){var r=Number.parseInt(e,10)||0;if(r<1)return"";var n=void 0===t?"":String(t);for(""===n&&(n=" ");n.length<r;){var a=n.length,i=r-a;n+=a>i?n.slice(0,i):n}return n.length>r&&(n=n.slice(0,r)),n}var t=function(){function e(e,n){var a=String(e);if(!a)return a;switch(n){case"start":return t.test(a)?a.replace(t,""):a;case"end":return r.test(a)?a.replace(r,""):a;default:throw new Error('_trimString called with incorrect where parameter value: "'+n+'"')}}var t=new RegExp("^"+Patterns.space+Patterns.space+"*"),r=new RegExp(""+Patterns.space+Patterns.space+"*$");return e}();Array.prototype.flat||Object.defineProperty(Array.prototype,"flat",{configurable:!0,writable:!0,value:function(){function e(){if(null==this)throw new TypeError("Array.prototype.flat called on null or undefined");var t=0===arguments.length?1:Number(arguments[0])||0;return t<1?Array.prototype.slice.call(this):Array.prototype.reduce.call(this,function(r,n){return n instanceof Array?r.push.apply(r,_toConsumableArray(e.call(n,t-1))):r.push(n),r},[])}return e}()}),Array.prototype.flatMap||Object.defineProperty(Array.prototype,"flatMap",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.flatMap called on null or undefined");return Array.prototype.map.apply(this,arguments).flat()}}),Array.prototype.includes||Object.defineProperty(Array.prototype,"includes",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.includes called on null or undefined");if(0===arguments.length)return!1;var e=this.length>>>0;if(0===e)return!1;var t=arguments[0],r=Number(arguments[1])||0;for(r<0&&(r=Math.max(0,e+r));r<e;++r){var n=this[r];if(n===t||n!==n&&t!==t)return!0}return!1}}),Object.entries||Object.defineProperty(Object,"entries",{configurable:!0,writable:!0,value:function(e){if("object"!==(void 0===e?"undefined":_typeof(e))||null===e)throw new TypeError("Object.entries object parameter must be an object");return Object.keys(e).map(function(t){return[t,e[t]]})}}),Object.fromEntries||Object.defineProperty(Object,"fromEntries",{configurable:!0,writable:!0,value:function(e){return Array.from(e).reduce(function(e,t){if(Object(t)!==t)throw new TypeError("Object.fromEntries iterable parameter must yield objects");return t[0]in e?Object.defineProperty(e,t[0],{configurable:!0,enumerable:!0,writable:!0,value:t[1]}):e[t[0]]=t[1],e},{})}}),Object.getOwnPropertyDescriptors||Object.defineProperty(Object,"getOwnPropertyDescriptors",{configurable:!0,writable:!0,value:function(e){if(null==e)throw new TypeError("Object.getOwnPropertyDescriptors object parameter is null or undefined");var t=Object(e);return Reflect.ownKeys(t).reduce(function(e,r){var n=Object.getOwnPropertyDescriptor(t,r);return void 0!==n&&(r in e?Object.defineProperty(e,r,{configurable:!0,enumerable:!0,writable:!0,value:n}):e[r]=n),e},{})}}),Object.values||Object.defineProperty(Object,"values",{configurable:!0,writable:!0,value:function(e){if("object"!==(void 0===e?"undefined":_typeof(e))||null===e)throw new TypeError("Object.values object parameter must be an object");return Object.keys(e).map(function(t){return e[t]})}}),String.prototype.padStart||Object.defineProperty(String.prototype,"padStart",{configurable:!0,writable:!0,value:function(t,r){if(null==this)throw new TypeError("String.prototype.padStart called on null or undefined");var n=String(this),a=n.length,i=Number.parseInt(t,10);return i<=a?n:e(i-a,r)+n}}),String.prototype.padEnd||Object.defineProperty(String.prototype,"padEnd",{configurable:!0,writable:!0,value:function(t,r){if(null==this)throw new TypeError("String.prototype.padEnd called on null or undefined");var n=String(this),a=n.length,i=Number.parseInt(t,10);return i<=a?n:n+e(i-a,r)}}),String.prototype.trimStart||Object.defineProperty(String.prototype,"trimStart",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.trimStart called on null or undefined");return t(this,"start")}}),String.prototype.trimLeft||Object.defineProperty(String.prototype,"trimLeft",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.trimLeft called on null or undefined");return t(this,"start")}}),String.prototype.trimEnd||Object.defineProperty(String.prototype,"trimEnd",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.trimEnd called on null or undefined");return t(this,"end")}}),String.prototype.trimRight||Object.defineProperty(String.prototype,"trimRight",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.trimRight called on null or undefined");return t(this,"end")}})}(),function(){function _random(){var e=void 0,t=void 0;switch(arguments.length){case 0:throw new Error("_random called with insufficient parameters");case 1:e=0,t=arguments[0];break;default:e=arguments[0],t=arguments[1]}if(e>t){var r=[t,e];e=r[0],t=r[1]}return Math.floor(_nativeMathRandom()*(t-e+1))+e}function _randomIndex(e,t){var r=void 0,n=void 0;switch(t.length){case 1:r=0,n=e-1;break;case 2:r=0,n=Math.trunc(t[1]);break;default:r=Math.trunc(t[1]),n=Math.trunc(t[2])}return Number.isNaN(r)?r=0:!Number.isFinite(r)||r>=e?r=e-1:r<0&&(r=e+r)<0&&(r=0),Number.isNaN(n)?n=0:!Number.isFinite(n)||n>=e?n=e-1:n<0&&(n=e+n)<0&&(n=e-1),_random(r,n)}function _getCodePointStartAndEnd(e,t){var r=e.charCodeAt(t);if(Number.isNaN(r))return{char:"",start:-1,end:-1};if(r<55296||r>57343)return{char:e.charAt(t),start:t,end:t};if(r>=55296&&r<=56319){var n=t+1;if(n>=e.length)throw new Error("high surrogate without trailing low surrogate");var a=e.charCodeAt(n);if(a<56320||a>57343)throw new Error("high surrogate without trailing low surrogate");return{char:e.charAt(t)+e.charAt(n),start:t,end:n}}if(0===t)throw new Error("low surrogate without leading high surrogate");var i=t-1,o=e.charCodeAt(i);if(o<55296||o>56319)throw new Error("low surrogate without leading high surrogate");return{char:e.charAt(i)+e.charAt(t),start:i,end:t}}var _nativeMathRandom=Math.random;Object.defineProperty(Array,"random",{configurable:!0,writable:!0,value:function(e){if("object"!==(void 0===e?"undefined":_typeof(e))||null===e||!Object.prototype.hasOwnProperty.call(e,"length"))throw new TypeError("Array.random array parameter must be an array or array-lke object");var t=e.length>>>0;if(0!==t){return e[0===arguments.length?_random(0,t-1):_randomIndex(t,Array.prototype.slice.call(arguments,1))]}}}),Object.defineProperty(Array.prototype,"concatUnique",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.concatUnique called on null or undefined");var e=Array.from(this);if(0===arguments.length)return e;var t=Array.prototype.reduce.call(arguments,function(e,t){return e.concat(t)},[]),r=t.length;if(0===r)return e;for(var n=Array.prototype.indexOf,a=Array.prototype.push,i=0;i<r;++i){var o=t[i];-1===n.call(e,o)&&a.call(e,o)}return e}}),Object.defineProperty(Array.prototype,"count",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.count called on null or undefined");for(var e=Array.prototype.indexOf,t=arguments[0],r=Number(arguments[1])||0,n=0;-1!==(r=e.call(this,t,r));)++n,++r;return n}}),Object.defineProperty(Array.prototype,"delete",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.delete called on null or undefined");if(0===arguments.length)return[];var e=this.length>>>0;if(0===e)return[];for(var t=Array.prototype.concat.apply([],arguments),r=t.length,n=[],a=0;a<e;++a)for(var i=this[a],o=0;o<r;++o){var s=t[o];if(i===s||i!==i&&s!==s){n.push(a);break}}for(var u=[],l=0,c=n.length;l<c;++l)u[l]=this[n[l]];for(var d=Array.prototype.splice,f=n.length-1;f>=0;--f)d.call(this,n[f],1);return u}}),Object.defineProperty(Array.prototype,"deleteAt",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.deleteAt called on null or undefined");if(0===arguments.length)return[];var e=this.length>>>0;if(0===e)return[];for(var t=Array.prototype.splice,r=[].concat(_toConsumableArray(new Set(Array.prototype.concat.apply([],arguments).map(function(t){return t<0?Math.max(0,e+t):t})).values())),n=[].concat(_toConsumableArray(r)).sort(function(e,t){return t-e}),a=[],i=0,o=r.length;i<o;++i)a[i]=this[r[i]];for(var s=0,u=n.length;s<u;++s)t.call(this,n[s],1);return a}}),Object.defineProperty(Array.prototype,"deleteWith",{configurable:!0,writable:!0,value:function(e,t){if(null==this)throw new TypeError("Array.prototype.deleteWith called on null or undefined");if("function"!=typeof e)throw new Error("Array.prototype.deleteWith predicate parameter must be a function");var r=this.length>>>0;if(0===r)return[];for(var n=Array.prototype.splice,a=[],i=[],o=0;o<r;++o)e.call(t,this[o],o,this)&&(i.push(this[o]),a.push(o));for(var s=a.length-1;s>=0;--s)n.call(this,a[s],1);return i}}),Object.defineProperty(Array.prototype,"first",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.first called on null or undefined");if(0!=this.length>>>0)return this[0]}}),Object.defineProperty(Array.prototype,"includesAll",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.includesAll called on null or undefined");if(1===arguments.length)return Array.isArray(arguments[0])?Array.prototype.includesAll.apply(this,arguments[0]):Array.prototype.includes.apply(this,arguments);for(var e=0,t=arguments.length;e<t;++e)if(!Array.prototype.some.call(this,function(e){return e===this.val||e!==e&&this.val!==this.val},{val:arguments[e]}))return!1;return!0}}),Object.defineProperty(Array.prototype,"includesAny",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.includesAny called on null or undefined");if(1===arguments.length)return Array.isArray(arguments[0])?Array.prototype.includesAny.apply(this,arguments[0]):Array.prototype.includes.apply(this,arguments);for(var e=0,t=arguments.length;e<t;++e)if(Array.prototype.some.call(this,function(e){return e===this.val||e!==e&&this.val!==this.val},{val:arguments[e]}))return!0;return!1}}),Object.defineProperty(Array.prototype,"last",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.last called on null or undefined");var e=this.length>>>0;if(0!==e)return this[e-1]}}),Object.defineProperty(Array.prototype,"pluck",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.pluck called on null or undefined");var e=this.length>>>0;if(0!==e){var t=0===arguments.length?_random(0,e-1):_randomIndex(e,[].concat(Array.prototype.slice.call(arguments)));return Array.prototype.splice.call(this,t,1)[0]}}}),Object.defineProperty(Array.prototype,"pluckMany",{configurable:!0,writable:!0,value:function(e){if(null==this)throw new TypeError("Array.prototype.pluckMany called on null or undefined");var t=this.length>>>0;if(0===t)return[];var r=Math.trunc(e);if(!Number.isInteger(r))throw new Error("Array.prototype.pluckMany want parameter must be an integer");if(r<1)return[];r>t&&(r=t);var n=Array.prototype.splice,a=[],i=t-1;do{a.push(n.call(this,_random(0,i--),1)[0])}while(a.length<r);return a}}),Object.defineProperty(Array.prototype,"pushUnique",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.pushUnique called on null or undefined");var e=arguments.length;if(0===e)return this.length>>>0;for(var t=Array.prototype.indexOf,r=Array.prototype.push,n=0;n<e;++n){var a=arguments[n];-1===t.call(this,a)&&r.call(this,a)}return this.length>>>0}}),Object.defineProperty(Array.prototype,"random",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.random called on null or undefined");var e=this.length>>>0;if(0!==e){return this[0===arguments.length?_random(0,e-1):_randomIndex(e,[].concat(Array.prototype.slice.call(arguments)))]}}}),Object.defineProperty(Array.prototype,"randomMany",{configurable:!0,writable:!0,value:function(e){if(null==this)throw new TypeError("Array.prototype.randomMany called on null or undefined");var t=this.length>>>0;if(0===t)return[];var r=Math.trunc(e);if(!Number.isInteger(r))throw new Error("Array.prototype.randomMany want parameter must be an integer");if(r<1)return[];r>t&&(r=t);var n=new Map,a=[],i=t-1;do{var o=void 0;do{o=_random(0,i)}while(n.has(o));n.set(o,!0),a.push(this[o])}while(a.length<r);return a}}),Object.defineProperty(Array.prototype,"shuffle",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.shuffle called on null or undefined");var e=this.length>>>0;if(0===e)return this;for(var t=e-1;t>0;--t){var r=Math.floor(_nativeMathRandom()*(t+1));if(t!==r){var n=this[t];this[t]=this[r],this[r]=n}}return this}}),Object.defineProperty(Array.prototype,"unshiftUnique",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.unshiftUnique called on null or undefined");var e=arguments.length;if(0===e)return this.length>>>0;for(var t=Array.prototype.indexOf,r=Array.prototype.unshift,n=0;n<e;++n){var a=arguments[n];-1===t.call(this,a)&&r.call(this,a)}return this.length>>>0}}),Object.defineProperty(Function.prototype,"partial",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Function.prototype.partial called on null or undefined");var e=Array.prototype.slice,t=this,r=e.call(arguments,0);return function(){for(var n=[],a=0,i=0;i<r.length;++i)n.push(r[i]===undefined?arguments[a++]:r[i]);return t.apply(this,n.concat(e.call(arguments,a)))}}}),Object.defineProperty(Math,"clamp",{configurable:!0,writable:!0,value:function(e,t,r){var n=Number(e);return Number.isNaN(n)?NaN:n.clamp(t,r)}}),Object.defineProperty(Math,"easeInOut",{configurable:!0,writable:!0,value:function(e){return 1-(Math.cos(Number(e)*Math.PI)+1)/2}}),Object.defineProperty(Number.prototype,"clamp",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Number.prototype.clamp called on null or undefined");if(2!==arguments.length)throw new Error("Number.prototype.clamp called with an incorrect number of parameters");var e=Number(arguments[0]),t=Number(arguments[1]);if(e>t){var r=[t,e];e=r[0],t=r[1]}return Math.min(Math.max(this,e),t)}}),RegExp.escape||function(){var e=/[\\^$*+?.()|[\]{}]/g,t=new RegExp(e.source);Object.defineProperty(RegExp,"escape",{configurable:!0,writable:!0,value:function(r){var n=String(r);return n&&t.test(n)?n.replace(e,"\\$&"):n}})}(),function(){var e=/{(\d+)(?:,([+-]?\d+))?}/g,t=new RegExp(e.source);Object.defineProperty(String,"format",{configurable:!0,writable:!0,value:function(r){function n(e,t,r){if(!t)return e;var n=Math.abs(t)-e.length;if(n<1)return e;var a=String(r).repeat(n);return t<0?e+a:a+e}if(arguments.length<2)return 0===arguments.length?"":r;var a=2===arguments.length&&Array.isArray(arguments[1])?[].concat(_toConsumableArray(arguments[1])):Array.prototype.slice.call(arguments,1);return 0===a.length?r:t.test(r)?(e.lastIndex=0,r.replace(e,function(e,t,r){var i=a[t];if(null==i)return"";for(;"function"==typeof i;)i=i();switch(void 0===i?"undefined":_typeof(i)){case"string":break;case"object":i=JSON.stringify(i);break;default:i=String(i)}return n(i,r?Number.parseInt(r,10):0," ")})):r}})}(),Object.defineProperty(String.prototype,"contains",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.contains called on null or undefined");return-1!==String.prototype.indexOf.apply(this,arguments)}}),Object.defineProperty(String.prototype,"count",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.count called on null or undefined");var e=String(arguments[0]||"");if(""===e)return 0;for(var t=String.prototype.indexOf,r=e.length,n=Number(arguments[1])||0,a=0;-1!==(n=t.call(this,e,n));)++a,n+=r;return a}}),Object.defineProperty(String.prototype,"first",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.first called on null or undefined");return _getCodePointStartAndEnd(String(this),0).char}}),Object.defineProperty(String.prototype,"last",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.last called on null or undefined");var e=String(this);return _getCodePointStartAndEnd(e,e.length-1).char}}),Object.defineProperty(String.prototype,"splice",{configurable:!0,writable:!0,value:function(e,t,r){if(null==this)throw new TypeError("String.prototype.splice called on null or undefined");var n=this.length>>>0;if(0===n)return"";var a=Number(e);Number.isSafeInteger(a)?a<0&&(a+=n)<0&&(a=0):a=0,a>n&&(a=n);var i=Number(t);(!Number.isSafeInteger(i)||i<0)&&(i=0);var o=this.slice(0,a);return void 0!==r&&(o+=r),a+i<n&&(o+=this.slice(a+i)),o}}),Object.defineProperty(String.prototype,"splitOrEmpty",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.splitOrEmpty called on null or undefined");return""===String(this)?[]:String.prototype.split.apply(this,arguments)}}),Object.defineProperty(String.prototype,"toLocaleUpperFirst",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.toLocaleUpperFirst called on null or undefined");var e=String(this),t=_getCodePointStartAndEnd(e,0),r=t.char,n=t.end;return-1===n?"":r.toLocaleUpperCase()+e.slice(n+1)}}),Object.defineProperty(String.prototype,"toUpperFirst",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.toUpperFirst called on null or undefined");var e=String(this),t=_getCodePointStartAndEnd(e,0),r=t.char,n=t.end;return-1===n?"":r.toUpperCase()+e.slice(n+1)}}),Object.defineProperty(Date.prototype,"toJSON",{configurable:!0,writable:!0,value:function(){return["(revive:date)",this.toISOString()]}}),Object.defineProperty(Function.prototype,"toJSON",{configurable:!0,writable:!0,value:function(){return["(revive:eval)","("+this.toString()+")"]}}),Object.defineProperty(Map.prototype,"toJSON",{configurable:!0,writable:!0,value:function(){return["(revive:map)",[].concat(_toConsumableArray(this))]}}),Object.defineProperty(RegExp.prototype,"toJSON",{configurable:!0,writable:!0,value:function(){return["(revive:eval)",this.toString()]}}),Object.defineProperty(Set.prototype,"toJSON",{configurable:!0,writable:!0,value:function(){return["(revive:set)",[].concat(_toConsumableArray(this))]}}),Object.defineProperty(JSON,"reviveWrapper",{configurable:!0,writable:!0,value:function(e,t){if("string"!=typeof e)throw new TypeError("JSON.reviveWrapper code parameter must be a string");return["(revive:eval)",[e,t]]}}),Object.defineProperty(JSON,"_real_stringify",{value:JSON.stringify}),Object.defineProperty(JSON,"stringify",{configurable:!0,writable:!0,value:function(e,t,r){return JSON._real_stringify(e,function(e,r){var n=r;if("function"==typeof t)try{n=t(e,n)}catch(e){}return void 0===n&&(n=["(revive:eval)","undefined"]),n},r)}}),Object.defineProperty(JSON,"_real_parse",{value:JSON.parse}),Object.defineProperty(JSON,"parse",{configurable:!0,writable:!0,value:function value(text,reviver){return JSON._real_parse(text,function(key,val){var value=val;if(Array.isArray(value)&&2===value.length)switch(value[0]){case"(revive:set)":value=new Set(value[1]);break;case"(revive:map)":value=new Map(value[1]);break;case"(revive:date)":value=new Date(value[1]);break;case"(revive:eval)":try{if(Array.isArray(value[1])){var $ReviveData$=value[1][1];value=eval(value[1][0])}else value=eval(value[1])}catch(e){}}else if("string"==typeof value&&"@@revive@@"===value.slice(0,10))try{value=eval(value.slice(10))}catch(e){}if("function"==typeof reviver)try{value=reviver(key,value)}catch(e){}return value})}}),Object.defineProperty(Array.prototype,"contains",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.contains called on null or undefined");return Array.prototype.includes.apply(this,arguments)}}),Object.defineProperty(Array.prototype,"containsAll",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.containsAll called on null or undefined");return Array.prototype.includesAll.apply(this,arguments)}}),Object.defineProperty(Array.prototype,"containsAny",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.containsAny called on null or undefined");return Array.prototype.includesAny.apply(this,arguments)}}),Object.defineProperty(Array.prototype,"flatten",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.flatten called on null or undefined");return Array.prototype.flat.call(this,1/0)}}),Object.defineProperty(String.prototype,"readBracketedList",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.readBracketedList called on null or undefined");for(var e=new RegExp("(?:\\[\\[((?:\\s|\\S)*?)\\]\\])|([^\"'\\s]\\S*)","gm"),t=[],r=void 0;null!==(r=e.exec(this));)r[1]?t.push(r[1]):r[2]&&t.push(r[2]);return t}})}();var Browser=function(){var e=navigator.userAgent.toLowerCase(),t=e.includes("windows phone"),r=Object.freeze({Android:!t&&e.includes("android"),BlackBerry:/blackberry|bb10/.test(e),iOS:!t&&/ip(?:hone|ad|od)/.test(e),Opera:!t&&("object"===_typeof(window.operamini)||e.includes("opera mini")),Windows:t||/iemobile|wpdesktop/.test(e),any:function(){return r.Android||r.BlackBerry||r.iOS||r.Opera||r.Windows}}),n=!r.Windows&&!/khtml|trident|edge/.test(e)&&e.includes("gecko"),a=!e.includes("opera")&&/msie|trident/.test(e),i=a?function(){var t=/(?:msie\s+|rv:)(\d+\.\d)/.exec(e);return t?Number(t[1]):0}():null,o=e.includes("opera")||e.includes(" opr/"),s=o?function(){var t=new RegExp((/khtml|chrome/.test(e)?"opr":"version")+"\\/(\\d+\\.\\d+)"),r=t.exec(e);return r?Number(r[1]):0}():null,u=e.includes("vivaldi");return Object.freeze({userAgent:e,isMobile:r,isGecko:n,isIE:a,ieVersion:i,isOpera:o,operaVersion:s,isVivaldi:u})}(),Has=function(){var e=function(){try{return"function"==typeof document.createElement("audio").canPlayType}catch(e){}return!1}(),t=function(){try{return"Blob"in window&&"File"in window&&"FileList"in window&&"FileReader"in window&&(!Browser.isOpera||Browser.operaVersion>=15)}catch(e){}return!1}(),r=function(){try{return"geolocation"in navigator&&"function"==typeof navigator.geolocation.getCurrentPosition&&"function"==typeof navigator.geolocation.watchPosition}catch(e){}return!1}(),n=function(){try{return"MutationObserver"in window&&"function"==typeof window.MutationObserver}catch(e){}return!1}(),a=function(){try{return"performance"in window&&"function"==typeof window.performance.now}catch(e){}return!1}(),i=function(){try{return"ontouchstart"in window||!!window.DocumentTouch&&document instanceof window.DocumentTouch||!!navigator.maxTouchPoints||!!navigator.msMaxTouchPoints}catch(e){}return!1}(),o=function(){try{for(var e=new Map([["transition","transitionend"],["MSTransition","msTransitionEnd"],["WebkitTransition","webkitTransitionEnd"],["MozTransition","transitionend"]]),t=[].concat(_toConsumableArray(e.keys())),r=document.createElement("div"),n=0;n<t.length;++n)if(r.style[t[n]]!==undefined)return e.get(t[n])}catch(e){}return!1}();return Object.freeze({audio:e,fileAPI:t,geolocation:r,mutationObserver:n,performance:a,touch:i,transitionEndEvent:o})}(),Visibility=function(){function e(){return a}function t(){return a&&document[a.stateProperty]||"visible"}function r(){return Boolean(a)}function n(){return Boolean(a&&document[a.hiddenProperty])}var a=function(){try{return Object.freeze([{hiddenProperty:"hidden",stateProperty:"visibilityState",changeEvent:"visibilitychange"},{hiddenProperty:"webkitHidden",stateProperty:"webkitVisibilityState",changeEvent:"webkitvisibilitychange"},{hiddenProperty:"mozHidden",stateProperty:"mozVisibilityState",changeEvent:"mozvisibilitychange"},{hiddenProperty:"msHidden",stateProperty:"msVisibilityState",changeEvent:"msvisibilitychange"}].find(function(e){return e.hiddenProperty in document}))}catch(e){}return undefined}();return Object.freeze(Object.defineProperties({},{vendor:{get:e},state:{get:t},isEnabled:{value:r},isHidden:{value:n},hiddenProperty:{value:a&&a.hiddenProperty},stateProperty:{value:a&&a.stateProperty},changeEvent:{value:a&&a.changeEvent}}))}(),Fullscreen=function(){function e(e){var t=e||document.documentElement;return t===document.documentElement&&("msRequestFullscreen"===f.requestFn||Browser.isOpera&&Browser.operaVersion<15)&&(t=document.body),t}function t(){return f}function r(){return(f||null)&&document[f.element]}function n(){return Boolean(f&&document[f.isEnabled])}function a(){return Boolean(f&&document[f.element])}function i(t,r){var n=this;if(!f)return Promise.reject(new Error("fullscreen not supported"));var i=e(r);if("function"!=typeof i[f.requestFn])return Promise.reject(new Error("fullscreen not supported"));if(a())return Promise.resolve();if(p())return i[f.requestFn](t);var o=".Fullscreen_requestFullscreen";return new Promise(function(e,r){jQuery(i).off(o).one(""+f.errorEvent+o+" "+f.changeEvent+o,function(t){jQuery(n).off(o),t.type===f.errorEvent?r(new Error("unknown fullscreen request error")):e()}),i[f.requestFn](t)})}function o(){var e=this;if(!f||"function"!=typeof document[f.exitFn])return Promise.reject(new TypeError("fullscreen not supported"));if(!a())return Promise.reject(new TypeError("fullscreen mode not active"));if(p())return document[f.exitFn]();var t=".Fullscreen_exitFullscreen";return new Promise(function(r,n){jQuery(document).off(t).one(""+f.errorEvent+t+" "+f.changeEvent+t,function(a){jQuery(e).off(t),a.type===f.errorEvent?n(new Error("unknown fullscreen exit error")):r()}),document[f.exitFn]()})}function s(e,t){return a()?o():i(e,t)}function u(t,r){if(f){var n=e(r);$(n).on(f.changeEvent,t)}}function l(t,r){if(f){var n=e(r);t?$(n).off(f.changeEvent,t):$(n).off(f.changeEvent)}}function c(t,r){if(f){var n=e(r);$(n).on(f.errorEvent,t)}}function d(t,r){if(f){var n=e(r);t?$(n).off(f.errorEvent,t):$(n).off(f.errorEvent)}}var f=function(){try{return Object.freeze([{isEnabled:"fullscreenEnabled",element:"fullscreenElement",requestFn:"requestFullscreen",exitFn:"exitFullscreen",changeEvent:"fullscreenchange",errorEvent:"fullscreenerror"},{isEnabled:"webkitFullscreenEnabled",element:"webkitFullscreenElement",requestFn:"webkitRequestFullscreen",exitFn:"webkitExitFullscreen",changeEvent:"webkitfullscreenchange",errorEvent:"webkitfullscreenerror"},{isEnabled:"mozFullScreenEnabled",element:"mozFullScreenElement",requestFn:"mozRequestFullScreen",exitFn:"mozCancelFullScreen",changeEvent:"mozfullscreenchange",errorEvent:"mozfullscreenerror"},{isEnabled:"msFullscreenEnabled",element:"msFullscreenElement",requestFn:"msRequestFullscreen",exitFn:"msExitFullscreen",changeEvent:"MSFullscreenChange",errorEvent:"MSFullscreenError"}].find(function(e){return e.isEnabled in document}))}catch(e){}return undefined}(),p=function(){function e(){if(null!==t)return t;if(t=!1,f)try{var e=document.exitFullscreen();e.catch(function(){}),t=e instanceof Promise}catch(e){}return t}var t=null;return e}();return Object.freeze(Object.defineProperties({},{vendor:{get:t},element:{get:r},isEnabled:{value:n},isFullscreen:{value:a},request:{value:i},exit:{value:o},toggle:{value:s},onChange:{value:u},offChange:{value:l},onError:{value:c},offError:{value:d}}))}(),_ref3=function(){function e(e){for(var t=e.cloneNode(!0),r=document.createDocumentFragment(),n=void 0;null!==(n=t.firstChild);){if(n.nodeType===Node.ELEMENT_NODE)switch(n.nodeName.toUpperCase()){case"BR":case"DIV":case"P":r.appendChild(document.createTextNode(" "))}r.appendChild(n)}return r.textContent}function t(e){if("object"!==(void 0===e?"undefined":_typeof(e))||null===e)return e;if(e instanceof String)return String(e);if(e instanceof Number)return Number(e);if(e instanceof Boolean)return Boolean(e)
