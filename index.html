@@ -1913,7 +1913,18 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.</tw-passagedata><tw
 
 &lt;span class=&quot;next2&quot;&gt;[[|Предзагрузка]]&lt;/span&gt;
 
-&lt;&lt;timed 15s t8n&gt;&gt;&lt;&lt;goto &quot;Предзагрузка&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="6" name="main_menu_day" tags="" position="523,216" size="100,100">&lt;&lt;timed 1s t8n&gt;&gt;&lt;div class=&quot;mouse_move&quot;&gt;
+&lt;&lt;timed 15s t8n&gt;&gt;&lt;&lt;goto &quot;Предзагрузка&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="6" name="main_menu_day" tags="" position="523,216" size="100,100">&lt;span class=&quot;hero&quot;&gt;
+&lt;img
+        id=&quot;img_hero_delay&quot;
+        src=
+&quot;https://github.com/Demiverse/new/blob/main/menu/besedka_4.png?raw=true&quot;&gt;
+&lt;img
+        id=&quot;img_hero_delay&quot;
+        src=
+&quot;https://github.com/Demiverse/new/blob/main/menu/f_4.png?raw=true&quot;&gt;
+&lt;/span&gt;
+
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;div class=&quot;mouse_move&quot;&gt;
  &lt;img
         id=&quot;img3&quot;
 		src=
@@ -8587,7 +8598,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.</tw-passagedata><tw
 Для собеседника это будет выглядеть так, что он нашёл единомышленника и родственную душу. Ну а для тебя это станет отличным способом завоевать его доверие. Главное, не перестарайся и случайно не начни пародировать собеседника - иначе это лишь усугубит ситуацию.
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;&lt;if ($jasker_02 and $smeyana_02) or ($smeyana_02 and $nayan_02) or ($nayan_02 and $jasker_02) or ($jasker_03 and $smeyana_03) or ($smeyana_03 and $nayan_03) or ($nayan_03 and $jasker_03) is true&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта8]]&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;notdialog&quot;&gt;&lt;div id=&quot;elem2&quot;&gt;&lt;span class=&quot;next&quot;&gt;[[|antoinette_02]]&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 3s t8n&gt;&gt;&lt;&lt;if ($jasker_02 and $smeyana_02) or ($smeyana_02 and $nayan_02) or ($nayan_02 and $jasker_02) or ($jasker_03 and $smeyana_03) or ($smeyana_03 and $nayan_03) or ($nayan_03 and $jasker_03) or ($jasker_02 and $smeyana_03) or ($smeyana_02 and $nayan_03) or ($nayan_02 and $jasker_03) or ($jasker_03 and $smeyana_02) or ($smeyana_03 and $nayan_02) or ($nayan_03 and $jasker_02) is true&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта8]]&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;notdialog&quot;&gt;&lt;div id=&quot;elem2&quot;&gt;&lt;span class=&quot;next&quot;&gt;[[|antoinette_02]]&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;div class=&quot;hero&quot;&gt;
 &lt;img
@@ -8632,8 +8643,8 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.</tw-passagedata><tw
 &quot;https://content.alloder.ru/uploads/An_nachalo_b6afaf8fe2.png&quot;&gt;
 &lt;/div&gt;
 
-&lt;&lt;run memorize (&#39;achievement_10&#39;, true)&gt;&gt;
-&lt;&lt;set $achievement_10 to true&gt;&gt;
+&lt;&lt;run memorize (&#39;achievement_010&#39;, true)&gt;&gt;
+&lt;&lt;set $achievement_010 to true&gt;&gt;
 
 &lt;&lt;if $achiev_not_antoinette02 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;if $antoinette_02 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;notify 3000&gt;&gt;&lt;div style=&quot;color: rgb(134 105 66);&quot;&gt;Получено достижение:&lt;/div&gt; Игривый язычок&lt;&lt;/notify&gt;&gt;&lt;&lt;timed 5s&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Сохранение...&lt;&lt;/notify&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/if&gt;&gt;
 
@@ -9340,8 +9351,8 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.</tw-passagedata><tw
 &quot;https://content.alloder.ru/uploads/divan_1_fe13d696d0.png&quot;&gt;
 &lt;/span&gt;
 
-&lt;&lt;run memorize (&#39;achievement_11&#39;, true)&gt;&gt;
-&lt;&lt;set $achievement_11 to true&gt;&gt;
+&lt;&lt;run memorize (&#39;achievement_011&#39;, true)&gt;&gt;
+&lt;&lt;set $achievement_011 to true&gt;&gt;
 
 &lt;&lt;if $achiev_not_antoinette03 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;if $antoinette_03 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;notify 3000&gt;&gt;&lt;div style=&quot;color: rgb(134 105 66);&quot;&gt;Получено достижение:&lt;/div&gt; Светский угодник&lt;&lt;/notify&gt;&gt;&lt;&lt;timed 5s&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Сохранение...&lt;&lt;/notify&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/if&gt;&gt;
 
@@ -9394,8 +9405,8 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.</tw-passagedata><tw
 &quot;https://content.alloder.ru/uploads/divan_1_fe13d696d0.png&quot;&gt;
 &lt;/span&gt;
 
-&lt;&lt;run memorize (&#39;achievement_11&#39;, true)&gt;&gt;
-&lt;&lt;set $achievement_11 to true&gt;&gt;
+&lt;&lt;run memorize (&#39;achievement_011&#39;, true)&gt;&gt;
+&lt;&lt;set $achievement_011 to true&gt;&gt;
 
 &lt;&lt;if $achiev_not_antoinette03 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;if $antoinette_03 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;notify 3000&gt;&gt;&lt;div style=&quot;color: rgb(134 105 66);&quot;&gt;Получено достижение:&lt;/div&gt; Светский угодник&lt;&lt;/notify&gt;&gt;&lt;&lt;timed 5s&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Сохранение...&lt;&lt;/notify&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/if&gt;&gt;
 
@@ -9843,8 +9854,8 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.</tw-passagedata><tw
 &lt;&lt;audio &quot;Nayan_sound2&quot; stop&gt;&gt;
 &lt;&lt;audio &quot;night_bgm&quot; stop&gt;&gt;
 
-&lt;&lt;run memorize (&#39;achievement_12&#39;, true)&gt;&gt;
-&lt;&lt;set $achievement_12 to true&gt;&gt;
+&lt;&lt;run memorize (&#39;achievement_012&#39;, true)&gt;&gt;
+&lt;&lt;set $achievement_012 to true&gt;&gt;
 
 &lt;&lt;if $achiev_not_antoinette04 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;if $antoinette_04 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;notify 3000&gt;&gt;&lt;div style=&quot;color: rgb(134 105 66);&quot;&gt;Получено достижение:&lt;/div&gt; Телесных дел мастер&lt;&lt;/notify&gt;&gt;&lt;&lt;timed 5s&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Сохранение...&lt;&lt;/notify&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/if&gt;&gt;
 
@@ -9970,7 +9981,18 @@ Opium Witch
 
 &lt;&lt;audio &quot;credits&quot; loop play&gt;&gt;
 
-&lt;span class=&quot;next2&quot;&gt;[[|Предзагрузка]]&lt;/span&gt;</tw-passagedata><tw-passagedata pid="213" name="main_menu_night" tags="" position="688,224" size="100,100">&lt;&lt;timed 1s t8n&gt;&gt;&lt;div class=&quot;mouse_move&quot;&gt;
+&lt;span class=&quot;next2&quot;&gt;[[|Предзагрузка]]&lt;/span&gt;</tw-passagedata><tw-passagedata pid="213" name="main_menu_night" tags="" position="688,224" size="100,100">&lt;span class=&quot;hero&quot;&gt;
+&lt;img
+        id=&quot;img_hero_delay&quot;
+        src=
+&quot;https://github.com/Demiverse/new/blob/main/menu/besedka_4.png?raw=true&quot;&gt;
+&lt;img
+        id=&quot;img_hero_delay&quot;
+        src=
+&quot;https://github.com/Demiverse/new/blob/main/menu/f_3.png?raw=true&quot;&gt;
+&lt;/span&gt;
+
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;div class=&quot;mouse_move&quot;&gt;
  &lt;img
         id=&quot;img3&quot;
 		src=
@@ -10011,7 +10033,18 @@ Opium Witch
 &lt;&lt;audio &quot;Jasker_sound&quot; stop&gt;&gt;
 &lt;&lt;audio &quot;Jasker_sound2&quot; stop&gt;&gt;
 &lt;&lt;audio &quot;Nayan_sound&quot; stop&gt;&gt;
-&lt;&lt;audio &quot;Nayan_sound2&quot; stop&gt;&gt;</tw-passagedata><tw-passagedata pid="214" name="main_menu_evening" tags="" position="854,264" size="100,100">&lt;&lt;timed 1s t8n&gt;&gt;&lt;div class=&quot;mouse_move&quot;&gt;
+&lt;&lt;audio &quot;Nayan_sound2&quot; stop&gt;&gt;</tw-passagedata><tw-passagedata pid="214" name="main_menu_evening" tags="" position="854,264" size="100,100">&lt;span class=&quot;hero&quot;&gt;
+&lt;img
+        id=&quot;img_hero_delay&quot;
+        src=
+&quot;https://github.com/Demiverse/new/blob/main/menu/besedka_4.png?raw=true&quot;&gt;
+&lt;img
+        id=&quot;img_hero_delay&quot;
+        src=
+&quot;https://github.com/Demiverse/new/blob/main/menu/f_2.png?raw=true&quot;&gt;
+&lt;/span&gt;
+
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;div class=&quot;mouse_move&quot;&gt;
  &lt;img
         id=&quot;img3&quot;
 		src=
