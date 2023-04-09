@@ -156,7 +156,14 @@ h3 {
     margin-block-end: 0em;
     font-weight: bold;
 }
-
+@media screen and (min-width: 3840px) {
+ h3 {
+  font-size: 280%;
+    left: 200px;
+    right: 200px;
+    position: fixed;
+  }
+}
 h5 {
     display: block;
   margin-block-start: 1em;
@@ -277,6 +284,11 @@ body.desert {
 	    top: 30em;
     bottom: -15em;
   }
+}
+@media screen and (min-width: 3840px) {
+ .desert .passage { 
+   font-size: 150%;
+}
 }
 /* cтиль 3 */ 
 .logo {
@@ -460,6 +472,12 @@ body.menu {
    opacity: 0%;
   }
 }
+@media screen and (min-width: 3840px) {
+ .settingsicon { 
+      width: 45px;
+    height: 45px;
+  }
+}
 /*Смеяна*/
 .settingsicon-smeyana {
     background-image: url("https://content.alloder.ru/uploads/Menu_Button_Normal_UI_Texture_ed45264d70.png");
@@ -492,6 +510,12 @@ body.menu {
 @media screen and (orientation:landscape) and (max-width: 960px) {
  .settingsicon-smeyana { 
    opacity: 0%;
+  }
+}
+@media screen and (min-width: 3840px) {
+ .settingsicon-smeyana { 
+      width: 45px;
+    height: 45px;
   }
 }
 /*Найан*/
@@ -528,6 +552,12 @@ body.menu {
    opacity: 0%;
   }
 }
+@media screen and (min-width: 3840px) {
+ .settingsicon-nayan { 
+      width: 45px;
+    height: 45px;
+  }
+}
 /*Яскер*/
 .settingsicon-jasker {
     background-image: url("https://content.alloder.ru/uploads/Menu_Button_Normal_UI_Texture_ed45264d70.png");
@@ -560,6 +590,12 @@ body.menu {
 @media screen and (orientation:landscape) and (max-width: 960px) {
  .settingsicon-jasker { 
    opacity: 0%;
+  }
+}
+@media screen and (min-width: 3840px) {
+ .settingsicon-jasker { 
+      width: 45px;
+    height: 45px;
   }
 }
 /* мерцание текста */
@@ -638,7 +674,12 @@ text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6
 }
 @media screen and (min-width: 3840px) {
  .subtitle-item { 
- font-size: calc(1.4rem + 0.7vw + 0.1vh);
+   font-size: calc(1.1rem + 0.7vw + 0.1vh);
+}
+}
+@media screen and (min-width: 3840px) {
+ .subtitle-item a:hover{ 
+   background-size: 100%;
 }
 }
 .subtitle2 {
@@ -789,6 +830,7 @@ text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6
    background-image: url('https://github.com/Demiverse/new/blob/main/menu/Background%20(2).png?raw=true');
      background-repeat: no-repeat;
   background-position: center center;
+  background-size: cover;
       overflow: hidden;
 }
 #ui-overlay.open {
@@ -1333,6 +1375,53 @@ opacity: 0%;
     bottom: -4em;
 }
 }
+@media screen and (min-width: 3840px) {
+#ui-dialog-body .img_border {
+    left: 48em;
+    width: 1442px;
+    height: 2035px;
+}
+}
+@media screen and (min-width: 3840px) {
+#ui-dialog-body .img_border2 {
+    left: 48em;
+    width: 1442px;
+    height: 2035px;
+}
+}
+@media screen and (min-width: 3840px) {
+#ui-dialog-body .img_item {
+       left: 69em;
+    top: 33em;
+    width: 800px;
+    height: 800px;
+}
+}
+@media screen and (min-width: 3840px) {
+#ui-dialog-body .img_item2 {
+       left: 69em;
+    top: 33em;
+    width: 800px;
+    height: 800px;
+}
+}
+@media screen and (min-width: 3840px) {
+#ui-dialog-body .img_item_text {
+     left: 38.5em;
+    top: 14em;
+    width: 434px;
+    height: 589px;
+    font-size: 38px;
+}
+}
+@media screen and (min-width: 3840px) {
+#ui-dialog-body .img_item_text2 {
+        font-size: 20px;
+}
+}
+
+
+
 @media screen and (max-width: 960px) and (max-width: 840px) and (max-width: 720px) {
 #ui-dialog-body.settings input[type=range][id|=setting-control-volume] {
  display: none;
@@ -1480,6 +1569,29 @@ opacity: 0%;
   }
 }
 
+@media screen and (min-width: 3840px) {
+ #img_hero { 
+     top: 325px;
+   left: 1075px;
+}
+}
+@media screen and (min-width: 3840px) {
+ #img_hero_jasker { 
+     top: 130px;
+   left: 500px;
+}
+}
+@media screen and (min-width: 3840px) {
+ #img_hero_nayan { 
+      top: 222px;
+    left: 1177px;
+}
+}
+@media screen and (min-width: 3840px) {
+ #img_hero_smeyana { 
+    left: 1174px;
+  }
+}
 /* ------------------------
 
 SCROLLBAR
@@ -1596,7 +1708,11 @@ body.jasker-finalart {
     bottom: -15em;
   }
 }
-
+@media screen and (min-width: 3840px) {
+ .jasker-finalart .passage { 
+   font-size: 150%;
+}
+}
 
 #ui-dialog-body .menu {
       background-color: rgba(0, 0, 0, 0);
@@ -1704,7 +1820,11 @@ body.jasker {
     bottom: -15em;
   }
 }
-
+@media screen and (min-width: 3840px) {
+ .jasker .passage { 
+   font-size: 150%;
+}
+}
 /* cтиль Найана */
 html.nayan {
   width: 100%;
@@ -1788,7 +1908,11 @@ body.nayan {
     bottom: -15em;
   }
 }
-
+@media screen and (min-width: 3840px) {
+ .nayan .passage { 
+   font-size: 150%;
+}
+}
 /* cтиль Смеяна */
 html.smeyana {
   width: 100%;
@@ -1872,9 +1996,23 @@ body.smeyana {
     bottom: -15em;
   }
 }
+@media screen and (min-width: 3840px) {
+ .smeyana .passage { 
+   font-size: 150%;
+}
+}
 
 :focus { 
   outline: none; 
+}
+@media screen and (min-width: 3840px) {
+#blink1 {
+    font-size: 250%;
+    position: fixed;
+    top: 28em;
+    left: 0em;
+    right: 0em;
+}
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript">// Локализация
 l10nStrings.savesTitle="Загрузить";
 l10nStrings.settingsTitle="Настройки";
@@ -2285,9 +2423,9 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.</tw-passagedata><tw
 &lt;&lt;audio &quot;Nayan_sound2&quot; stop&gt;&gt;</tw-passagedata><tw-passagedata pid="7" name="Достижения" tags="" position="35,19" size="100,100">&lt;h3&gt;Серия достижений «Груз тысячелетий»&lt;/h3&gt;&lt;&lt;if $achievement_01 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Вы рассмешили деда&lt;/h3&gt;Найану уже не одна сотня лет, но таких шуток с ним ещё не шутили&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Вы рассмешили деда&lt;/h3&gt;Найану уже не одна сотня лет, но таких шуток с ним ещё не шутили&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $achievement_02 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;На что клюёт мотыль?&lt;/h3&gt;Вам бы хотелось разговорить историка, но книжная пыль для него оказалась интереснее...&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;На что клюёт мотыль?&lt;/h3&gt;Вам бы хотелось разговорить историка, но книжная пыль для него оказалась интереснее...&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $achievement_03 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Мотылёк в бутылке&lt;/h3&gt;Вот говорят - как бы горестно не было, не лезь в бутылку... Теперь вы знаете, что может случиться&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Мотылёк в бутылке&lt;/h3&gt;Вот говорят - как бы горестно не было, не лезь в бутылку... Теперь вы знаете, что может случиться&lt;/span&gt;&lt;&lt;/if&gt;&gt;
 &lt;h3&gt;Серия достижений «Тренировка по расписанию»&lt;/h3&gt;&lt;&lt;if $achievement_04 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Таким boyцам здесь не место!&lt;/h3&gt;Вы разочаровали отца хадаганской нации&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Таким boyцам здесь не место!&lt;/h3&gt;Вы разочаровали отца хадаганской нации&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $achievement_05 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Горячая разминка&lt;/h3&gt;Потный бой - он трудный самый. Но ваши усилия вознаграждены&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Горячая разминка&lt;/h3&gt;Потный бой - он трудный самый. Но ваши усилия вознаграждены&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $achievement_06 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Welcome to the club, buddy!&lt;/h3&gt;Теперь вы член клуба. Будьте тверды и целеустремлённы!&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Welcome to the club, buddy!&lt;/h3&gt;Теперь вы член клуба. Будьте тверды и целеустремлённы!&lt;/span&gt;&lt;&lt;/if&gt;&gt;
 &lt;h3&gt;Серия достижений «Покончить с невежеством»&lt;/h3&gt;&lt;&lt;if $achievement_07 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Бестолочь&lt;/h3&gt;Хорошо, что хоть посохом по хребтине не приложила...&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Бестолочь&lt;/h3&gt;Хорошо, что хоть посохом по хребтине не приложила...&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $achievement_08 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Светлая голова&lt;/h3&gt;Владычица заручилась вашей поддержкой&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Светлая голова&lt;/h3&gt;Владычица заручилась вашей поддержкой&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $achievement_09 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;С лёгким паром!&lt;/h3&gt;Мало кому доведётся отшлёпать Смеяну веником по ягодицам и при этом угодить ей&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;С лёгким паром!&lt;/h3&gt;Мало кому доведётся отшлёпать Смеяну веником по ягодицам и при этом угодить ей&lt;/span&gt;&lt;&lt;/if&gt;&gt;
-&lt;h3&gt;Серия достижений «Королевский приём»&lt;/h3&gt;&lt;&lt;if $achievement_010 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Игривый язычок&lt;/h3&gt;Главное - правильно уболтать врага, сделав своим союзником. А может, и кем-то бóльшим...&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Игривый язычок&lt;/h3&gt;Главное - правильно уболтать врага, сделав своим союзником. А может, и кем-то бóльшим...&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $achievement_011 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Светский угодник&lt;/h3&gt;Красиво пить не запретишь! Главное, знать меру и правильную подачу&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Светский угодник&lt;/h3&gt;Красиво пить не запретишь! Главное, знать меру и правильную подачу&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $achievement_012 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Телесных дел мастер&lt;/h3&gt;После обучения у самой Антуанетты успех в личной жизни вам гарантирован&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Телесных дел мастер&lt;/h3&gt;После обучения у самой Антуанетты успех в личной жизни вам гарантирован&lt;/span&gt;&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="8" name="Начало" tags="logo2" position="922,0" size="100,100">&lt;&lt;fadein 2s 0s&gt;&gt;&lt;h3&gt;В этой игре есть различные звукосодержащие элементы. Рекомендуется отрегулировать громкость на вашем устройстве. Вы также можете сделать это в меню настроек, если запустили игру с компьютера.&lt;/h3&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;Нажмите на экран...&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
+&lt;h3&gt;Серия достижений «Королевский приём»&lt;/h3&gt;&lt;&lt;if $achievement_010 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Игривый язычок&lt;/h3&gt;Главное - правильно уболтать врага, сделав своим союзником. А может, и кем-то бóльшим...&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Игривый язычок&lt;/h3&gt;Главное - правильно уболтать врага, сделав своим союзником. А может, и кем-то бóльшим...&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $achievement_011 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Светский угодник&lt;/h3&gt;Красиво пить не запретишь! Главное, знать меру и правильную подачу&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Светский угодник&lt;/h3&gt;Красиво пить не запретишь! Главное, знать меру и правильную подачу&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $achievement_012 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Телесных дел мастер&lt;/h3&gt;После обучения у самой Антуанетты успех в личной жизни вам гарантирован&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Телесных дел мастер&lt;/h3&gt;После обучения у самой Антуанетты успех в личной жизни вам гарантирован&lt;/span&gt;&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="8" name="Начало" tags="logo2" position="922,0" size="100,100">&lt;&lt;fadein 2s 0s&gt;&gt;&lt;h3&gt;В этой игре есть различные звукосодержащие элементы. Рекомендуется отрегулировать громкость на вашем устройстве. Вы также можете сделать это в меню настроек.&lt;/h3&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;span class=&quot;text&quot;&gt;&lt;em&gt;Нажмите на экран...&lt;/em&gt;&lt;/span&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;span class=&quot;next2&quot;&gt;[[|Allods]]&lt;/span&gt;
+&lt;span class=&quot;next&quot;&gt;[[|Allods]]&lt;/span&gt;
 
 </tw-passagedata><tw-passagedata pid="9" name="Антуанетта3" tags="desert no-transition" position="243,620" size="100,100">&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
 Я вижу, что тебя просто обвинили в наступивших бедах. И скорее всего, это было сделано на эмоциях. Поэтому у тебя есть шанс исправить ситуацию. Я ценю твою помощь и решила помочь в ответ. Да, в этом есть и моя личная заинтересованность, но всё же...
@@ -10740,7 +10878,7 @@ Opium Witch
         id=&quot;img_hero_delay&quot;
 		src=
 &quot;https://content.alloder.ru/uploads/An_nachalo_b6afaf8fe2.png&quot;&gt;
-&lt;/span&gt;</tw-passagedata><tw-passagedata pid="224" name="StartPassage2" tags="" position="253,307" size="100,100">&lt;&lt;fadein 2s 0s&gt;&gt;&lt;h3&gt;Вы хорошо помните её слова, произнесённые на Айрине: «Это очень трогательно! Тебе и так удалось внести основной вклад в нашу победу, а уж то, что твой голос был отдан мне… Моя благодарность будет вечной. Если тебе что-то будет нужно – Игниста всегда будет рада принять тебя».&lt;/h3&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;Нажмите на экран...&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
+&lt;/span&gt;</tw-passagedata><tw-passagedata pid="224" name="StartPassage2" tags="" position="253,307" size="100,100">&lt;&lt;fadein 2s 0s&gt;&gt;&lt;h3&gt;Вы хорошо помните её слова, произнесённые на Айрине: «Это очень трогательно! Тебе и так удалось внести основной вклад в нашу победу, а уж то, что твой голос был отдан мне… Моя благодарность будет вечной. Если тебе что-то будет нужно – Игниста всегда будет рада принять тебя».&lt;/h3&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;span class=&quot;text&quot;&gt;&lt;em&gt;Нажмите на экран...&lt;/em&gt;&lt;/span&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
 &lt;&lt;timed 3.5s t8n&gt;&gt;&lt;span class=&quot;next2&quot;&gt;[[|delay]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
