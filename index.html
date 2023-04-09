@@ -143,7 +143,6 @@ body {
   color: white;
   font-size: 100%;
   text-align: center;
-  
    	-webkit-user-select: none;
 	-khtml-user-select: none;
 	-moz-user-select: none;
@@ -614,6 +613,7 @@ text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6
 .subtitle-item a {
   font-family: 'AllodsWest', arial;
     font-weight: normal;
+     background-repeat: no-repeat;
   background-position: center bottom;
   line-height: 1.3em; 
      padding-right: 80px;
@@ -635,6 +635,11 @@ text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6
   color: #D3D3D3;
   margin: 1%;
   text-decoration: none;
+}
+@media screen and (min-width: 3840px) {
+ .subtitle-item { 
+  font-size: calc(1.5rem + 1vw);
+}
 }
 .subtitle2 {
   color: white;
@@ -679,6 +684,15 @@ text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6
    height: auto;
    width: 130%;
    pointer-events: none;
+}
+@media screen and (min-width: 3840px) {
+ #img2 {
+  top: 497px;
+    left: 1997px;
+    width: 22%;
+    height: auto;
+    pointer-events: none;
+}
 }
 @media screen and (orientation:landscape) and (max-width: 960px) {
 .mouse_move {
@@ -2079,8 +2093,7 @@ $(document).on("dblclick", function (event) {
   
           shift.style.transform = `translateX(${x}px) translateY(${y}px)`;
         });
-      }
-</script><tw-tag name="autosave" color="green"></tw-tag>,<tw-tag name="code-passage" color="orange"></tw-tag>,<tw-tag name="desert" color="orange"></tw-tag>,<tw-tag name="frontpage" color="yellow"></tw-tag>,<tw-tag name="jasker" color="red"></tw-tag>,<tw-tag name="jasker-finalart" color="orange"></tw-tag>,<tw-tag name="jasker_finalart" color="orange"></tw-tag>,<tw-tag name="menu" color="yellow"></tw-tag>,<tw-tag name="nayan" color="red"></tw-tag>,<tw-tag name="no-transition" color="purple"></tw-tag>,<tw-tag name="no-transition2" color="red"></tw-tag>,<tw-tag name="smeyana" color="red"></tw-tag>,<tw-tag name="ключ" color="blue"></tw-tag><tw-passagedata pid="1" name="StartPassage" tags="" position="350,419" size="100,100">
+      }</script><tw-tag name="autosave" color="green"></tw-tag>,<tw-tag name="code-passage" color="orange"></tw-tag>,<tw-tag name="desert" color="orange"></tw-tag>,<tw-tag name="frontpage" color="yellow"></tw-tag>,<tw-tag name="jasker" color="red"></tw-tag>,<tw-tag name="jasker-finalart" color="orange"></tw-tag>,<tw-tag name="jasker_finalart" color="orange"></tw-tag>,<tw-tag name="menu" color="yellow"></tw-tag>,<tw-tag name="nayan" color="red"></tw-tag>,<tw-tag name="no-transition" color="purple"></tw-tag>,<tw-tag name="no-transition2" color="red"></tw-tag>,<tw-tag name="smeyana" color="red"></tw-tag>,<tw-tag name="ключ" color="blue"></tw-tag><tw-passagedata pid="1" name="StartPassage" tags="" position="350,419" size="100,100">
 &lt;&lt;fadein 2s 0s&gt;&gt;&lt;h3&gt;Игниста… Аллод принадлежащий Дому ди Делис. Место, пропитанное романтикой, гедонизмом и кулуарными историями. Неудивительно, что Антуанетта ди Делис решила воспользоваться Днём всех влюблённых и собрать влиятельных лиц Сарнаута именно здесь.&lt;/h3&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;Нажмите на экран...&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
 &lt;&lt;timed 3.5s t8n&gt;&gt;&lt;span class=&quot;next2&quot;&gt;[[|StartPassage2]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
