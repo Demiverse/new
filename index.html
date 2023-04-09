@@ -231,6 +231,10 @@ body.desert {
   margin-block-start: 0em;
     margin-block-end: 0em;
     font-weight: bold;
+font-size: revert;
+    left: 0;
+    right: 0;
+    position: revert;
 }
 .desert #passages {
   border-left: 0px;
@@ -1391,7 +1395,7 @@ opacity: 0%;
 }
 @media screen and (min-width: 3840px) {
 #ui-dialog-body .img_item {
-       left: 69em;
+       left: 67em;
     top: 33em;
     width: 800px;
     height: 800px;
@@ -1400,9 +1404,9 @@ opacity: 0%;
 @media screen and (min-width: 3840px) {
 #ui-dialog-body .img_item2 {
        left: 69em;
-    top: 33em;
-    width: 800px;
-    height: 800px;
+    top: 38em;
+    width: 700px;
+    height: 700px;
 }
 }
 @media screen and (min-width: 3840px) {
@@ -1654,6 +1658,10 @@ body.jasker-finalart {
   margin-block-start: 0em;
     margin-block-end: 0em;
     font-weight: bold;
+font-size: revert;
+    left: 0;
+    right: 0;
+    position: revert;
 }
 .jasker-finalart #passages {
   border-left: 0px;
@@ -1766,6 +1774,10 @@ body.jasker {
   margin-block-start: 0em;
     margin-block-end: 0em;
     font-weight: bold;
+font-size: revert;
+    left: 0;
+    right: 0;
+    position: revert;
 }
 .jasker #passages {
   border-left: 0px;
@@ -1854,6 +1866,10 @@ body.nayan {
   margin-block-start: 0em;
     margin-block-end: 0em;
     font-weight: bold;
+font-size: revert;
+    left: 0;
+    right: 0;
+    position: revert;
 }
 .nayan #passages {
   border-left: 0px;
@@ -1942,6 +1958,10 @@ body.smeyana {
   margin-block-start: 0em;
     margin-block-end: 0em;
     font-weight: bold;
+font-size: revert;
+    left: 0;
+    right: 0;
+    position: revert;
 }
 .smeyana #passages {
   border-left: 0px;
@@ -2005,15 +2025,32 @@ body.smeyana {
 :focus { 
   outline: none; 
 }
+
+#blink2 {
+  -webkit-animation: blink1 3s linear infinite;
+  animation: blink1 3s linear infinite;
+  animation-delay: 2s;
+}
+@-webkit-keyframes blink1 {
+  0% { color: rgba(230, 230, 230, 1); }
+  50% { color: rgba(230, 230, 230, 0); }
+  100% { color: rgba(230, 230, 230, 1); }
+}
+@keyframes blink1 {
+  0% { color: rgba(230, 230, 230, 1); }
+  50% { color: rgba(230, 230, 230, 0); }
+  100% { color: rgba(230, 230, 230, 1); }
+}
 @media screen and (min-width: 3840px) {
-#blink1 {
+#blink2 {
     font-size: 250%;
     position: fixed;
-    top: 28em;
+    top: 25em;
     left: 0em;
     right: 0em;
 }
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript">// Локализация
+}
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">// Локализация
 l10nStrings.savesTitle="Загрузить";
 l10nStrings.settingsTitle="Настройки";
 l10nStrings.restartTitle="Перезапуск";
@@ -2232,7 +2269,7 @@ $(document).on("dblclick", function (event) {
           shift.style.transform = `translateX(${x}px) translateY(${y}px)`;
         });
       }</script><tw-tag name="autosave" color="green"></tw-tag>,<tw-tag name="code-passage" color="orange"></tw-tag>,<tw-tag name="desert" color="orange"></tw-tag>,<tw-tag name="frontpage" color="yellow"></tw-tag>,<tw-tag name="jasker" color="red"></tw-tag>,<tw-tag name="jasker-finalart" color="orange"></tw-tag>,<tw-tag name="jasker_finalart" color="orange"></tw-tag>,<tw-tag name="menu" color="yellow"></tw-tag>,<tw-tag name="nayan" color="red"></tw-tag>,<tw-tag name="no-transition" color="purple"></tw-tag>,<tw-tag name="no-transition2" color="red"></tw-tag>,<tw-tag name="smeyana" color="red"></tw-tag>,<tw-tag name="ключ" color="blue"></tw-tag><tw-passagedata pid="1" name="StartPassage" tags="" position="350,419" size="100,100">
-&lt;&lt;fadein 2s 0s&gt;&gt;&lt;h3&gt;Игниста… Аллод принадлежащий Дому ди Делис. Место, пропитанное романтикой, гедонизмом и кулуарными историями. Неудивительно, что Антуанетта ди Делис решила воспользоваться Днём всех влюблённых и собрать влиятельных лиц Сарнаута именно здесь.&lt;/h3&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;Нажмите на экран...&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
+&lt;&lt;fadein 2s 0s&gt;&gt;&lt;h3&gt;Игниста… Аллод принадлежащий Дому ди Делис. Место, пропитанное романтикой, гедонизмом и кулуарными историями. Неудивительно, что Антуанетта ди Делис решила воспользоваться Днём всех влюблённых и собрать влиятельных лиц Сарнаута именно здесь.&lt;/h3&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink2&quot;&gt;&lt;em&gt;Нажмите на экран...&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
 &lt;&lt;timed 3.5s t8n&gt;&gt;&lt;span class=&quot;next2&quot;&gt;[[|StartPassage2]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
@@ -2423,7 +2460,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.</tw-passagedata><tw
 &lt;&lt;audio &quot;Nayan_sound2&quot; stop&gt;&gt;</tw-passagedata><tw-passagedata pid="7" name="Достижения" tags="" position="35,19" size="100,100">&lt;h3&gt;Серия достижений «Груз тысячелетий»&lt;/h3&gt;&lt;&lt;if $achievement_01 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Вы рассмешили деда&lt;/h3&gt;Найану уже не одна сотня лет, но таких шуток с ним ещё не шутили&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Вы рассмешили деда&lt;/h3&gt;Найану уже не одна сотня лет, но таких шуток с ним ещё не шутили&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $achievement_02 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;На что клюёт мотыль?&lt;/h3&gt;Вам бы хотелось разговорить историка, но книжная пыль для него оказалась интереснее...&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;На что клюёт мотыль?&lt;/h3&gt;Вам бы хотелось разговорить историка, но книжная пыль для него оказалась интереснее...&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $achievement_03 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Мотылёк в бутылке&lt;/h3&gt;Вот говорят - как бы горестно не было, не лезь в бутылку... Теперь вы знаете, что может случиться&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Мотылёк в бутылке&lt;/h3&gt;Вот говорят - как бы горестно не было, не лезь в бутылку... Теперь вы знаете, что может случиться&lt;/span&gt;&lt;&lt;/if&gt;&gt;
 &lt;h3&gt;Серия достижений «Тренировка по расписанию»&lt;/h3&gt;&lt;&lt;if $achievement_04 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Таким boyцам здесь не место!&lt;/h3&gt;Вы разочаровали отца хадаганской нации&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Таким boyцам здесь не место!&lt;/h3&gt;Вы разочаровали отца хадаганской нации&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $achievement_05 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Горячая разминка&lt;/h3&gt;Потный бой - он трудный самый. Но ваши усилия вознаграждены&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Горячая разминка&lt;/h3&gt;Потный бой - он трудный самый. Но ваши усилия вознаграждены&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $achievement_06 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Welcome to the club, buddy!&lt;/h3&gt;Теперь вы член клуба. Будьте тверды и целеустремлённы!&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Welcome to the club, buddy!&lt;/h3&gt;Теперь вы член клуба. Будьте тверды и целеустремлённы!&lt;/span&gt;&lt;&lt;/if&gt;&gt;
 &lt;h3&gt;Серия достижений «Покончить с невежеством»&lt;/h3&gt;&lt;&lt;if $achievement_07 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Бестолочь&lt;/h3&gt;Хорошо, что хоть посохом по хребтине не приложила...&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Бестолочь&lt;/h3&gt;Хорошо, что хоть посохом по хребтине не приложила...&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $achievement_08 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Светлая голова&lt;/h3&gt;Владычица заручилась вашей поддержкой&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Светлая голова&lt;/h3&gt;Владычица заручилась вашей поддержкой&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $achievement_09 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;С лёгким паром!&lt;/h3&gt;Мало кому доведётся отшлёпать Смеяну веником по ягодицам и при этом угодить ей&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;С лёгким паром!&lt;/h3&gt;Мало кому доведётся отшлёпать Смеяну веником по ягодицам и при этом угодить ей&lt;/span&gt;&lt;&lt;/if&gt;&gt;
-&lt;h3&gt;Серия достижений «Королевский приём»&lt;/h3&gt;&lt;&lt;if $achievement_010 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Игривый язычок&lt;/h3&gt;Главное - правильно уболтать врага, сделав своим союзником. А может, и кем-то бóльшим...&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Игривый язычок&lt;/h3&gt;Главное - правильно уболтать врага, сделав своим союзником. А может, и кем-то бóльшим...&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $achievement_011 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Светский угодник&lt;/h3&gt;Красиво пить не запретишь! Главное, знать меру и правильную подачу&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Светский угодник&lt;/h3&gt;Красиво пить не запретишь! Главное, знать меру и правильную подачу&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $achievement_012 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Телесных дел мастер&lt;/h3&gt;После обучения у самой Антуанетты успех в личной жизни вам гарантирован&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Телесных дел мастер&lt;/h3&gt;После обучения у самой Антуанетты успех в личной жизни вам гарантирован&lt;/span&gt;&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="8" name="Начало" tags="logo2" position="922,0" size="100,100">&lt;&lt;fadein 2s 0s&gt;&gt;&lt;h3&gt;В этой игре есть различные звукосодержащие элементы. Рекомендуется отрегулировать громкость на вашем устройстве. Вы также можете сделать это в меню настроек.&lt;/h3&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;span class=&quot;text&quot;&gt;&lt;em&gt;Нажмите на экран...&lt;/em&gt;&lt;/span&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
+&lt;h3&gt;Серия достижений «Королевский приём»&lt;/h3&gt;&lt;&lt;if $achievement_010 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Игривый язычок&lt;/h3&gt;Главное - правильно уболтать врага, сделав своим союзником. А может, и кем-то бóльшим...&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Игривый язычок&lt;/h3&gt;Главное - правильно уболтать врага, сделав своим союзником. А может, и кем-то бóльшим...&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $achievement_011 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Светский угодник&lt;/h3&gt;Красиво пить не запретишь! Главное, знать меру и правильную подачу&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Светский угодник&lt;/h3&gt;Красиво пить не запретишь! Главное, знать меру и правильную подачу&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $achievement_012 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Телесных дел мастер&lt;/h3&gt;После обучения у самой Антуанетты успех в личной жизни вам гарантирован&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Телесных дел мастер&lt;/h3&gt;После обучения у самой Антуанетты успех в личной жизни вам гарантирован&lt;/span&gt;&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="8" name="Начало" tags="logo2" position="922,0" size="100,100">&lt;&lt;fadein 2s 0s&gt;&gt;&lt;h3&gt;В этой игре есть различные звукосодержащие элементы. Рекомендуется отрегулировать громкость на вашем устройстве. Вы также можете сделать это в меню настроек.&lt;/h3&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink2&quot;&gt;&lt;span class=&quot;text&quot;&gt;&lt;em&gt;Нажмите на экран...&lt;/em&gt;&lt;/span&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
 &lt;span class=&quot;next&quot;&gt;[[|Allods]]&lt;/span&gt;
 
@@ -10878,7 +10915,7 @@ Opium Witch
         id=&quot;img_hero_delay&quot;
 		src=
 &quot;https://content.alloder.ru/uploads/An_nachalo_b6afaf8fe2.png&quot;&gt;
-&lt;/span&gt;</tw-passagedata><tw-passagedata pid="224" name="StartPassage2" tags="" position="253,307" size="100,100">&lt;&lt;fadein 2s 0s&gt;&gt;&lt;h3&gt;Вы хорошо помните её слова, произнесённые на Айрине: «Это очень трогательно! Тебе и так удалось внести основной вклад в нашу победу, а уж то, что твой голос был отдан мне… Моя благодарность будет вечной. Если тебе что-то будет нужно – Игниста всегда будет рада принять тебя».&lt;/h3&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;span class=&quot;text&quot;&gt;&lt;em&gt;Нажмите на экран...&lt;/em&gt;&lt;/span&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
+&lt;/span&gt;</tw-passagedata><tw-passagedata pid="224" name="StartPassage2" tags="" position="253,307" size="100,100">&lt;&lt;fadein 2s 0s&gt;&gt;&lt;h3&gt;Вы хорошо помните её слова, произнесённые на Айрине: «Это очень трогательно! Тебе и так удалось внести основной вклад в нашу победу, а уж то, что твой голос был отдан мне… Моя благодарность будет вечной. Если тебе что-то будет нужно – Игниста всегда будет рада принять тебя».&lt;/h3&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink2&quot;&gt;&lt;span class=&quot;text&quot;&gt;&lt;em&gt;Нажмите на экран...&lt;/em&gt;&lt;/span&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
 &lt;&lt;timed 3.5s t8n&gt;&gt;&lt;span class=&quot;next2&quot;&gt;[[|delay]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
