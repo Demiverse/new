@@ -639,18 +639,6 @@ text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6
   }
 }
 
-/* для мобил */
-.subtitle-mobile {
-  color: white;
-  text-align: left;
-  padding: 5%;
- position: absolute;
-  overflow: auto;
-    left: 33em;
-	right: 0em;
-  top: 6.7em;
-  bottom: 0em;
-}
 /* меню */
 .subtitle-item a {
   font-family: 'AllodsWest', arial;
@@ -678,16 +666,6 @@ text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6
   margin: 1%;
   text-decoration: none;
 }
-@media screen and (min-width: 3840px) {
- .subtitle-item { 
-   font-size: calc(1.1rem + 0.7vw + 0.1vh);
-}
-}
-@media screen and (min-width: 3840px) {
- .subtitle-item a:hover{ 
-   background-size: 100%;
-}
-}
 .subtitle2 {
   color: white;
   text-align: left;
@@ -698,20 +676,25 @@ text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6
     top: 7em;
     bottom: 0em;
 }
-      .mouse_move {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-		 opacity: 100%;
-      }
-      .mouse_move img {
-        position: fixed;
+@media screen and (min-width: 2000px) {
+.subtitle2 {
+     color: white;
+    text-align: left;
+    padding: 5%;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    left: 71%;
+    right: 0;
+    top: 50%;
+    bottom: 0;
+    font-size: 200%;
+}
+}
+  .mouse_move {
       }
       #img1 {
+		  position: fixed;
+       z-index: -2;
         top: -50px;
         left: -309px;
         height: auto;
@@ -719,116 +702,40 @@ text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6
 		pointer-events: none;
       }
       #img2 {
-    top: 150px;
-    left: 650px;
-    width: 22%;
-    height: auto;
-	pointer-events: none; 
+		 position: fixed;
+    z-index: -1;
+    top: 28%;
+    left: 40%;
+    pointer-events: none;
+    width: auto;
+    max-height: 35%;
 }
 #img3 {
+    position: fixed;
+  z-index: -3;
    top: -50px;
    left: -309px;
    height: auto;
    width: 130%;
    pointer-events: none;
 }
-@media screen and (min-width: 3840px) {
- #img2 {
-  top: 363px;
-    left: 1420px;
+}
+@media screen and (max-width: 1920px) {
+#img1 {
+  }
+}
+@media screen and (max-width: 1920px) {
+#img3 {
+  }
+}
+@media screen and (max-width: 1920px) {
+#img2 {
+top: 150px;
+    left: 650px;
     width: 22%;
     height: auto;
     pointer-events: none;
-}
-}
-@media screen and (orientation:landscape) and (max-width: 960px) {
-.mouse_move {
-  opacity: 0%;
-  }
-}
-@media screen and (orientation:portrait) and (max-width: 960px) {
-.mouse_move {
-  opacity: 0%; 
-  }
-}
-/* Shrink the page when viewed on devices with a low screen width */
-@media screen and (orientation:landscape) and (max-width: 960px) {
- .back_mobile { 
-  background-image: url("https://content.alloder.ru/uploads/maxresdefault_c3e0398b53.jpg");
-  background-attachment: local;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  background-color: black;
-	font-size: 0%; 
-     position: absolute;
-    left: 0em;
-    right: 0em;
-    top: 0em;
-    bottom: 0em;
-}
-}
-@media screen and (orientation:portrait) and (max-width: 960px) {
- .back_mobile_day { 
-	 background-image: url("https://github.com/Demiverse/new/blob/main/menu/v-9aXFLOKFk.jpg?raw=true");
-  background-attachment: local;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  background-color: black;
-     position: absolute;
-    left: -36em;
-    right: -3em;
-    top: -2em;
-    bottom: -4em;
-}
-} 
-@media screen and (orientation:portrait) and (max-width: 960px) {
- .back_mobile_night { 
-	 background-image: url("https://github.com/Demiverse/new/blob/main/menu/J3NRNbY_LtE.jpg?raw=true");
-  background-attachment: local;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  background-color: black;
-     position: absolute;
-    left: -36em;
-    right: -3em;
-    top: -2em;
-    bottom: -4em;
-}
-} 
-@media screen and (orientation:portrait) and (max-width: 960px) {
- .back_mobile_evening { 
-	 background-image: url("https://github.com/Demiverse/new/blob/main/menu/tGkgwSgs2Fo.jpg?raw=true");
-  background-attachment: local;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  background-color: black;
-     position: absolute;
-    left: -36em;
-    right: -3em;
-    top: -2em;
-    bottom: -4em;
-}
-} 
-@media screen and (orientation:portrait) and (max-width: 960px) {
-.subtitle2 {
-  color: white;
-  text-align: left;
-  padding: 5%;
-     position: absolute;
-        left: 9em;
-    right: 0em;
-    top: 10em;
-    bottom: -1em;
-  font-size: 150%; 
-}
-}
-@media screen and (orientation:landscape) and (max-width: 960px) {
-.subtitle2 {
-   opacity: 0%; 
+  max-height: none;
   }
 }
 /* дизайн настроек */
@@ -2316,7 +2223,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.</tw-passagedata><tw
 
 &lt;span class=&quot;next2&quot;&gt;[[|Предзагрузка]]&lt;/span&gt;
 
-&lt;&lt;timed 15s t8n&gt;&gt;&lt;&lt;goto &quot;Предзагрузка&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="6" name="main_menu_day" tags="" position="507,218" size="100,100">&lt;span class=&quot;hero&quot;&gt;
+&lt;&lt;timed 15s t8n&gt;&gt;&lt;&lt;goto &quot;Предзагрузка&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="6" name="main_menu_day" tags="" position="507,223" size="100,100">&lt;span class=&quot;hero&quot;&gt;
 &lt;img
         id=&quot;img_hero_delay&quot;
         src=
@@ -2327,29 +2234,26 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.</tw-passagedata><tw
 &quot;https://github.com/Demiverse/new/blob/main/menu/f_4.png?raw=true&quot;&gt;
 &lt;/span&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;div class=&quot;mouse_move&quot;&gt;
- &lt;img
-        id=&quot;img3&quot;
-		src=
-&quot;https://github.com/Demiverse/new/blob/main/menu/f_4.png?raw=true&quot;
-        class=&quot;mouse&quot;
-        value=&quot;3&quot;/&gt;
+&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;mouse_move&quot;&gt;
 		 &lt;img
         id=&quot;img2&quot;
 		src=
 &quot;https://content.alloder.ru/uploads/gorizontalnoe_logo_beloe_397590d2f6.png&quot;
         class=&quot;mouse&quot;
         value=&quot;-2&quot;/&gt;
+		&lt;img
+        id=&quot;img3&quot;
+		src=
+&quot;https://github.com/Demiverse/new/blob/main/menu/f_4.png?raw=true&quot;
+        class=&quot;mouse&quot;
+        value=&quot;3&quot;/&gt;
 		     &lt;img
         id=&quot;img1&quot;
         src=
 &quot;https://github.com/Demiverse/new/blob/main/menu/besedka_4.png?raw=true&quot;
         class=&quot;mouse&quot;
         value=&quot;5&quot;/&gt;
-			&lt;/div&gt;
-	
-&lt;span class=&quot;back_mobile&quot;&gt;&lt;/span&gt;
-&lt;span class=&quot;back_mobile_day&quot;&gt;&lt;/span&gt;
+			&lt;/span&gt;
 	
 &lt;span class=&quot;subtitle-item&quot;&gt;&lt;div class=&quot;subtitle2&quot;&gt;&lt;&lt;if $variable is true&gt;&gt;&lt;&lt;link &quot;Продолжить&quot;&gt;&gt;&lt;&lt;run Save.autosave.load()&gt;&gt;&lt;/span&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;/if&gt;&gt;
 &lt;span class=&quot;subtitle-item&quot;&gt;[[Новая игра|обновление]]&lt;/span&gt;
@@ -10467,29 +10371,26 @@ Opium Witch
 &quot;https://github.com/Demiverse/new/blob/main/menu/f_3.png?raw=true&quot;&gt;
 &lt;/span&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;div class=&quot;mouse_move&quot;&gt;
- &lt;img
-        id=&quot;img3&quot;
-		src=
-&quot;https://github.com/Demiverse/new/blob/main/menu/f_3.png?raw=true&quot;
-        class=&quot;mouse&quot;
-        value=&quot;3&quot;/&gt;
+&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;mouse_move&quot;&gt;
 		 &lt;img
         id=&quot;img2&quot;
 		src=
 &quot;https://content.alloder.ru/uploads/gorizontalnoe_logo_beloe_397590d2f6.png&quot;
         class=&quot;mouse&quot;
         value=&quot;-2&quot;/&gt;
+		&lt;img
+        id=&quot;img3&quot;
+		src=
+&quot;https://github.com/Demiverse/new/blob/main/menu/f_3.png?raw=true&quot;
+        class=&quot;mouse&quot;
+        value=&quot;3&quot;/&gt;
 		     &lt;img
         id=&quot;img1&quot;
         src=
 &quot;https://github.com/Demiverse/new/blob/main/menu/besedka_4.png?raw=true&quot;
         class=&quot;mouse&quot;
         value=&quot;5&quot;/&gt;
-			&lt;/div&gt;
-	
-&lt;span class=&quot;back_mobile&quot;&gt;&lt;/span&gt;
-&lt;span class=&quot;back_mobile_night&quot;&gt;&lt;/span&gt;
+			&lt;/span&gt;
 	
 &lt;span class=&quot;subtitle-item&quot;&gt;&lt;div class=&quot;subtitle2&quot;&gt;&lt;&lt;if $variable is true&gt;&gt;&lt;&lt;link &quot;Продолжить&quot;&gt;&gt;&lt;&lt;run Save.autosave.load()&gt;&gt;&lt;/span&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;/if&gt;&gt;
 &lt;span class=&quot;subtitle-item&quot;&gt;[[Новая игра|обновление]]&lt;/span&gt;
@@ -10524,29 +10425,26 @@ Opium Witch
 &quot;https://github.com/Demiverse/new/blob/main/menu/f_2.png?raw=true&quot;&gt;
 &lt;/span&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;div class=&quot;mouse_move&quot;&gt;
- &lt;img
-        id=&quot;img3&quot;
-		src=
-&quot;https://github.com/Demiverse/new/blob/main/menu/f_2.png?raw=true&quot;
-        class=&quot;mouse&quot;
-        value=&quot;3&quot;/&gt;
+&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;mouse_move&quot;&gt;
 		 &lt;img
         id=&quot;img2&quot;
 		src=
 &quot;https://content.alloder.ru/uploads/gorizontalnoe_logo_beloe_397590d2f6.png&quot;
         class=&quot;mouse&quot;
         value=&quot;-2&quot;/&gt;
+		&lt;img
+        id=&quot;img3&quot;
+		src=
+&quot;https://github.com/Demiverse/new/blob/main/menu/f_2.png?raw=true&quot;
+        class=&quot;mouse&quot;
+        value=&quot;3&quot;/&gt;
 		     &lt;img
         id=&quot;img1&quot;
         src=
 &quot;https://github.com/Demiverse/new/blob/main/menu/besedka_4.png?raw=true&quot;
         class=&quot;mouse&quot;
         value=&quot;5&quot;/&gt;
-			&lt;/div&gt;
-	
-&lt;span class=&quot;back_mobile&quot;&gt;&lt;/span&gt;
-&lt;span class=&quot;back_mobile_evening&quot;&gt;&lt;/span&gt;
+			&lt;/span&gt;
 	
 &lt;span class=&quot;subtitle-item&quot;&gt;&lt;div class=&quot;subtitle2&quot;&gt;&lt;&lt;if $variable is true&gt;&gt;&lt;&lt;link &quot;Продолжить&quot;&gt;&gt;&lt;&lt;run Save.autosave.load()&gt;&gt;&lt;/span&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;/if&gt;&gt;
 &lt;span class=&quot;subtitle-item&quot;&gt;[[Новая игра|обновление]]&lt;/span&gt;
