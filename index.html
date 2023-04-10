@@ -10675,7 +10675,7 @@ Opium Witch
 &lt;&lt;audio &quot;Jasker_sound&quot; stop&gt;&gt;
 &lt;&lt;audio &quot;Jasker_sound2&quot; stop&gt;&gt;
 &lt;&lt;audio &quot;Nayan_sound2&quot; stop&gt;&gt;
-&lt;&lt;audio &quot;night_bgm&quot; stop&gt;&gt;</tw-passagedata><tw-passagedata pid="222" name="ПредАнтуанетта" tags="" position="3053,288" size="100,100">&lt;&lt;fadeout 2s 6s&gt;&gt;&lt;&lt;fadein 2s 0s&gt;&gt;&lt;h3&gt;Вы возвращаетесь к Антуанетте&lt;/h3&gt;&lt;&lt;timed 8s&gt;&gt;&lt;&lt;goto &quot;обновление2&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;/fadeout&gt;&gt;</tw-passagedata><tw-passagedata pid="223" name="Антуанетта1" tags="desert" position="27,426" size="100,100">&lt;&lt;timed 2s t8n&gt;&gt;&lt;&lt;timed 2s t8n&gt;&gt;&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
+&lt;&lt;audio &quot;night_bgm&quot; stop&gt;&gt;</tw-passagedata><tw-passagedata pid="222" name="ПредАнтуанетта" tags="" position="3038,329" size="100,100">&lt;&lt;fadeout 2s 6s&gt;&gt;&lt;&lt;fadein 2s 0s&gt;&gt;&lt;h3&gt;Вы возвращаетесь к Антуанетте&lt;/h3&gt;&lt;&lt;timed 8s&gt;&gt;&lt;&lt;goto &quot;ЛинияПродолжениеАнтуанетта&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;/fadeout&gt;&gt;</tw-passagedata><tw-passagedata pid="223" name="Антуанетта1" tags="desert" position="27,426" size="100,100">&lt;&lt;timed 2s t8n&gt;&gt;&lt;&lt;timed 2s t8n&gt;&gt;&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
 Здравствуй, герой Сарнаута. Как понимаешь, я пригласила тебя сюда не просто так. Во время известных событий на Айрине твоя помощь была неоценима. Я не уверена, что без неё удалось бы достичь таких дипломатических успехов и решить столько проблем.\&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;&lt;timed 5s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|Антуанетта2]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
@@ -11038,9 +11038,7 @@ Opium Witch
 &lt;&lt;run forget (&#39;achievement_09&#39;)&gt;&gt;
 &lt;&lt;run forget (&#39;achievement_010&#39;)&gt;&gt;
 &lt;&lt;run forget (&#39;achievement_011&#39;)&gt;&gt;
-&lt;&lt;run forget (&#39;achievement_012&#39;)&gt;&gt;</tw-passagedata><tw-passagedata pid="253" name="обновление" tags="" position="519,403.5" size="100,100">&lt;&lt;switch visited()&gt;&gt;&lt;&lt;case 1&gt;&gt;
-
-&lt;&lt;run forget(&#39;smeyana_01&#39;)&gt;&gt;
+&lt;&lt;run forget (&#39;achievement_012&#39;)&gt;&gt;</tw-passagedata><tw-passagedata pid="253" name="обновление" tags="" position="519,403.5" size="100,100">&lt;&lt;run forget(&#39;smeyana_01&#39;)&gt;&gt;
 &lt;&lt;run forget(&#39;nayan_01&#39;)&gt;&gt;
 &lt;&lt;run forget(&#39;jasker_01&#39;)&gt;&gt;
 &lt;&lt;run forget(&#39;smeyana_02&#39;)&gt;&gt;
@@ -11063,11 +11061,7 @@ Opium Witch
 
 &lt;&lt;run forget(&#39;variable&#39;)&gt;&gt;
 
-&lt;&lt;goto &quot;обновление&quot;&gt;&gt;
-
-&lt;&lt;case 2&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;Нажмите на экран, чтобы отправиться на Игнисту...&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
-&lt;span class=&quot;next2&quot;&gt;[[|StartPassage]]&lt;/span&gt;&lt;&lt;/switch&gt;&gt;</tw-passagedata><tw-passagedata pid="254" name="обновление2" tags="" position="3105,406" size="100,100">&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;Нажмите на экран для перемещения в Рахл-Игнисту...&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
-&lt;span class=&quot;next2&quot;&gt;[[|ЛинияПродолжениеАнтуанетта]]&lt;/span&gt;</tw-passagedata><tw-passagedata pid="255" name="Безымянный параграф" tags="" position="3355,255" size="100,100">&lt;&lt;switch visited()&gt;&gt;&lt;&lt;case 1&gt;&gt;
+&lt;&lt;goto &quot;StartPassage&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="254" name="обновление2" tags="" position="3245,213" size="100,100">&lt;&lt;goto &quot;ЛинияПродолжениеАнтуанетта&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="255" name="Безымянный параграф" tags="" position="3363,217" size="100,100">&lt;&lt;switch visited()&gt;&gt;&lt;&lt;case 1&gt;&gt;
 
 &lt;&lt;run location.reload();&gt;&gt;
 
