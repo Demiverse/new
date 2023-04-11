@@ -10867,7 +10867,7 @@ Opium Witch
 &quot;https://content.alloder.ru/uploads/lezhit_udivlena_7ac8cc4e4a.png&quot;&gt;
 &lt;/span&gt;</tw-passagedata><tw-passagedata pid="234" name="Живот" tags="" position="3156,6089" size="100,100">&lt;&lt;fadeout 2s 6s&gt;&gt;&lt;&lt;fadein 2s 0s&gt;&gt;&lt;h3&gt;Антуанетта переворачивается на живот...&lt;/h3&gt;&lt;&lt;timed 8s&gt;&gt;&lt;&lt;goto &quot;ТокеныАнтуанетта14.1&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;/fadeout&gt;&gt;</tw-passagedata><tw-passagedata pid="235" name="Встаёт" tags="" position="3528,4374" size="100,100">&lt;&lt;fadeout 2s 6s&gt;&gt;&lt;&lt;fadein 2s 0s&gt;&gt;&lt;h3&gt;Антуанетта закончила урок и сказала следующее...&lt;/h3&gt;&lt;&lt;timed 8s&gt;&gt;&lt;&lt;goto &quot;ОкончаниеАнтуанетта&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;/fadeout&gt;&gt;
 
-</tw-passagedata><tw-passagedata pid="236" name="Предзагрузка" tags="" position="839,121" size="100,100">&lt;span class=&quot;hero&quot;&gt;
+</tw-passagedata><tw-passagedata pid="236" name="Предзагрузка" tags="" position="850,125" size="100,100">&lt;span class=&quot;hero&quot;&gt;
 &lt;img
         id=&quot;img_hero_delay&quot;
         src=
@@ -10894,12 +10894,11 @@ Opium Witch
 &quot;https://github.com/Demiverse/new/blob/main/menu/BlockHeaderFrame._UITexture_.png?raw=true&quot;&gt;
 &lt;/span&gt;
 
-&lt;&lt;if $date.getHours() gte 23 and $date.getHours() lt 6&gt;&gt;&lt;&lt;goto &quot;main_menu_night&quot;&gt;&gt; 
-	&lt;&lt;elseif $date.getHours() gte 12 and $date.getHours() lt 17&gt;&gt;&lt;&lt;goto &quot;main_menu_day&quot;&gt;&gt;
+	&lt;&lt;if $date.getHours() gte 12 and $date.getHours() lt 17&gt;&gt;&lt;&lt;goto &quot;main_menu_day&quot;&gt;&gt;
 	&lt;&lt;elseif $date.getHours() gte 6 and $date.getHours() lt 12&gt;&gt;&lt;&lt;goto &quot;main_menu_morning&quot;&gt;&gt;
 	&lt;&lt;elseif $date.getHours() gte 17 and $date.getHours() lt 23&gt;&gt;&lt;&lt;goto &quot;main_menu_evening&quot;&gt;&gt;
-	&lt;&lt;/if&gt;&gt;
-    </tw-passagedata><tw-passagedata pid="237" name="smeyana_02" tags="" position="851,951" size="100,100">&lt;&lt;run memorize (&#39;smeyana_01&#39;, true)&gt;&gt;
+    &lt;&lt;elseif $date.getHours() &gt;= 23 || $date.getHours() &lt; 6&gt;&gt;&lt;&lt;goto &quot;main_menu_night&quot;&gt;&gt; 
+	&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="237" name="smeyana_02" tags="" position="851,951" size="100,100">&lt;&lt;run memorize (&#39;smeyana_01&#39;, true)&gt;&gt;
 &lt;&lt;set $smeyana_01 to true&gt;&gt;
 &lt;&lt;run memorize (&#39;smeyana_02&#39;, true)&gt;&gt;
 &lt;&lt;set $smeyana_02 to true&gt;&gt;
