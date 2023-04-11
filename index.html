@@ -421,21 +421,21 @@ body.menu {
   text-decoration: none;
 }
  @keyframes move {
-	from {
-		margin-left: 0;
-	}
-	to {
-		margin-left: 5px;
-	}
+   from {
+transform: translateX(0);
 }
-#elem {
-	animation-direction: alternate;
+   to {
+transform: translateX(-0.5rem);
+}
+   }
+.proceed {
+  animation-direction: alternate;
 	animation-duration: 1s;
 	animation-name: move;
 	animation-iteration-count: infinite;
 	animation-timing-function: linear;
 }
-/*костыль*/
+/*другое*/
 #elem2 {
 	animation-direction: alternate;
 	animation-duration: 0s;
@@ -2350,7 +2350,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 &lt;&lt;audio &quot;Nayan_sound2&quot; stop&gt;&gt;
 &lt;&lt;audio &quot;night_bgm&quot; stop&gt;&gt;</tw-passagedata><tw-passagedata pid="10" name="Антуанетта4" tags="desert no-transition" position="239,755" size="100,100">&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
 Здесь, на Игнисте, будет проходить неформальный съезд влиятельных лиц Сарнаута. И накануне Дня всех влюблённых магия этого места усиливается многократно. Поэтому я решила собрать всех именно здесь и сейчас. Понимаешь, к чему я клоню?
-\&lt;&lt;/type&gt;&gt;&lt;&lt;timed 2s t8n&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;&lt;/div&gt; [[Задача ясна! Бегу завоёвывать сердца, печени и другие органы!]]&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;&lt;/div&gt; [[Давай-ка поподробнее…]]&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;&lt;/div&gt; [[Вот последняя фраза звучит очень подозрительно...]]&lt;&lt;/timed&gt;&gt;
+\&lt;&lt;/type&gt;&gt;&lt;&lt;timed 2s t8n&gt;&gt;&lt;div class=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Задача ясна! Бегу завоёвывать сердца, печени и другие органы!]]&lt;/div&gt; &lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Давай-ка поподробнее…]]&lt;/div&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Вот последняя фраза звучит очень подозрительно...]]&lt;/div&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
