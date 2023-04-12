@@ -296,6 +296,12 @@ font-size: revert;
    font-size: 150%;
 }
 }
+@media screen and (max-width: 1500px) {
+ .desert .passage { 
+left: 7em;
+font-size: 70%;
+}
+}
 /* cтиль 3 */ 
 .logo {
   position: fixed;
@@ -654,7 +660,7 @@ text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6
 }
 .subtitle-item a:hover {
   font-family: 'AllodsWest', arial;
-   background-image: url('https://github.com/Demiverse/new/blob/main/menu/BlockHeaderFrame._UITexture_.png?raw=true');
+  background-image: url('https://github.com/Demiverse/new/blob/main/menu/BlockHeaderFrame._UITexture_.png?raw=true'); 
    background-repeat: no-repeat;
    background-position: center bottom;
     padding-right: 80px;
@@ -666,6 +672,12 @@ text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6
   margin: 1%;
   text-decoration: none;
 }
+@media screen and (min-width: 2000px) {
+.subtitle-item a:hover {
+  background-size: cover;
+  background-image: none;
+  }
+}
 .subtitle2 {
   color: white;
   text-align: left;
@@ -675,6 +687,20 @@ text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6
     right: 0em;
     top: 7em;
     bottom: 0em;
+}
+@media screen and (min-width: 3840px) {
+.subtitle2 {
+     color: white;
+    text-align: left;
+    padding: 5%;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    left: 71%;
+    right: 0;
+    top: 50%;
+    bottom: 0;
+    font-size: 300%;
+}
 }
 @media screen and (min-width: 2000px) {
 .subtitle2 {
@@ -686,6 +712,20 @@ text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6
     left: 71%;
     right: 0;
     top: 50%;
+    bottom: 0;
+    font-size: 200%;
+}
+}
+@media screen and (max-width: 1600px) {
+.subtitle2 {
+       color: white;
+    text-align: left;
+    padding: 5%;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    left: 72%;
+    right: 0;
+    top: 42%;
     bottom: 0;
     font-size: 200%;
 }
@@ -703,12 +743,13 @@ text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6
       }
       #img2 {
 		 position: fixed;
-    z-index: -1;
-    top: 28%;
-    left: 40%;
+         z-index: -1;
+    top: 150px;
+    left: 650px;
+    width: 22%;
+    height: auto;
     pointer-events: none;
-    width: auto;
-    max-height: 35%;
+  max-height: none;
 }
 #img3 {
     position: fixed;
@@ -720,22 +761,73 @@ text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6
    pointer-events: none;
 }
 }
-@media screen and (max-width: 1920px) {
+@media screen and (max-width: 1600px) {
 #img1 {
   }
 }
-@media screen and (max-width: 1920px) {
+@media screen and (max-width: 1600px) {
 #img3 {
   }
 }
-@media screen and (max-width: 1920px) {
+@media screen and (max-width: 1600px) {
 #img2 {
-top: 150px;
-    left: 650px;
+    top: 422px;
+    left: 2059px;
     width: 22%;
     height: auto;
     pointer-events: none;
-  max-height: none;
+    max-height: none;
+  }
+}
+@media screen and (min-width: 2560px) {
+#img1 {
+  }
+}
+@media screen and (min-width: 2560px) {
+#img3 {
+  }
+}
+@media screen and (min-width: 2560px) {
+#img2 {
+    top: 26%;
+    left: 38%;
+    pointer-events: none;
+    width: auto;
+    max-height: 35%;
+  }
+}
+@media screen and (min-width: 3440px) {
+#img1 {
+  }
+}
+@media screen and (min-width: 3440px) {
+#img3 {
+  }
+}
+@media screen and (min-width: 3440px) {
+#img2 {
+       top: 30%;
+    left: 43%;
+    pointer-events: none;
+    width: auto;
+    max-height: 35%;
+  }
+}
+@media screen and (min-width: 3840px) {
+#img1 {
+  }
+}
+@media screen and (min-width: 3840px) {
+#img3 {
+  }
+}
+@media screen and (min-width: 3840px) {
+#img2 {
+      top: 26%;
+    left: 39%;
+    pointer-events: none;
+    width: auto;
+    max-height: 28%;
   }
 }
 /* дизайн настроек */
@@ -1587,6 +1679,12 @@ font-size: revert;
    font-size: 150%;
 }
 }
+@media screen and (max-width: 1500px) {
+ .jasker-finalart .passage { 
+left: 7em;
+font-size: 70%;
+}
+}
 
 #ui-dialog-body .menu {
     text-align: left;
@@ -1703,6 +1801,13 @@ font-size: revert;
    font-size: 150%;
 }
 }
+@media screen and (max-width: 1500px) {
+ .jasker .passage { 
+left: 7em;
+font-size: 70%;
+}
+}
+
 /* cтиль Найана */
 html.nayan {
   width: 100%;
@@ -1794,6 +1899,13 @@ font-size: revert;
    font-size: 150%;
 }
 }
+@media screen and (max-width: 1500px) {
+ .nayan .passage { 
+left: 7em;
+font-size: 70%;
+}
+}
+
 /* cтиль Смеяна */
 html.smeyana {
   width: 100%;
@@ -1884,6 +1996,12 @@ font-size: revert;
 @media screen and (min-width: 3840px) {
  .smeyana .passage { 
    font-size: 150%;
+}
+}
+@media screen and (max-width: 1500px) {
+ .smeyana .passage { 
+left: 7em;
+font-size: 70%;
 }
 }
 
@@ -2108,7 +2226,10 @@ $(document).on("dblclick", function (event) {
           shift.style.transform = `translateX(${x}px) translateY(${y}px)`;
         });
       }
-</script><tw-tag name="autosave" color="green"></tw-tag><tw-tag name="code-passage" color="orange"></tw-tag><tw-tag name="desert" color="orange"></tw-tag><tw-tag name="frontpage" color="yellow"></tw-tag><tw-tag name="jasker" color="red"></tw-tag><tw-tag name="jasker-finalart" color="orange"></tw-tag><tw-tag name="jasker_finalart" color="orange"></tw-tag><tw-tag name="menu" color="yellow"></tw-tag><tw-tag name="nayan" color="red"></tw-tag><tw-tag name="no-transition" color="purple"></tw-tag><tw-tag name="no-transition2" color="red"></tw-tag><tw-tag name="smeyana" color="red"></tw-tag><tw-tag name="ключ" color="blue"></tw-tag><tw-tag name="noreturn" color="none"></tw-tag><tw-passagedata pid="1" name="StartPassage" tags="" position="375,400" size="100,100">
+
+
+/*! t8n-typewriter module for SugarCube v2 */
+!function(){"use strict";function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}(),Furl=function(){function Furl(current,append){if(_classCallCheck(this,Furl),Object.defineProperties(this,{node:{value:current},childNodes:{value:[]},value:{writable:!0,value:""},append:{writable:!0,value:!!append},abortTyping:{writable:!0,value:!1}}),this.node.nodeValue&&(this.value=this.node.nodeValue,this.node.nodeValue=""),!this.node.style||"none"!==this.node.style.display)for(var childNodes=this.node.childNodes;childNodes.length>0;)this.childNodes.push(new Furl(childNodes[0],!0)),this.node.removeChild(childNodes[0])}return _createClass(Furl,[{key:"finish",value:function(){for(this.abortTyping=!0;this.unfurl(););}},{key:"unfurl",value:function(parent){if(this.append&&(parent&&parent.appendChild(this.node),this.append=!1),this.value)return this.node.nodeValue+=this.value[0],this.value=this.value.slice(1),!0;for(var current=this.node,i=0,len=this.childNodes.length;i<len;++i)if(this.childNodes[i].unfurl(current))return!0;return!1}}],[{key:"typeout",value:function(content,typeDelay,startDelay){function typer(){if(!furled.abortTyping)var current=passage(),typerId=setInterval(function(){!furled.abortTyping&&passage()===current&&furled.unfurl()||clearInterval(typerId)},typeDelay)}var furled=new Furl(content);return startDelay?setTimeout(typer,startDelay):typer(),furled}}]),Furl}(),tagRe=/^t8n-typewriter-(\d+)(?:-(\d+))?$/;postrender["t8n-typewriter-handler"]=function(content){$(document).off("keypress.t8n-typewriter");for(var tags=this.tags,i=0;i<tags.length;++i){var match=tagRe.exec(tags[i]);if(null!==match){if("break"===function(){var furled=Furl.typeout(content,Number(match[1]),Number(match[2]));return $(document).on("keypress.t8n-typewriter",function(ev){32!==ev.which||ev.target!==document.body&&ev.target!==document.documentElement||(ev.preventDefault(),$(document).off("keypress.t8n-typewriter"),furled.finish())}),"break"}())break}}}}();</script><tw-tag name="autosave" color="green"></tw-tag><tw-tag name="code-passage" color="orange"></tw-tag><tw-tag name="desert" color="orange"></tw-tag><tw-tag name="frontpage" color="yellow"></tw-tag><tw-tag name="jasker" color="red"></tw-tag><tw-tag name="jasker-finalart" color="orange"></tw-tag><tw-tag name="jasker_finalart" color="orange"></tw-tag><tw-tag name="menu" color="yellow"></tw-tag><tw-tag name="nayan" color="red"></tw-tag><tw-tag name="no-transition" color="purple"></tw-tag><tw-tag name="no-transition2" color="red"></tw-tag><tw-tag name="smeyana" color="red"></tw-tag><tw-tag name="ключ" color="blue"></tw-tag><tw-tag name="noreturn" color="none"></tw-tag><tw-passagedata pid="1" name="StartPassage" tags="" position="375,400" size="100,100">
 &lt;&lt;fadein 2s 0s&gt;&gt;&lt;h3&gt;Игниста… Аллод принадлежащий Дому ди Делис. Место, пропитанное романтикой, гедонизмом и кулуарными историями. Неудивительно, что Антуанетта ди Делис решила воспользоваться Днём всех влюблённых и собрать влиятельных лиц Сарнаута именно здесь.&lt;/h3&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;Нажмите на экран...&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
 &lt;&lt;timed 3.5s t8n&gt;&gt;&lt;span class=&quot;next2&quot;&gt;[[|StartPassage2]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
@@ -2211,7 +2332,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Жаль, что после произошедшего на Эдеме ситуация обернулась против нас всех… Но в этом твоей вины нет. Политика, тактика, стратегия... Это всё очень сложно для неискушённого ума. Даже искушённые не всегда могут просчитать все последствия. И тем более - взять ответственность на себя.
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|Антуанетта3]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|Антуанетта3]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -2249,7 +2370,11 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 &lt;&lt;audio &quot;night_bgm&quot; stop&gt;&gt;</tw-passagedata><tw-passagedata pid="4" name="Allods" tags="logo2" position="430,30" size="100,100">&lt;&lt;audio &quot;night_bgm&quot; loop play&gt;&gt;
 &lt;&lt;switch visited()&gt;&gt;&lt;&lt;case 1&gt;&gt;&lt;&lt;fadeout 2s 4s&gt;&gt;&lt;&lt;fadein 2s 0s&gt;&gt;&lt;div class=&quot;logo&quot;&gt;&lt;img src=&quot;https://content.alloder.ru/uploads/Allody_f6ef323a89.png&quot; alt=&quot;Allods&quot; width=&quot;100%&quot;&gt;&lt;/div&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;/fadeout&gt;&gt;&lt;&lt;timed 7s&gt;&gt;&lt;&lt;goto &quot;Allods&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;span class=&quot;next2&quot;&gt;[[|Allods]]&lt;/span&gt;
 
-&lt;&lt;case 2&gt;&gt;&lt;&lt;fadeout 2s 4s&gt;&gt;&lt;&lt;fadein 2s 0s&gt;&gt;&lt;div class=&quot;logo&quot;&gt;&lt;img src=&quot;https://alloder.ru/logos/logo_full.png&quot; alt=&quot;Created for Alloder.ru&quot; width=&quot;100%&quot;&gt;&lt;/div&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;/fadeout&gt;&gt;&lt;&lt;timed 7s&gt;&gt;&lt;&lt;goto &quot;Warning&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;span class=&quot;next2&quot;&gt;[[|Warning]]&lt;/span&gt;&lt;&lt;/switch&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="Warning" tags="logo2" position="662,64" size="100,100">&lt;div class=&quot;elementToFadeInAndOut&quot;&gt;&lt;h3&gt;Игра сохраняется автоматически, но вы также можете сделать это вручную.
+&lt;&lt;case 2&gt;&gt;&lt;&lt;fadeout 2s 4s&gt;&gt;&lt;&lt;fadein 2s 0s&gt;&gt;&lt;div class=&quot;logo&quot;&gt;&lt;img src=&quot;https://alloder.ru/logos/logo_full.png&quot; alt=&quot;Created for Alloder.ru&quot; width=&quot;100%&quot;&gt;&lt;/div&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;/fadeout&gt;&gt;&lt;&lt;timed 7s&gt;&gt;&lt;&lt;goto &quot;Warning&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;span class=&quot;next2&quot;&gt;[[|Warning]]&lt;/span&gt;&lt;&lt;/switch&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="Warning" tags="logo2" position="662,64" size="100,100">
+
+
+
+&lt;div class=&quot;elementToFadeInAndOut&quot;&gt;&lt;h3&gt;Игра сохраняется автоматически, но вы также можете сделать это вручную.
 Сохраните игру на диск перед удалением кэша из истории браузера, если хотите, чтобы данные не были утеряны. Проделать вышеперечисленные действия можно в игровых загрузках. 
 Приятной игры!&lt;/h3&gt;&lt;/div&gt;
 
@@ -2312,13 +2437,14 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 &lt;&lt;set $achiev_not_nayan04 to true&gt;&gt;</tw-passagedata><tw-passagedata pid="7" name="Достижения" tags="" position="35,19" size="100,100">&lt;h3&gt;Серия достижений «Груз тысячелетий»&lt;/h3&gt;&lt;&lt;if $achievement_01 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Вы рассмешили деда&lt;/h3&gt;Найану уже не одна сотня лет, но таких шуток с ним ещё не шутили&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Вы рассмешили деда&lt;/h3&gt;Найану уже не одна сотня лет, но таких шуток с ним ещё не шутили&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $achievement_02 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;На что клюёт мотыль?&lt;/h3&gt;Вам бы хотелось разговорить историка, но книжная пыль для него оказалась интереснее...&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;На что клюёт мотыль?&lt;/h3&gt;Вам бы хотелось разговорить историка, но книжная пыль для него оказалась интереснее...&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $achievement_03 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Мотылёк в бутылке&lt;/h3&gt;Вот говорят - как бы горестно не было, не лезь в бутылку... Теперь вы знаете, что может случиться&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Мотылёк в бутылке&lt;/h3&gt;Вот говорят - как бы горестно не было, не лезь в бутылку... Теперь вы знаете, что может случиться&lt;/span&gt;&lt;&lt;/if&gt;&gt;
 &lt;h3&gt;Серия достижений «Тренировка по расписанию»&lt;/h3&gt;&lt;&lt;if $achievement_04 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Таким boyцам здесь не место!&lt;/h3&gt;Вы разочаровали отца хадаганской нации&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Таким boyцам здесь не место!&lt;/h3&gt;Вы разочаровали отца хадаганской нации&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $achievement_05 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Горячая разминка&lt;/h3&gt;Потный бой - он трудный самый. Но ваши усилия вознаграждены&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Горячая разминка&lt;/h3&gt;Потный бой - он трудный самый. Но ваши усилия вознаграждены&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $achievement_06 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Welcome to the club, buddy!&lt;/h3&gt;Теперь вы член клуба. Будьте тверды и целеустремлённы!&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Welcome to the club, buddy!&lt;/h3&gt;Теперь вы член клуба. Будьте тверды и целеустремлённы!&lt;/span&gt;&lt;&lt;/if&gt;&gt;
 &lt;h3&gt;Серия достижений «Покончить с невежеством»&lt;/h3&gt;&lt;&lt;if $achievement_07 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Бестолочь&lt;/h3&gt;Хорошо, что хоть посохом по хребтине не приложила...&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Бестолочь&lt;/h3&gt;Хорошо, что хоть посохом по хребтине не приложила...&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $achievement_08 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Светлая голова&lt;/h3&gt;Владычица заручилась вашей поддержкой&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Светлая голова&lt;/h3&gt;Владычица заручилась вашей поддержкой&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $achievement_09 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;С лёгким паром!&lt;/h3&gt;Мало кому доведётся отшлёпать Смеяну веником по ягодицам и при этом угодить ей&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;С лёгким паром!&lt;/h3&gt;Мало кому доведётся отшлёпать Смеяну веником по ягодицам и при этом угодить ей&lt;/span&gt;&lt;&lt;/if&gt;&gt;
-&lt;h3&gt;Серия достижений «Королевский приём»&lt;/h3&gt;&lt;&lt;if $achievement_010 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Игривый язычок&lt;/h3&gt;Главное - правильно уболтать врага, сделав своим союзником. А может, и кем-то бóльшим...&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Игривый язычок&lt;/h3&gt;Главное - правильно уболтать врага, сделав своим союзником. А может, и кем-то бóльшим...&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $achievement_011 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Светский угодник&lt;/h3&gt;Красиво пить не запретишь! Главное, знать меру и правильную подачу&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Светский угодник&lt;/h3&gt;Красиво пить не запретишь! Главное, знать меру и правильную подачу&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $achievement_012 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Телесных дел мастер&lt;/h3&gt;После обучения у самой Антуанетты успех в личной жизни вам гарантирован&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Телесных дел мастер&lt;/h3&gt;После обучения у самой Антуанетты успех в личной жизни вам гарантирован&lt;/span&gt;&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="8" name="Начало" tags="logo2" position="925,0" size="100,100">&lt;&lt;fadein 2s 0s&gt;&gt;&lt;h3&gt;Уважаемые игроки, в этой игре есть различные звукосодержащие элементы. Перед началом любовных свершений рекомендуется отрегулировать громкость на вашем устройстве. Вы также можете сделать это в меню игровых настроек.&lt;/h3&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;Нажмите на экран...&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
+&lt;h3&gt;Серия достижений «Королевский приём»&lt;/h3&gt;&lt;&lt;if $achievement_010 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Игривый язычок&lt;/h3&gt;Главное - правильно уболтать врага, сделав своим союзником. А может, и кем-то бóльшим...&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Игривый язычок&lt;/h3&gt;Главное - правильно уболтать врага, сделав своим союзником. А может, и кем-то бóльшим...&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $achievement_011 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Светский угодник&lt;/h3&gt;Красиво пить не запретишь! Главное, знать меру и правильную подачу&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Светский угодник&lt;/h3&gt;Красиво пить не запретишь! Главное, знать меру и правильную подачу&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $achievement_012 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Телесных дел мастер&lt;/h3&gt;После обучения у самой Антуанетты успех в личной жизни вам гарантирован&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Телесных дел мастер&lt;/h3&gt;После обучения у самой Антуанетты успех в личной жизни вам гарантирован&lt;/span&gt;&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="8" name="Начало" tags="logo2" position="925,0" size="100,100">
+&lt;&lt;fadein 2s 0s&gt;&gt;&lt;h3&gt;Уважаемые игроки, в этой игре есть различные звукосодержащие элементы. Перед началом любовных свершений рекомендуется отрегулировать громкость на вашем устройстве. Вы также можете сделать это в меню игровых настроек.&lt;/h3&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;Нажмите на экран...&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
 &lt;span class=&quot;next2&quot;&gt;[[|Allods]]&lt;/span&gt;</tw-passagedata><tw-passagedata pid="9" name="Антуанетта3" tags="desert no-transition" position="243,620" size="100,100">&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
 Я вижу, что тебя просто обвинили в наступивших бедах. И скорее всего, это было сделано на эмоциях. Поэтому у тебя есть шанс исправить ситуацию. Я ценю твою помощь и решила помочь в ответ. Да, в этом есть и моя личная заинтересованность, но всё же...
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|Антуанетта4]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|Антуанетта4]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -2348,7 +2474,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 &lt;&lt;audio &quot;Jasker_sound2&quot; stop&gt;&gt;
 &lt;&lt;audio &quot;Nayan_sound&quot; stop&gt;&gt;
 &lt;&lt;audio &quot;Nayan_sound2&quot; stop&gt;&gt;
-&lt;&lt;audio &quot;night_bgm&quot; stop&gt;&gt;</tw-passagedata><tw-passagedata pid="10" name="Антуанетта4" tags="desert no-transition" position="239,755" size="100,100">&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
+&lt;&lt;audio &quot;night_bgm&quot; stop&gt;&gt;</tw-passagedata><tw-passagedata pid="10" name="Антуанетта4" tags="desert no-transition" position="250,750" size="100,100">&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
 Здесь, на Игнисте, будет проходить неформальный съезд влиятельных лиц Сарнаута. И накануне Дня всех влюблённых магия этого места усиливается многократно. Поэтому я решила собрать всех именно здесь и сейчас. Понимаешь, к чему я клоню?
 \&lt;&lt;/type&gt;&gt;&lt;&lt;timed 2s t8n&gt;&gt;&lt;div class=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Задача ясна! Бегу завоёвывать сердца, печени и другие органы!]]&lt;/div&gt; &lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Давай-ка поподробнее…]]&lt;/div&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Вот последняя фраза звучит очень подозрительно...]]&lt;/div&gt;&lt;&lt;/timed&gt;&gt;
 
@@ -2508,7 +2634,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Он уважает силу. Но не грубую, а гибкую. Яскер вообще эдакая &quot;вещь в себе&quot;. Целеустремлённый, волевой, жёсткий. Неприступный... С виду. И он хорош... В разных сферах. В своё время Яскер уже был на Игнисте. Этот визит был незабываем...
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|АнтуанеттаЯскер2]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|АнтуанеттаЯскер2]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;div class=&quot;hero&quot;&gt;
 &lt;&lt;if $antoinette_01 is true&gt;&gt;&lt;img
@@ -2549,7 +2675,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Ключ к нему - знания. Думаю, знания о былом тоже подойдут... Дело в том, что Найан - типичный житель пыльных библиотек. В отличие от большинства эльфов он равнодушен к гедонизму и женскому обществу предпочтёт книгу. Вот только... Всегда ли так было?
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|АнтуанеттаНайан2]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|АнтуанеттаНайан2]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;div class=&quot;hero&quot;&gt;
 &lt;&lt;if $antoinette_01 is true&gt;&gt;&lt;img
@@ -2586,7 +2712,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 &lt;&lt;audio &quot;Jasker_sound2&quot; stop&gt;&gt;
 &lt;&lt;audio &quot;Nayan_sound&quot; stop&gt;&gt;
 &lt;&lt;audio &quot;Nayan_sound2&quot; stop&gt;&gt;
-&lt;&lt;audio &quot;night_bgm&quot; stop&gt;&gt;</tw-passagedata><tw-passagedata pid="16" name="Смеяна" tags="desert autosave no-transition" position="313,1042" size="100,100">&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
+&lt;&lt;audio &quot;night_bgm&quot; stop&gt;&gt;</tw-passagedata><tw-passagedata pid="16" name="Смеяна" tags="desert autosave no-transition" position="300,1050" size="100,100">&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
 Смеяна прошла через многое, хотя так сразу и не скажешь... И она весьма трепетно относится к ученицам. Я слышала, что у нашей волшебницы есть какие-то планы на этот счёт. Попробуй поговорить с ней об этом.
 \&lt;&lt;/type&gt;&gt;&lt;&lt;timed 1.7s t8n&gt;&gt;&lt;&lt;if $smeyana_03 is true&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;&lt;&lt;link &quot; [[Отправиться к Смеяне и продолжить разговор|СмеянаПункт7]]&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/div&gt;&lt;&lt;else&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Отправиться к Смеяне|ЛинияСмеяны]]&lt;/div&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/timed&gt;&gt;
 
@@ -2644,7 +2770,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Кхм. С тех пор мы немного усовершенствовали инфраструктуру и добавили один спортивный объект... Яскер сейчас находится там. Учитывая, что он любит холодное оружие, наверняка ему потребуется вот это.
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|АнтуанеттаЯскер3]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|АнтуанеттаЯскер3]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;div class=&quot;hero&quot;&gt;
 &lt;&lt;if $antoinette_01 is true&gt;&gt;&lt;img
@@ -2749,11 +2875,11 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
         src=
 &quot;https://content.alloder.ru/uploads/imgonline_com_ua_Blur_sp_R9f_N_Qf30_Q_cadaccc027.jpg&quot;&gt;
 &lt;/span&gt;
-&lt;&lt;notify 3000&gt;&gt;Сохранение...&lt;&lt;/notify&gt;&gt;</tw-passagedata><tw-passagedata pid="19" name="АнтуанеттаНайан2" tags="desert no-transition" position="120,1198" size="100,100">&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
+&lt;&lt;notify 3000&gt;&gt;Сохранение...&lt;&lt;/notify&gt;&gt;</tw-passagedata><tw-passagedata pid="19" name="АнтуанеттаНайан2" tags="desert no-transition" position="125,1200" size="100,100">&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
 Кто знает, может, в его жизни была дама сердца, с которой у него так и не случилось красивой истории любви... Возможно, после этого он и ушёл с головой в науку.
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|АнтуанеттаНайан3]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|АнтуанеттаНайан3]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;div class=&quot;hero&quot;&gt;
 &lt;&lt;if $antoinette_01 is true&gt;&gt;&lt;img
@@ -2794,7 +2920,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Я тоже много читала. Но литература меня интересовала вполне определённая... И в ней мне как-то попался рецепт вина на драконьей крови - который, что ожидаемо, вызывает жар.
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|АнтуанеттаНайан4]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|АнтуанеттаНайан4]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;div class=&quot;hero&quot;&gt;
 &lt;&lt;if $antoinette_01 is true&gt;&gt;&lt;img
@@ -2976,7 +3102,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
         src=
 &quot;https://content.alloder.ru/uploads/Smeyana_Default_Anger_791844ecee.png&quot;&gt;&lt;/span&gt;</tw-passagedata><tw-passagedata pid="24" name="Интересно, что могло вдруг потребоваться от гонимого героя Сарнаута..." tags="no-transition smeyana" position="927,649" size="100,100">&lt;h3&gt;Смеяна&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
 По крайней мере, всё ещё героя. Знаешь, твоё положение чем-то напоминает мои юные годы... Только тебе ещё тряпкой полы мыть не приходилось, будучи отпрыском дворянского рода.
-\&lt;&lt;/type&gt;&gt;&lt;&lt;timed 3s t8n&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Зато приходилось кататься на здоровой рыбине, копаться в останках и офигевать от происходящего!]]&lt;/div&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Ну, если дворянского рода... Такое унижение действительно сложно пережить.]]&lt;/div&gt;&lt;&lt;/timed&gt;&gt;
+\&lt;&lt;/type&gt;&gt;&lt;&lt;timed 2s t8n&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Зато приходилось кататься на здоровой рыбине, копаться в останках и офигевать от происходящего!]]&lt;/div&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Ну, если дворянского рода... Такое унижение действительно сложно пережить.]]&lt;/div&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -3011,7 +3137,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Мда... Что ж, к делу. Насколько я знаю, тебе довелось побывать в самых разных местах, включая те, куда без спецдопуска не попасть. Нет, тайны я у тебя выпытывать не буду. Захотела бы - мои подручные с этим сами справились бы уже давно. Меня интересует другое... 
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|СмеянаПункт3]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|СмеянаПункт3]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -3134,7 +3260,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Радует, что ты понимаешь мою мысль. Да, мне бы хотелось покончить с невежеством. А то с одними лапотниками каши не сваришь, а наёмные учёные обойдутся дорого. Причём, во всех смыслах, если вспомнить того же Номарха Ивлиса. Давай-ка отойдём в место потише и поговорим там.
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|Баня]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|Баня]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -3175,7 +3301,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Нужно покончить уже с этим невежеством. Одними палками её не выбить - придётся браться за образование. И мне нужно знать, как лучше это стоит сделать. Не самой же шишки на своём лбу набивать! Давай-ка отойдём в место потише и поговорим там.
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|Баня]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|Баня]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -3216,7 +3342,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Ха! Что ж, на то вы и герои. Ваша задача - совершать подвиги и тешить простой люд. А наша задача - направлять ваши подвиги в нужное русло, чтобы от этого была хоть какая-то польза. К слову о пользе... Я в курсе, что тебе доводилось бывать в самых разных местах - и видеть, как там устроена жизнь. И у меня есть вопрос.
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|СмеянаПункт3]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|СмеянаПункт3]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -3251,7 +3377,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 К сожалению, да. И ты не представляешь, насколько. Впрочем, это была долгая история и мытьём полов там дело не закончилось. Но сейчас для не время для воспоминаний. Я бы не хотела, чтобы через подобное проходил кто-то моего происхождения или талантов, близких к моим. Поэтому возник вопрос. Тебе довелось побывать в разных местах и видеть, как живёт различный люд.
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|СмеянаПункт3]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|СмеянаПункт3]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -3319,7 +3445,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Ха-ха! Ой, не смеши... Тебе до неё, как троллю до высшей математики. Хотя... Что-то в тебе всё-таки есть.
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|СмеянаПункт5]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|СмеянаПункт5]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -3354,7 +3480,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Мне нравится, что ты ловишь мои мысли на лету.
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|СмеянаПункт5]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|СмеянаПункт5]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -3422,7 +3548,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Опять ты со своим подобострастием... Впрочем, ладно. Слушай внимательно.
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|СмеянаПункт6]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|СмеянаПункт6]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -3457,7 +3583,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Есть у меня на уме один проект...
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|СмеянаПункт6]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|СмеянаПункт6]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -3525,7 +3651,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Я и сама об этом думала. Но тогда у них не останется времени ни на совместную работу со мной, ни даже на простое общение.
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|СмеянаПункт7]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|СмеянаПункт7]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -3560,7 +3686,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Да... И это тяготит. Мне нужно обдумать систему просвещения. А это целый пласт работ.
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|СмеянаПункт7]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|СмеянаПункт7]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -3634,7 +3760,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Рада, что ты меня понимаешь. Значит, обсудим это подробнее чуть позже. А пока поддай пару. Вон, шайка в углу стоит.
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|smeyana_03]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|smeyana_03]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -3691,7 +3817,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Ха-ха! Не то слово! Ты даже не представляешь, насколько бывает сложно. Как отдадут некоторые своих детей на воспитание нянькам-титёхам... Прокляла бы! Девицам не везёт особенно. Вместо точных наук и чего-то полезного их учат только нос пудрить да на балах плясать. Тьфу!
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|СмеянаПункт8]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|СмеянаПункт8]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -3765,7 +3891,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Откуда ты... В смысле, ты на что это намекаешь, а?! Разговорчики! Веник лежит на лавке. Я жду!
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|СмеянаПункт9]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|СмеянаПункт9]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -3976,7 +4102,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
         id=&quot;img_hero_delay&quot;
 		src=
 &quot;https://content.alloder.ru/uploads/poza_1_osuzhdenie_545bde7a43.png&quot;&gt;
-&lt;/span&gt;</tw-passagedata><tw-passagedata pid="50" name="ЛинияПродолжениеАнтуанетта" tags="desert" position="3049,521" size="100,100">&lt;&lt;timed 2s t8n&gt;&gt;&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
+&lt;/span&gt;</tw-passagedata><tw-passagedata pid="50" name="ЛинияПродолжениеАнтуанетта" tags="desert" position="3050,525" size="100,100">&lt;&lt;timed 2s t8n&gt;&gt;&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
 Как твои успехи, герой Сарнаута? О ком хочешь узнать или о ком желаешь рассказать?
 \&lt;&lt;/type&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;timed 3s t8n&gt;&gt;&lt;&lt;if $jasker_01 is true&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;&lt;&lt;link &quot; [[Поведать о ситуации с Яскером|О Яскере]]&quot;&gt;&gt;&lt;/span&gt;&lt;&lt;/link&gt;&gt;&lt;/div&gt;&lt;&lt;else&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;&lt;&lt;link &quot; [[Разузнать о Яскере|Яскер]]&quot;&gt;&gt;&lt;/span&gt;&lt;&lt;/link&gt;&gt;&lt;/div&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $nayan_01 is true&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;&lt;&lt;link &quot; [[Поведать о ситуации с Найаном|О Найане]]&quot;&gt;&gt;&lt;/span&gt;&lt;&lt;/link&gt;&gt;&lt;/div&gt;&lt;&lt;else&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;&lt;&lt;link &quot; [[Разузнать о Найане|Найан]]&quot;&gt;&gt;&lt;/span&gt;&lt;&lt;/link&gt;&gt;&lt;/div&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $smeyana_01 is true&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;&lt;&lt;link &quot; [[Поведать о ситуации со Смеяной|О Смеяне]]&quot;&gt;&gt;&lt;/span&gt;&lt;&lt;/link&gt;&gt;&lt;/div&gt;&lt;&lt;else&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;&lt;&lt;link &quot; [[Разузнать о Смеяне|Смеяна]]&quot;&gt;&gt;&lt;/span&gt;&lt;&lt;/link&gt;&gt;&lt;/div&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;timed 3s t8n&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Уехать с Игнисты|КонецКонца]]&lt;/div&gt;&lt;&lt;/timed&gt;&gt;
 
@@ -4030,7 +4156,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 А теперь бери веник. Самое время для банных процедур!
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|СмеянаПункт9]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|СмеянаПункт9]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -4070,7 +4196,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Хм... Наблюдение интересное. Но было бы странно, если герой Сарнаута пришёл бы лишь для того, чтобы им поделиться.
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|НайанПункт2]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|НайанПункт2]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -4101,11 +4227,11 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 &lt;&lt;audio &quot;Jasker_sound&quot; stop&gt;&gt;
 &lt;&lt;audio &quot;Jasker_sound2&quot; stop&gt;&gt;
 &lt;&lt;audio &quot;Nayan_sound2&quot; stop&gt;&gt;
-&lt;&lt;audio &quot;night_bgm&quot; stop&gt;&gt;</tw-passagedata><tw-passagedata pid="53" name="Захотелось задать пару вопросов как историку." tags="no-transition nayan" position="1635,697" size="100,100">&lt;h3&gt;Найан&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
+&lt;&lt;audio &quot;night_bgm&quot; stop&gt;&gt;</tw-passagedata><tw-passagedata pid="53" name="Захотелось задать пару вопросов как историку." tags="no-transition nayan" position="1625,700" size="100,100">&lt;h3&gt;Найан&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
 Я весь внимание.
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|НайанПункт2]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|НайанПункт2]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -4179,7 +4305,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 У тебя какие-то амурные дела, которые не удаётся разрешить? Боюсь, с этим вопросом ты не по адресу. Стоит обратиться к Антуанетте. Вот уж кто умеет манипулировать мужчинами... И правильно браться за манипулятор, извиняюсь за столь грубую прямоту. Впрочем, будучи женщиной, она может и о женских особенностях многое рассказать, я полагаю.
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|НайанПункт3]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|НайанПункт3]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -4220,7 +4346,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Я пока ничего странного не заметил. Но доводилось слышать о том, что какие-то эманации ощущаются сильнее - вплоть до влияния на поведение местных обитателей. И не местных тоже.
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|НайанПункт3]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|НайанПункт3]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -4257,7 +4383,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 &lt;img
         id=&quot;img_hero_delay&quot;
         src=
-&quot;https://content.alloder.ru/uploads/Neytral_Kraska_a0f56611a7.png&quot;&gt;&lt;/span&gt;</tw-passagedata><tw-passagedata pid="57" name="НайанПункт3" tags="no-transition nayan" position="1567,1196" size="100,100">&lt;h3&gt;Найан&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
+&quot;https://content.alloder.ru/uploads/Neytral_Kraska_a0f56611a7.png&quot;&gt;&lt;/span&gt;</tw-passagedata><tw-passagedata pid="57" name="НайанПункт3" tags="no-transition nayan" position="1575,1200" size="100,100">&lt;h3&gt;Найан&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
 Хотя, в преддверии Дня всех влюблённых твой вопрос и впрямь звучит любопытно. Совпадение?
 \&lt;&lt;/type&gt;&gt;&lt;&lt;timed 1s t8n&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Не думаю. Но было бы интересно узнать, насколько магия Игнисты способна повлиять на историка. Конечно, если вы изучаете не только окружающий мир, но и свой собственный...]]&lt;/div&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Возможно... А вами никто из местных прелестниц не интересовался? Ну, припереть к стенке, тоже вопросы позадавать... Поиграть в строгого учителя и шаловливую ученицу? А мне можно?]]&lt;/div&gt;&lt;&lt;/timed&gt;&gt;
 
@@ -4300,7 +4426,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Я пока ничего подозрительного не ощущал. Но для научных изысканий тема весьма интересная, признаю.
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|НайанПункт4]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|НайанПункт4]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -4341,7 +4467,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Ха-ха! Я понял! Ох уж эти шуточки Антуанетты... Передай ей, что это и вправду было неожиданно.
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|nayan_02]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|nayan_02]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -4437,7 +4563,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Фу, как грубо! Но... По сути верно.
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|НайанПункт5]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|НайанПункт5]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -4478,7 +4604,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Именно!
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|НайанПункт5]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|НайанПункт5]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -4515,7 +4641,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 &lt;img
         id=&quot;img_hero_delay&quot;
         src=
-&quot;https://content.alloder.ru/uploads/Neytral_1c248b1f9a.png&quot;&gt;&lt;/span&gt;</tw-passagedata><tw-passagedata pid="63" name="НайанПункт5" tags="no-transition nayan" position="1580,1855" size="100,100">&lt;h3&gt;Найан&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
+&quot;https://content.alloder.ru/uploads/Neytral_1c248b1f9a.png&quot;&gt;&lt;/span&gt;</tw-passagedata><tw-passagedata pid="63" name="НайанПункт5" tags="no-transition nayan" position="1575,1850" size="100,100">&lt;h3&gt;Найан&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
 И здесь не устоял даже Яскер, который прибыл во главе с ними. Впрочем, эта история кулуарная. Но вот не случилась ли она как раз накануне Дня всех влюблённых? Надо будет уточнить...
 \&lt;&lt;/type&gt;&gt;&lt;&lt;timed 1.5s t8n&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Скорее всего, это стоит сделать у самой Антуанетты. А то слухи разные ходят с тех пор...]]&lt;/div&gt;&lt;&lt;if $nayan_item is true&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;&lt;&lt;link &quot; [[Кстати, а вы только летописи изучали или ещё какой-то литературой интересовались?]]&quot;&gt;&gt;&lt;/span&gt;&lt;&lt;/link&gt;&gt;&lt;/div&gt;&lt;&lt;else&gt;&gt;&lt;div id=&quot;elem2&quot;&gt;&lt;span class=&quot;notdialog&quot;&gt;Кстати, а вы только летописи изучали или ещё какой-то литературой интересовались?&lt;/span&gt;&lt;/div&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/timed&gt;&gt;
 
@@ -4552,7 +4678,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Не только, разумеется. Другие виды письменных источников не менее ценны для полноты картины.
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|НайанПункт6]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|НайанПункт6]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -4587,7 +4713,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Да, пожалуй. Ведь информация от первоисточника ценнее, да и для летописи пригодится. Хотя будет забавно, если потом кто-то воспользуется ей для написания очередного любовного романа... Но ожидаемо.
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|nayan_03]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|nayan_03]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -4677,7 +4803,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Скорее, там удивляет фантазия составителя. Некоторые описания блюд и напитков таковы, что пока вживую не попробуешь - не поверишь, что такое можно съесть или выпить.
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|НайанПункт7]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|НайанПункт7]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -4712,7 +4838,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Там диву даёшься из-за содержания, чаще всего. Нередко так и хочется воскликнуть &quot;банальщина!&quot; и &quot;в жизни это иначе работает!&quot;. В жизни вообще многое получается совсем не так, как хотелось бы, к сожалению...
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|НайанПункт7]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|НайанПункт7]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -4786,7 +4912,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Ха-ха! Это было неожиданно! Но, позвольте...
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|НайанПункт9]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|НайанПункт9]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -4831,11 +4957,11 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
         id=&quot;img_hero_delay&quot;
         src=
 &quot;https://content.alloder.ru/uploads/Background_1_420873078e.png&quot;&gt;
-&lt;/span&gt;</tw-passagedata><tw-passagedata pid="71" name="Меня тоже! А то вот попалось одно вино... Странное, правда. Вот, может, вы знаете, что это. Вдруг в каких-то свитках оно описывалось?" tags="no-transition nayan" position="1706,2700" size="100,100">&lt;h3&gt;Найан&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
+&lt;/span&gt;</tw-passagedata><tw-passagedata pid="71" name="Меня тоже! А то вот попалось одно вино... Странное, правда. Вот, может, вы знаете, что это. Вдруг в каких-то свитках оно описывалось?" tags="no-transition nayan" position="1700,2700" size="100,100">&lt;h3&gt;Найан&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
 Интересный экземпляр. Хм...
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|НайанПункт9]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|НайанПункт9]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -4923,7 +5049,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Ха-ха! Ну, если уж сам герой Сарнаута не боится распробовать... Пожалуй, присоединюсь.
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|НайанПункт10]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|НайанПункт10]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -4958,7 +5084,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Хм... Сложно сказать.
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|НайанПункт10]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|НайанПункт10]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -4993,7 +5119,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 За свою долгую жизнь я провёл немало времени не только в библиотеках, но и на торжественных мероприятиях. Жизнь при дворе к этому обязывала. Поэтому успел испробовать различные напитки и кое-что смыслю в купаже.
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|НайанПункт11]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|НайанПункт11]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -5068,7 +5194,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 О? Оо... О-О!
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|НайанПункт11.1]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|НайанПункт11.1]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -5103,7 +5229,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 О? Оо... О-О!
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|НайанПункт11.1.1]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|НайанПункт11.1.1]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -5138,7 +5264,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Как же я мог забыть... Хотя неудивительно! Что ж, эту страницу я пытался перелистнуть. Но Игниста, по-видимому, и впрямь призвана вытаскивать на свет всё, что касается таких вещей...
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|НайанПункт12]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|НайанПункт12]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -5213,7 +5339,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Вижу, на героя Сарнаута это действует так же сильно, как эльфийского юнца...
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|НайанПункт12]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|НайанПункт12]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -5323,7 +5449,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Благодарю!
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|НайанПункт13]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|НайанПункт13]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -5361,11 +5487,11 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
         id=&quot;img_hero_delay&quot;
         src=
 &quot;https://content.alloder.ru/uploads/Goly_NEJTRAL_64065c2013.png&quot;&gt;
-&lt;/span&gt;</tw-passagedata><tw-passagedata pid="85" name="*протянуть Найану початую бутылку*" tags="no-transition nayan" position="1678,4385" size="100,100">&lt;h3&gt;Найан&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
+&lt;/span&gt;</tw-passagedata><tw-passagedata pid="85" name="*протянуть Найану початую бутылку*" tags="no-transition nayan" position="1675,4375" size="100,100">&lt;h3&gt;Найан&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
 И в самом деле... К чёрту церемонии! *делает пару глотков из бутылки*
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|НайанПункт13]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|НайанПункт13]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -5440,7 +5566,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Она тоже интересовалась историей. И, похоже, этим её заинтересовал и я. Поначалу как собеседник. Но затем...
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|НайанПункт14]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|НайанПункт14]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -5475,7 +5601,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Знаешь, вот говорят, что противоположности притягиваются... Смею заверить - это чушь! Она тоже интересовалась историей. Благодаря этому мы и познакомились. Она была отличным собеседником! Но...
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|НайанПункт14]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|НайанПункт14]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -5510,7 +5636,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 В какой-то момент она начала проявлять уже другой интерес. И не к моим знаниям, а ко мне лично! И вот, юнец, который привык черпать знания из книг, столкнулся с вполне конкретной проблемой. И не на бумаге, а в жизни! Я просто не знал, как себя вести. 
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|НайанПункт14.1]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|НайанПункт14.1]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -5578,7 +5704,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 А я... Сделал глупость. 
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|НайанПункт15]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|НайанПункт15]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -5613,7 +5739,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Думаю, это решение было продиктовано не коварством, а отчаянием... 
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|НайанПункт15]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|НайанПункт15]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -5648,7 +5774,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Видимо, она полагала, что дело в моей неуверенности. А это вино... Имеет весьма специфический состав, который... очень расслабляет, скажем так. И оно настояно на драконьей крови, что значительно усиливает эффект. 
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|НайанПункт15.1]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|НайанПункт15.1]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -5683,7 +5809,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Но... К тому моменту отчаялся уже я. И прямо сказал, что мне не нужно ничего. Моя стезя - наука. А не эти любовные хитросплетения, в которых я совсем не смыслю...  
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|НайанПункт15.2]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|НайанПункт15.2]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -5759,7 +5885,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Я ценю твоё стремление поддержать меня и как-то разрядить ситуацию... Но... 
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|НайанПункт16]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|НайанПункт16]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -5794,7 +5920,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Не стоит, право слово! 
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|НайанПункт16]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|НайанПункт16]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -5889,7 +6015,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Мда... Узнаю Антуанетту. Вселенское благодушие и чрезмерное гостеприимство.
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ЯскерПункт2]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ЯскерПункт2]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -5931,7 +6057,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Ну-ну. Хотя, учитывая, что командование экспедицией на Эдеме осуществлялось не тобой... Впрочем, тебе стоило бы иметь свою голову на плечах и при наличии каких-то подозрений сообщать о них напрямую главе фракции, а не заниматься самодеятельностью!
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ЯскерПункт2]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ЯскерПункт2]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -6010,7 +6136,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Кхм... Это лич... государственная тайна! Тебе вообще знать об этом необязательно. А после произошедшего на Эдеме... Иди-ка ты отсюда ВОН!!!
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|jasker_02]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|jasker_02]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -6067,7 +6193,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Удивительно. Впрочем... При тех задачах, что тебе приходилось выполнять - достаточно ожидаемо. Герои всегда полагаются на силу в той или иной степени... Интересно другое - что тебе захотелось потренироваться.
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ЯскерПункт3]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ЯскерПункт3]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -6142,7 +6268,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Звучит как лесть. Но да, хадаганский народ достаточно давно владеет мастерством холодного оружия. А уж его видами с искривлённым клинком...
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ЯскерПункт4]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ЯскерПункт4]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -6184,7 +6310,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Весьма своевременное уточнение с твоей стороны, ха-ха! Что ж, не могу отказать в такой просьбе. Я покажу тебе, кто мастер этого зала!
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ЯскерПункт4]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ЯскерПункт4]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -6226,7 +6352,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Думаю, в этом случае тебе будет интересно узнать, что техники владения боем различаются. И у каждого народа он свой. У хадаганцев это режущий удар, выполняемый плечом и спиной при неподвижных запястье и локте.
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ЯскерПункт4.1]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ЯскерПункт4.1]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -6261,7 +6387,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 У эльфов - рубящий, выполняемый плечом и предплечьем. Это инстинктивный способ удара, который используют все новички - поэтому эльфийской технике обучиться проще.
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ЯскерПункт4.2]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ЯскерПункт4.2]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -6296,7 +6422,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Наверняка тебе доводилось биться дуэлянтами на Айрине. И вряд ли это было сложно... Но такое фехтование напоминает мне рубку дров. Хадаганское, всё же, требует большего мастерства.
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ЯскерПункт4.3]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ЯскерПункт4.3]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -6329,7 +6455,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 &lt;&lt;audio &quot;Nayan_sound2&quot; stop&gt;&gt;
 &lt;&lt;audio &quot;night_bgm&quot; stop&gt;&gt;</tw-passagedata><tw-passagedata pid="110" name="ЯскерПункт4.3" tags="no-transition jasker" position="2190,1969" size="100,100">&lt;h3&gt;Яскер&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
 Но не думай, что я раскрою тебе все карты и расскажу, как буду вести себя в поединке. Позади тебя стоит стенд с оружием. Возьми клинок и попробуй-ка отразить эти удары!
-\&lt;&lt;/type&gt;&gt;&lt;&lt;timed 3s t8n&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Вперёд!]]&lt;/div&gt;&lt;&lt;/timed&gt;&gt;
+\&lt;&lt;/type&gt;&gt;&lt;&lt;timed 1.5s t8n&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Вперёд!]]&lt;/div&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -6411,7 +6537,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Молодец!
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ЯскерПункт6]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ЯскерПункт6]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -6453,7 +6579,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Трусишь?
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ЯскерПункт6]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ЯскерПункт6]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -6539,7 +6665,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Неплохо!
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ЯскерПункт7]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ЯскерПункт7]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -6581,7 +6707,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Тьфу! С таким подходом можешь брать уроки у баньши - у них визжать получается лучше. Или тебе хотелось оглушить меня своим воплем? Герой Сарнаута... Ты бы на меня ещё рейд собрал! Похоже, разочаровывать окружающих - лучшее, что тебе удаётся.
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|jasker_02]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|jasker_02]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -6671,7 +6797,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Не стоит. Для Великого Мага это пустяки. Благодарю за компанию! Было приятно немного размяться. Я думаю, что мы сможем продолжить наш разговор чуть позже.
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|jasker_03]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|jasker_03]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -6728,7 +6854,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Интересное совпадение. Хотя... Чтобы у героя не было запаса зелий для разных боевых ситуаций? Ха-ха!
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ЯскерПункт8]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ЯскерПункт8]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -6779,7 +6905,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 &quot;https://content.alloder.ru/uploads/Background_a9c781d74a.png&quot;&gt;
 &lt;/span&gt;</tw-passagedata><tw-passagedata pid="120" name="ЯскерПункт8" tags="no-transition jasker" position="2172,3106" size="100,100">&lt;h3&gt;Яскер&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
 А вот спортивную форму жаль. Самый первый комплект от Абибаса... Хороший портной, кстати. Его мастерская весь Незебград обшивает. Да и орки нахваливают не меньше, чем продавцов семечек. Ну-ка...
-\&lt;&lt;/type&gt;&gt;&lt;&lt;timed 2s t8n&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Ого! Так вот как закалялась имперская сталь!]]&lt;/div&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Знакомый комплект... Потыкать палочкой - 300 золотых! Ещё в &quot;Розе и Шиповнике&quot; так шутили...]]&lt;/div&gt;&lt;&lt;/timed&gt;&gt;
+\&lt;&lt;/type&gt;&gt;&lt;&lt;timed 1.7s t8n&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Ого! Так вот как закалялась имперская сталь!]]&lt;/div&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Знакомый комплект... Потыкать палочкой - 300 золотых! Ещё в &quot;Розе и Шиповнике&quot; так шутили...]]&lt;/div&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -6821,7 +6947,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Кхм. Раз уж этот комплект вызвал такое удивление, то представляю твоё лицо, когда увидишь тренажёры для растяжки... Они стоят в этом же зале, дальше.
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ЯскерПункт9]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ЯскерПункт9]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -6863,7 +6989,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Ничего удивительного, учитывая, что это заведение - тоже детище Антуанетты. Думаю, если ознакомишься с этим залом получше, то узнаешь, что тут ещё и не такое есть. На тему... кхм... &quot;потыкать&quot; она тоже изобретательна. Столько видов массажа вообще вряд ли кто-то кроме неё знает...
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ЯскерПункт9]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ЯскерПункт9]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -6945,7 +7071,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Ха-ха! На любой будет верно, пожалуй.
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ЯскерПункт10]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ЯскерПункт10]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -6983,11 +7109,11 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
         id=&quot;img_hero_delay&quot;
         src=
 &quot;https://content.alloder.ru/uploads/golyj_standartnoe_2eb780dbc1.png&quot;&gt;
-&lt;/span&gt;</tw-passagedata><tw-passagedata pid="125" name="Похоже, в одиночку по Игнисте передвигаться будет опасно... А то зажмут где-нибудь в углу..." tags="no-transition jasker" position="2352,3615" size="100,100">&lt;h3&gt;Яскер&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
+&lt;/span&gt;</tw-passagedata><tw-passagedata pid="125" name="Похоже, в одиночку по Игнисте передвигаться будет опасно... А то зажмут где-нибудь в углу..." tags="no-transition jasker" position="2350,3625" size="100,100">&lt;h3&gt;Яскер&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
 Но тебе это понравится, скорее всего. Ха-ха!
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ЯскерПункт10]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ЯскерПункт10]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -7025,7 +7151,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
         id=&quot;img_hero_delay&quot;
         src=
 &quot;https://content.alloder.ru/uploads/golyj_standartnoe_2eb780dbc1.png&quot;&gt;
-&lt;/span&gt;</tw-passagedata><tw-passagedata pid="126" name="ЯскерПункт10" tags="no-transition jasker" position="2186,3805" size="100,100">&lt;h3&gt;Яскер&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
+&lt;/span&gt;</tw-passagedata><tw-passagedata pid="126" name="ЯскерПункт10" tags="no-transition jasker" position="2200,3800" size="100,100">&lt;h3&gt;Яскер&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
 О, смотри-ка... Раны затянулись. Твоя чудо-склянка и вправду работает! Прямо какой-то карманный лекарь...
 \&lt;&lt;/type&gt;&gt;&lt;&lt;timed 1s t8n&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Герой Сарнаута всегда готов! Как пионер!]]&lt;/div&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Служу Империи, ха-ха!]]&lt;/div&gt;&lt;&lt;/timed&gt;&gt;
 
@@ -7065,11 +7191,11 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
         id=&quot;img_hero_delay&quot;
         src=
 &quot;https://content.alloder.ru/uploads/golyj_uhmylka_bfa9a4ffcd.png&quot;&gt;
-&lt;/span&gt;</tw-passagedata><tw-passagedata pid="127" name="Герой Сарнаута всегда готов! Как пионер!" tags="no-transition jasker" position="2023,3978" size="100,100">&lt;h3&gt;Яскер&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
+&lt;/span&gt;</tw-passagedata><tw-passagedata pid="127" name="Герой Сарнаута всегда готов! Как пионер!" tags="no-transition jasker" position="2025,3975" size="100,100">&lt;h3&gt;Яскер&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
 Знаю, знаю... Дынин рапорты вовремя отсылает, ха!
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ЯскерПункт11]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ЯскерПункт11]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -7100,11 +7226,11 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 &lt;&lt;audio &quot;Jasker_sound&quot; stop&gt;&gt;
 &lt;&lt;audio &quot;Nayan_sound&quot; stop&gt;&gt;
 &lt;&lt;audio &quot;Nayan_sound2&quot; stop&gt;&gt;
-&lt;&lt;audio &quot;night_bgm&quot; stop&gt;&gt;</tw-passagedata><tw-passagedata pid="128" name="Служу Империи, ха-ха!" tags="no-transition jasker" position="2341,3969" size="100,100">&lt;h3&gt;Яскер&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
+&lt;&lt;audio &quot;night_bgm&quot; stop&gt;&gt;</tw-passagedata><tw-passagedata pid="128" name="Служу Империи, ха-ха!" tags="no-transition jasker" position="2350,3975" size="100,100">&lt;h3&gt;Яскер&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
 Вот это по-нашему! Хвалю!
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ЯскерПункт11]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ЯскерПункт11]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -7172,7 +7298,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Очень дальновидно, надо сказать... Впрочем, выходит, что в данном случае приключения нашёл себе я. Хм!
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ЯскерПункт12]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ЯскерПункт12]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -7214,7 +7340,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Логично... Массажные кабинеты тут хороши, к слову.
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ЯскерПункт12]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ЯскерПункт12]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -7296,7 +7422,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Как это не дала?! Дала, ещё как! Кхм... Ладно, это была солдафонская шутка... Но не думаю, что Антуанетта обиделась бы на эту пошлость, учитывая контекст...
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ЯскерПункт13]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ЯскерПункт13]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -7338,7 +7464,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Ещё как прижали... И сорвали не только планы, но и доспех. Даже подштанников не оставили, ха-ха!
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ЯскерПункт13]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ЯскерПункт13]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -7380,7 +7506,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Началось всё с того, что наша высадка была обнаружена. Антуанетта хоть и выглядит ветреницей, но в магии она хороша не меньше, чем в любовной науке. Хотя, возможно, сработала и её интуиция, как у всякой женщины... 
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ЯскерПункт13.1]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ЯскерПункт13.1]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -7415,7 +7541,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 К Игнисте мы подбирались скрытно. Корабли нельзя было заметить с берега, пока они не подошли бы вплотную... И после швартовки мои бойцы отправились на разведку территории. 
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ЯскерПункт13.2]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ЯскерПункт13.2]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -7450,7 +7576,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Так эта фурия ворвалась на корабль! Да, к тому моменту он опустел и остались лишь часовые. Как Антуанетта пробралась мимо них - загадка. Но в капитанскую рубку она ворвалась как к себе домой! 
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ЯскерПункт13.3]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ЯскерПункт13.3]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -7530,7 +7656,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Ха-ха! Нет. Но с садовником кое-что было, кстати... И не надо на меня так смотреть! Его напоили и искупали в фонтане, а не то, что ты думаешь... 
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ЯскерПункт14]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ЯскерПункт14]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -7572,7 +7698,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Старый солдат не знает слов любви! Только движения... Шутка! Хотя куда уж мне до юмора героя Сарнаута... 
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ЯскерПункт14]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ЯскерПункт14]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -7610,11 +7736,11 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
         id=&quot;img_hero_delay&quot;
         src=
 &quot;https://content.alloder.ru/uploads/golyj_uhmylka_bfa9a4ffcd.png&quot;&gt;
-&lt;/span&gt;</tw-passagedata><tw-passagedata pid="141" name="ЯскерПункт14" tags="no-transition jasker" position="2151,5634" size="100,100">&lt;h3&gt;Яскер&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
+&lt;/span&gt;</tw-passagedata><tw-passagedata pid="141" name="ЯскерПункт14" tags="no-transition jasker" position="2150,5625" size="100,100">&lt;h3&gt;Яскер&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
 Но любишь же ты подколоть, конечно... Хотя жизнь порой бывает смешнее. Помнишь синему, которую снимали на &quot;Фабрике грёз&quot;? Думаю, ты догадываешься, что сюжет в ней был несколько иным. Антуанетта сначала поскандалила, как сделала бы любая женщина на её месте. Но потом... Скажем так, мы нашли общий язык. 
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ЯскерПункт14.1]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ЯскерПункт14.1]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -7649,7 +7775,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Однако, если бы рядовому зрителю это было показано без купюр... Ты понимаешь, насколько бы это взбудоражило умы. И дело даже не столько в цензуре. Но... Договариваться с эльфийской волшебницей? 
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ЯскерПункт14.2]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ЯскерПункт14.2]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -7684,7 +7810,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 В умах народных масс лидер нации должен быть жёстким и не искать компромиссов. Он должен думать лишь о благе государства, а не о личных утехах. И, разумеется, не быть подвластным чарам. Что женским, что магическим. 
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ЯскерПункт14.3]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ЯскерПункт14.3]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -8441,7 +8567,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Ну что ж... Переходим к тому, что я тебе обещала ранее. И пусть тебя не смущает откровенность нашего разговора.
 \&lt;&lt;/type&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта1.1]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта1.1]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;div class=&quot;hero&quot;&gt;&lt;&lt;timed 0.3s t8n&gt;&gt;
 &lt;img
@@ -8476,7 +8602,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Ты - герой Сарнаута. А героев постоянно постоянно куда-то посылают... Чаще всего - в не самые приятные места. В конечном итоге, из-за этого герои учатся владеть лишь оружием и магией, которая пригодилась бы в бою.
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|Перчатки]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|Перчатки]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;div class=&quot;hero&quot;&gt;
 &lt;img
@@ -8517,7 +8643,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Некоторые ещё овладевают ремеслом и навыками торговли - но, опять же, лишь для того, чтобы в дальнейшем вложиться в свои боевые умения и побеждать. И лишь сравнительно небольшая часть героев интересуется дипломатией и манерами... 
 \&lt;&lt;/type&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта1.3]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта1.3]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;div class=&quot;hero&quot;&gt;&lt;&lt;timed 0.3s t8n&gt;&gt;
 &lt;img
@@ -8548,11 +8674,11 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 &lt;&lt;audio &quot;Jasker_sound2&quot; stop&gt;&gt;
 &lt;&lt;audio &quot;Nayan_sound&quot; stop&gt;&gt;
 &lt;&lt;audio &quot;Nayan_sound2&quot; stop&gt;&gt;
-&lt;&lt;audio &quot;night_bgm&quot; stop&gt;&gt;</tw-passagedata><tw-passagedata pid="160" name="ТокеныАнтуанетта1.3" tags="desert no-transition" position="2984,1574" size="100,100">&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
+&lt;&lt;audio &quot;night_bgm&quot; stop&gt;&gt;</tw-passagedata><tw-passagedata pid="160" name="ТокеныАнтуанетта1.3" tags="desert no-transition" position="2975,1575" size="100,100">&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
 Я бы хотела тебя научить, как вести себя не только на поле боя. Хотя в некоторых привычных тебе ситуациях это тоже может пригодиться... 
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|Топ]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|Топ]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;div class=&quot;hero&quot;&gt;
 &lt;img
@@ -8593,7 +8719,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 В своё время на Игнисту высадились имперские солдаты, чтобы занять аллод. Я бы могла дать отпор и устроить бойню, как это сделал бы другой Великий Маг. Тем более, что среди них был Яскер - а его уничтожение сильно повлияло бы на баланс сил внутри Империи.  
 \&lt;&lt;/type&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта1.5]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта1.5]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;div class=&quot;hero&quot;&gt;&lt;&lt;timed 0.3s t8n&gt;&gt;
 &lt;img
@@ -8628,7 +8754,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Однако в этом случае на захват Игнисты могли быть брошены новые силы. Жертв стало бы больше. Я уже не говорю о том, что вместо Яскера к власти пришёл бы кто-то иной... И не факт, что он не оказался бы кровавым самодуром, уничтожающим всё на своём пути. Яскер, во всяком случае, действительно заботится о благе государства. И даже несмотря на его кажущуюся неприступность, с ним можно вести переговоры.  
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта1.6]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта1.6]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;div class=&quot;hero&quot;&gt;
 &lt;img
@@ -8669,7 +8795,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Яскер не лишён благородства. Этим он меня покорил... Вы с ним в этом похожи. Позволь тебя научить, как можно обаять оппонента и привлечь его на свою сторону.
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта1.7]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта1.7]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;div class=&quot;hero&quot;&gt;
 &lt;img
@@ -8740,7 +8866,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Нет-нет, ты слишком торопишь события. Боюсь, от такого напора твой оппонент может как пуститься в бегство, так и, напротив, посчитать это попыткой нападения.
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта6]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта6]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;div class=&quot;hero&quot;&gt;
 &lt;img
@@ -8774,7 +8900,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 О нет, ты же не придворная фрейлина, которая стремится устранить конкурентку.
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта6]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта6]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;div class=&quot;hero&quot;&gt;
 &lt;img
@@ -8804,11 +8930,11 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 &lt;&lt;audio &quot;Jasker_sound2&quot; stop&gt;&gt;
 &lt;&lt;audio &quot;Nayan_sound&quot; stop&gt;&gt;
 &lt;&lt;audio &quot;Nayan_sound2&quot; stop&gt;&gt;
-&lt;&lt;audio &quot;night_bgm&quot; stop&gt;&gt;</tw-passagedata><tw-passagedata pid="167" name="ТокеныАнтуанетта6" tags="desert no-transition" position="2947,2494" size="100,100">&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
+&lt;&lt;audio &quot;night_bgm&quot; stop&gt;&gt;</tw-passagedata><tw-passagedata pid="167" name="ТокеныАнтуанетта6" tags="desert no-transition" position="3000,2500" size="100,100">&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
 Нужно действовать мягче. Если тебе в грудь ещё не целится остриё оружия - можно начать с выяснения целей, которые интересуют твоего оппонента. Вполне возможно, ваше столкновение было спланировано кем-то извне. А может, твой оппонент и не надеялся договориться, поэтому сразу решил перейти к силовым методам.
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта6.1]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта6.1]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;div class=&quot;hero&quot;&gt;
 &lt;img
@@ -8876,7 +9002,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Догадываюсь, о какой книжке речь... Но уж поверь, гормон удовольствия вырабатывается не только через &quot;мягкое место&quot;, ха-ха!
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта7]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта7]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;div class=&quot;hero&quot;&gt;
 &lt;img
@@ -8907,11 +9033,11 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 &lt;&lt;audio &quot;Jasker_sound2&quot; stop&gt;&gt;
 &lt;&lt;audio &quot;Nayan_sound&quot; stop&gt;&gt;
 &lt;&lt;audio &quot;Nayan_sound2&quot; stop&gt;&gt;
-&lt;&lt;audio &quot;night_bgm&quot; stop&gt;&gt;</tw-passagedata><tw-passagedata pid="170" name="Прижму к своей могучей геройской груди - на одну положу, а второй прихлопну от широты чувств." tags="desert no-transition" position="3097,2776" size="100,100">&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
+&lt;&lt;audio &quot;night_bgm&quot; stop&gt;&gt;</tw-passagedata><tw-passagedata pid="170" name="Прижму к своей могучей геройской груди - на одну положу, а второй прихлопну от широты чувств." tags="desert no-transition" position="3100,2775" size="100,100">&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
 Боюсь, для этого тебе надо быть либо сильно накачанным орком, либо... Что скорее всего... Большегрудой дамой. Не каждому такое дано. Хотя идея в чём-то интересная, признаю, ха-ха!
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта7]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта7]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;div class=&quot;hero&quot;&gt;
 &lt;img
@@ -8946,7 +9072,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Но... Для тебя слишком привычно действовать силой. У героев это частая проблема. Однако здесь тебе надо продемонстрировать оппоненту понимание его позиции. Для этого надо найти с ним общие точки соприкосновения. В дальнейшем диалоге отталкивайся от них. 
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта7.1]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта7.1]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;div class=&quot;hero&quot;&gt;
 &lt;img
@@ -8981,7 +9107,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 А для закрепления результата есть один простой психологический приём. Он называется &quot;зеркало&quot;. Обрати внимание, какими фразами чаще всего пользуется собеседник и как он озвучивает мысль. Запомни манеру речи и какие-то нюансы его мимики. А после повторяй то же самое в ответ на его слова, продолжая и поддерживая его мысль - разумеется, с некоторым временным интервалом, чтобы это смотрелось естественно. 
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта7.2]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта7.2]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;div class=&quot;hero&quot;&gt;
 &lt;img
@@ -9016,7 +9142,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Для собеседника это будет выглядеть так, что он нашёл единомышленника и родственную душу. Ну а для тебя это станет отличным способом завоевать его доверие. Главное, не перестарайся и случайно не начни пародировать собеседника - иначе это лишь усугубит ситуацию.
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;&lt;if ($jasker_02 and $smeyana_02) or ($smeyana_02 and $nayan_02) or ($nayan_02 and $jasker_02) or ($jasker_03 and $smeyana_03) or ($smeyana_03 and $nayan_03) or ($nayan_03 and $jasker_03) or ($jasker_02 and $smeyana_03) or ($smeyana_02 and $nayan_03) or ($nayan_02 and $jasker_03) or ($jasker_03 and $smeyana_02) or ($smeyana_03 and $nayan_02) or ($nayan_03 and $jasker_02) is true&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта8]]&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;notdialog&quot;&gt;&lt;div id=&quot;elem2&quot;&gt;&lt;span class=&quot;next&quot;&gt;[[|antoinette_02]]&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;&lt;if ($jasker_02 and $smeyana_02) or ($smeyana_02 and $nayan_02) or ($nayan_02 and $jasker_02) or ($jasker_03 and $smeyana_03) or ($smeyana_03 and $nayan_03) or ($nayan_03 and $jasker_03) or ($jasker_02 and $smeyana_03) or ($smeyana_02 and $nayan_03) or ($nayan_02 and $jasker_03) or ($jasker_03 and $smeyana_02) or ($smeyana_03 and $nayan_02) or ($nayan_03 and $jasker_02) is true&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта8]]&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;notdialog&quot;&gt;&lt;div id=&quot;elem2&quot;&gt;&lt;span class=&quot;next&quot;&gt;[[|antoinette_02]]&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;div class=&quot;hero&quot;&gt;
 &lt;img
@@ -9108,11 +9234,11 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 
 &lt;&lt;run memorize (&#39;antoinette_0101&#39;, true)&gt;&gt;
 &lt;&lt;set $antoinette_0101 to true&gt;&gt;
-&lt;&lt;run forget(&#39;antoinette_01&#39;)&gt;&gt;</tw-passagedata><tw-passagedata pid="175" name="Устроить грандиозный скандал! Вон, даже сурового Яскера впечатлило. Мне бы такое мастерство..." tags="desert no-transition" position="2863,3648" size="100,100">&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
+&lt;&lt;run forget(&#39;antoinette_01&#39;)&gt;&gt;</tw-passagedata><tw-passagedata pid="175" name="Устроить грандиозный скандал! Вон, даже сурового Яскера впечатлило. Мне бы такое мастерство..." tags="desert no-transition" position="2875,3650" size="100,100">&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
 Нет, ха-ха! Ты мне льстишь, герой Сарнаута... То был исключительный случай. Всё же, Яскер сам пришёл ко мне. И не один. Я хоть и гостеприимная хозяйка, но не люблю, когда мой аллод топчут грязными сапогами. Здесь просто пришлось обозначить своё негодование. Хотя, конечно, сработало это как элемент неожиданности...
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|Села]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|Села]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;div class=&quot;hero&quot;&gt;
 &lt;img
@@ -9154,7 +9280,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 О нет, этот вариант уже годится для мелочных дворцовых интриг... Но, похоже, тебя слишком часто в них вовлекали. И это печально.. Там слишком много грязи. И слишком много хитросплетений приходится держать в своей голове...
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|Села]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|Села]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;div class=&quot;hero&quot;&gt;
 &lt;img
@@ -9196,7 +9322,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Нужно просчитывать дальнейшее развитие событий. Тот, кто владеет этим мастерством в совершенстве, способен менять мир куда эффективнее, чем тот, кто полагается лишь на грубую силу.
 \&lt;&lt;/type&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта9.1]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта9.1]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;div class=&quot;hero&quot;&gt;&lt;&lt;timed 0.3s t8n&gt;&gt;
 &lt;img
@@ -9231,7 +9357,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Впрочем, мы сейчас говорим о более простых вещах - умении принимать гостей. И здесь пригодятся знания из светской сферы. Речь о совместном ужине. Я не буду останавливаться на видах блюд и столовых приборах, иначе ты совсем уснёшь от моих лекций. Но остановлюсь на правильной подаче вина. Обычно с такими вопросами разбираются слуги, но мы же говорим о личном общении?
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта9.2]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта9.2]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;div class=&quot;hero&quot;&gt;
 &lt;img
@@ -9299,7 +9425,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Ха-ха! Неизгладимое... Верно замечено. В приличном обществе за такое... кхм... бьют канделябром по голове.
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта10]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта10]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;div class=&quot;hero&quot;&gt;
 &lt;img
@@ -9334,7 +9460,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 О нет, всё куда проще.
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта10]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта10]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;div class=&quot;hero&quot;&gt;
 &lt;img
@@ -9365,11 +9491,11 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 &lt;&lt;audio &quot;Jasker_sound2&quot; stop&gt;&gt;
 &lt;&lt;audio &quot;Nayan_sound&quot; stop&gt;&gt;
 &lt;&lt;audio &quot;Nayan_sound2&quot; stop&gt;&gt;
-&lt;&lt;audio &quot;night_bgm&quot; stop&gt;&gt;</tw-passagedata><tw-passagedata pid="182" name="ТокеныАнтуанетта10" tags="desert no-transition" position="2982,4463" size="100,100">&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
+&lt;&lt;audio &quot;night_bgm&quot; stop&gt;&gt;</tw-passagedata><tw-passagedata pid="182" name="ТокеныАнтуанетта10" tags="desert no-transition" position="2975,4475" size="100,100">&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
 Нужно полностью снять обёртку с горлышка и не трясти бутылку. Особенно, когда вытаскиваешь пробку. К слову о ней... Тебе моя пробка тут не попадалась? Вытянутая такая, конусообразная, с кристаллом у основания? 
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта10.1]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта10.1]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;div class=&quot;hero&quot;&gt;
 &lt;img
@@ -9452,7 +9578,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Ой... Как я и говорила, не надо трясти бутылку перед тем, как открыть. Теперь придётся думать, что делать, чтобы вино не выветрилось... 
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта11.1]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта11.1]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;div class=&quot;hero&quot;&gt;
 &lt;img
@@ -9487,7 +9613,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Ладно. Давай пока разольём его по бокалам. Наклони бокал под углом, чтобы вино стекало по стенке. Так оно лучше раскроет свой вкус. После этого предложи собеседнику выбрать один из бокалов. Так он будет уверен, что стенки не смазаны ядом. Затем можно поднять свой бокал и отпить из него, показывая, что вино тоже не отравлено.
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта12]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта12]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;div class=&quot;hero&quot;&gt;
 &lt;img
@@ -9525,7 +9651,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
         id=&quot;img_hero_delay&quot;
 		src=
 &quot;https://content.alloder.ru/uploads/divan_2_5299a88a80.png&quot;&gt;
-&lt;/span&gt;</tw-passagedata><tw-passagedata pid="186" name="ТокеныАнтуанетта12" tags="desert no-transition" position="2979,5101" size="100,100">&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
+&lt;/span&gt;</tw-passagedata><tw-passagedata pid="186" name="ТокеныАнтуанетта12" tags="desert no-transition" position="2975,5100" size="100,100">&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
 Итак... Вино у нас красное. Весьма сладкое, замечу. Люблю этот сорт... Как думаешь, с чем он будет лучше сочетаться?
 \&lt;&lt;/type&gt;&gt;&lt;&lt;timed 1.5s t8n&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[С чем-нибудь нажористым! Чтобы переваривалось лучше.]]&lt;/div&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[С вкусняхами! Чтобы аж всё слиплось!]]&lt;/div&gt;&lt;&lt;/timed&gt;&gt;
 
@@ -9562,7 +9688,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Ха-ха! Если такое вино подаётся в самом начале, то играет роль аперитива. В этом случае, действительно, оно подаётся вместе с блюдами из мяса или птицы. Но если в конце - то с десертами и фруктами.
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта13]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта13]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;div class=&quot;hero&quot;&gt;
 &lt;img
@@ -9597,7 +9723,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Как шутил один наш знакомый орк - &quot;Чтобы ТАМ не слипалось, надо поддать больше напора на выходе&quot;. Прости мне столь грубую шутку, но думаю, иногда можно позволить немного &quot;перца&quot; при личном общении. Всё же, мы уже не первый день знакомы. Но да - если такое вино подаётся в конце, то к нему подойдут десерты и фрукты.
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта13]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта13]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;div class=&quot;hero&quot;&gt;
 &lt;img
@@ -9632,7 +9758,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Лучше, если они будут не слишком сладкими - иначе начнут перебивать вкус вина. Возьми с того стола тарелку с фруктами, кстати. И тоже угощайся. *звяк*
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта13.1]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта13.1]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;div class=&quot;hero&quot;&gt;
 &lt;img
@@ -9667,7 +9793,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 О, вот и моя пробка нашлась. Помоги-ка её вставить. Да не красней ты так! Ох, что же за герои пошли... Опять хрупкой женщине приходится всё делать самой...
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|Бутылка]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|Бутылка]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;div class=&quot;hero&quot;&gt;
 &lt;img
@@ -9739,7 +9865,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Дай угадаю... Опять в &quot;Розе и Шиповнике&quot;, да? Вот говорила же, что беседки надо делать с нормальными дверями, а не этими завесами...
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;&lt;if ($jasker_02 and $smeyana_02 and $nayan_02) or ($jasker_03 and $smeyana_03 and $nayan_03) or ($jasker_03 and $smeyana_02 and $nayan_02) or ($jasker_02 and $smeyana_03 and $nayan_02) or ($jasker_02 and $smeyana_02 and $nayan_03) or ($jasker_02 and $smeyana_03 and $nayan_03) or ($jasker_03 and $smeyana_02 and $nayan_03) or ($jasker_03 and $smeyana_03 and $nayan_02) is true&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта14]]&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;notdialog&quot;&gt;&lt;div id=&quot;elem2&quot;&gt;&lt;span class=&quot;next&quot;&gt;[[|antoinette_03]]&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;&lt;if ($jasker_02 and $smeyana_02 and $nayan_02) or ($jasker_03 and $smeyana_03 and $nayan_03) or ($jasker_03 and $smeyana_02 and $nayan_02) or ($jasker_02 and $smeyana_03 and $nayan_02) or ($jasker_02 and $smeyana_02 and $nayan_03) or ($jasker_02 and $smeyana_03 and $nayan_03) or ($jasker_03 and $smeyana_02 and $nayan_03) or ($jasker_03 and $smeyana_03 and $nayan_02) is true&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта14]]&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;notdialog&quot;&gt;&lt;div id=&quot;elem2&quot;&gt;&lt;span class=&quot;next&quot;&gt;[[|antoinette_03]]&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;div class=&quot;hero&quot;&gt;
 &lt;img
@@ -9792,7 +9918,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Ха-ха! Нет... Те, которые я использую для себя выглядят несколько иначе. Но ход твоих мыслей мне нравится...
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;&lt;if ($jasker_02 and $smeyana_02 and $nayan_02) or ($jasker_03 and $smeyana_03 and $nayan_03) or ($jasker_03 and $smeyana_02 and $nayan_02) or ($jasker_02 and $smeyana_03 and $nayan_02) or ($jasker_02 and $smeyana_02 and $nayan_03) or ($jasker_02 and $smeyana_03 and $nayan_03) or ($jasker_03 and $smeyana_02 and $nayan_03) or ($jasker_03 and $smeyana_03 and $nayan_02) is true&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта14]]&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;notdialog&quot;&gt;&lt;div id=&quot;elem2&quot;&gt;&lt;span class=&quot;next&quot;&gt;[[|antoinette_03]]&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;&lt;if ($jasker_02 and $smeyana_02 and $nayan_02) or ($jasker_03 and $smeyana_03 and $nayan_03) or ($jasker_03 and $smeyana_02 and $nayan_02) or ($jasker_02 and $smeyana_03 and $nayan_02) or ($jasker_02 and $smeyana_02 and $nayan_03) or ($jasker_02 and $smeyana_03 and $nayan_03) or ($jasker_03 and $smeyana_02 and $nayan_03) or ($jasker_03 and $smeyana_03 and $nayan_02) is true&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта14]]&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;notdialog&quot;&gt;&lt;div id=&quot;elem2&quot;&gt;&lt;span class=&quot;next&quot;&gt;[[|antoinette_03]]&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;div class=&quot;hero&quot;&gt;
 &lt;img
@@ -9845,7 +9971,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Впрочем, раз мы закончили с трапезой, то перейдём к более деликатному вопросу... Обычно к этому этапу переходят после того, как установлен доверительный контакт, а отношения стали гораздо... более тесными. Но происходит это явно не в первую встречу. Хотя бывает и так, что между вами промелькнула искра.
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|Живот]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|Живот]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;div class=&quot;hero&quot;&gt;
 &lt;img
@@ -9926,7 +10052,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Да уж... Видимо, высадка солдат тогда не прошла бесследно... Мы уже устали отучать медведеней от этого лексикона. Так и передают по цепочке до сих пор...
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта16]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта16]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;div class=&quot;hero&quot;&gt;
 &lt;img
@@ -9967,7 +10093,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Ой... Задёрни шторы, пожалуйста. Не то, чтобы я против, но пока не в настроении. Мы ведь должны закончить урок?
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта16]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта16]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;div class=&quot;hero&quot;&gt;
 &lt;img
@@ -10041,7 +10167,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Ха-ха! В целом, да.
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта17]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта17]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;div class=&quot;hero&quot;&gt;
 &lt;img
@@ -10075,7 +10201,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Нет-нет, начинать стоит именно с шеи. А дальше двигаться всё ниже и ниже...
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта17]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта17]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;div class=&quot;hero&quot;&gt;
 &lt;img
@@ -10109,7 +10235,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Начинать надо с поглаживаний... Это делается всей плоскостью ладони. Можешь делать это &quot;ёлочкой&quot; - от позвоночника к бокам, а можешь и круговыми движениями. Поглаживай по плечам, лопаткам, вдоль позвоночника, по пояснице и... Да! А ты быстро учишься... Повтори так несколько раз, чтобы немного разогнать кровоток и расслабить мышцы спины.
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта18]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта18]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;div class=&quot;hero&quot;&gt;
 &lt;img
@@ -10143,7 +10269,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Теперь сделай то же самое с небольшим нажимом. Можешь массировать не всей плоскостью ладони, а её основанием. Так ты разогреешь мышцы... Только осторожнее с крыльями. О, я чувствую, как по телу пошло тепло...
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта19]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта19]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;div class=&quot;hero&quot;&gt;
 &lt;img
@@ -10177,7 +10303,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Дальше... Возьми меня за плечи и разомни их сзади, используя подушечки больших пальцев. Сдвигай руки ближе к позвоночнику. Чувствуешь мышцы между плечами и шеей? Если ты остановишься на них помассируешь чуть дольше, я буду не против... Да, и основание шеи тоже...
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта19.1]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта19.1]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;div class=&quot;hero&quot;&gt;
 &lt;img
@@ -10211,7 +10337,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 Теперь сделай то же самое с мышцами вдоль позвоночника. И не забудь про поясницу - когда долго сидишь, там тоже требуется разминка. Да, там где крестец... Захватывай ладонями область с боков и разомни тоже... Хорошо...
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта20]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта20]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;div class=&quot;hero&quot;&gt;
 &lt;img
@@ -10243,7 +10369,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 &lt;&lt;audio &quot;Nayan_sound2&quot; stop&gt;&gt;
 &lt;&lt;audio &quot;night_bgm&quot; stop&gt;&gt;</tw-passagedata><tw-passagedata pid="205" name="ТокеныАнтуанетта20" tags="desert no-transition autosave" position="2953,7508" size="100,100">&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
 И вот теперь... Повтори то же самое, но с нажимом - используй основание ладони. Пройдись по спине, надавливая на мышцы рядом с плечами, на лопатки, на мышцы вдоль позвоночника... И на поясницу. Да, если разомнёшь её нижнюю часть - я тоже не буду против. Сегодня пришлось поработать с бумагами и я эту часть немного отсидела, честно говоря. Буду рада, если ты мне поможешь...
-\&lt;&lt;/type&gt;&gt;&lt;&lt;timed 3s t8n&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Да, моя королева!|antoinette_04.1]]&lt;/div&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Извините, но я пойду...|antoinette_04]]&lt;/div&gt;&lt;&lt;/timed&gt;&gt;
+\&lt;&lt;/type&gt;&gt;&lt;&lt;timed 3s t8n&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Да, моя королева!|antoinette_04.1]]&lt;/div&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;div class=&quot;hero&quot;&gt;
 &lt;img
@@ -10565,7 +10691,7 @@ Opium Witch
 Ха! Вечно занятые герои, которые вечно пытаются успеть выполнить все задания... Но я и сам когда-то был таким же. Понимаю. Ну смотри тогда. Я пока ещё побуду тут и потренируюсь. Надумаешь - приходи.
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|jasker_04]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|jasker_04]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -10618,11 +10744,11 @@ Opium Witch
 
 &lt;&lt;if $achiev_not_jasker04 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;if $jasker_04 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;notify 3000&gt;&gt;&lt;div style=&quot;color: rgb(134 105 66);&quot;&gt;Получено достижение:&lt;/div&gt; Welcome to the club, buddy!&lt;&lt;/notify&gt;&gt;&lt;&lt;timed 5s&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Сохранение...&lt;&lt;/notify&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/if&gt;&gt;
 
-&lt;&lt;if ($jasker_04) or ($achiev_not_jasker04) is true&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Сохранение...&lt;&lt;/notify&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="217" name="ЯскерПункт15.2" tags="no-transition autosave jasker" position="2407,6291" size="100,100">&lt;h3&gt;Яскер&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
+&lt;&lt;if ($jasker_04) or ($achiev_not_jasker04) is true&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Сохранение...&lt;&lt;/notify&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="217" name="ЯскерПункт15.2" tags="no-transition autosave jasker" position="2400,6300" size="100,100">&lt;h3&gt;Яскер&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
 И позаниматься на тренажёрах. Разумеется. 
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|jasker_04.1]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|jasker_04.1]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;
 &lt;img
@@ -10657,18 +10783,17 @@ Opium Witch
 
 &lt;&lt;if $achiev_not_jasker04 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;if $jasker_04 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;notify 3000&gt;&gt;&lt;div style=&quot;color: rgb(134 105 66);&quot;&gt;Получено достижение:&lt;/div&gt; Welcome to the club, buddy!&lt;&lt;/notify&gt;&gt;&lt;&lt;timed 5s&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Сохранение...&lt;&lt;/notify&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/if&gt;&gt;
 
-&lt;&lt;if ($jasker_04) or ($achiev_not_jasker04) is true&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Сохранение...&lt;&lt;/notify&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="218" name="ЯскерПунктФинал" tags="" position="2330,6590" size="100,100">&lt;&lt;fadeout 2s 6s&gt;&gt;&lt;&lt;fadein 2s 0s&gt;&gt;&lt;h3&gt;Спустя приятно проведённое время, полное пота и удовольствий&lt;/h3&gt;&lt;&lt;timed 8s&gt;&gt;&lt;&lt;goto &quot;ЯскерПунктФинал2&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;/fadeout&gt;&gt;</tw-passagedata><tw-passagedata pid="219" name="ЯскерПунктФинал2" tags="jasker-finalart" position="2292,6759" size="100,100">&lt;&lt;timed 2s t8n&gt;&gt;&lt;h3&gt;Яскер&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
+&lt;&lt;if ($jasker_04) or ($achiev_not_jasker04) is true&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Сохранение...&lt;&lt;/notify&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="218" name="ЯскерПунктФинал" tags="" position="2330,6590" size="100,100">&lt;&lt;fadeout 2s 6s&gt;&gt;&lt;&lt;fadein 2s 0s&gt;&gt;&lt;h3&gt;Спустя приятно проведённое время, полное пота и удовольствий&lt;/h3&gt;&lt;&lt;timed 8s&gt;&gt;&lt;&lt;goto &quot;ЯскерПунктФинал2&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;/fadeout&gt;&gt;</tw-passagedata><tw-passagedata pid="219" name="ЯскерПунктФинал2" tags="jasker-finalart" position="2300,6750" size="100,100">&lt;&lt;timed 2s t8n&gt;&gt;&lt;h3&gt;Яскер&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
 А знаешь, мне понравилось. Давненько не встречал достойного спарринг-партнёра, который бы занимался с такой отдачей. Если сохранишь свой боевой настрой, то твоим врагам можно будет лишь посочувствовать. Причём, посмертно. 
 \&lt;&lt;/type&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;timed 4s t8n&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Вернуться к Антуанетте|jasker_04]]&lt;/div&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Уехать с Игнисты|Титры]]&lt;/div&gt;&lt;&lt;/timed&gt;&gt;
 
-&lt;span class=&quot;hero&quot;&gt;
-&lt;&lt;timed 1.7s t8n&gt;&gt;&lt;img
+&lt;span class=&quot;hero&quot;&gt;&lt;&lt;timed 1.7s t8n&gt;&gt;&lt;img
         id=&quot;img_hero2&quot;
 		src=
 &quot;https://github.com/Demiverse/new/blob/main/menu/тень.png?raw=true&quot;&gt;
 &lt;&lt;/timed&gt;&gt;&lt;/span&gt;
 
-&lt;&lt;link &quot;&lt;i class=&#39;settingsicon-jasker&#39;&gt;&lt;/i&gt;&quot;&gt;&gt;
+&lt;&lt;timed 2s t8n&gt;&gt;&lt;&lt;link &quot;&lt;i class=&#39;settingsicon-jasker&#39;&gt;&lt;/i&gt;&quot;&gt;&gt;
 &lt;&lt;dialog &#39;Меню&#39;&gt;&gt;\&lt;i class=&#39;menu&#39;&gt;&lt;&lt;link &quot;Загрузить игру&quot;&gt;&gt;&lt;&lt;run UI.saves()&gt;&gt;&lt;&lt;/link&gt;&gt;
         &lt;&lt;link &quot;Настройки&quot;&gt;&gt;&lt;&lt;run UI.settings()&gt;&gt;&lt;&lt;/link&gt;&gt;
         &lt;&lt;link &#39;Достижения&#39;&gt;&gt;&lt;&lt;run Dialog.setup(&quot;Достижения&quot;);Dialog.wiki(Story.get(&quot;Достижения&quot;).processText());Dialog.open();&gt;&gt;&lt;&lt;/link&gt;&gt;
@@ -10676,6 +10801,7 @@ Opium Witch
 		&lt;&lt;link &quot;Вернуться в меню&quot; &quot;Предзагрузка&quot;&gt;&gt;&lt;&lt;dialogclose&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/i&gt;\
     &lt;&lt;/dialog&gt;&gt;
 &lt;&lt;/link&gt;&gt;
+&lt;&lt;/timed&gt;&gt;
 
 &lt;&lt;audio &quot;Jasker_sound2&quot; loop play&gt;&gt;
 &lt;&lt;audio &quot;Ignista_sound2&quot; stop&gt;&gt;
@@ -10729,7 +10855,7 @@ Opium Witch
 &lt;&lt;audio &quot;night_bgm&quot; stop&gt;&gt;</tw-passagedata><tw-passagedata pid="222" name="ПредАнтуанетта" tags="" position="3069,269" size="100,100">&lt;&lt;fadeout 2s 6s&gt;&gt;&lt;&lt;fadein 2s 0s&gt;&gt;&lt;h3&gt;Вы возвращаетесь к Антуанетте&lt;/h3&gt;&lt;&lt;timed 8s&gt;&gt;&lt;&lt;goto &quot;обновление2&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;/fadeout&gt;&gt;</tw-passagedata><tw-passagedata pid="223" name="Антуанетта1" tags="desert" position="27,426" size="100,100">&lt;&lt;timed 2s t8n&gt;&gt;&lt;&lt;timed 2s t8n&gt;&gt;&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
 Здравствуй, герой Сарнаута. Как понимаешь, я пригласила тебя сюда не просто так. Во время известных событий на Айрине твоя помощь была неоценима. Я не уверена, что без неё удалось бы достичь таких дипломатических успехов и решить столько проблем.\&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;timed 5s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|Антуанетта2]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 2s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|Антуанетта2]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;span class=&quot;hero&quot;&gt;&lt;&lt;timed 0.3s t8n&gt;&gt;
 &lt;img
@@ -10856,7 +10982,7 @@ Opium Witch
 Речь пойдёт о массаже. Я расскажу о самом простом.
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;timed 3s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта15]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1s t8n&gt;&gt;&lt;span class=&quot;next&quot;&gt;[[|ТокеныАнтуанетта15]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;div class=&quot;hero&quot;&gt;&lt;&lt;timed 0.3s t8n&gt;&gt;
 &lt;img
@@ -11021,7 +11147,7 @@ Opium Witch
 &lt;&lt;goto &quot;Встаёт&quot;&gt;&gt;
 
 &lt;&lt;run memorize (&#39;achiev_not_antoinette03&#39;, true)&gt;&gt;
-&lt;&lt;set $achiev_not_antoinette03 to true&gt;&gt;</tw-passagedata><tw-passagedata pid="248" name="antoinette_04" tags="" position="3125,7575" size="100,100">&lt;&lt;run memorize (&#39;antoinette_04&#39;, true)&gt;&gt;
+&lt;&lt;set $achiev_not_antoinette03 to true&gt;&gt;</tw-passagedata><tw-passagedata pid="248" name="antoinette_04.1" tags="" position="2950,7650" size="100,100">&lt;&lt;run memorize (&#39;antoinette_04&#39;, true)&gt;&gt;
 &lt;&lt;set $antoinette_04 to true&gt;&gt;
 &lt;&lt;run forget(&#39;antoinette_03&#39;)&gt;&gt;
 &lt;&lt;run forget(&#39;antoinette_02&#39;)&gt;&gt;
@@ -11029,13 +11155,7 @@ Opium Witch
 &lt;&lt;goto &quot;Встаёт2&quot;&gt;&gt;
 
 &lt;&lt;run memorize (&#39;achiev_not_antoinette04&#39;, true)&gt;&gt;
-&lt;&lt;set $achiev_not_antoinette04 to true&gt;&gt;</tw-passagedata><tw-passagedata pid="249" name="antoinette_04.1" tags="" position="2954,7658" size="100,100">&lt;&lt;run forget(&#39;antoinette_03&#39;)&gt;&gt;
-&lt;&lt;run forget(&#39;antoinette_02&#39;)&gt;&gt;
-
-&lt;&lt;goto &quot;Встаёт2&quot;&gt;&gt;
-
-&lt;&lt;run memorize (&#39;achiev_not_antoinette04&#39;, true)&gt;&gt;
-&lt;&lt;set $achiev_not_antoinette04 to true&gt;&gt;</tw-passagedata><tw-passagedata pid="250" name="Встаёт2" tags="" position="3275,4200" size="100,100">&lt;&lt;fadeout 2s 6s&gt;&gt;&lt;&lt;fadein 2s 0s&gt;&gt;&lt;h3&gt;Спустя приятно проведённое время...&lt;/h3&gt;&lt;&lt;timed 8s&gt;&gt;&lt;&lt;goto &quot;обновление3&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;/fadeout&gt;&gt;</tw-passagedata><tw-passagedata pid="251" name="jasker_04.1" tags="" position="2532,6435" size="100,100">&lt;&lt;run memorize (&#39;jasker_01&#39;, true)&gt;&gt;
+&lt;&lt;set $achiev_not_antoinette04 to true&gt;&gt;</tw-passagedata><tw-passagedata pid="249" name="Встаёт2" tags="" position="3275,4200" size="100,100">&lt;&lt;fadeout 2s 6s&gt;&gt;&lt;&lt;fadein 2s 0s&gt;&gt;&lt;h3&gt;Спустя приятно проведённое время...&lt;/h3&gt;&lt;&lt;timed 8s&gt;&gt;&lt;&lt;goto &quot;обновление3&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;/fadeout&gt;&gt;</tw-passagedata><tw-passagedata pid="250" name="jasker_04.1" tags="" position="2532,6435" size="100,100">&lt;&lt;run memorize (&#39;jasker_01&#39;, true)&gt;&gt;
 &lt;&lt;set $jasker_01 to true&gt;&gt;
 &lt;&lt;run memorize (&#39;jasker_04&#39;, true)&gt;&gt;
 &lt;&lt;set $jasker_04 to true&gt;&gt;
@@ -11045,7 +11165,7 @@ Opium Witch
 &lt;&lt;goto &quot;ЯскерПунктФинал&quot;&gt;&gt;
 
 &lt;&lt;run memorize (&#39;achiev_not_jasker04&#39;, true)&gt;&gt;
-&lt;&lt;set $achiev_not_jasker04 to true&gt;&gt;</tw-passagedata><tw-passagedata pid="252" name="Сброс всего" tags="" position="152,132" size="100,100">&lt;&lt;run forget(&#39;achiev_not_smeyana02&#39;)&gt;&gt;
+&lt;&lt;set $achiev_not_jasker04 to true&gt;&gt;</tw-passagedata><tw-passagedata pid="251" name="Сброс всего" tags="" position="152,132" size="100,100">&lt;&lt;run forget(&#39;achiev_not_smeyana02&#39;)&gt;&gt;
 &lt;&lt;run forget(&#39;achiev_not_smeyana03&#39;)&gt;&gt;
 &lt;&lt;run forget(&#39;achiev_not_smeyana04&#39;)&gt;&gt;
 &lt;&lt;run forget(&#39;achiev_not_jasker02&#39;)&gt;&gt;
@@ -11092,10 +11212,10 @@ Opium Witch
 &lt;&lt;run forget (&#39;achievement_09&#39;)&gt;&gt;
 &lt;&lt;run forget (&#39;achievement_010&#39;)&gt;&gt;
 &lt;&lt;run forget (&#39;achievement_011&#39;)&gt;&gt;
-&lt;&lt;run forget (&#39;achievement_012&#39;)&gt;&gt;</tw-passagedata><tw-passagedata pid="253" name="обновление001" tags="" position="675,400" size="100,100">&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;Нажмите на экран, чтобы отправиться на Игнисту...&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;&lt;span class=&quot;next2&quot;&gt;[[|StartPassage]]&lt;/span&gt;
+&lt;&lt;run forget (&#39;achievement_012&#39;)&gt;&gt;</tw-passagedata><tw-passagedata pid="252" name="обновление001" tags="" position="675,400" size="100,100">&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;Нажмите на экран, чтобы отправиться на Игнисту...&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;&lt;span class=&quot;next2&quot;&gt;[[|StartPassage]]&lt;/span&gt;
 
- &lt;&lt;forget $SkipIntro&gt;&gt;</tw-passagedata><tw-passagedata pid="254" name="обновление2" tags="" position="3225,275" size="100,100">&lt;&lt;remember $SkipIntro2 = true&gt;&gt;
-&lt;&lt;run Engine.restart()&gt;&gt;</tw-passagedata><tw-passagedata pid="255" name="main_menu_day" tags="" position="1007,261" size="100,100">&lt;span class=&quot;hero&quot;&gt;
+ &lt;&lt;forget $SkipIntro&gt;&gt;</tw-passagedata><tw-passagedata pid="253" name="обновление2" tags="" position="3225,275" size="100,100">&lt;&lt;remember $SkipIntro2 = true&gt;&gt;
+&lt;&lt;run Engine.restart()&gt;&gt;</tw-passagedata><tw-passagedata pid="254" name="main_menu_day" tags="" position="1007,261" size="100,100">&lt;span class=&quot;hero&quot;&gt;
 &lt;img
         id=&quot;img_hero_delay&quot;
         src=
@@ -11160,7 +11280,7 @@ Opium Witch
 &lt;&lt;run memorize (&#39;achiev_not_jasker04&#39;, true)&gt;&gt;
 &lt;&lt;set $achiev_not_jasker04 to true&gt;&gt;
 &lt;&lt;run memorize (&#39;achiev_not_nayan04&#39;, true)&gt;&gt;
-&lt;&lt;set $achiev_not_nayan04 to true&gt;&gt;</tw-passagedata><tw-passagedata pid="256" name="обновление" tags="" position="800,375" size="100,100">&lt;&lt;run forget(&#39;smeyana_01&#39;)&gt;&gt;
+&lt;&lt;set $achiev_not_nayan04 to true&gt;&gt;</tw-passagedata><tw-passagedata pid="255" name="обновление" tags="" position="800,375" size="100,100">&lt;&lt;run forget(&#39;smeyana_01&#39;)&gt;&gt;
 &lt;&lt;run forget(&#39;nayan_01&#39;)&gt;&gt;
 &lt;&lt;run forget(&#39;jasker_01&#39;)&gt;&gt;
 &lt;&lt;run forget(&#39;smeyana_02&#39;)&gt;&gt;
@@ -11184,10 +11304,10 @@ Opium Witch
 &lt;&lt;run forget(&#39;variable&#39;)&gt;&gt;
 
 &lt;&lt;remember $SkipIntro = true&gt;&gt;
-&lt;&lt;run Engine.restart()&gt;&gt;</tw-passagedata><tw-passagedata pid="257" name="обновление02" tags="" position="3200,400" size="100,100">&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;Нажмите на экран для перемещения в Рахл-Игнисту...&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;&lt;span class=&quot;next2&quot;&gt;[[|ЛинияПродолжениеАнтуанетта]]&lt;/span&gt;
+&lt;&lt;run Engine.restart()&gt;&gt;</tw-passagedata><tw-passagedata pid="256" name="обновление02" tags="" position="3200,400" size="100,100">&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;Нажмите на экран для перемещения в Рахл-Игнисту...&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;&lt;span class=&quot;next2&quot;&gt;[[|ЛинияПродолжениеАнтуанетта]]&lt;/span&gt;
 
-&lt;&lt;forget $SkipIntro2&gt;&gt;</tw-passagedata><tw-passagedata pid="258" name="обновление3" tags="" position="3400,4300" size="100,100">&lt;&lt;remember $SkipIntro3 = true&gt;&gt;
-&lt;&lt;run Engine.restart()&gt;&gt;</tw-passagedata><tw-passagedata pid="259" name="обновление03" tags="" position="3525,4300" size="100,100">&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;Нажмите на экран для того, чтобы услышать...&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;&lt;span class=&quot;next2&quot;&gt;[[|ОкончаниеАнтуанетта]]&lt;/span&gt;
+&lt;&lt;forget $SkipIntro2&gt;&gt;</tw-passagedata><tw-passagedata pid="257" name="обновление3" tags="" position="3400,4300" size="100,100">&lt;&lt;remember $SkipIntro3 = true&gt;&gt;
+&lt;&lt;run Engine.restart()&gt;&gt;</tw-passagedata><tw-passagedata pid="258" name="обновление03" tags="" position="3525,4300" size="100,100">&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;Нажмите на экран, чтобы выслушать Антуанетту...&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;&lt;span class=&quot;next2&quot;&gt;[[|ОкончаниеАнтуанетта]]&lt;/span&gt;
 
 &lt;&lt;forget $SkipIntro3&gt;&gt;</tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
