@@ -315,16 +315,15 @@ font-size: 70%;
     user-select: none;
   pointer-events: none; 
 }
-@media screen and (orientation:landscape) and (max-width: 960px) {
+@media screen and (orientation:portrait) and (max-width: 1024px) {
  .logo2 { 
-  background-image: url("https://content.alloder.ru/uploads/maxresdefault_c3e0398b53.jpg");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  background-color: black;
-   opacity: 0%;
-  }
+display: none;
+}
+}
+@media screen and (orientation:landscape) and (max-width: 1024px) {
+ .logo2 { 
+display: none;
+}
 }
 
 /* cтиль 3 */ 
@@ -674,7 +673,6 @@ text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6
 }
 @media screen and (min-width: 2000px) {
 .subtitle-item a:hover {
-  background-size: cover;
   background-image: none;
   }
 }
@@ -688,32 +686,45 @@ text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6
     top: 7em;
     bottom: 0em;
 }
+@media screen and (min-width: 3440px) and (max-width: 3800px) {
+.subtitle2 {
+    color: white;
+    text-align: left;
+    padding: 5%;
+    position: absolute;
+    left: 53em;
+    right: 0em;
+    top: 7em;
+    bottom: 0em;
+    font-size: 170%;
+}
+}
 @media screen and (min-width: 3840px) {
 .subtitle2 {
-     color: white;
+      color: white;
     text-align: left;
     padding: 5%;
     position: fixed;
     transform: translate(-50%, -50%);
-    left: 71%;
+    left: 70%;
     right: 0;
-    top: 50%;
+    top: 42%;
     bottom: 0;
-    font-size: 300%;
+    font-size: 250%;
 }
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 2560px) and (max-width: 3000px) {
 .subtitle2 {
-     color: white;
+       color: white;
     text-align: left;
     padding: 5%;
     position: fixed;
     transform: translate(-50%, -50%);
-    left: 71%;
+    left: 72%;
     right: 0;
-    top: 50%;
+    top: 45%;
     bottom: 0;
-    font-size: 200%;
+    font-size: 150%;
 }
 }
 @media screen and (max-width: 1600px) {
@@ -723,11 +734,11 @@ text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6
     padding: 5%;
     position: fixed;
     transform: translate(-50%, -50%);
-    left: 72%;
+    left: 64%;
     right: 0;
     top: 42%;
     bottom: 0;
-    font-size: 200%;
+    font-size: 90%;
 }
 }
   .mouse_move {
@@ -771,9 +782,9 @@ text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6
 }
 @media screen and (max-width: 1600px) {
 #img2 {
-    top: 422px;
-    left: 2059px;
-    width: 22%;
+    top: 111px;
+    left: 308px;
+    width: 23%;
     height: auto;
     pointer-events: none;
     max-height: none;
@@ -789,7 +800,7 @@ text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6
 }
 @media screen and (min-width: 2560px) {
 #img2 {
-    top: 26%;
+  top: 20%;
     left: 38%;
     pointer-events: none;
     width: auto;
@@ -806,11 +817,11 @@ text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6
 }
 @media screen and (min-width: 3440px) {
 #img2 {
-       top: 30%;
-    left: 43%;
+     top: 23%;
+    left: 41%;
     pointer-events: none;
     width: auto;
-    max-height: 35%;
+    max-height: 40%;
   }
 }
 @media screen and (min-width: 3840px) {
@@ -823,7 +834,7 @@ text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6
 }
 @media screen and (min-width: 3840px) {
 #img2 {
-      top: 26%;
+       top: 18%;
     left: 39%;
     pointer-events: none;
     width: auto;
@@ -2229,7 +2240,13 @@ $(document).on("dblclick", function (event) {
 
 
 /*! t8n-typewriter module for SugarCube v2 */
-!function(){"use strict";function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}(),Furl=function(){function Furl(current,append){if(_classCallCheck(this,Furl),Object.defineProperties(this,{node:{value:current},childNodes:{value:[]},value:{writable:!0,value:""},append:{writable:!0,value:!!append},abortTyping:{writable:!0,value:!1}}),this.node.nodeValue&&(this.value=this.node.nodeValue,this.node.nodeValue=""),!this.node.style||"none"!==this.node.style.display)for(var childNodes=this.node.childNodes;childNodes.length>0;)this.childNodes.push(new Furl(childNodes[0],!0)),this.node.removeChild(childNodes[0])}return _createClass(Furl,[{key:"finish",value:function(){for(this.abortTyping=!0;this.unfurl(););}},{key:"unfurl",value:function(parent){if(this.append&&(parent&&parent.appendChild(this.node),this.append=!1),this.value)return this.node.nodeValue+=this.value[0],this.value=this.value.slice(1),!0;for(var current=this.node,i=0,len=this.childNodes.length;i<len;++i)if(this.childNodes[i].unfurl(current))return!0;return!1}}],[{key:"typeout",value:function(content,typeDelay,startDelay){function typer(){if(!furled.abortTyping)var current=passage(),typerId=setInterval(function(){!furled.abortTyping&&passage()===current&&furled.unfurl()||clearInterval(typerId)},typeDelay)}var furled=new Furl(content);return startDelay?setTimeout(typer,startDelay):typer(),furled}}]),Furl}(),tagRe=/^t8n-typewriter-(\d+)(?:-(\d+))?$/;postrender["t8n-typewriter-handler"]=function(content){$(document).off("keypress.t8n-typewriter");for(var tags=this.tags,i=0;i<tags.length;++i){var match=tagRe.exec(tags[i]);if(null!==match){if("break"===function(){var furled=Furl.typeout(content,Number(match[1]),Number(match[2]));return $(document).on("keypress.t8n-typewriter",function(ev){32!==ev.which||ev.target!==document.body&&ev.target!==document.documentElement||(ev.preventDefault(),$(document).off("keypress.t8n-typewriter"),furled.finish())}),"break"}())break}}}}();</script><tw-tag name="autosave" color="green"></tw-tag><tw-tag name="code-passage" color="orange"></tw-tag><tw-tag name="desert" color="orange"></tw-tag><tw-tag name="frontpage" color="yellow"></tw-tag><tw-tag name="jasker" color="red"></tw-tag><tw-tag name="jasker-finalart" color="orange"></tw-tag><tw-tag name="jasker_finalart" color="orange"></tw-tag><tw-tag name="menu" color="yellow"></tw-tag><tw-tag name="nayan" color="red"></tw-tag><tw-tag name="no-transition" color="purple"></tw-tag><tw-tag name="no-transition2" color="red"></tw-tag><tw-tag name="smeyana" color="red"></tw-tag><tw-tag name="ключ" color="blue"></tw-tag><tw-tag name="noreturn" color="none"></tw-tag><tw-passagedata pid="1" name="StartPassage" tags="" position="375,400" size="100,100">
+!function(){"use strict";function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}(),Furl=function(){function Furl(current,append){if(_classCallCheck(this,Furl),Object.defineProperties(this,{node:{value:current},childNodes:{value:[]},value:{writable:!0,value:""},append:{writable:!0,value:!!append},abortTyping:{writable:!0,value:!1}}),this.node.nodeValue&&(this.value=this.node.nodeValue,this.node.nodeValue=""),!this.node.style||"none"!==this.node.style.display)for(var childNodes=this.node.childNodes;childNodes.length>0;)this.childNodes.push(new Furl(childNodes[0],!0)),this.node.removeChild(childNodes[0])}return _createClass(Furl,[{key:"finish",value:function(){for(this.abortTyping=!0;this.unfurl(););}},{key:"unfurl",value:function(parent){if(this.append&&(parent&&parent.appendChild(this.node),this.append=!1),this.value)return this.node.nodeValue+=this.value[0],this.value=this.value.slice(1),!0;for(var current=this.node,i=0,len=this.childNodes.length;i<len;++i)if(this.childNodes[i].unfurl(current))return!0;return!1}}],[{key:"typeout",value:function(content,typeDelay,startDelay){function typer(){if(!furled.abortTyping)var current=passage(),typerId=setInterval(function(){!furled.abortTyping&&passage()===current&&furled.unfurl()||clearInterval(typerId)},typeDelay)}var furled=new Furl(content);return startDelay?setTimeout(typer,startDelay):typer(),furled}}]),Furl}(),tagRe=/^t8n-typewriter-(\d+)(?:-(\d+))?$/;postrender["t8n-typewriter-handler"]=function(content){$(document).off("keypress.t8n-typewriter");for(var tags=this.tags,i=0;i<tags.length;++i){var match=tagRe.exec(tags[i]);if(null!==match){if("break"===function(){var furled=Furl.typeout(content,Number(match[1]),Number(match[2]));return $(document).on("keypress.t8n-typewriter",function(ev){32!==ev.which||ev.target!==document.body&&ev.target!==document.documentElement||(ev.preventDefault(),$(document).off("keypress.t8n-typewriter"),furled.finish())}),"break"}())break}}}}();
+
+
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+    alert ("Хей")
+}
+ else alert</script><tw-tag name="autosave" color="green"></tw-tag><tw-tag name="code-passage" color="orange"></tw-tag><tw-tag name="desert" color="orange"></tw-tag><tw-tag name="frontpage" color="yellow"></tw-tag><tw-tag name="jasker" color="red"></tw-tag><tw-tag name="jasker-finalart" color="orange"></tw-tag><tw-tag name="jasker_finalart" color="orange"></tw-tag><tw-tag name="menu" color="yellow"></tw-tag><tw-tag name="nayan" color="red"></tw-tag><tw-tag name="no-transition" color="purple"></tw-tag><tw-tag name="no-transition2" color="red"></tw-tag><tw-tag name="smeyana" color="red"></tw-tag><tw-tag name="ключ" color="blue"></tw-tag><tw-tag name="noreturn" color="none"></tw-tag><tw-tag name="logo2" color="purple"></tw-tag><tw-passagedata pid="1" name="StartPassage" tags="" position="375,400" size="100,100">
 &lt;&lt;fadein 2s 0s&gt;&gt;&lt;h3&gt;Игниста… Аллод принадлежащий Дому ди Делис. Место, пропитанное романтикой, гедонизмом и кулуарными историями. Неудивительно, что Антуанетта ди Делис решила воспользоваться Днём всех влюблённых и собрать влиятельных лиц Сарнаута именно здесь.&lt;/h3&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;Нажмите на экран...&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
 &lt;&lt;timed 3.5s t8n&gt;&gt;&lt;span class=&quot;next2&quot;&gt;[[|StartPassage2]]&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
@@ -2367,14 +2384,10 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 &lt;&lt;audio &quot;Jasker_sound2&quot; stop&gt;&gt;
 &lt;&lt;audio &quot;Nayan_sound&quot; stop&gt;&gt;
 &lt;&lt;audio &quot;Nayan_sound2&quot; stop&gt;&gt;
-&lt;&lt;audio &quot;night_bgm&quot; stop&gt;&gt;</tw-passagedata><tw-passagedata pid="4" name="Allods" tags="logo2" position="430,30" size="100,100">&lt;&lt;audio &quot;night_bgm&quot; loop play&gt;&gt;
+&lt;&lt;audio &quot;night_bgm&quot; stop&gt;&gt;</tw-passagedata><tw-passagedata pid="4" name="Allods" tags="" position="430,30" size="100,100">&lt;&lt;audio &quot;night_bgm&quot; loop play&gt;&gt;
 &lt;&lt;switch visited()&gt;&gt;&lt;&lt;case 1&gt;&gt;&lt;&lt;fadeout 2s 4s&gt;&gt;&lt;&lt;fadein 2s 0s&gt;&gt;&lt;div class=&quot;logo&quot;&gt;&lt;img src=&quot;https://content.alloder.ru/uploads/Allody_f6ef323a89.png&quot; alt=&quot;Allods&quot; width=&quot;100%&quot;&gt;&lt;/div&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;/fadeout&gt;&gt;&lt;&lt;timed 7s&gt;&gt;&lt;&lt;goto &quot;Allods&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;span class=&quot;next2&quot;&gt;[[|Allods]]&lt;/span&gt;
 
-&lt;&lt;case 2&gt;&gt;&lt;&lt;fadeout 2s 4s&gt;&gt;&lt;&lt;fadein 2s 0s&gt;&gt;&lt;div class=&quot;logo&quot;&gt;&lt;img src=&quot;https://alloder.ru/logos/logo_full.png&quot; alt=&quot;Created for Alloder.ru&quot; width=&quot;100%&quot;&gt;&lt;/div&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;/fadeout&gt;&gt;&lt;&lt;timed 7s&gt;&gt;&lt;&lt;goto &quot;Warning&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;span class=&quot;next2&quot;&gt;[[|Warning]]&lt;/span&gt;&lt;&lt;/switch&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="Warning" tags="logo2" position="662,64" size="100,100">
-
-
-
-&lt;div class=&quot;elementToFadeInAndOut&quot;&gt;&lt;h3&gt;Игра сохраняется автоматически, но вы также можете сделать это вручную.
+&lt;&lt;case 2&gt;&gt;&lt;&lt;fadeout 2s 4s&gt;&gt;&lt;&lt;fadein 2s 0s&gt;&gt;&lt;div class=&quot;logo&quot;&gt;&lt;img src=&quot;https://alloder.ru/logos/logo_full.png&quot; alt=&quot;Created for Alloder.ru&quot; width=&quot;100%&quot;&gt;&lt;/div&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;/fadeout&gt;&gt;&lt;&lt;timed 7s&gt;&gt;&lt;&lt;goto &quot;Warning&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;span class=&quot;next2&quot;&gt;[[|Warning]]&lt;/span&gt;&lt;&lt;/switch&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="Warning" tags="" position="675,75" size="100,100">&lt;div class=&quot;elementToFadeInAndOut&quot;&gt;&lt;h3&gt;Игра сохраняется автоматически, но вы также можете сделать это вручную.
 Сохраните игру на диск перед удалением кэша из истории браузера, если хотите, чтобы данные не были утеряны. Проделать вышеперечисленные действия можно в игровых загрузках. 
 Приятной игры!&lt;/h3&gt;&lt;/div&gt;
 
@@ -2437,10 +2450,9 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 &lt;&lt;set $achiev_not_nayan04 to true&gt;&gt;</tw-passagedata><tw-passagedata pid="7" name="Достижения" tags="" position="35,19" size="100,100">&lt;h3&gt;Серия достижений «Груз тысячелетий»&lt;/h3&gt;&lt;&lt;if $achievement_01 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Вы рассмешили деда&lt;/h3&gt;Найану уже не одна сотня лет, но таких шуток с ним ещё не шутили&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Вы рассмешили деда&lt;/h3&gt;Найану уже не одна сотня лет, но таких шуток с ним ещё не шутили&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $achievement_02 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;На что клюёт мотыль?&lt;/h3&gt;Вам бы хотелось разговорить историка, но книжная пыль для него оказалась интереснее...&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;На что клюёт мотыль?&lt;/h3&gt;Вам бы хотелось разговорить историка, но книжная пыль для него оказалась интереснее...&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $achievement_03 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Мотылёк в бутылке&lt;/h3&gt;Вот говорят - как бы горестно не было, не лезь в бутылку... Теперь вы знаете, что может случиться&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Мотылёк в бутылке&lt;/h3&gt;Вот говорят - как бы горестно не было, не лезь в бутылку... Теперь вы знаете, что может случиться&lt;/span&gt;&lt;&lt;/if&gt;&gt;
 &lt;h3&gt;Серия достижений «Тренировка по расписанию»&lt;/h3&gt;&lt;&lt;if $achievement_04 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Таким boyцам здесь не место!&lt;/h3&gt;Вы разочаровали отца хадаганской нации&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Таким boyцам здесь не место!&lt;/h3&gt;Вы разочаровали отца хадаганской нации&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $achievement_05 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Горячая разминка&lt;/h3&gt;Потный бой - он трудный самый. Но ваши усилия вознаграждены&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Горячая разминка&lt;/h3&gt;Потный бой - он трудный самый. Но ваши усилия вознаграждены&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $achievement_06 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Welcome to the club, buddy!&lt;/h3&gt;Теперь вы член клуба. Будьте тверды и целеустремлённы!&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Welcome to the club, buddy!&lt;/h3&gt;Теперь вы член клуба. Будьте тверды и целеустремлённы!&lt;/span&gt;&lt;&lt;/if&gt;&gt;
 &lt;h3&gt;Серия достижений «Покончить с невежеством»&lt;/h3&gt;&lt;&lt;if $achievement_07 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Бестолочь&lt;/h3&gt;Хорошо, что хоть посохом по хребтине не приложила...&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Бестолочь&lt;/h3&gt;Хорошо, что хоть посохом по хребтине не приложила...&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $achievement_08 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Светлая голова&lt;/h3&gt;Владычица заручилась вашей поддержкой&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Светлая голова&lt;/h3&gt;Владычица заручилась вашей поддержкой&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $achievement_09 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;С лёгким паром!&lt;/h3&gt;Мало кому доведётся отшлёпать Смеяну веником по ягодицам и при этом угодить ей&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;С лёгким паром!&lt;/h3&gt;Мало кому доведётся отшлёпать Смеяну веником по ягодицам и при этом угодить ей&lt;/span&gt;&lt;&lt;/if&gt;&gt;
-&lt;h3&gt;Серия достижений «Королевский приём»&lt;/h3&gt;&lt;&lt;if $achievement_010 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Игривый язычок&lt;/h3&gt;Главное - правильно уболтать врага, сделав своим союзником. А может, и кем-то бóльшим...&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Игривый язычок&lt;/h3&gt;Главное - правильно уболтать врага, сделав своим союзником. А может, и кем-то бóльшим...&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $achievement_011 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Светский угодник&lt;/h3&gt;Красиво пить не запретишь! Главное, знать меру и правильную подачу&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Светский угодник&lt;/h3&gt;Красиво пить не запретишь! Главное, знать меру и правильную подачу&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $achievement_012 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Телесных дел мастер&lt;/h3&gt;После обучения у самой Антуанетты успех в личной жизни вам гарантирован&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Телесных дел мастер&lt;/h3&gt;После обучения у самой Антуанетты успех в личной жизни вам гарантирован&lt;/span&gt;&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="8" name="Начало" tags="logo2" position="925,0" size="100,100">
-&lt;&lt;fadein 2s 0s&gt;&gt;&lt;h3&gt;Уважаемые игроки, в этой игре есть различные звукосодержащие элементы. Перед началом любовных свершений рекомендуется отрегулировать громкость на вашем устройстве. Вы также можете сделать это в меню игровых настроек.&lt;/h3&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;Нажмите на экран...&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
+&lt;h3&gt;Серия достижений «Королевский приём»&lt;/h3&gt;&lt;&lt;if $achievement_010 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Игривый язычок&lt;/h3&gt;Главное - правильно уболтать врага, сделав своим союзником. А может, и кем-то бóльшим...&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Игривый язычок&lt;/h3&gt;Главное - правильно уболтать врага, сделав своим союзником. А может, и кем-то бóльшим...&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $achievement_011 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Светский угодник&lt;/h3&gt;Красиво пить не запретишь! Главное, знать меру и правильную подачу&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Светский угодник&lt;/h3&gt;Красиво пить не запретишь! Главное, знать меру и правильную подачу&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $achievement_012 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Телесных дел мастер&lt;/h3&gt;После обучения у самой Антуанетты успех в личной жизни вам гарантирован&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Телесных дел мастер&lt;/h3&gt;После обучения у самой Антуанетты успех в личной жизни вам гарантирован&lt;/span&gt;&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="8" name="Начало" tags="" position="925,0" size="100,100">&lt;&lt;fadein 2s 0s&gt;&gt;&lt;h3&gt;Уважаемые игроки, в этой игре есть различные звукосодержащие элементы. Перед началом любовных свершений рекомендуется отрегулировать громкость на вашем устройстве. Вы также можете сделать это в меню игровых настроек.&lt;/h3&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;Нажмите на экран...&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
-&lt;span class=&quot;next2&quot;&gt;[[|Allods]]&lt;/span&gt;</tw-passagedata><tw-passagedata pid="9" name="Антуанетта3" tags="desert no-transition" position="243,620" size="100,100">&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
+&lt;span class=&quot;next&quot;&gt;[[|Allods]]&lt;/span&gt;</tw-passagedata><tw-passagedata pid="9" name="Антуанетта3" tags="desert no-transition" position="243,620" size="100,100">&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
 Я вижу, что тебя просто обвинили в наступивших бедах. И скорее всего, это было сделано на эмоциях. Поэтому у тебя есть шанс исправить ситуацию. Я ценю твою помощь и решила помочь в ответ. Да, в этом есть и моя личная заинтересованность, но всё же...
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
