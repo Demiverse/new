@@ -1159,6 +1159,13 @@ input[type=range]::-ms-track {
    background-repeat: no-repeat;
     display: table-cell;
 }
+.achieve3 {
+    background-image: url("https://content.alloder.ru/uploads/Medal_Frame_Complete50_UI_Texture_2d0694e2fd.png");
+  width: 128px;
+  height: 128px;
+   background-repeat: no-repeat;
+    display: table-cell;
+}
 #ui-dialog-body .achievetext {
       width: 80%;
   font-size: 18px;
@@ -1197,8 +1204,8 @@ input[type=range]::-ms-track {
 
 #notify {
     position : fixed;
-    display: block;
-    width: 12em;
+    display: table;
+    width: 19em;
     right: -20em; top: 75px;
     padding : 0.5em;
     background-color: #181818;
@@ -2446,7 +2453,10 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 &lt;&lt;audio &quot;night_bgm&quot; stop&gt;&gt;</tw-passagedata><tw-passagedata pid="4" name="Allods" tags="" position="430,30" size="100,100">&lt;&lt;audio &quot;night_bgm&quot; loop play&gt;&gt;
 &lt;&lt;switch visited()&gt;&gt;&lt;&lt;case 1&gt;&gt;&lt;&lt;fadeout 2s 4s&gt;&gt;&lt;&lt;fadein 2s 0s&gt;&gt;&lt;div class=&quot;logo&quot;&gt;&lt;img src=&quot;https://content.alloder.ru/uploads/Allody_f6ef323a89.png&quot; alt=&quot;Allods&quot; width=&quot;100%&quot;&gt;&lt;/div&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;/fadeout&gt;&gt;&lt;&lt;timed 7s&gt;&gt;&lt;&lt;goto &quot;Allods&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;span class=&quot;next2&quot;&gt;[[|Allods]]&lt;/span&gt;
 
-&lt;&lt;case 2&gt;&gt;&lt;&lt;fadeout 2s 4s&gt;&gt;&lt;&lt;fadein 2s 0s&gt;&gt;&lt;div class=&quot;logo&quot;&gt;&lt;img src=&quot;https://alloder.ru/logos/logo_full.png&quot; alt=&quot;Created for Alloder.ru&quot; width=&quot;100%&quot;&gt;&lt;/div&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;/fadeout&gt;&gt;&lt;&lt;timed 7s&gt;&gt;&lt;&lt;goto &quot;Warning&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;span class=&quot;next2&quot;&gt;[[|Warning]]&lt;/span&gt;&lt;&lt;/switch&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="Warning" tags="" position="675,75" size="100,100">&lt;div class=&quot;elementToFadeInAndOut&quot;&gt;&lt;h3&gt;Игра сохраняется автоматически, но вы также можете сделать это вручную.
+&lt;&lt;case 2&gt;&gt;&lt;&lt;fadeout 2s 4s&gt;&gt;&lt;&lt;fadein 2s 0s&gt;&gt;&lt;div class=&quot;logo&quot;&gt;&lt;img src=&quot;https://alloder.ru/logos/logo_full.png&quot; alt=&quot;Created for Alloder.ru&quot; width=&quot;100%&quot;&gt;&lt;/div&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;/fadeout&gt;&gt;&lt;&lt;timed 7s&gt;&gt;&lt;&lt;goto &quot;Warning&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;span class=&quot;next2&quot;&gt;[[|Warning]]&lt;/span&gt;&lt;&lt;/switch&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="Warning" tags="" position="675,75" size="100,100">
+
+
+&lt;div class=&quot;elementToFadeInAndOut&quot;&gt;&lt;h3&gt;Игра сохраняется автоматически, но вы также можете сделать это вручную.
 Сохраните игру на диск перед удалением кэша из истории браузера, если хотите, чтобы данные не были утеряны. Проделать вышеперечисленные действия можно в игровых загрузках. 
 Приятной игры!&lt;/h3&gt;&lt;/div&gt;
 
@@ -2495,7 +2505,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 &lt;&lt;run memorize (&#39;achiev_not_jasker04&#39;, true)&gt;&gt;
 &lt;&lt;set $achiev_not_jasker04 to true&gt;&gt;
 &lt;&lt;run memorize (&#39;achiev_not_nayan04&#39;, true)&gt;&gt;
-&lt;&lt;set $achiev_not_nayan04 to true&gt;&gt;</tw-passagedata><tw-passagedata pid="7" name="Достижения" tags="" position="35,19" size="100,100">&lt;h3&gt;Серия достижений «Груз тысячелетий»&lt;/h3&gt;&lt;&lt;if $achievement_01 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Вы рассмешили деда&lt;/h3&gt;Найану уже не одна сотня лет, но таких шуток с ним ещё не шутили&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Вы рассмешили деда&lt;/h3&gt;Найану уже не одна сотня лет, но таких шуток с ним ещё не шутили&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $achievement_02 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;На что клюёт мотыль?&lt;/h3&gt;Вам бы хотелось разговорить историка, но книжная пыль для него оказалась интереснее...&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;На что клюёт мотыль?&lt;/h3&gt;Вам бы хотелось разговорить историка, но книжная пыль для него оказалась интереснее...&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $achievement_03 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Мотылёк в бутылке&lt;/h3&gt;Вот говорят - как бы горестно не было, не лезь в бутылку... Теперь вы знаете, что может случиться&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Мотылёк в бутылке&lt;/h3&gt;Вот говорят - как бы горестно не было, не лезь в бутылку... Теперь вы знаете, что может случиться&lt;/span&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;set $achiev_not_nayan04 to true&gt;&gt;</tw-passagedata><tw-passagedata pid="7" name="Достижения" tags="" position="25,25" size="100,100">&lt;h3&gt;Серия достижений «Груз тысячелетий»&lt;/h3&gt;&lt;&lt;if $achievement_01 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Вы рассмешили деда&lt;/h3&gt;Найану уже не одна сотня лет, но таких шуток с ним ещё не шутили&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Вы рассмешили деда&lt;/h3&gt;Найану уже не одна сотня лет, но таких шуток с ним ещё не шутили&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $achievement_02 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;На что клюёт мотыль?&lt;/h3&gt;Вам бы хотелось разговорить историка, но книжная пыль для него оказалась интереснее...&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;На что клюёт мотыль?&lt;/h3&gt;Вам бы хотелось разговорить историка, но книжная пыль для него оказалась интереснее...&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $achievement_03 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Мотылёк в бутылке&lt;/h3&gt;Вот говорят - как бы горестно не было, не лезь в бутылку... Теперь вы знаете, что может случиться&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Мотылёк в бутылке&lt;/h3&gt;Вот говорят - как бы горестно не было, не лезь в бутылку... Теперь вы знаете, что может случиться&lt;/span&gt;&lt;&lt;/if&gt;&gt;
 &lt;h3&gt;Серия достижений «Тренировка по расписанию»&lt;/h3&gt;&lt;&lt;if $achievement_04 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Таким boyцам здесь не место!&lt;/h3&gt;Вы разочаровали отца хадаганской нации&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Таким boyцам здесь не место!&lt;/h3&gt;Вы разочаровали отца хадаганской нации&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $achievement_05 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Горячая разминка&lt;/h3&gt;Потный бой - он трудный самый. Но ваши усилия вознаграждены&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Горячая разминка&lt;/h3&gt;Потный бой - он трудный самый. Но ваши усилия вознаграждены&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $achievement_06 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Welcome to the club, buddy!&lt;/h3&gt;Теперь вы член клуба. Будьте тверды и целеустремлённы!&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Welcome to the club, buddy!&lt;/h3&gt;Теперь вы член клуба. Будьте тверды и целеустремлённы!&lt;/span&gt;&lt;&lt;/if&gt;&gt;
 &lt;h3&gt;Серия достижений «Покончить с невежеством»&lt;/h3&gt;&lt;&lt;if $achievement_07 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Бестолочь&lt;/h3&gt;Хорошо, что хоть посохом по хребтине не приложила...&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Бестолочь&lt;/h3&gt;Хорошо, что хоть посохом по хребтине не приложила...&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $achievement_08 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Светлая голова&lt;/h3&gt;Владычица заручилась вашей поддержкой&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Светлая голова&lt;/h3&gt;Владычица заручилась вашей поддержкой&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $achievement_09 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;С лёгким паром!&lt;/h3&gt;Мало кому доведётся отшлёпать Смеяну веником по ягодицам и при этом угодить ей&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;С лёгким паром!&lt;/h3&gt;Мало кому доведётся отшлёпать Смеяну веником по ягодицам и при этом угодить ей&lt;/span&gt;&lt;&lt;/if&gt;&gt;
 &lt;h3&gt;Серия достижений «Королевский приём»&lt;/h3&gt;&lt;&lt;if $achievement_010 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Игривый язычок&lt;/h3&gt;Главное - правильно уболтать врага, сделав своим союзником. А может, и кем-то бóльшим...&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Игривый язычок&lt;/h3&gt;Главное - правильно уболтать врага, сделав своим союзником. А может, и кем-то бóльшим...&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $achievement_011 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Светский угодник&lt;/h3&gt;Красиво пить не запретишь! Главное, знать меру и правильную подачу&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Светский угодник&lt;/h3&gt;Красиво пить не запретишь! Главное, знать меру и правильную подачу&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $achievement_012 is true&gt;&gt;&lt;span class=&quot;achievetext2&quot;&gt;&lt;i class=&#39;achieve2&#39;&gt;&lt;/i&gt;&lt;h3&gt;Телесных дел мастер&lt;/h3&gt;После обучения у самой Антуанетты успех в личной жизни вам гарантирован&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;achievetext&quot;&gt;&lt;i class=&#39;achieve1&#39;&gt;&lt;/i&gt;&lt;h3&gt;Телесных дел мастер&lt;/h3&gt;После обучения у самой Антуанетты успех в личной жизни вам гарантирован&lt;/span&gt;&lt;&lt;/if&gt;&gt;
@@ -3282,7 +3292,8 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 &lt;&lt;run memorize (&#39;achievement_07&#39;, true)&gt;&gt;
 &lt;&lt;set $achievement_07 to true&gt;&gt;
 
-&lt;&lt;if $achiev_not_smeyana02 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;if $smeyana_02 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Получено достижение:&lt;div style=&quot;color: rgb(193,169,135);&quot;&gt;Бестолочь&lt;/div&gt;&lt;&lt;/notify&gt;&gt;&lt;&lt;timed 5s&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Сохранение...&lt;&lt;/notify&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $achiev_not_smeyana02 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;if $smeyana_02 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;notify 3000&gt;&gt;&lt;i class=&#39;achieve3&#39;&gt;&lt;/i&gt;
+Получено достижение:&lt;div style=&quot;color: rgb(193,169,135); line-height: 150%;&quot;&gt;Бестолочь&lt;/div&gt;&lt;&lt;/notify&gt;&gt;&lt;&lt;timed 5s&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Сохранение...&lt;&lt;/notify&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/if&gt;&gt;
 
 &lt;&lt;if ($smeyana_02) or ($achiev_not_smeyana02) is true&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Сохранение...&lt;&lt;/notify&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="27" name="СмеянаПункт3" tags="no-transition smeyana" position="581,956" size="100,100">&lt;h3&gt;Смеяна&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
 Насколько в почести у местного населения были технологии и образование? По сравнению с тем, насколько они там развиты были в принципе, разумеется.
@@ -3872,7 +3883,8 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 &lt;&lt;run memorize (&#39;achievement_08&#39;, true)&gt;&gt;
 &lt;&lt;set $achievement_08 to true&gt;&gt;
 
-&lt;&lt;if $achiev_not_smeyana03 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;if $smeyana_03 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Получено достижение:&lt;div style=&quot;color: rgb(193,169,135);&quot;&gt;Светлая голова&lt;/div&gt;&lt;&lt;/notify&gt;&gt;&lt;&lt;timed 5s&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Сохранение...&lt;&lt;/notify&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $achiev_not_smeyana03 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;if $smeyana_03 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;notify 3000&gt;&gt;&lt;i class=&#39;achieve3&#39;&gt;&lt;/i&gt;
+Получено достижение:&lt;div style=&quot;color: rgb(193,169,135); line-height: 150%;&quot;&gt;Светлая голова&lt;/div&gt;&lt;&lt;/notify&gt;&gt;&lt;&lt;timed 5s&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Сохранение...&lt;&lt;/notify&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/if&gt;&gt;
 
 &lt;&lt;if ($smeyana_03) or ($achiev_not_smeyana03) is true&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Сохранение...&lt;&lt;/notify&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="43" name="Это да... А то наохаешься с такими..." tags="no-transition smeyana" position="708,2391" size="100,100">&lt;h3&gt;Смеяна&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
 Ха-ха! Не то слово! Ты даже не представляешь, насколько бывает сложно. Как отдадут некоторые своих детей на воспитание нянькам-титёхам... Прокляла бы! Девицам не везёт особенно. Вместо точных наук и чего-то полезного их учат только нос пудрить да на балах плясать. Тьфу!
@@ -4026,7 +4038,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 &lt;img
         id=&quot;img_hero_delay&quot;
         src=
-&quot;https://content.alloder.ru/uploads/Smeyana_Nudevenik2horni1_d6826bee7b.png&quot;&gt;&lt;/span&gt;</tw-passagedata><tw-passagedata pid="47" name="Да, Владычица!" tags="ключ autosave no-transition smeyana" position="596,3025" size="100,100">&lt;h3&gt;Смеяна&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
+&quot;https://content.alloder.ru/uploads/Smeyana_Nudevenik2horni1_d6826bee7b.png&quot;&gt;&lt;/span&gt;</tw-passagedata><tw-passagedata pid="47" name="Да, Владычица!" tags="ключ autosave no-transition smeyana" position="600,3025" size="100,100">&lt;h3&gt;Смеяна&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
 ЕЩЁ!
 \&lt;&lt;/type&gt;&gt;&lt;&lt;timed 1s t8n&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Слушаюсь, Владычица!|smeyana_04]]&lt;/div&gt;&lt;&lt;/timed&gt;&gt;
 
@@ -4078,7 +4090,8 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 &lt;&lt;run memorize (&#39;achievement_09&#39;, true)&gt;&gt;
 &lt;&lt;set $achievement_09 to true&gt;&gt;
 
-&lt;&lt;if $achiev_not_smeyana04 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;if $smeyana_04 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Получено достижение:&lt;div style=&quot;color: rgb(193,169,135);&quot;&gt;С лёгким паром!&lt;/div&gt;&lt;&lt;/notify&gt;&gt;&lt;&lt;timed 5s&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Сохранение...&lt;&lt;/notify&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $achiev_not_smeyana04 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;if $smeyana_04 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;notify 3000&gt;&gt;&lt;i class=&#39;achieve3&#39;&gt;&lt;/i&gt;
+Получено достижение:&lt;div style=&quot;color: rgb(193,169,135); line-height: 150%;&quot;&gt;С лёгким паром!&lt;/div&gt;&lt;&lt;/notify&gt;&gt;&lt;&lt;timed 5s&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Сохранение...&lt;&lt;/notify&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/if&gt;&gt;
 
 &lt;&lt;if ($smeyana_04) or ($achiev_not_smeyana04) is true&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Сохранение...&lt;&lt;/notify&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="48" name="ЛинияНайана" tags="nayan" position="1560,549" size="100,100">&lt;&lt;timed 2s t8n&gt;&gt;&lt;&lt;timed 2s t8n&gt;&gt;&lt;h3&gt;Найан&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
 Приветствую! Чем обязан столь неожиданному визиту?
@@ -4579,7 +4592,8 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 &lt;&lt;run memorize (&#39;achievement_01&#39;, true)&gt;&gt;
 &lt;&lt;set $achievement_01 to true&gt;&gt;
 
-&lt;&lt;if $achiev_not_nayan02 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;if $nayan_02 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Получено достижение:&lt;div style=&quot;color: rgb(193,169,135);&quot;&gt;Вы рассмешили деда&lt;/div&gt;&lt;&lt;/notify&gt;&gt;&lt;&lt;timed 5s&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Сохранение...&lt;&lt;/notify&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $achiev_not_nayan02 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;if $nayan_02 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;notify 3000&gt;&gt;&lt;i class=&#39;achieve3&#39;&gt;&lt;/i&gt;
+Получено достижение:&lt;div style=&quot;color: rgb(193,169,135); line-height: 150%;&quot;&gt;Вы рассмешили деда&lt;/div&gt;&lt;&lt;/notify&gt;&gt;&lt;&lt;timed 5s&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Сохранение...&lt;&lt;/notify&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/if&gt;&gt;
 
 &lt;&lt;if ($nayan_02) or ($achiev_not_nayan02) is true&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Сохранение...&lt;&lt;/notify&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="60" name="НайанПункт4" tags="no-transition nayan" position="1574,1532" size="100,100">&lt;h3&gt;Найан&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
 Помнится, пятьдесят лет назад имперские войска высаживались на Игнисту. Но, как говорят, до непосредственно военных действий дело так и не дошло. Потому что... Как бы повежливее сказать...
@@ -4770,7 +4784,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 &lt;&lt;audio &quot;Jasker_sound&quot; stop&gt;&gt;
 &lt;&lt;audio &quot;Jasker_sound2&quot; stop&gt;&gt;
 &lt;&lt;audio &quot;Nayan_sound2&quot; stop&gt;&gt;
-&lt;&lt;audio &quot;night_bgm&quot; stop&gt;&gt;</tw-passagedata><tw-passagedata pid="65" name="Скорее всего, это стоит сделать у самой Антуанетты. А то слухи разные ходят с тех пор..." tags="ключ autosave no-transition nayan" position="1680,2015" size="100,100">&lt;h3&gt;Найан&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
+&lt;&lt;audio &quot;night_bgm&quot; stop&gt;&gt;</tw-passagedata><tw-passagedata pid="65" name="Скорее всего, это стоит сделать у самой Антуанетты. А то слухи разные ходят с тех пор..." tags="ключ autosave no-transition nayan" position="1675,2025" size="100,100">&lt;h3&gt;Найан&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
 Да, пожалуй. Ведь информация от первоисточника ценнее, да и для летописи пригодится. Хотя будет забавно, если потом кто-то воспользуется ей для написания очередного любовного романа... Но ожидаемо.
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
@@ -4825,7 +4839,8 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 &lt;&lt;run memorize (&#39;achievement_02&#39;, true)&gt;&gt;
 &lt;&lt;set $achievement_02 to true&gt;&gt;
 
-&lt;&lt;if $achiev_not_nayan03 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;if $nayan_03 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Получено достижение:&lt;div style=&quot;color: rgb(193,169,135);&quot;&gt;На что клюёт мотыль?&lt;/div&gt;&lt;&lt;/notify&gt;&gt;&lt;&lt;timed 5s&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Сохранение...&lt;&lt;/notify&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $achiev_not_nayan03 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;if $nayan_03 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;notify 3000&gt;&gt;&lt;i class=&#39;achieve3&#39;&gt;&lt;/i&gt;
+Получено достижение:&lt;div style=&quot;color: rgb(193,169,135); line-height: 150%;&quot;&gt;На что клюёт мотыль?&lt;/div&gt;&lt;&lt;/notify&gt;&gt;&lt;&lt;timed 5s&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Сохранение...&lt;&lt;/notify&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/if&gt;&gt;
 
 &lt;&lt;if ($nayan_03) or ($achiev_not_nayan03) is true&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Сохранение...&lt;&lt;/notify&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="66" name="НайанПункт6" tags="no-transition nayan" position="1569,2167" size="100,100">&lt;h3&gt;Найан&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
 Впрочем... Литература разных жанров бывает интересной и сама по себе. Ведь порой можно встретить такой слог и авторский стиль, что диву даёшься.
@@ -6012,7 +6027,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 &lt;&lt;audio &quot;Jasker_sound&quot; stop&gt;&gt;
 &lt;&lt;audio &quot;Jasker_sound2&quot; stop&gt;&gt;
 &lt;&lt;audio &quot;Nayan_sound2&quot; stop&gt;&gt;
-&lt;&lt;audio &quot;night_bgm&quot; stop&gt;&gt;</tw-passagedata><tw-passagedata pid="98" name="НайанПункт16" tags="ключ autosave no-transition nayan" position="1526,6175" size="100,100">&lt;h3&gt;Найан&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
+&lt;&lt;audio &quot;night_bgm&quot; stop&gt;&gt;</tw-passagedata><tw-passagedata pid="98" name="НайанПункт16" tags="ключ autosave no-transition nayan" position="1525,6175" size="100,100">&lt;h3&gt;Найан&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
 Это уже былое... Былое...
 \&lt;&lt;/type&gt;&gt;&lt;&lt;timed 1s t8n&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[*обняться вместе и плакать*|nayan_04]]&lt;/div&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Да чтобы такой ик! ...сторик, с таким опытом... И сдался... Не верю! Вы же и-ик! ...стольких ситуаций выходили! Гхыр... Гыш... Геш-таль-ты закрывать надо! Ик!|НайанПункт16.2]]&lt;/div&gt;&lt;&lt;/timed&gt;&gt;
 
@@ -6070,7 +6085,8 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 &lt;&lt;run memorize (&#39;achievement_03&#39;, true)&gt;&gt;
 &lt;&lt;set $achievement_03 to true&gt;&gt;
 
-&lt;&lt;if $achiev_not_nayan04 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;if $nayan_04 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Получено достижение:&lt;div style=&quot;color: rgb(193,169,135);&quot;&gt;Мотылёк в бутылке&lt;/div&gt;&lt;&lt;/notify&gt;&gt;&lt;&lt;timed 5s&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Сохранение...&lt;&lt;/notify&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $achiev_not_nayan04 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;if $nayan_04 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;notify 3000&gt;&gt;&lt;i class=&#39;achieve3&#39;&gt;&lt;/i&gt;
+Получено достижение:&lt;div style=&quot;color: rgb(193,169,135); line-height: 150%;&quot;&gt;Мотылёк в бутылке&lt;/div&gt;&lt;&lt;/notify&gt;&gt;&lt;&lt;timed 5s&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Сохранение...&lt;&lt;/notify&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/if&gt;&gt;
 
 &lt;&lt;if ($nayan_04) or ($achiev_not_nayan04) is true&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Сохранение...&lt;&lt;/notify&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="99" name="Да меня тут это... На огонёк пригласили. Так сказать, в квартал эльфийских фонарей." tags="no-transition jasker" position="2110,731" size="100,100">&lt;h3&gt;Яскер&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
 Мда... Узнаю Антуанетту. Вселенское благодушие и чрезмерное гостеприимство.
@@ -6193,7 +6209,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
         id=&quot;img_hero_delay&quot;
 		src=
 &quot;https://content.alloder.ru/uploads/poza_1_standartnaya_f77118ee79.png&quot;&gt;
-&lt;/span&gt;</tw-passagedata><tw-passagedata pid="102" name="Так мы же здесь отдыхаем, вроде. И раз уж вы упомянули про Антуанетту... А как вы с ней тогда познакомились и почему решили высадиться на Игнисту?" tags="ключ autosave no-transition jasker" position="2076,1008" size="100,100">&lt;&lt;timed 0s t8n&gt;&gt;&lt;h3&gt;Яскер&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
+&lt;/span&gt;</tw-passagedata><tw-passagedata pid="102" name="Так мы же здесь отдыхаем, вроде. И раз уж вы упомянули про Антуанетту... А как вы с ней тогда познакомились и почему решили высадиться на Игнисту?" tags="ключ autosave no-transition jasker" position="2075,1000" size="100,100">&lt;&lt;timed 0s t8n&gt;&gt;&lt;h3&gt;Яскер&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
 Кхм... Это лич... государственная тайна! Тебе вообще знать об этом необязательно. А после произошедшего на Эдеме... Иди-ка ты отсюда ВОН!!!
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;/timed&gt;&gt;
 
@@ -6248,7 +6264,8 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 &lt;&lt;run memorize (&#39;achievement_04&#39;, true)&gt;&gt;
 &lt;&lt;set $achievement_04 to true&gt;&gt;
 
-&lt;&lt;if $achiev_not_jasker02 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;if $jasker_02 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Получено достижение:&lt;div style=&quot;color: rgb(193,169,135);&quot;&gt;Таким boyцам здесь не место!&lt;/div&gt;&lt;&lt;/notify&gt;&gt;&lt;&lt;timed 5s&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Сохранение...&lt;&lt;/notify&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $achiev_not_jasker02 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;if $jasker_02 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;notify 3000&gt;&gt;&lt;i class=&#39;achieve3&#39;&gt;&lt;/i&gt;
+Получено достижение:&lt;div style=&quot;color: rgb(193,169,135); line-height: 150%;&quot;&gt;Таким boyцам здесь не&lt;div style=&quot;color: rgb(193,169,135); line-height: 50%;&quot;&gt;место!&lt;/div&gt;&lt;&lt;/notify&gt;&gt;&lt;&lt;timed 5s&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Сохранение...&lt;&lt;/notify&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/if&gt;&gt;
 
 &lt;&lt;if ($jasker_02) or ($achiev_not_jasker02) is true&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Сохранение...&lt;&lt;/notify&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="103" name="Вообще-то меня сюда пригласили на такую же неформальную встречу. Так, по старой памяти. А на Игнисте ранее бывать не приходилось, поэтому изучаю, что тут есть. И меня тоже заинтересовал этот спортзал." tags="no-transition jasker" position="2299,1008" size="100,100">&lt;h3&gt;Яскер&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
 Удивительно. Впрочем... При тех задачах, что тебе приходилось выполнять - достаточно ожидаемо. Герои всегда полагаются на силу в той или иной степени... Интересно другое - что тебе захотелось потренироваться.
@@ -6764,7 +6781,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
         id=&quot;img_hero_delay&quot;
         src=
 &quot;https://content.alloder.ru/uploads/porez_uhmylka_8d5f1ba953.png&quot;&gt;
-&lt;/span&gt;</tw-passagedata><tw-passagedata pid="116" name="*взвизгнуть, чтобы оглушить Яскера ультразвуком*" tags="ключ autosave no-transition jasker" position="2295,2588" size="100,100">&lt;h3&gt;Яскер&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
+&lt;/span&gt;</tw-passagedata><tw-passagedata pid="116" name="*взвизгнуть, чтобы оглушить Яскера ультразвуком*" tags="ключ autosave no-transition jasker" position="2300,2575" size="100,100">&lt;h3&gt;Яскер&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
 Тьфу! С таким подходом можешь брать уроки у баньши - у них визжать получается лучше. Или тебе хотелось оглушить меня своим воплем? Герой Сарнаута... Ты бы на меня ещё рейд собрал! Похоже, разочаровывать окружающих - лучшее, что тебе удаётся.
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
@@ -6819,7 +6836,8 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 &lt;&lt;run memorize (&#39;achievement_04&#39;, true)&gt;&gt;
 &lt;&lt;set $achievement_04 to true&gt;&gt;
 
-&lt;&lt;if $achiev_not_jasker02 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;if $jasker_02 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Получено достижение:&lt;div style=&quot;color: rgb(193,169,135);&quot;&gt;Таким boyцам здесь не место!&lt;/div&gt;&lt;&lt;/notify&gt;&gt;&lt;&lt;timed 5s&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Сохранение...&lt;&lt;/notify&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $achiev_not_jasker02 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;if $jasker_02 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;notify 3000&gt;&gt;&lt;i class=&#39;achieve3&#39;&gt;&lt;/i&gt;
+Получено достижение:&lt;div style=&quot;color: rgb(193,169,135); line-height: 150%;&quot;&gt;Таким boyцам здесь не&lt;div style=&quot;color: rgb(193,169,135); line-height: 50%;&quot;&gt;место!&lt;/div&gt;&lt;&lt;/notify&gt;&gt;&lt;&lt;timed 5s&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Сохранение...&lt;&lt;/notify&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/if&gt;&gt;
 
 &lt;&lt;if ($jasker_02) or ($achiev_not_jasker02) is true&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Сохранение...&lt;&lt;/notify&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="117" name="ЯскерПункт7" tags="no-transition jasker" position="2173,2770" size="100,100">&lt;h3&gt;Яскер&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
 Кхм... Предлагаю сделать перерыв, чтобы переодеться и сделать небольшую перевязку.
@@ -6909,7 +6927,8 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 &lt;&lt;run memorize (&#39;achievement_05&#39;, true)&gt;&gt;
 &lt;&lt;set $achievement_05 to true&gt;&gt;
 
-&lt;&lt;if $achiev_not_jasker03 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;if $jasker_03 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Получено достижение:&lt;div style=&quot;color: rgb(193,169,135);&quot;&gt;Горячая разминка&lt;/div&gt;&lt;&lt;/notify&gt;&gt;&lt;&lt;timed 5s&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Сохранение...&lt;&lt;/notify&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $achiev_not_jasker03 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;if $jasker_03 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;notify 3000&gt;&gt;&lt;i class=&#39;achieve3&#39;&gt;&lt;/i&gt;
+Получено достижение:&lt;div style=&quot;color: rgb(193,169,135); line-height: 150%;&quot;&gt;Горячая разминка!&lt;/div&gt;&lt;&lt;/notify&gt;&gt;&lt;&lt;timed 5s&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Сохранение...&lt;&lt;/notify&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/if&gt;&gt;
 
 &lt;&lt;if ($jasker_03) or ($achiev_not_jasker03) is true&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Сохранение...&lt;&lt;/notify&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="119" name="Думаю, здесь пригодится заживляющая мазь. Смажу ею порезы и будете как новенький!" tags="no-transition jasker" position="2345,2909" size="100,100">&lt;h3&gt;Яскер&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
 Интересное совпадение. Хотя... Чтобы у героя не было запаса зелий для разных боевых ситуаций? Ха-ха!
@@ -9250,7 +9269,8 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 &lt;&lt;run memorize (&#39;achievement_010&#39;, true)&gt;&gt;
 &lt;&lt;set $achievement_010 to true&gt;&gt;
 
-&lt;&lt;if $achiev_not_antoinette02 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;if $antoinette_02 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Получено достижение:&lt;div style=&quot;color: rgb(193,169,135);&quot;&gt;Игривый язычок&lt;/div&gt;&lt;&lt;/notify&gt;&gt;&lt;&lt;timed 5s&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Сохранение...&lt;&lt;/notify&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $achiev_not_antoinette02 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;if $antoinette_02 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;notify 3000&gt;&gt;&lt;i class=&#39;achieve3&#39;&gt;&lt;/i&gt;
+Получено достижение:&lt;div style=&quot;color: rgb(193,169,135); line-height: 150%;&quot;&gt;Игривый язычок&lt;/div&gt;&lt;&lt;/notify&gt;&gt;&lt;&lt;timed 5s&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Сохранение...&lt;&lt;/notify&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/if&gt;&gt;
 
 &lt;&lt;if ($antoinette_02) or ($achiev_not_antoinette02) is true&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Сохранение...&lt;&lt;/notify&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="174" name="ТокеныАнтуанетта8" tags="desert no-transition" position="3025,3475" size="100,100">&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
 Если всё прошло успешно, то следующий шаг - продемонстрировать свои добрые намерения. Для этого стоит пригласить собеседника пообщаться в более спокойной обстановке. В идеале - в свою резиденцию. Но для начала сгодится и нейтральная территория. Как ты думаешь, что стоит сделать дальше?
@@ -9928,7 +9948,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 &lt;&lt;audio &quot;Jasker_sound2&quot; stop&gt;&gt;
 &lt;&lt;audio &quot;Nayan_sound&quot; stop&gt;&gt;
 &lt;&lt;audio &quot;Nayan_sound2&quot; stop&gt;&gt;
-&lt;&lt;audio &quot;night_bgm&quot; stop&gt;&gt;</tw-passagedata><tw-passagedata pid="192" name="Нет! Но приходилось видеть кое-что другое... И это было страшно..." tags="desert ключ autosave no-transition" position="2867,5891" size="100,100">&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
+&lt;&lt;audio &quot;night_bgm&quot; stop&gt;&gt;</tw-passagedata><tw-passagedata pid="192" name="Нет! Но приходилось видеть кое-что другое... И это было страшно..." tags="desert ключ autosave no-transition" position="2875,5900" size="100,100">&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
 Дай угадаю... Опять в &quot;Розе и Шиповнике&quot;, да? Вот говорила же, что беседки надо делать с нормальными дверями, а не этими завесами...
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
@@ -9979,7 +9999,8 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 &lt;&lt;run memorize (&#39;achievement_011&#39;, true)&gt;&gt;
 &lt;&lt;set $achievement_011 to true&gt;&gt;
 
-&lt;&lt;if $achiev_not_antoinette03 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;if $antoinette_03 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Получено достижение:&lt;div style=&quot;color: rgb(193,169,135);&quot;&gt;Светский угодник&lt;/div&gt;&lt;&lt;/notify&gt;&gt;&lt;&lt;timed 5s&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Сохранение...&lt;&lt;/notify&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $achiev_not_antoinette03 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;if $antoinette_03 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;notify 3000&gt;&gt;&lt;i class=&#39;achieve3&#39;&gt;&lt;/i&gt;
+Получено достижение:&lt;div style=&quot;color: rgb(193,169,135); line-height: 150%;&quot;&gt;Светский угодник&lt;/div&gt;&lt;&lt;/notify&gt;&gt;&lt;&lt;timed 5s&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Сохранение...&lt;&lt;/notify&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/if&gt;&gt;
 
 &lt;&lt;if ($antoinette_03) or ($achiev_not_antoinette03) is true&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Сохранение...&lt;&lt;/notify&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="193" name="А... Так это для вина была? А мне казалось, что для... Кхм..." tags="desert ключ autosave no-transition" position="3050,5900" size="100,100">&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
 Ха-ха! Нет... Те, которые я использую для себя выглядят несколько иначе. Но ход твоих мыслей мне нравится...
@@ -10032,7 +10053,8 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 &lt;&lt;run memorize (&#39;achievement_011&#39;, true)&gt;&gt;
 &lt;&lt;set $achievement_011 to true&gt;&gt;
 
-&lt;&lt;if $achiev_not_antoinette03 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;if $antoinette_03 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Получено достижение:&lt;div style=&quot;color: rgb(193,169,135);&quot;&gt;Светский угодник&lt;/div&gt;&lt;&lt;/notify&gt;&gt;&lt;&lt;timed 5s&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Сохранение...&lt;&lt;/notify&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $achiev_not_antoinette03 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;if $antoinette_03 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;notify 3000&gt;&gt;&lt;i class=&#39;achieve3&#39;&gt;&lt;/i&gt;
+Получено достижение:&lt;div style=&quot;color: rgb(193,169,135); line-height: 150%;&quot;&gt;Светский угодник&lt;/div&gt;&lt;&lt;/notify&gt;&gt;&lt;&lt;timed 5s&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Сохранение...&lt;&lt;/notify&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/if&gt;&gt;
 
 &lt;&lt;if ($antoinette_03) or ($achiev_not_antoinette03) is true&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Сохранение...&lt;&lt;/notify&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="194" name="ТокеныАнтуанетта14" tags="desert no-transition" position="2975,6075" size="100,100">&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
 Впрочем, раз мы закончили с трапезой, то перейдём к более деликатному вопросу... Обычно к этому этапу переходят после того, как установлен доверительный контакт, а отношения стали гораздо... более тесными. Но происходит это явно не в первую встречу. Хотя бывает и так, что между вами промелькнула искра.
@@ -10471,7 +10493,8 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 &lt;&lt;run memorize (&#39;achievement_012&#39;, true)&gt;&gt;
 &lt;&lt;set $achievement_012 to true&gt;&gt;
 
-&lt;&lt;if $achiev_not_antoinette04 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;if $antoinette_04 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Получено достижение:&lt;div style=&quot;color: rgb(193,169,135);&quot;&gt;Телесных дел мастер&lt;/div&gt;&lt;&lt;/notify&gt;&gt;&lt;&lt;timed 5s&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Сохранение...&lt;&lt;/notify&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $achiev_not_antoinette04 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;if $antoinette_04 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;notify 3000&gt;&gt;&lt;i class=&#39;achieve3&#39;&gt;&lt;/i&gt;
+Получено достижение:&lt;div style=&quot;color: rgb(193,169,135); line-height: 150%;&quot;&gt;Телесных дел мастер&lt;/div&gt;&lt;&lt;/notify&gt;&gt;&lt;&lt;timed 5s&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Сохранение...&lt;&lt;/notify&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/if&gt;&gt;
 
 &lt;&lt;if ($antoinette_04) or ($achiev_not_antoinette04) is true&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Сохранение...&lt;&lt;/notify&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;/if&gt;&gt;
 
@@ -10787,7 +10810,8 @@ Opium Witch
 &lt;&lt;run memorize (&#39;achievement_06&#39;, true)&gt;&gt;
 &lt;&lt;set $achievement_06 to true&gt;&gt;
 
-&lt;&lt;if $achiev_not_jasker04 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;if $jasker_04 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Получено достижение:&lt;div style=&quot;color: rgb(193,169,135);&quot;&gt;Welcome to the club, buddy!&lt;/div&gt;&lt;&lt;/notify&gt;&gt;&lt;&lt;timed 5s&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Сохранение...&lt;&lt;/notify&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $achiev_not_jasker04 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;if $jasker_04 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;notify 3000&gt;&gt;&lt;i class=&#39;achieve3&#39;&gt;&lt;/i&gt;
+Получено достижение:&lt;div style=&quot;color: rgb(193,169,135); line-height: 150%;&quot;&gt;Welcome to the club, &lt;div style=&quot;color: rgb(193,169,135); line-height: 80%;&quot;&gt;buddy!&lt;/div&gt;&lt;&lt;/notify&gt;&gt;&lt;&lt;timed 5s&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Сохранение...&lt;&lt;/notify&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/if&gt;&gt;
 
 &lt;&lt;if ($jasker_04) or ($achiev_not_jasker04) is true&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Сохранение...&lt;&lt;/notify&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="217" name="ЯскерПункт15.2" tags="no-transition autosave jasker" position="2400,6300" size="100,100">&lt;h3&gt;Яскер&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
 И позаниматься на тренажёрах. Разумеется. 
@@ -10826,7 +10850,8 @@ Opium Witch
 &lt;&lt;audio &quot;Nayan_sound2&quot; stop&gt;&gt;
 &lt;&lt;audio &quot;night_bgm&quot; stop&gt;&gt;
 
-&lt;&lt;if $achiev_not_jasker04 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;if $jasker_04 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Получено достижение:&lt;div style=&quot;color: rgb(193,169,135);&quot;&gt;Welcome to the club, buddy!&lt;/div&gt;&lt;&lt;/notify&gt;&gt;&lt;&lt;timed 5s&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Сохранение...&lt;&lt;/notify&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $achiev_not_jasker04 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;if $jasker_04 is true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;notify 3000&gt;&gt;&lt;i class=&#39;achieve3&#39;&gt;&lt;/i&gt;
+Получено достижение:&lt;div style=&quot;color: rgb(193,169,135); line-height: 150%;&quot;&gt;Welcome to the club, &lt;div style=&quot;color: rgb(193,169,135); line-height: 80%;&quot;&gt;buddy!&lt;/div&gt;&lt;&lt;/notify&gt;&gt;&lt;&lt;timed 5s&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Сохранение...&lt;&lt;/notify&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/if&gt;&gt;
 
 &lt;&lt;if ($jasker_04) or ($achiev_not_jasker04) is true&gt;&gt;&lt;&lt;notify 3000&gt;&gt;Сохранение...&lt;&lt;/notify&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="218" name="ЯскерПунктФинал" tags="" position="2330,6590" size="100,100">&lt;&lt;fadeout 2s 6s&gt;&gt;&lt;&lt;fadein 2s 0s&gt;&gt;&lt;h3&gt;Спустя приятно проведённое время, полное пота и удовольствий&lt;/h3&gt;&lt;&lt;timed 8s&gt;&gt;&lt;&lt;goto &quot;ЯскерПунктФинал2&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/fadein&gt;&gt;&lt;&lt;/fadeout&gt;&gt;</tw-passagedata><tw-passagedata pid="219" name="ЯскерПунктФинал2" tags="jasker-finalart" position="2300,6750" size="100,100">&lt;&lt;timed 2s t8n&gt;&gt;&lt;h3&gt;Яскер&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
 А знаешь, мне понравилось. Давненько не встречал достойного спарринг-партнёра, который бы занимался с такой отдачей. Если сохранишь свой боевой настрой, то твоим врагам можно будет лишь посочувствовать. Причём, посмертно. 
