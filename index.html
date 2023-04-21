@@ -81,7 +81,19 @@ var LZString={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234
 }else{document.documentElement.setAttribute("data-init", "lacking");}
 </script>
 <style id="style-normalize" type="text/css">/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}</style>
-<style id="style-init-screen" type="text/css">@-webkit-keyframes init-loading-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@-o-keyframes init-loading-spin{0%{-o-transform:rotate(0);transform:rotate(0)}100%{-o-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes init-loading-spin{0%{-webkit-transform:rotate(0);-o-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);-o-transform:rotate(360deg);transform:rotate(360deg)}}#init-screen{display:none;z-index:500000;position:fixed;top:0;left:0;height:100%;width:100%;font:28px/1 Helmet,Freesans,sans-serif;font-weight:700;color:#eee;background-color:#111;text-align:center}#init-screen>div{display:none;position:relative;margin:0 auto;max-width:1136px;top:25%}html[data-init=lacking] #init-screen,html[data-init=loading] #init-screen,html[data-init=no-js] #init-screen{display:block}html[data-init=lacking] #init-lacking,html[data-init=no-js] #init-no-js{display:block;padding:0 1em}html[data-init=no-js] #init-no-js{color:red}html[data-init=loading] #init-loading{display:block;border:24px solid transparent;border-radius:50%;border-top-color:#7f7f7f;border-bottom-color:#7f7f7f;width:100px;height:100px;-webkit-animation:init-loading-spin 2s linear infinite;-o-animation:init-loading-spin 2s linear infinite;animation:init-loading-spin 2s linear infinite}html[data-init=loading] #init-loading>div{text-indent:9999em;overflow:hidden;white-space:nowrap}html[data-init=loading] #passages,html[data-init=loading] #ui-bar{display:none}</style>
+
+<style id="style-init-screen" type="text/css">@-webkit-keyframes init-loading-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@-o-keyframes init-loading-spin{0%{-o-transform:rotate(0);transform:rotate(0)}100%{-o-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes init-loading-spin{0%{-webkit-transform:rotate(0);-o-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);-o-transform:rotate(360deg);transform:rotate(360deg)}}#init-screen{display:none;z-index:500000;position:fixed;top:0;left:0;height:180%;width:100%;font:28px/1 Helmet,Freesans,sans-serif;font-weight:700;color:#eee;background-color:#111;text-align:center}#init-screen>div{display:none;position:relative;margin:0 auto;max-width:1136px;top:25%}html[data-init=lacking] #init-screen,html[data-init=loading] #init-screen,html[data-init=no-js] #init-screen{display:block}html[data-init=lacking] #init-lacking,html[data-init=no-js] #init-no-js{display:block;padding:0 1em}html[data-init=no-js] #init-no-js{color:red}html[data-init=loading] #init-loading {
+ width: 48px;
+   height: 48px;
+   border-radius: 50%;
+   display: inline-block;
+   border-top: 3px solid #FFF;
+   border-right: 3px solid transparent;
+   -webkit-animation: init-loading-spin 1s linear infinite;
+   animation: init-loading-spin 1s linear infinite;
+}
+html[data-init=loading] #init-loading>div{text-indent:9999em;overflow:hidden;white-space:nowrap}html[data-init=loading] #passages,html[data-init=loading] #ui-bar{display:none}</style>
+
 <style id="style-font" type="text/css">@font-face{font-family:tme-fa-icons;src:url('data:application/octet-stream;base64,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') format('woff')}</style>
 <style id="style-core" type="text/css">html{font:16px/1 Helmet,Freesans,sans-serif}#store-area,tw-storydata{display:none!important;z-index:0}.no-transition{-webkit-transition:none!important;-o-transition:none!important;transition:none!important}:-webkit-full-screen{height:100%;width:100%}:-ms-fullscreen{height:100%;width:100%}:fullscreen{height:100%;width:100%}body::-ms-backdrop{background:0 0}:focus{outline:thin dotted}:disabled{cursor:not-allowed!important}body{color:#eee;background-color:#111;overflow:auto}a{cursor:pointer;color:#68d;text-decoration:none;-webkit-transition-duration:.2s;-o-transition-duration:.2s;transition-duration:.2s}a:hover{color:#8af;text-decoration:underline}a.link-broken{color:#c22}a.link-broken:hover{color:#e44}a[disabled],span.link-disabled{color:#aaa;cursor:not-allowed!important;text-decoration:none}area{cursor:pointer}button{cursor:pointer;color:#eee;background-color:#35a;border:1px solid #57c;line-height:normal;padding:.4em;-webkit-transition-duration:.2s;-o-transition-duration:.2s;transition-duration:.2s;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}button:hover{background-color:#57c;border-color:#79e}button:disabled{background-color:#444;border:1px solid #666}input,select,textarea{color:#eee;background-color:transparent;border:1px solid #444;padding:.4em}select{padding:.34em .4em}input[type=text]{min-width:18em}textarea{min-width:30em;resize:vertical}input[type=checkbox],input[type=file],input[type=radio],select{cursor:pointer}input[type=range]{-webkit-appearance:none;min-height:1.2em}input[type=range]:focus{outline:0}input[type=range]::-webkit-slider-runnable-track{background:#222;border:1px solid #444;border-radius:0;cursor:pointer;height:10px;width:100%}input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;background:#35a;border:1px solid #57c;border-radius:0;cursor:pointer;height:18px;margin-top:-5px;width:33px}input[type=range]:focus::-webkit-slider-runnable-track{background:#222}input[type=range]::-moz-range-track{background:#222;border:1px solid #444;border-radius:0;cursor:pointer;height:10px;width:100%}input[type=range]::-moz-range-thumb{background:#35a;border:1px solid #57c;border-radius:0;cursor:pointer;height:18px;width:33px}input[type=range]::-ms-track{background:0 0;border-color:transparent;color:transparent;cursor:pointer;height:10px;width:calc(100% - 1px)}input[type=range]::-ms-fill-lower{background:#222;border:1px solid #444;border-radius:0}input[type=range]::-ms-fill-upper{background:#222;border:1px solid #444;border-radius:0}input[type=range]::-ms-thumb{background:#35a;border:1px solid #57c;border-radius:0;cursor:pointer;height:16px;width:33px}input:not(:disabled):focus,input:not(:disabled):hover,select:not(:disabled):focus,select:not(:disabled):hover,textarea:not(:disabled):focus,textarea:not(:disabled):hover{background-color:#333;border-color:#eee}hr{display:block;height:1px;border:none;border-top:1px solid #eee;margin:1em 0;padding:0}audio,canvas,progress,video{max-width:100%;vertical-align:middle}.error-view{background-color:#511;border-left:.5em solid #c22;display:inline-block;margin:.1em;max-width:100%;padding:0 .25em;position:relative}.error-view>.error-toggle{background-color:transparent;border:none;line-height:inherit;left:0;padding:0;position:absolute;top:0;width:1.75em}.error-view>.error{display:inline-block;margin-left:.25em}.error-view>.error-toggle+.error{margin-left:1.5em}.error-view>.error-source[hidden]{display:none}.error-view>.error-source:not([hidden]){background-color:rgba(0,0,0,.2);display:block;margin:0 0 .25em;overflow-x:auto;padding:.25em}.highlight,.marked{color:#ff0;font-weight:700;font-style:italic}.nobr{white-space:nowrap}.error-view>.error-toggle:before,.error-view>.error:before,[data-icon-after]:after,[data-icon-before]:before,[data-icon]:before,a.link-external:after{font-family:tme-fa-icons!important;font-style:normal;font-weight:900;font-variant:normal;line-height:1;speak:never;text-rendering:auto;text-transform:none;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}[data-icon]:before{content:attr(data-icon)}[data-icon-before]:before{content:attr(data-icon-before) "\00a0\00a0"}[data-icon-after]:after{content:"\00a0\00a0" attr(data-icon-after)}.error-view>.error-toggle:before{content:"\e81a"}.error-view>.error-toggle.enabled:before{content:"\e818"}.error-view>.error:before{content:"\e80d\00a0\00a0"}a.link-external:after{content:"\00a0\e80e"}</style>
 <style id="style-core-display" type="text/css">#story{z-index:10;margin:2.5em}@media screen and (max-width:1136px){#story{margin-right:1.5em}}#passages{max-width:54em;margin:0 auto}</style>
@@ -216,7 +228,7 @@ body.desert {
   /* Remove default styles */
    font-family: 'AllodsWest', arial;
   font-size: 22px;
-  background-image: url("https://content.alloder.ru/uploads/imgonline_com_ua_Blur_id_TQASB_9cz_Q7wlj_f61f19c0a9.jpg");
+  background-image: url("https://content.alloder.ru/uploads/ck1_R6_Ix_Xl_T8_3138c465c9.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1516,6 +1528,16 @@ position: fixed;
     width: auto;
     max-height: 100%;
 }
+#img_hero_ant {
+    position: fixed;
+    z-index: -2;
+    top: 28%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    width: auto;
+    max-height: 60%;
+}
 #img_hero_smeyana {
 	 position: fixed;
     z-index: -2;
@@ -2071,18 +2093,20 @@ font-size: 70%;
 
 .img_item3 {
     background-image: url("https://content.alloder.ru/uploads/Zta_Fi_U_Fmdn_A_problembo_com_3d5882b737.png");
-    position: fixed;
-    left: 65%;
+  position: fixed;
+    z-index: -3;
+    left: 44%;
     top: -10%;
-    width: 30%;
+    width: 20%;
     height: 100%;
     background-repeat: no-repeat;
     background-size: 20%;
     background-position: center center;
     display: table-cell;
     transition: 0.3s linear;
-    filter: blur(5px);
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript">// Локализация
+    transform: rotate(91deg);
+}
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">// Локализация
 l10nStrings.savesTitle="Загрузить";
 l10nStrings.settingsTitle="Настройки";
 l10nStrings.restartTitle="Перезапуск";
@@ -2105,6 +2129,9 @@ l10nStrings.restartPrompt = 'Вы уверены, что хотите перез
 
 // Автосохранение
 config.saves.autosave = "autosave";
+
+// Скип
+Config.macros.typeSkipKey = " ";
 
 // name saves - allows players to change name of save file
 Config.saves.onSave = function (save, details) {
@@ -2301,11 +2328,6 @@ $(document).on("dblclick", function (event) {
           shift.style.transform = `translateX(${x}px) translateY(${y}px)`;
         });
       }
-
-
-/*! t8n-typewriter module for SugarCube v2 */
-!function(){"use strict";function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}(),Furl=function(){function Furl(current,append){if(_classCallCheck(this,Furl),Object.defineProperties(this,{node:{value:current},childNodes:{value:[]},value:{writable:!0,value:""},append:{writable:!0,value:!!append},abortTyping:{writable:!0,value:!1}}),this.node.nodeValue&&(this.value=this.node.nodeValue,this.node.nodeValue=""),!this.node.style||"none"!==this.node.style.display)for(var childNodes=this.node.childNodes;childNodes.length>0;)this.childNodes.push(new Furl(childNodes[0],!0)),this.node.removeChild(childNodes[0])}return _createClass(Furl,[{key:"finish",value:function(){for(this.abortTyping=!0;this.unfurl(););}},{key:"unfurl",value:function(parent){if(this.append&&(parent&&parent.appendChild(this.node),this.append=!1),this.value)return this.node.nodeValue+=this.value[0],this.value=this.value.slice(1),!0;for(var current=this.node,i=0,len=this.childNodes.length;i<len;++i)if(this.childNodes[i].unfurl(current))return!0;return!1}}],[{key:"typeout",value:function(content,typeDelay,startDelay){function typer(){if(!furled.abortTyping)var current=passage(),typerId=setInterval(function(){!furled.abortTyping&&passage()===current&&furled.unfurl()||clearInterval(typerId)},typeDelay)}var furled=new Furl(content);return startDelay?setTimeout(typer,startDelay):typer(),furled}}]),Furl}(),tagRe=/^t8n-typewriter-(\d+)(?:-(\d+))?$/;postrender["t8n-typewriter-handler"]=function(content){$(document).off("keypress.t8n-typewriter");for(var tags=this.tags,i=0;i<tags.length;++i){var match=tagRe.exec(tags[i]);if(null!==match){if("break"===function(){var furled=Furl.typeout(content,Number(match[1]),Number(match[2]));return $(document).on("keypress.t8n-typewriter",function(ev){32!==ev.which||ev.target!==document.body&&ev.target!==document.documentElement||(ev.preventDefault(),$(document).off("keypress.t8n-typewriter"),furled.finish())}),"break"}())break}}}}();
-
 
 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
    Engine.restart(); 
@@ -2713,7 +2735,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
         id=&quot;img_hero&quot;
         src=
 &quot;https://content.alloder.ru/uploads/11_plate_9cfc760f40.png&quot;&gt;&lt;&lt;elseif $antoinette_0101 is true&gt;&gt;&lt;img
-        id=&quot;img_hero&quot;
+        id=&quot;img_hero_ant&quot;
         src=
 &quot;https://content.alloder.ru/uploads/divan_2_5299a88a80.png&quot;&gt;&lt;&lt;else&gt;&gt;&lt;img
         id=&quot;img_hero&quot;
@@ -2754,7 +2776,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
         id=&quot;img_hero&quot;
         src=
 &quot;https://content.alloder.ru/uploads/11_plate_9cfc760f40.png&quot;&gt;&lt;&lt;elseif $antoinette_0101 is true&gt;&gt;&lt;img
-        id=&quot;img_hero&quot;
+        id=&quot;img_hero_ant&quot;
         src=
 &quot;https://content.alloder.ru/uploads/divan_2_5299a88a80.png&quot;&gt;&lt;&lt;else&gt;&gt;&lt;img
         id=&quot;img_hero&quot;
@@ -2793,7 +2815,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
         id=&quot;img_hero&quot;
         src=
 &quot;https://content.alloder.ru/uploads/11_plate_9cfc760f40.png&quot;&gt;&lt;&lt;elseif $antoinette_0101 is true&gt;&gt;&lt;img
-        id=&quot;img_hero&quot;
+        id=&quot;img_hero_ant&quot;
         src=
 &quot;https://content.alloder.ru/uploads/divan_2_5299a88a80.png&quot;&gt;&lt;&lt;else&gt;&gt;&lt;img
         id=&quot;img_hero&quot;
@@ -2849,7 +2871,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
         id=&quot;img_hero&quot;
         src=
 &quot;https://content.alloder.ru/uploads/11_plate_9cfc760f40.png&quot;&gt;&lt;&lt;elseif $antoinette_0101 is true&gt;&gt;&lt;img
-        id=&quot;img_hero&quot;
+        id=&quot;img_hero_ant&quot;
         src=
 &quot;https://content.alloder.ru/uploads/divan_2_5299a88a80.png&quot;&gt;&lt;&lt;else&gt;&gt;&lt;img
         id=&quot;img_hero&quot;
@@ -2888,7 +2910,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
         id=&quot;img_hero&quot;
         src=
 &quot;https://content.alloder.ru/uploads/11_plate_9cfc760f40.png&quot;&gt;&lt;&lt;elseif $antoinette_0101 is true&gt;&gt;&lt;img
-        id=&quot;img_hero&quot;
+        id=&quot;img_hero_ant&quot;
         src=
 &quot;https://content.alloder.ru/uploads/divan_2_5299a88a80.png&quot;&gt;&lt;&lt;else&gt;&gt;&lt;img
         id=&quot;img_hero&quot;
@@ -2959,7 +2981,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
         id=&quot;img_hero&quot;
         src=
 &quot;https://content.alloder.ru/uploads/11_plate_9cfc760f40.png&quot;&gt;&lt;&lt;elseif $antoinette_0101 is true&gt;&gt;&lt;img
-        id=&quot;img_hero&quot;
+        id=&quot;img_hero_ant&quot;
         src=
 &quot;https://content.alloder.ru/uploads/divan_2_5299a88a80.png&quot;&gt;&lt;&lt;else&gt;&gt;&lt;img
         id=&quot;img_hero&quot;
@@ -3000,7 +3022,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
         id=&quot;img_hero&quot;
         src=
 &quot;https://content.alloder.ru/uploads/11_plate_9cfc760f40.png&quot;&gt;&lt;&lt;elseif $antoinette_0101 is true&gt;&gt;&lt;img
-        id=&quot;img_hero&quot;
+        id=&quot;img_hero_ant&quot;
         src=
 &quot;https://content.alloder.ru/uploads/divan_2_5299a88a80.png&quot;&gt;&lt;&lt;else&gt;&gt;&lt;img
         id=&quot;img_hero&quot;
@@ -3039,7 +3061,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
         id=&quot;img_hero&quot;
         src=
 &quot;https://content.alloder.ru/uploads/11_plate_9cfc760f40.png&quot;&gt;&lt;&lt;elseif $antoinette_0101 is true&gt;&gt;&lt;img
-        id=&quot;img_hero&quot;
+        id=&quot;img_hero_ant&quot;
         src=
 &quot;https://content.alloder.ru/uploads/divan_2_5299a88a80.png&quot;&gt;&lt;&lt;else&gt;&gt;&lt;img
         id=&quot;img_hero&quot;
@@ -4187,7 +4209,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
         id=&quot;img_hero&quot;
         src=
 &quot;https://content.alloder.ru/uploads/11_plate_9cfc760f40.png&quot;&gt;&lt;&lt;elseif $antoinette_0101 is true&gt;&gt;&lt;img
-        id=&quot;img_hero&quot;
+        id=&quot;img_hero_ant&quot;
         src=
 &quot;https://content.alloder.ru/uploads/divan_2_5299a88a80.png&quot;&gt;&lt;&lt;else&gt;&gt;&lt;img
         id=&quot;img_hero&quot;
@@ -7979,7 +8001,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
         id=&quot;img_hero&quot;
         src=
 &quot;https://content.alloder.ru/uploads/11_plate_9cfc760f40.png&quot;&gt;&lt;&lt;elseif $antoinette_0101 is true&gt;&gt;&lt;img
-        id=&quot;img_hero&quot;
+        id=&quot;img_hero_ant&quot;
         src=
 &quot;https://content.alloder.ru/uploads/divan_2_5299a88a80.png&quot;&gt;&lt;&lt;else&gt;&gt;&lt;img
         id=&quot;img_hero&quot;
@@ -8018,7 +8040,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
         id=&quot;img_hero&quot;
         src=
 &quot;https://content.alloder.ru/uploads/11_plate_9cfc760f40.png&quot;&gt;&lt;&lt;elseif $antoinette_0101 is true&gt;&gt;&lt;img
-        id=&quot;img_hero&quot;
+        id=&quot;img_hero_ant&quot;
         src=
 &quot;https://content.alloder.ru/uploads/divan_2_5299a88a80.png&quot;&gt;&lt;&lt;else&gt;&gt;&lt;img
         id=&quot;img_hero&quot;
@@ -8057,7 +8079,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
         id=&quot;img_hero&quot;
         src=
 &quot;https://content.alloder.ru/uploads/11_plate_9cfc760f40.png&quot;&gt;&lt;&lt;elseif $antoinette_0101 is true&gt;&gt;&lt;img
-        id=&quot;img_hero&quot;
+        id=&quot;img_hero_ant&quot;
         src=
 &quot;https://content.alloder.ru/uploads/divan_2_5299a88a80.png&quot;&gt;&lt;&lt;else&gt;&gt;&lt;img
         id=&quot;img_hero&quot;
@@ -8087,7 +8109,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 &lt;&lt;audio &quot;Jasker_sound2&quot; stop&gt;&gt;
 &lt;&lt;audio &quot;Nayan_sound&quot; stop&gt;&gt;
 &lt;&lt;audio &quot;Nayan_sound2&quot; stop&gt;&gt;
-&lt;&lt;audio &quot;night_bgm&quot; stop&gt;&gt;</tw-passagedata><tw-passagedata pid="148" name="Он доволен! Не припомню, чтобы Яскер когда-нибудь был таким весёлым..." tags="desert no-transition" position="2731,758" size="100,100">&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
+&lt;&lt;audio &quot;night_bgm&quot; stop&gt;&gt;</tw-passagedata><tw-passagedata pid="148" name="Он доволен! Не припомню, чтобы Яскер когда-нибудь был таким весёлым..." tags="desert no-transition" position="2725,750" size="100,100">&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
 Рада это слышать. Видимо, мазь поспособствовала исцелению и некоторых старых травм. Тем более, что её побочное действие так же приводит к расслаблению мышц тела. Но Яскеру будет полезно отдохнуть. А меня твои успехи... вдохновляют.
 \&lt;&lt;/type&gt;&gt;&lt;&lt;timed 2s t8n&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Поговорить ещё|ЛинияПродолжениеАнтуанеттаБезПерехода]]&lt;/div&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Вернуться к Яскеру|ЯскерПункт15]]&lt;/div&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Уехать с Игнисты|КонецКонца]]&lt;/div&gt;&lt;&lt;/timed&gt;&gt;
 
@@ -8096,7 +8118,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
         id=&quot;img_hero&quot;
         src=
 &quot;https://content.alloder.ru/uploads/11_plate_9cfc760f40.png&quot;&gt;&lt;&lt;elseif $antoinette_0101 is true&gt;&gt;&lt;img
-        id=&quot;img_hero&quot;
+        id=&quot;img_hero_ant&quot;
         src=
 &quot;https://content.alloder.ru/uploads/divan_2_5299a88a80.png&quot;&gt;&lt;&lt;else&gt;&gt;&lt;img
         id=&quot;img_hero&quot;
@@ -8154,7 +8176,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
         id=&quot;img_hero&quot;
         src=
 &quot;https://content.alloder.ru/uploads/11_plate_9cfc760f40.png&quot;&gt;&lt;&lt;elseif $antoinette_0101 is true&gt;&gt;&lt;img
-        id=&quot;img_hero&quot;
+        id=&quot;img_hero_ant&quot;
         src=
 &quot;https://content.alloder.ru/uploads/divan_2_5299a88a80.png&quot;&gt;&lt;&lt;else&gt;&gt;&lt;img
         id=&quot;img_hero&quot;
@@ -8212,7 +8234,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
         src=
 &quot;https://content.alloder.ru/uploads/11_plate_9cfc760f40.png&quot;&gt;
 &lt;img
-        id=&quot;img_hero&quot;
+        id=&quot;img_hero_delay&quot;
         src=
 &quot;https://content.alloder.ru/uploads/44_belyo_3772a34971.png&quot;&gt;
 &lt;/span&gt;</tw-passagedata><tw-passagedata pid="150" name="Как-то не очень пошёл у нас с ним диалог..." tags="desert no-transition" position="2618,948" size="100,100">&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
@@ -8224,7 +8246,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
         id=&quot;img_hero&quot;
         src=
 &quot;https://content.alloder.ru/uploads/11_plate_9cfc760f40.png&quot;&gt;&lt;&lt;elseif $antoinette_0101 is true&gt;&gt;&lt;img
-        id=&quot;img_hero&quot;
+        id=&quot;img_hero_ant&quot;
         src=
 &quot;https://content.alloder.ru/uploads/divan_2_5299a88a80.png&quot;&gt;&lt;&lt;else&gt;&gt;&lt;img
         id=&quot;img_hero&quot;
@@ -8278,7 +8300,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
         src=
 &quot;https://content.alloder.ru/uploads/11_plate_9cfc760f40.png&quot;&gt;
 &lt;img
-        id=&quot;img_hero&quot;
+        id=&quot;img_hero_delay&quot;
         src=
 &quot;https://content.alloder.ru/uploads/44_belyo_3772a34971.png&quot;&gt;
 &lt;/span&gt;</tw-passagedata><tw-passagedata pid="151" name="И вкусно, и грустно... Но, кажется, мы вместе достигли катарсиса." tags="desert no-transition" position="3000,975" size="100,100">&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
@@ -8290,7 +8312,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
         id=&quot;img_hero&quot;
         src=
 &quot;https://content.alloder.ru/uploads/11_plate_9cfc760f40.png&quot;&gt;&lt;&lt;elseif $antoinette_0101 is true&gt;&gt;&lt;img
-        id=&quot;img_hero&quot;
+        id=&quot;img_hero_ant&quot;
         src=
 &quot;https://content.alloder.ru/uploads/divan_2_5299a88a80.png&quot;&gt;&lt;&lt;else&gt;&gt;&lt;img
         id=&quot;img_hero&quot;
@@ -8344,7 +8366,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
         id=&quot;img_hero&quot;
         src=
 &quot;https://content.alloder.ru/uploads/11_plate_9cfc760f40.png&quot;&gt;&lt;&lt;elseif $antoinette_0101 is true&gt;&gt;&lt;img
-        id=&quot;img_hero&quot;
+        id=&quot;img_hero_ant&quot;
         src=
 &quot;https://content.alloder.ru/uploads/divan_2_5299a88a80.png&quot;&gt;&lt;&lt;else&gt;&gt;&lt;img
         id=&quot;img_hero&quot;
@@ -8394,7 +8416,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 		src=
 &quot;https://content.alloder.ru/uploads/lezhit_ulybk_fd78f8597d.png&quot;&gt;
 &lt;img
-        id=&quot;img_hero&quot;
+        id=&quot;img_hero_delay&quot;
         src=
 &quot;https://content.alloder.ru/uploads/44_belyo_3772a34971.png&quot;&gt;
 &lt;/span&gt;</tw-passagedata><tw-passagedata pid="153" name="Он как-то быстро раскусил вашу хитрость. Да и у меня как-то не особо получилось заинтересовать Найана..." tags="desert no-transition" position="3180,1024" size="100,100">&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
@@ -8406,7 +8428,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
         id=&quot;img_hero&quot;
         src=
 &quot;https://content.alloder.ru/uploads/11_plate_9cfc760f40.png&quot;&gt;&lt;&lt;elseif $antoinette_0101 is true&gt;&gt;&lt;img
-        id=&quot;img_hero&quot;
+        id=&quot;img_hero_ant&quot;
         src=
 &quot;https://content.alloder.ru/uploads/divan_2_5299a88a80.png&quot;&gt;&lt;&lt;else&gt;&gt;&lt;img
         id=&quot;img_hero&quot;
@@ -8456,7 +8478,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 		src=
 &quot;https://content.alloder.ru/uploads/lezhit_ulybk_fd78f8597d.png&quot;&gt;
 &lt;img
-        id=&quot;img_hero&quot;
+        id=&quot;img_hero_delay&quot;
         src=
 &quot;https://content.alloder.ru/uploads/44_belyo_3772a34971.png&quot;&gt;
 &lt;/span&gt;</tw-passagedata><tw-passagedata pid="154" name="Владычица распарена и довольна!" tags="desert no-transition" position="3371,749" size="100,100">&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
@@ -8468,7 +8490,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
         id=&quot;img_hero&quot;
         src=
 &quot;https://content.alloder.ru/uploads/11_plate_9cfc760f40.png&quot;&gt;&lt;&lt;elseif $antoinette_0101 is true&gt;&gt;&lt;img
-        id=&quot;img_hero&quot;
+        id=&quot;img_hero_ant&quot;
         src=
 &quot;https://content.alloder.ru/uploads/divan_2_5299a88a80.png&quot;&gt;&lt;&lt;else&gt;&gt;&lt;img
         id=&quot;img_hero&quot;
@@ -8522,7 +8544,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
         id=&quot;img_hero&quot;
         src=
 &quot;https://content.alloder.ru/uploads/11_plate_9cfc760f40.png&quot;&gt;&lt;&lt;elseif $antoinette_0101 is true&gt;&gt;&lt;img
-        id=&quot;img_hero&quot;
+        id=&quot;img_hero_ant&quot;
         src=
 &quot;https://content.alloder.ru/uploads/divan_2_5299a88a80.png&quot;&gt;&lt;&lt;else&gt;&gt;&lt;img
         id=&quot;img_hero&quot;
@@ -8576,7 +8598,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
         src=
 &quot;https://content.alloder.ru/uploads/11_plate_9cfc760f40.png&quot;&gt;
 &lt;img
-        id=&quot;img_hero&quot;
+        id=&quot;img_hero_delay&quot;
         src=
 &quot;https://content.alloder.ru/uploads/44_belyo_3772a34971.png&quot;&gt;
 &lt;/span&gt;</tw-passagedata><tw-passagedata pid="156" name="Не задался разговор..." tags="desert no-transition" position="3500,1025" size="100,100">&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
@@ -8588,7 +8610,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
         id=&quot;img_hero&quot;
         src=
 &quot;https://content.alloder.ru/uploads/11_plate_9cfc760f40.png&quot;&gt;&lt;&lt;elseif $antoinette_0101 is true&gt;&gt;&lt;img
-        id=&quot;img_hero&quot;
+        id=&quot;img_hero_ant&quot;
         src=
 &quot;https://content.alloder.ru/uploads/divan_2_5299a88a80.png&quot;&gt;&lt;&lt;else&gt;&gt;&lt;img
         id=&quot;img_hero&quot;
@@ -8642,7 +8664,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
         src=
 &quot;https://content.alloder.ru/uploads/11_plate_9cfc760f40.png&quot;&gt;
 &lt;img
-        id=&quot;img_hero&quot;
+        id=&quot;img_hero_delay&quot;
         src=
 &quot;https://content.alloder.ru/uploads/44_belyo_3772a34971.png&quot;&gt;
 &lt;/span&gt;</tw-passagedata><tw-passagedata pid="157" name="ТокеныАнтуанетта" tags="desert no-transition" position="3115,1179" size="100,100">&lt;&lt;timed 2s t8n&gt;&gt;&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
@@ -9409,7 +9431,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 
 &lt;div class=&quot;hero&quot;&gt;&lt;&lt;timed 0.3s t8n&gt;&gt;
 &lt;img
-        id=&quot;img_hero&quot;
+        id=&quot;img_hero_ant&quot;
         src=
 &quot;https://content.alloder.ru/uploads/divan_1_fe13d696d0.png&quot;&gt;&lt;&lt;/timed&gt;&gt;
 &lt;&lt;timed 1.7s t8n&gt;&gt;&lt;img
@@ -9444,7 +9466,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 
 &lt;div class=&quot;hero&quot;&gt;
 &lt;img
-        id=&quot;img_hero&quot;
+        id=&quot;img_hero_ant&quot;
         src=
 &quot;https://content.alloder.ru/uploads/divan_1_fe13d696d0.png&quot;&gt;
 &lt;img
@@ -9471,13 +9493,13 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 &lt;&lt;audio &quot;Jasker_sound2&quot; stop&gt;&gt;
 &lt;&lt;audio &quot;Nayan_sound&quot; stop&gt;&gt;
 &lt;&lt;audio &quot;Nayan_sound2&quot; stop&gt;&gt;
-&lt;&lt;audio &quot;night_bgm&quot; stop&gt;&gt;</tw-passagedata><tw-passagedata pid="179" name="ТокеныАнтуанетта9.2" tags="desert no-transition" position="3004,4118" size="100,100">&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
+&lt;&lt;audio &quot;night_bgm&quot; stop&gt;&gt;</tw-passagedata><tw-passagedata pid="179" name="ТокеныАнтуанетта9.2" tags="desert no-transition" position="3000,4125" size="100,100">&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
 Если ужин хорош, то и переговоры протекают лучше. А вино нужно правильно открыть... Ты знаешь, как?
 \&lt;&lt;/type&gt;&gt;&lt;&lt;timed 1.2s t8n&gt;&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Найти штопор. Можно открыть и вилкой, но это будет не так удобно... Зато такое мастерство произведёт на собеседника неизгладимое впечатление!]]&lt;/div&gt;&lt;div id=&quot;elem&quot;&gt;&lt;span class=&quot;proceed&quot;&gt;&lt;&lt;link &#39;→&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; [[Открывая бутылку, главное целиться горлышком от себя. А то кто знает... Хоть и не шампанское, но всё же...]]&lt;/div&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;div class=&quot;hero&quot;&gt;
 &lt;img
-        id=&quot;img_hero&quot;
+        id=&quot;img_hero_ant&quot;
         src=
 &quot;https://content.alloder.ru/uploads/divan_1_fe13d696d0.png&quot;&gt;
 &lt;img
@@ -9512,7 +9534,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 
 &lt;div class=&quot;hero&quot;&gt;
 &lt;img
-        id=&quot;img_hero&quot;
+        id=&quot;img_hero_ant&quot;
         src=
 &quot;https://content.alloder.ru/uploads/divan_1_fe13d696d0.png&quot;&gt;
 &lt;img
@@ -9539,7 +9561,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 &lt;&lt;audio &quot;Jasker_sound2&quot; stop&gt;&gt;
 &lt;&lt;audio &quot;Nayan_sound&quot; stop&gt;&gt;
 &lt;&lt;audio &quot;Nayan_sound2&quot; stop&gt;&gt;
-&lt;&lt;audio &quot;night_bgm&quot; stop&gt;&gt;</tw-passagedata><tw-passagedata pid="181" name="Открывая бутылку, главное целиться горлышком от себя. А то кто знает... Хоть и не шампанское, но всё же..." tags="desert no-transition" position="3123,4268" size="100,100">&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
+&lt;&lt;audio &quot;night_bgm&quot; stop&gt;&gt;</tw-passagedata><tw-passagedata pid="181" name="Открывая бутылку, главное целиться горлышком от себя. А то кто знает... Хоть и не шампанское, но всё же..." tags="desert no-transition" position="3125,4275" size="100,100">&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
 О нет, всё куда проще.
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
@@ -9547,7 +9569,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 
 &lt;div class=&quot;hero&quot;&gt;
 &lt;img
-        id=&quot;img_hero&quot;
+        id=&quot;img_hero_ant&quot;
         src=
 &quot;https://content.alloder.ru/uploads/divan_1_fe13d696d0.png&quot;&gt;
 &lt;img
@@ -9582,7 +9604,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 
 &lt;div class=&quot;hero&quot;&gt;
 &lt;img
-        id=&quot;img_hero&quot;
+        id=&quot;img_hero_ant&quot;
         src=
 &quot;https://content.alloder.ru/uploads/divan_1_fe13d696d0.png&quot;&gt;
 &lt;img
@@ -9622,7 +9644,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 
 &lt;div class=&quot;hero&quot;&gt;
 &lt;img
-        id=&quot;img_hero&quot;
+        id=&quot;img_hero_ant&quot;
         src=
 &quot;https://content.alloder.ru/uploads/divan_1_fe13d696d0.png&quot;&gt;
 &lt;img
@@ -9671,7 +9693,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 
 &lt;div class=&quot;hero&quot;&gt;
 &lt;img
-        id=&quot;img_hero&quot;
+        id=&quot;img_hero_ant&quot;
         src=
 &quot;https://content.alloder.ru/uploads/divan_1_fe13d696d0.png&quot;&gt;
 &lt;img
@@ -9706,7 +9728,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 
 &lt;div class=&quot;hero&quot;&gt;
 &lt;img
-        id=&quot;img_hero&quot;
+        id=&quot;img_hero_ant&quot;
         src=
 &quot;https://content.alloder.ru/uploads/divan_1_fe13d696d0.png&quot;&gt;
 &lt;img
@@ -9746,7 +9768,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 
 &lt;div class=&quot;hero&quot;&gt;
 &lt;img
-        id=&quot;img_hero&quot;
+        id=&quot;img_hero_ant&quot;
         src=
 &quot;https://content.alloder.ru/uploads/divan_2_5299a88a80.png&quot;&gt;
 &lt;img
@@ -9781,7 +9803,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 
 &lt;div class=&quot;hero&quot;&gt;
 &lt;img
-        id=&quot;img_hero&quot;
+        id=&quot;img_hero_ant&quot;
         src=
 &quot;https://content.alloder.ru/uploads/divan_2_5299a88a80.png&quot;&gt;
 &lt;img
@@ -9816,7 +9838,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 
 &lt;div class=&quot;hero&quot;&gt;
 &lt;img
-        id=&quot;img_hero&quot;
+        id=&quot;img_hero_ant&quot;
         src=
 &quot;https://content.alloder.ru/uploads/divan_2_5299a88a80.png&quot;&gt;
 &lt;img
@@ -9851,7 +9873,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 
 &lt;div class=&quot;hero&quot;&gt;
 &lt;img
-        id=&quot;img_hero&quot;
+        id=&quot;img_hero_ant&quot;
         src=
 &quot;https://content.alloder.ru/uploads/divan_2_5299a88a80.png&quot;&gt;
 &lt;img
@@ -9886,7 +9908,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 
 &lt;div class=&quot;hero&quot;&gt;
 &lt;img
-        id=&quot;img_hero&quot;
+        id=&quot;img_hero_ant&quot;
         src=
 &quot;https://content.alloder.ru/uploads/divan_2_5299a88a80.png&quot;&gt;
 &lt;img
@@ -9919,7 +9941,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 
 &lt;div class=&quot;hero&quot;&gt;&lt;&lt;timed 0.3s t8n&gt;&gt;
 &lt;img
-        id=&quot;img_hero&quot;
+        id=&quot;img_hero_ant&quot;
         src=
 &quot;https://content.alloder.ru/uploads/divan_2_5299a88a80.png&quot;&gt;&lt;&lt;/timed&gt;&gt;
 &lt;&lt;timed 1.7s t8n&gt;&gt;&lt;img
@@ -9958,7 +9980,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 
 &lt;div class=&quot;hero&quot;&gt;
 &lt;img
-        id=&quot;img_hero&quot;
+        id=&quot;img_hero_ant&quot;
         src=
 &quot;https://content.alloder.ru/uploads/divan_2_5299a88a80.png&quot;&gt;
 &lt;img
@@ -10012,7 +10034,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 
 &lt;div class=&quot;hero&quot;&gt;
 &lt;img
-        id=&quot;img_hero&quot;
+        id=&quot;img_hero_ant&quot;
         src=
 &quot;https://content.alloder.ru/uploads/divan_2_5299a88a80.png&quot;&gt;
 &lt;img
@@ -10066,7 +10088,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 
 &lt;div class=&quot;hero&quot;&gt;
 &lt;img
-        id=&quot;img_hero&quot;
+        id=&quot;img_hero_ant&quot;
         src=
 &quot;https://content.alloder.ru/uploads/divan_1_fe13d696d0.png&quot;&gt;
 &lt;img
@@ -10112,7 +10134,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 
 &lt;div class=&quot;hero&quot;&gt;
 &lt;img
-        id=&quot;img_hero&quot;
+        id=&quot;img_hero_ant&quot;
         src=
 &quot;https://content.alloder.ru/uploads/lezhit_udivlena_7ac8cc4e4a.png&quot;&gt;
 &lt;img
@@ -10139,7 +10161,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 &lt;&lt;audio &quot;Jasker_sound2&quot; stop&gt;&gt;
 &lt;&lt;audio &quot;Nayan_sound&quot; stop&gt;&gt;
 &lt;&lt;audio &quot;Nayan_sound2&quot; stop&gt;&gt;
-&lt;&lt;audio &quot;night_bgm&quot; stop&gt;&gt;</tw-passagedata><tw-passagedata pid="196" name="Медведень из кустов орёт! Что именно - повторять не буду..." tags="desert no-transition" position="2837,6389" size="100,100">&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
+&lt;&lt;audio &quot;night_bgm&quot; stop&gt;&gt;</tw-passagedata><tw-passagedata pid="196" name="Медведень из кустов орёт! Что именно - повторять не буду..." tags="desert no-transition" position="2850,6400" size="100,100">&lt;h3&gt;Антуанетта&lt;/h3&gt;&lt;&lt;type 5ms&gt;&gt;\
 Да уж... Видимо, высадка солдат тогда не прошла бесследно... Мы уже устали отучать медведеней от этого лексикона. Так и передают по цепочке до сих пор...
 \&lt;&lt;/type&gt;&gt;&lt;&lt;fadein 2s 3s&gt;&gt;&lt;span id=&quot;blink1&quot;&gt;&lt;em&gt;&lt;h5&gt;Совершите двойное нажатие по экрану для продолжения...&lt;/h5&gt;&lt;/em&gt;&lt;/span&gt;&lt;&lt;/fadein&gt;&gt;
 
@@ -10147,7 +10169,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 
 &lt;div class=&quot;hero&quot;&gt;
 &lt;img
-        id=&quot;img_hero&quot;
+        id=&quot;img_hero_ant&quot;
         src=
 &quot;https://content.alloder.ru/uploads/lezhit_udivlena_7ac8cc4e4a.png&quot;&gt;
 &lt;img
@@ -10188,7 +10210,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 
 &lt;div class=&quot;hero&quot;&gt;
 &lt;img
-        id=&quot;img_hero&quot;
+        id=&quot;img_hero_ant&quot;
         src=
 &quot;https://content.alloder.ru/uploads/lezhit_udivlena_7ac8cc4e4a.png&quot;&gt;
 &lt;img
@@ -10228,7 +10250,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 
 &lt;div class=&quot;hero&quot;&gt;
 &lt;img
-        id=&quot;img_hero&quot;
+        id=&quot;img_hero_ant&quot;
         src=
 &quot;https://content.alloder.ru/uploads/lezhit_ulybk_fd78f8597d.png&quot;&gt;
 &lt;img
@@ -10262,7 +10284,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 
 &lt;div class=&quot;hero&quot;&gt;
 &lt;img
-        id=&quot;img_hero&quot;
+        id=&quot;img_hero_ant&quot;
         src=
 &quot;https://content.alloder.ru/uploads/lezhit_ulybk_fd78f8597d.png&quot;&gt;
 &lt;img
@@ -10296,7 +10318,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 
 &lt;div class=&quot;hero&quot;&gt;
 &lt;img
-        id=&quot;img_hero&quot;
+        id=&quot;img_hero_ant&quot;
         src=
 &quot;https://content.alloder.ru/uploads/lezhit_ulybk_fd78f8597d.png&quot;&gt;
 &lt;img
@@ -10330,7 +10352,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 
 &lt;div class=&quot;hero&quot;&gt;
 &lt;img
-        id=&quot;img_hero&quot;
+        id=&quot;img_hero_ant&quot;
         src=
 &quot;https://content.alloder.ru/uploads/lezhit_ulybk_fd78f8597d.png&quot;&gt;
 &lt;img
@@ -10364,7 +10386,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 
 &lt;div class=&quot;hero&quot;&gt;
 &lt;img
-        id=&quot;img_hero&quot;
+        id=&quot;img_hero_ant&quot;
         src=
 &quot;https://content.alloder.ru/uploads/lezhit_ulybk_fd78f8597d.png&quot;&gt;
 &lt;img
@@ -10398,7 +10420,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 
 &lt;div class=&quot;hero&quot;&gt;
 &lt;img
-        id=&quot;img_hero&quot;
+        id=&quot;img_hero_ant&quot;
         src=
 &quot;https://content.alloder.ru/uploads/lezhit_ulybk_fd78f8597d.png&quot;&gt;
 &lt;img
@@ -10432,7 +10454,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 
 &lt;div class=&quot;hero&quot;&gt;
 &lt;img
-        id=&quot;img_hero&quot;
+        id=&quot;img_hero_ant&quot;
         src=
 &quot;https://content.alloder.ru/uploads/lezhit_ulybk_fd78f8597d.png&quot;&gt;
 &lt;img
@@ -10464,7 +10486,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
 
 &lt;div class=&quot;hero&quot;&gt;
 &lt;img
-        id=&quot;img_hero&quot;
+        id=&quot;img_hero_ant&quot;
         src=
 &quot;https://content.alloder.ru/uploads/lezhit_ulybk_fd78f8597d.png&quot;&gt;
 &lt;img
@@ -10522,7 +10544,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
         id=&quot;img_hero&quot;
         src=
 &quot;https://content.alloder.ru/uploads/11_plate_9cfc760f40.png&quot;&gt;&lt;&lt;elseif $antoinette_0101 is true&gt;&gt;&lt;img
-        id=&quot;img_hero&quot;
+        id=&quot;img_hero_ant&quot;
         src=
 &quot;https://content.alloder.ru/uploads/divan_2_5299a88a80.png&quot;&gt;&lt;&lt;else&gt;&gt;&lt;img
         id=&quot;img_hero&quot;
@@ -10561,7 +10583,7 @@ The current hour is &lt;&lt;print $date.getHours() &gt;&gt;.
         id=&quot;img_hero&quot;
         src=
 &quot;https://content.alloder.ru/uploads/11_plate_9cfc760f40.png&quot;&gt;&lt;&lt;elseif $antoinette_0101 is true&gt;&gt;&lt;img
-        id=&quot;img_hero&quot;
+        id=&quot;img_hero_ant&quot;
         src=
 &quot;https://content.alloder.ru/uploads/divan_2_5299a88a80.png&quot;&gt;&lt;&lt;else&gt;&gt;&lt;img
         id=&quot;img_hero&quot;
@@ -10979,7 +11001,7 @@ Opium Witch
         id=&quot;img_hero&quot;
         src=
 &quot;https://content.alloder.ru/uploads/11_plate_9cfc760f40.png&quot;&gt;&lt;&lt;elseif $antoinette_0101 is true&gt;&gt;&lt;img
-        id=&quot;img_hero&quot;
+        id=&quot;img_hero_ant&quot;
         src=
 &quot;https://content.alloder.ru/uploads/divan_2_5299a88a80.png&quot;&gt;&lt;&lt;else&gt;&gt;&lt;img
         id=&quot;img_hero&quot;
@@ -11046,7 +11068,7 @@ Opium Witch
 &lt;img
         id=&quot;img_hero_delay&quot;
 		src=
-&quot;https://content.alloder.ru/uploads/imgonline_com_ua_Blur_id_TQASB_9cz_Q7wlj_f61f19c0a9.jpg&quot;&gt;
+&quot;https://content.alloder.ru/uploads/ck1_R6_Ix_Xl_T8_3138c465c9.jpg&quot;&gt;
 &lt;/span&gt;
 
 &lt;&lt;goto &quot;Антуанетта1&quot;&gt;&gt;
@@ -11058,7 +11080,7 @@ Opium Witch
 
 &lt;div class=&quot;hero&quot;&gt;&lt;&lt;timed 0.3s t8n&gt;&gt;
 &lt;img
-        id=&quot;img_hero&quot;
+        id=&quot;img_hero_ant&quot;
         src=
 &quot;https://content.alloder.ru/uploads/lezhit_ulybk_fd78f8597d.png&quot;&gt;&lt;&lt;/timed&gt;&gt;
 &lt;&lt;timed 1.7s t8n&gt;&gt;&lt;img
@@ -11371,7 +11393,7 @@ Opium Witch
 
 &lt;div class=&quot;hero&quot;&gt;
 &lt;img
-        id=&quot;img_hero&quot;
+        id=&quot;img_hero_ant&quot;
         src=
 &quot;https://content.alloder.ru/uploads/divan_1_fe13d696d0.png&quot;&gt;
 &lt;img
